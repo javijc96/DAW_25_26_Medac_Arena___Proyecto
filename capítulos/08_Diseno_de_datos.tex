@@ -1,0 +1,104 @@
+\chapter{Diseño de datos} \label{cap:diseño_datos}
+
+\section{Introducción}
+En este capítulo se definirán las estructuras de datos que conforman el sistema a partir de los elementos identificados durante el análisis de datos del Capítulo 7 (tipos de entidad y tipos de interrelación). Para ello, se llevarán a cabo los siguientes pasos:
+
+\begin{itemize}
+    \item Obtención del modelo relacional. Definición de la estructuras (tablas) del modelo de datos.
+    \item Normalización del modelo. Refinamiento del modelo, para la eliminación de errores de integridad.
+    \item Obtención del esquema relacional.
+    \item Diagrama relacional.
+\end{itemize}
+
+ \section{Modelo Relacional}\label{sec:modelo-relacional}
+A partir del Modelo Entidad - Interrelación descrito en el capítulo 7, se pueden obtener las tablas o relaciones del Modelo Relacional utilizando las reglas de transformación (RTECAR - véase el capítulo 5 de Bases de Datos. Desde Chen hasta Codd con ORACLE.\cite{reglasBD}). En concreto, se han aplicado las siguientes reglas de transformación:
+
+\begin{itemize}
+    \item RTECAR-1: Todos los tipos de entidad presentes en el esquema conceptual se transformarán en tablas o relaciones en el esquema relacional manteniendo el número y tipo de atributos, así como la característica de identificador de esos atributos.
+    \item RTECAR-3.1: En las relaciones 1:N, la clave primaria de la entidad del lado 1 se convierte en una clave foránea en la tabla de la entidad del lado N.
+\end{itemize}
+
+Para cada tabla se mostrará la siguiente información:
+
+\begin{itemize}
+    \item \textbf{Descripción}. Se describirá el origen de la tabla, indicando los elementos del modelo Entidad-Interrelación desde los que se ha obtenido.
+    \item \textbf{Nombre de la tabla}
+    \item \textbf{Atributos}. Se describirán los atributos que componen la tabla, distinguiendo su rol en cada caso con la siguiente notación:
+        \begin{itemize}
+            \item Clave \underline{primaria}
+            \item Clave ALTERNA, si existe
+            \item Claves \textbf{foráneas}, si existen
+            \item Resto de atributos
+        \end{itemize}
+    \item \textbf{Esquema relacional}. Definición formal de la tabla, de acuerdo con el Modelo Relacional.
+\end{itemize}
+
+\subsection{Tabla Usuario}
+    \begin{itemize}
+        \item \textbf{Descripción}: la tabla Usuario se obtiene a partir de la entidad \textit{Usuario}.
+        \item \textbf{Nombre de la tabla}:
+        \item \textbf{Atributos}:
+            \begin{itemize}
+                \item Clave primaria: \underline{id}
+                \item Clave alterna: 
+                \item Clave foránea: \textbf{}
+                \item Resto de atributos: 
+            \end{itemize}
+        \item \textbf{Esquema relacional}: 
+            Usuario(\textbf{\underline{id}}, name, email, password, estado)
+    \end{itemize}
+
+    
+ \section{Normalización del modelo}\label{sec:normalizacion}
+La normalización del modelo descrito en la sección anterior pretende detectar y corregir redundancias e inconsistencias en la información representada, para lo cual se aplicarán las medidas correctoras que garanticen que las tablas obtenidas cumplen las siguientes formas normalizadas \cite{reglasBD}.
+
+\begin{itemize}
+    \item Primera Forma Normal (FN1): una relación R satisface la FN1 si y solo si, todos los dominios subyacentes de la relación R (atributos) contienen valores atómicos.
+    \item Segunda Forma Normal (FN2): una relación R satisface la FN2 si y sólo si, satisface la FN1 y cada atributo de la relación depende funcionalmente de forma completa de la clave primaria de esa relación.
+    \item Tercera Forma Normal (FN3): una relación R satisface la FN3 si y sólo si, satisface la FN2 y cada atributo no primo de la relación no depende funcionalmente de forma transitiva de la clave primaria de esa relación, es decir, no pueden existir dependencias transitivas entre los atributos que no forman parte de la clave primaria de esa relación R.
+    \item Forma Normal de Boyce-Codd (FNBC): una relación R satisface la FNBC si y sólo si, se encuentra en FN1 y cada determinante funcional es una clave candidata de la relación R, denominándose determinante funcional a uno o un conjunto de atributos de una relación R del cual depende funcionalmente de forma completa algún otro atributo de la misma relación.
+\end{itemize}
+
+Todas las tablas definidas se encuentran en la Primera Forma Normal, puesto que en ninguna de ellas existen atributos múltiples.
+
+\subsection{Tabla Usuario}
+    \begin{itemize}
+        \item \textbf{Claves candidatas}: id
+        \item \textbf{Normalización}: La tabla Usuario presenta una dependencia funcional formada por la clave primaria y el resto de atributos. La tabla se encuentra en FNBC: el único determinante funcional es la clave primaria, por lo que la dependencia funcional con el resto de atributos es completa.
+    \end{itemize}
+
+\begin{figure}[H]
+\centering
+%\includegraphics[scale=0.75]{img/diagramas/Datos/FNBC-Usuario.png}
+\caption{Tabla Usuario en FNBC}\label{fig:Tabla Usuario en FNBC}   
+\end{figure}
+
+ \section{Esquema relacional}\label{sec:esquema-relacional}
+
+\begin{table}[H]
+\begin{center}
+    \begin{tabular}{|l|p{8cm}|}
+    \hline
+    Tabla                 &   Atributos          
+    \\ \hline
+    Usuario             &   (\textbf{\underline{id}}, name, email, password, estado) 
+    \\  \hline
+            \end{tabular}
+        \end{center}
+    \end{table}
+
+
+
+\section{Diagrama relacional}\label{sec:diagrama-relacional}
+El diagrama relacional del modelo propuesto se muestra en la figura \ref{fig:Diagrama Relacional}.
+
+\begin{landscape}
+\begin{figure}[H]
+\centering
+%\includegraphics[scale=0.3]{img/diagramas/Datos/Diagrama-relacional.png}
+\caption{Diagrama relacional}\label{fig:Diagrama Relacional}   
+\end{figure}
+\end{landscape}
+
+
+

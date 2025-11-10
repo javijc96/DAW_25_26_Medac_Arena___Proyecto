@@ -1,0 +1,206 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{reglasBD}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=d41d8cd98f00b204e9800998ecf8427e}{%
+           family={{}},
+           familyi={\bibinitperiod}}}%
+      }
+      \strng{namehash}{d41d8cd98f00b204e9800998ecf8427e}
+      \strng{fullhash}{d41d8cd98f00b204e9800998ecf8427e}
+      \strng{fullhashraw}{d41d8cd98f00b204e9800998ecf8427e}
+      \strng{bibnamehash}{d41d8cd98f00b204e9800998ecf8427e}
+      \strng{authorbibnamehash}{d41d8cd98f00b204e9800998ecf8427e}
+      \strng{authornamehash}{d41d8cd98f00b204e9800998ecf8427e}
+      \strng{authorfullhash}{d41d8cd98f00b204e9800998ecf8427e}
+      \strng{authorfullhashraw}{d41d8cd98f00b204e9800998ecf8427e}
+      \field{sortinit}{0}
+      \field{sortinithash}{c5602f03f17cc894ea7a6362c3cb0e13}
+      \field{labelnamesource}{author}
+      \field{note}{[]}
+    \endentry
+    \entry{administracionMysql}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=239c7361d9dff735316c57706294de37}{%
+           family={{Alejandro Castán Salinas}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{239c7361d9dff735316c57706294de37}
+      \strng{fullhash}{239c7361d9dff735316c57706294de37}
+      \strng{fullhashraw}{239c7361d9dff735316c57706294de37}
+      \strng{bibnamehash}{239c7361d9dff735316c57706294de37}
+      \strng{authorbibnamehash}{239c7361d9dff735316c57706294de37}
+      \strng{authornamehash}{239c7361d9dff735316c57706294de37}
+      \strng{authorfullhash}{239c7361d9dff735316c57706294de37}
+      \strng{authorfullhashraw}{239c7361d9dff735316c57706294de37}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[En línea. Última consulta: ]}
+      \field{title}{Guía rápida de administración de MySQL}
+      \verb{urlraw}
+      \verb http://www.xtec.cat/~acastan/textos/Administracion%20de%20MySQL.html
+      \endverb
+      \verb{url}
+      \verb http://www.xtec.cat/~acastan/textos/Administracion%20de%20MySQL.html
+      \endverb
+    \endentry
+    \entry{medac}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=bc419436798bc181199077774cd86945}{%
+           family={{Centro Formación Profesional}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{bc419436798bc181199077774cd86945}
+      \strng{fullhash}{bc419436798bc181199077774cd86945}
+      \strng{fullhashraw}{bc419436798bc181199077774cd86945}
+      \strng{bibnamehash}{bc419436798bc181199077774cd86945}
+      \strng{authorbibnamehash}{bc419436798bc181199077774cd86945}
+      \strng{authornamehash}{bc419436798bc181199077774cd86945}
+      \strng{authorfullhash}{bc419436798bc181199077774cd86945}
+      \strng{authorfullhashraw}{bc419436798bc181199077774cd86945}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[En línea. Última consulta: ]}
+      \field{title}{Centro Formación Profesional}
+      \verb{urlraw}
+      \verb https://medac.es/fp-cordoba/escritora-maria-goyri-sn
+      \endverb
+      \verb{url}
+      \verb https://medac.es/fp-cordoba/escritora-maria-goyri-sn
+      \endverb
+    \endentry
+    \entry{arquitecturaMariadb}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=ddede6986fcb62ae8c9ba6c8311570da}{%
+           family={{Jessica Navil}},
+           familyi={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{ddede6986fcb62ae8c9ba6c8311570da}
+      \strng{fullhash}{ddede6986fcb62ae8c9ba6c8311570da}
+      \strng{fullhashraw}{ddede6986fcb62ae8c9ba6c8311570da}
+      \strng{bibnamehash}{ddede6986fcb62ae8c9ba6c8311570da}
+      \strng{authorbibnamehash}{ddede6986fcb62ae8c9ba6c8311570da}
+      \strng{authornamehash}{ddede6986fcb62ae8c9ba6c8311570da}
+      \strng{authorfullhash}{ddede6986fcb62ae8c9ba6c8311570da}
+      \strng{authorfullhashraw}{ddede6986fcb62ae8c9ba6c8311570da}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[En línea. Última consulta: ]}
+      \field{title}{Arquitectura de MariaDB}
+      \verb{urlraw}
+      \verb https://prezi.com/oz6eimbnuyq4/arquitectura-de-mariadb/
+      \endverb
+      \verb{url}
+      \verb https://prezi.com/oz6eimbnuyq4/arquitectura-de-mariadb/
+      \endverb
+    \endentry
+    \entry{mongodbEnterprise}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=c8bae9f9e58f1bd038d0be43f580d9d8}{%
+           family={{Luismi Gracia}},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{c8bae9f9e58f1bd038d0be43f580d9d8}
+      \strng{fullhash}{c8bae9f9e58f1bd038d0be43f580d9d8}
+      \strng{fullhashraw}{c8bae9f9e58f1bd038d0be43f580d9d8}
+      \strng{bibnamehash}{c8bae9f9e58f1bd038d0be43f580d9d8}
+      \strng{authorbibnamehash}{c8bae9f9e58f1bd038d0be43f580d9d8}
+      \strng{authornamehash}{c8bae9f9e58f1bd038d0be43f580d9d8}
+      \strng{authorfullhash}{c8bae9f9e58f1bd038d0be43f580d9d8}
+      \strng{authorfullhashraw}{c8bae9f9e58f1bd038d0be43f580d9d8}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[En línea. Última consulta: ]}
+      \field{title}{¿Qué ofrece MongoDB Enterprise Advanced?}
+      \verb{urlraw}
+      \verb https://unpocodejava.com/2019/07/22/que-ofrece-mongodb-enterprise-advanced/
+      \endverb
+      \verb{url}
+      \verb https://unpocodejava.com/2019/07/22/que-ofrece-mongodb-enterprise-advanced/
+      \endverb
+    \endentry
+    \entry{visualStudioCode}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=140864078aeca1c7c35b4beb33c53c34}{%
+           family={{Microsoft}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{fullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{fullhashraw}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{bibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorbibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authornamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorfullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorfullhashraw}{140864078aeca1c7c35b4beb33c53c34}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[En línea. Última consulta: ]}
+      \field{title}{Visual Studio Code}
+      \verb{urlraw}
+      \verb https://code.visualstudio.com/
+      \endverb
+      \verb{url}
+      \verb https://code.visualstudio.com/
+      \endverb
+    \endentry
+    \entry{w3c}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=bdea812935506778c291249971f80655}{%
+           family={{World Wide Web Consortium}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{bdea812935506778c291249971f80655}
+      \strng{fullhash}{bdea812935506778c291249971f80655}
+      \strng{fullhashraw}{bdea812935506778c291249971f80655}
+      \strng{bibnamehash}{bdea812935506778c291249971f80655}
+      \strng{authorbibnamehash}{bdea812935506778c291249971f80655}
+      \strng{authornamehash}{bdea812935506778c291249971f80655}
+      \strng{authorfullhash}{bdea812935506778c291249971f80655}
+      \strng{authorfullhashraw}{bdea812935506778c291249971f80655}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[En Línea. Última consulta: ]}
+      \field{title}{World Wide Web Consortium}
+      \verb{urlraw}
+      \verb https://www.w3.org/
+      \endverb
+      \verb{url}
+      \verb https://www.w3.org/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

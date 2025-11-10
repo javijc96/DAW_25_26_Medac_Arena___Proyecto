@@ -1,0 +1,114 @@
+\chapter{Especificación de requisitos}\label{cap:especificacion_requisitos}
+
+\section{Introducción}
+
+Se desea desarrollar una aplicación web que permita la la gestión de.... Las siguientes secciones describen los actores del sistema (Sección \ref{sec:actores}), la descripción modular (Sección \ref{sec:modulos}), los requisitos del sistema (Sección  \ref{sec:requisitos-del-sistema}).
+
+\section{Actores del sistema}\label{sec:actores}
+
+Se van a considerar los siguientes tipos de usuario en la aplicación web: 
+    \begin{itemize}
+    \item Usuario 
+    \item Administrador: usuario registrado en el sistema que...   
+    \end{itemize}
+
+\section{Módulos de la aplicación}\label{sec:modulos}
+
+La aplicación web va a estar compuesta por módulos que corresponderán a cada uno de los tipos de usuario considerados y que se describen en las siguientes secciones.
+
+\subsection{Módulo del usuario...}
+
+El usuario... podrá :
+\begin{itemize}
+    \item 
+\end{itemize}
+
+\subsection{Módulo del administrador}
+
+El usuario de tipo Administrador tendrá un control total de la aplicación. Además, se encargará de forma exclusiva de los siguientes módulos:
+\begin{itemize}
+    \item Gestión...
+\end{itemize}
+
+En principio, la aplicación solamente tendrá un único administrador.
+
+\section{Requisitos del sistema}\label{sec:requisitos-del-sistema}
+
+Los requisitos del sistema hacen referencia a todas las características relacionadas con la aplicación web. Se describirán los siguientes tipos de requisitos:
+\begin{itemize}
+    \item Requisitos funcionales: describen las tareas que la aplicación debe realizar para satisfacer las necesidades del problema (Sección \ref{sec:requisitos-funcionales}).
+    \item Requisitos no funcionales: describen cómo se tiene que satisfacer las necesidades del problema  (Sección \ref{sec:requisitos-no-funcionales}).
+    \item Requisitos de la interfaz: describen cómo debe ser la comunicación entre el usuario y la aplicación  (Sección \ref{sec:requisitos-interfaz}).
+    \item Requisitos de la información: describen las características de los datos que se van a gestionar (Sección \ref{sec:requisitos-información}).
+\end{itemize}
+
+
+\subsection{Requisitos funcionales}\label{sec:requisitos-funcionales}
+
+Los requisitos funcionales indican lo que el sistema debe hacer. Cada uno de estos requisitos debe tener dos propiedades: 
+\begin{itemize}
+    \item Ser completo: el requisito debe mencionar exactamente lo que el sistema debe hacer
+    \item Ser cerrado: el requisito debe ser claro y no estar abierto a múltiples interpretaciones, sino solamente a una.
+\end{itemize}
+
+Los requisitos funcionales que se van a considerar se agruparán según los módulos de los tipos de usuario y se denotarán como RF-<nº requisito>.
+
+ \begin{itemize}
+ \item \textbf{Módulo del usuario...}
+ \item[] La aplicación debe permitir que el usuario público pueda realizar las siguientes acciones:
+     \begin{itemize}
+         \item RF-1. Consultar 
+     \end{itemize}
+
+ \item \textbf{Módulo del administrador}
+ \item[] La aplicación debe permitir que el administrador pueda realizar las siguientes acciones:
+     \begin{itemize}
+        \item RF-2. Gestionar... .
+             \begin{itemize}
+                  \item RF-2.1. Crear un .
+                  \item RF-2.2. Buscar un .
+                  \item RF-2.3. Consultar un .
+                  \item RF-2.4. Modificar un .
+                  \item RF-2.5. Eliminar un .
+             \end{itemize} 
+        \item RF-3. Gestionar los ...
+             \begin{itemize}
+                  \item RF-3.1. Crear...
+             \end{itemize} 
+     \end{itemize}
+ \end{itemize}
+
+\subsection{Requisitos no funcionales}\label{sec:requisitos-no-funcionales}
+
+Los requisitos no funcionales representan cómo tiene que trabajar la aplicación. Los requisitos no funcionales se denotarán como RNF-<nº requisito>.
+
+\begin{itemize}
+    \item RNF-1. La aplicación solamente tendrá un usuario con el rol de administrador.
+    \item RNF-2. El borrado de todos registros en la base de datos serán borrados lógicos (soft delete), mediante actualización de un campo.
+    \item ...
+\end{itemize}
+
+
+\subsection{Requisitos de la interfaz}\label{sec:requisitos-interfaz}
+  
+  La interfaz es el dispositivo que permite la comunicación entre el usuario y el sistema. En esta sección, se enumeran los requisitos que debe tener la interfaz para que pueda ser utilizada por todos los tipos de usuario.
+  
+  Los requisitos la interfaz  especifican cómo deber la comunicación entre el usuario y la parte visible de la aplicación. Se denotarán como RINT-<nº de requisito> 
+
+
+\begin{itemize}
+    \item RINT-1. 
+\end{itemize}
+
+\subsection{Requisitos de información}\label{sec:requisitos-información}
+
+Los requisitos de información hacen referencia a los datos que debe gestionar la aplicación web. Se denotarán como RI-<no de requisito>.
+
+Se deberá almacenar la siguiente información:
+\begin{itemize}
+    \item RI-1. 
+\end{itemize}
+
+        
+Una descripción más detallada de la información que se va a gestionar se puede consultar en el capítulo \ref{cap:modelo_de_datos} de Modelo de Datos.
+

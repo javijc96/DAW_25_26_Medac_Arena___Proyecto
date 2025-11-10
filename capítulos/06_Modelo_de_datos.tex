@@ -1,0 +1,212 @@
+\chapter{Modelo de datos} \label{cap:modelo_de_datos}
+
+\section{Introducción}
+
+En este capítulo se describirá conceptualmente el modelo de datos que empleará el sistema. Se identificarán las entidades que intervienen en el problema, sus atributos y las interrelaciones entre dichas entidades.
+
+Para la confección del modelo, se empleará la notación del Modelo Entidad - Interrelación (modelo E-R) propuesto por Peter Chen%\cite{peter}. 
+El esquema E-R describe la información representando los distintos elementos que la componen mediante un conjunto limitado de símbolos y reglas de relación entre ellos. Básicamente, los elementos principales del modelo son “tipo de entidad” y “tipo de interrelación”.
+
+En las siguientes secciones se especifican con detalle los tipos de entidad y los tipos de interrelación que intervienen en el modelo, y se mostrará el diagrama E-R completo, que ofrecerá una visión global del problema.
+
+\section{Tipos de entidad} \label{sec:entidades}
+
+De acuerdo con el modelo E-R, un tipo de entidad representa a una serie de entes, objetos o personas reales o abstractos que forman parte del universo del problema a describir. Los tipos de entidad pueden ser fuertes o débiles.
+
+\begin{itemize}
+
+    \item Tipo de entidad fuerte: su existencia no depende de la de otro tipo de entidad.
+
+    \item Tipo de entidad débil: su existencia depende de la de otro tipo de entidad. La debilidad puede ser por existencia o por identificación.
+
+    \begin{itemize}
+        \item Tipo de entidad débil por existencia: puede ser identificado por sí mismo a partir de sus atributos propios, pero requiere de la existencia de otro tipo de entidad del que depende.
+
+        \item Tipo de entidad débil por identificación: es un tipo de entidad débil por existencia que, además, requiere de algún atributo identificativo del tipo de entidad del que depende para poder ser identificado y diferenciado.
+    \end{itemize} 
+\end{itemize}    
+
+Las entidades de un determinado tipo de entidad se describen mediante un conjunto de atributos que representan cada una de las características o propiedades que lo describen.
+
+Cada atributo tiene asociado un dominio de valores permitidos. Cada entidad se identifica y diferencia de forma inequívoca mediante un atributo identificador, que toma un valor único para cada entidad.
+
+En esta sección se describirán todos los tipos de entidad que se han identificado que forman parte del problema descrito, indicando para cada uno de ellos la siguiente información:
+
+\begin{itemize}
+    \item Descripción: definición de la entidad y función dentro del universo del problema.
+    
+    \item Restricción: indicación de si tiene alguna debilidad por identificación o existencia respecto de otra entidad.
+    
+    \item Características: se indicarán las siguientes: 
+    \begin{itemize}
+        \item Nombre del tipo de entidad.
+        \item Tipo: Fuerte o débil.
+        \item Atributos heredados.
+        \item Atributo identificador primario.
+        \item Atributo identificador alternativo.
+        \item Número de atributos, incluyendo los heredados.
+    \end{itemize}
+    
+    \item Atributos propios: por cada atributo, además del nombre del mismo, se indicará:
+    \begin{itemize}
+        \item Definición: descripción del atributo.
+        \item Dominio: tipo de dato o valores que puede tomar el atributo.
+        \item Tipo: indicación de si es clave primaria o alterna, en su caso, atributo simple, etc.
+        \item Opcional: indicación de si el atributo puede contener un valor nulo o no.
+        \item Ejemplo: valor de muestra.
+    \end{itemize}
+    
+    \item Diagrama: representación gráfica del tipo de entidad, de acuerdo con la notación E-R.
+    
+    \item Ejemplo de entidad.
+\end{itemize}    
+
+Los tipos de entidad que se han identificado y que se describirán a continuación son los siguientes:
+\begin{itemize}
+    \item Tipo de entidad: Usuario
+    \item ...
+\end{itemize}
+
+\subsection{Entidad Usuario}
+\begin{itemize}
+    \item Descripción: este tipo de entidad representa a los usuarios registrados en el sistema que...
+    \item Restricciones: es una entidad fuerte por lo que no depende de otro tipo de entidad.
+    \item Características:
+    \begin{itemize}
+        \item Nombre de la entidad: Usuario.
+        \item Tipo: fuerte.
+        \item Atributos heredados: ninguno.
+        \item Atributo identificador primario: id.
+        \item Atributo identificador alternativo: ninguno.
+        \item Número de atributos: 5 propios.
+    \end{itemize}
+
+    \item Atributos propios:
+    \begin{itemize}
+        \item id
+        \begin{itemize}
+            \item Definición: código numérico secuencial e incremental que identifica el centro.
+            \item Dominio: números enteros mayores que 0.
+            \item Tipo: clave primaria.
+            \item Opcional: no
+            \item Ejemplo: 13
+        \end{itemize}
+
+        \item name
+        \begin{itemize}
+            \item Definición: nombre que identifica al usuario.
+            \item Dominio: conjunto de 150 caracteres.
+            \item Tipo: atributo simple.
+            \item Opcional: no
+            \item Ejemplo: 
+        \end{itemize}
+
+        \item email
+        \begin{itemize}
+            \item Definición: dirección de correo del usuario.
+            \item Dominio: conjunto de 250 caracteres.
+            \item Tipo: atributo simple.
+            \item Opcional: no
+            \item Ejemplo: 
+        \end{itemize}
+
+        \item password
+        \begin{itemize}
+            \item Definición: contraseña del usuario.
+            \item Dominio: conjunto de 250 caracteres encriptados.
+            \item Tipo: atributo simple.
+            \item Opcional: no
+            \item Ejemplo: 
+        \end{itemize}
+
+        \item estado
+        \begin{itemize}
+            \item Definición: estado del usuario.
+            \item Dominio: 1 (Habilitado), 0 (Deshabilitado).
+            \item Tipo: atributo simple.
+            \item Opcional: no
+            \item Ejemplo: 1
+        \end{itemize}
+    \end{itemize}
+
+    \item Diagrama (Figura \ref{fig:E-Usuario}):
+
+    \begin{figure}[H]
+        \centering
+        %\includegraphics[scale=0.8]{img/diagramas/EER/E-Usuario.png}
+        \caption{Entidad Usuario}
+        \label{fig:E-Usuario}
+    \end{figure}
+
+    \item Ejemplo de entidad (Tabla \ref{table:T-Usuario}):
+
+    \begin{table}[H]
+    \centering
+        \begin{tabular}{ |p{6cm}||p{6cm}|  }
+             \hline
+                \multicolumn{2}{|c|}{\textbf{Usuario}} \\
+             \hline
+                 \textbf{Atributo} & \textbf{Valor} \\
+             \hline
+                 id & 1 \\
+             \hline
+                 nombre & Ciencias \\
+             \hline
+                 email &  \\
+            \hline
+                 password &  \\
+             \hline
+                 estado & 1 \\
+        \end{tabular}
+        \caption{Ejemplo de la entidad \textit{Usuario}}
+        \label{table:T-Usuario}
+    \end{table}
+\end{itemize}
+
+\section{Tipos de interrelación} \label{sec:relaciones}
+En esta sección se identificarán y describirán las interrelaciones entre los tipos de entidad descritos en la sección 7.2.
+
+Las interrelaciones pueden ser de tipo débil o fuerte.
+
+\begin{itemize}
+    \item Un tipo de Interrelación Fuerte es aquella que representa la relación existente entre dos tipos de entidad fuertes.
+
+    \item Un tipo de Interrelación Débil es aquella que representa la relación entre un tipo de entidad débil y otro fuerte o entre dos tipos de entidad débiles.
+\end{itemize}
+
+De acuerdo con la notación del modelo E-R, una interrelación se representa mediante un rombo del que parten flechas hacia los tipos de entidad que forman parte de la relación. Cada tipo de entidad interviene en la interrelación con una determinada cardinalidad, que indica el número mínimo y máximo de instancias de cada tipo de entidad que pueden participar en la interrelación. Se representa por dos valores entre paréntesis (mínimo y máximo). Las posibles cardinalidades son: (0,1), (1,1),(0,n),(1,n),(m,n). Estas cardinalidades determinan el tipo de interrelación que se está definiendo, que puede ser:
+
+\begin{itemize}
+    \item \textbf{1:1} Uno a uno. Cuando los dos tipos de entidad participan con una cardinalidad máxima de 1.
+    \item \textbf{1:N o N:1} Uno a muchos, o muchos a uno. Cuando uno de los tipos de entidad participa con una cardinalidad máxima de 1 y el otro con una cardinalidad máxima de n.
+    \item \textbf{N:N} Muchos a muchos. Cuando ambos tipos de entidad participan una cardinalidad máxima de n.
+\end{itemize}
+
+Para cada una de las interrelaciones que se han identificado en la definición del problema, se indicará la siguiente información:
+
+\begin{itemize}
+    \item \textbf{Nombre}. Nombre del tipo de interrelación.
+    \item \textbf{Descripción}. Definición del tipo de interrelación y de los tipos de entidad que participan en ella.
+    \item \textbf{Tipo}. Indicación de si se trata de un tipo de interrelación débil o fuerte identificando los tipos de debilidad en su caso.
+    \item \textbf{Cardinalidad}. Indicación de la cardinalidad del tipo de interrelación y cardinalidades mínima y máxima de los tipos de entidad intervinientes.
+    \item \textbf{Atributos}. Indicación del número y descripción de los atributos del tipo de interrelación, en su caso.
+    \item \textbf{Diagrama}. Representación gráfica del tipo de interrelación, de acuerdo con la notación E-R.
+    \item \textbf{Ejemplo}. Valores de muestra.
+\end{itemize}
+
+Se han identificado las interrelaciones que se indican a continuación y que se describirán en las siguientes subsecciones:
+
+\begin{itemize}
+    \item Tipo de Interrelación: Usuario - ...
+\end{itemize}
+
+\begin{landscape}
+\section{Diagrama del Modelo Entidad-Interrelación}\label{sec:diagrama-E-R}
+El diagrama completo se muestra en la figura \ref{fig:EER_v5}
+\begin{figure}[H]
+    \centering
+    %\includegraphics[scale=0.35]{img/diagramas/EER/EER_v5.png}
+    \caption{Diagrama del modelo Entidad - Interrelación}
+    \label{fig:EER_v5}
+\end{figure}
+\end{landscape}
