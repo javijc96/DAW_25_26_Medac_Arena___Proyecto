@@ -69,7 +69,7 @@ Los tipos de entidad que se han identificado y que se describirán a continuaci�
 
 \subsection{Entidad Usuario}
 \begin{itemize}
-    \item Descripción: este tipo de entidad representa a los usuarios registrados en el sistema que...
+    \item Descripción: este tipo de entidad representa a los usuarios registrados en el sistema que contratan los servicios de subscripciones para acceder a los productos
     \item Restricciones: es una entidad fuerte por lo que no depende de otro tipo de entidad.
     \item Características:
     \begin{itemize}
@@ -78,14 +78,14 @@ Los tipos de entidad que se han identificado y que se describirán a continuaci�
         \item Atributos heredados: ninguno.
         \item Atributo identificador primario: id.
         \item Atributo identificador alternativo: ninguno.
-        \item Número de atributos: 5 propios.
+        \item Número de atributos: 7 propios.
     \end{itemize}
 
     \item Atributos propios:
     \begin{itemize}
         \item id
         \begin{itemize}
-            \item Definición: código numérico secuencial e incremental que identifica el centro.
+            \item Definición: código numérico secuencial e incremental que identifica el usuario.
             \item Dominio: números enteros mayores que 0.
             \item Tipo: clave primaria.
             \item Opcional: no
@@ -98,16 +98,36 @@ Los tipos de entidad que se han identificado y que se describirán a continuaci�
             \item Dominio: conjunto de 150 caracteres.
             \item Tipo: atributo simple.
             \item Opcional: no
-            \item Ejemplo: 
+            \item Ejemplo: Juan 
         \end{itemize}
 
+        \item apellidos
+        \begin{itemize}
+            \item Definicion
+            \item Definición: apellidos del usuario.
+            \item Dominio: conjunto de 150 caracteres.
+            \item Tipo: atributo simple.
+            \item Opcional: no
+            \item Ejemplo: Bautista
+        \end{itemize}
+
+        \item telefono
+        \begin{itemize}
+            \item Definicion
+            \item Definición: número de teléfono del usuario.
+            \item Dominio: conjunto de 150 caracteres.
+            \item Tipo: atributo simple.
+            \item Opcional: no
+            \item Ejemplo: 649543987
+        \end{itemize} 
+            
         \item email
         \begin{itemize}
             \item Definición: dirección de correo del usuario.
             \item Dominio: conjunto de 250 caracteres.
             \item Tipo: atributo simple.
             \item Opcional: no
-            \item Ejemplo: 
+            \item Ejemplo: moyano@gmail.com
         \end{itemize}
 
         \item password
@@ -119,15 +139,16 @@ Los tipos de entidad que se han identificado y que se describirán a continuaci�
             \item Ejemplo: 
         \end{itemize}
 
-        \item estado
+        \item fecha_alta
         \begin{itemize}
-            \item Definición: estado del usuario.
-            \item Dominio: 1 (Habilitado), 0 (Deshabilitado).
+            \item Definición: Fecha en que se crea la cuenta del usuario.
+            \item Dominio: conjunto de 250 caracteres encriptados.
             \item Tipo: atributo simple.
             \item Opcional: no
-            \item Ejemplo: 1
+            \item Ejemplo: 24/11/2025
         \end{itemize}
-    \end{itemize}
+
+    \end{itemize}   
 
     \item Diagrama (Figura \ref{fig:E-Usuario}):
 
@@ -151,17 +172,27 @@ Los tipos de entidad que se han identificado y que se describirán a continuaci�
                  id & 1 \\
              \hline
                  nombre & Ciencias \\
+            \hline
+                apellidos & Galisteo \\
+            \hline
+                teléfono & 695586666 \\
              \hline
                  email &  \\
             \hline
                  password &  \\
              \hline
-                 estado & 1 \\
         \end{tabular}
         \caption{Ejemplo de la entidad \textit{Usuario}}
         \label{table:T-Usuario}
     \end{table}
 \end{itemize}
+
+
+
+
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 \section{Tipos de interrelación} \label{sec:relaciones}
 En esta sección se identificarán y describirán las interrelaciones entre los tipos de entidad descritos en la sección 7.2.
