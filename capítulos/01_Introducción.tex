@@ -2,7 +2,13 @@
 
 \section{Contexto del problema a resolver}
     
-    
+    En la actualidad, la práctica deportiva y las actividades orientadas al bienestar físico han experimentado un crecimiento significativo. Este auge ha provocado que tanto gimnasios como centros deportivos, empresas dedicadas al acondicionamiento físico y usuarios particulares presenten una necesidad cada vez mayor de disponer de material de gimnasia actualizado, en buen estado y adaptado a sus necesidades.
+
+    Sin embargo, el acceso a este tipo de equipamiento supone un reto para muchas organizaciones debido a sus elevados costes, la rápida obsolescencia del material, los costes de mantenimiento asociados y la falta de flexibilidad en los modelos tradicionales de compra. Todo ello genera barreras económicas y logísticas que dificultan la renovación del material o incluso su adquisición inicial.
+
+    Este contexto ha impulsado la búsqueda de nuevos modelos que permitan una gestión más eficiente y accesible del material deportivo, promoviendo soluciones basadas en la suscripción y el alquiler, capaces de adaptarse a distintos perfiles de usuario.
+
+
 \section{Definición del problema real}
     
     Existe un problema generalizado con respecto al material de gimnasia, se dan muchos casos en que tanto empresas
@@ -14,56 +20,69 @@
     
 \section{Definición del problema técnico}
 
-    Se va a utilizar la metodología denominada
+    Para dar solución al problema identificado, se plantea el desarrollo de una aplicación web basada en un modelo de suscripción para el alquiler de material de gimnasia. Esta aplicación permitirá gestionar los servicios, controlar los diferentes niveles de suscripción y garantizar que los usuarios puedan acceder al material que necesiten.
 
+    Se utilizará una metodología de desarrollo incremental y modular, lo que permitirá construir la aplicación por fases, integrar las funcionalidades de manera progresiva y facilitar el mantenimiento y escalabilidad del sistema.
 
 \subsection{Funcionamiento}
-    Se desea implementar una aplicación web que permita realizar una gestión de servicios de suscripcion para alquilar material
-    de gimnasia ofreciendo precios competentes que permitan el acceso a cualquier individuo 
+    La aplicación web ofrecerá un sistema de gestión de servicios de suscripción mediante el cual los usuarios podrán alquilar material de gimnasia. El objetivo principal es proporcionar precios competitivos que permitan el acceso a cualquier tipo de cliente, desde empresas hasta usuarios particulares.
+
+    Los tipos de usuarios que interactuarán con la aplicación son los siguientes:
 
     Los usuarios que interactuarán con la aplicación son los siguientes:
     \begin{itemize}
-        \item Administrador
-          \begin{itemize}
-              \item Este tipo de usuario estará registrado en el sistema ...
-              \item En particular, tendrá las competencias exclusivas de...
-          \end{itemize}
-         
-     \end{itemize}
-     
-\subsection{Entorno}
- Existirán dos entornos de trabajo para esta aplicación. 
+    \item \textbf{Administrador}
+    \begin{itemize}
+        \item Estará registrado en el sistema y tendrá acceso a un panel de administración.
+        \item Podrá gestionar el catálogo de material disponible, crear o modificar planes de suscripción, supervisar el estado del inventario y gestionar las cuentas de los usuarios registrados.
+        \item Tendrá competencias exclusivas como la actualización de los datos del sistema, la revisión de reportes y el control de la facturación.
+    \end{itemize}
 
-  \begin{itemize}
-     \item Entorno de desarrollo y testeo: entorno que se utilizará para desarrollar, probar y depurar la aplicación web antes de su lanzamiento al entorno de producción.
-     \item Entorno de producción: entorno en el que se encontrará la versión final de la aplicación web...
- \end{itemize}
+    \item \textbf{Usuario suscrito}
+    \begin{itemize}
+        \item Podrá registrarse en la plataforma y seleccionar el tipo de suscripción más adecuado a sus necesidades.
+        \item Tendrá acceso al material incluido en su plan y podrá solicitar cambios, ampliaciones o renovaciones.
+        \item Podrá consultar su historial de alquileres, pagos y configuración de cuenta.
+    \end{itemize}
+
+    \item \textbf{Usuario invitado}
+    \begin{itemize}
+        \item Tendrá acceso limitado a la plataforma y podrá consultar la información general, los niveles de suscripción y el catálogo.
+        \item No podrá alquilar material hasta completar el registro.
+    \end{itemize}
+\end{itemize}
+
+\subsection{Entorno}
+Existirán dos entornos de trabajo para esta aplicación:
+
+\begin{itemize}
+    \item Entorno de desarrollo y testeo: entorno que se utilizará para desarrollar, probar y depurar la aplicación web antes de su lanzamiento al entorno de producción.
+    \item Entorno de producción: entorno en el que se encontrará la versión final de la aplicación web...
+\end{itemize}
 
 Existirán dos entornos de ejecución para esta aplicación. 
 
- \begin{itemize}
-     \item Entorno de ejecución del administrador: el administrador ejecutará la aplicación...
-     \item Entorno de ejecución del resto de usuarios: ...
- \end{itemize}
+\begin{itemize}
+    \item \textbf{Entorno de ejecución del administrador}: incluirá herramientas avanzadas de gestión, paneles de control y funciones exclusivas.
 
- La interfaz es el medio de comunicación entre los usuarios y la aplicación web. Es importante que la interfaz sea lo más intuitiva y amigable posible para poder generar una mejor experiencia en el usuario. Los requisitos de la interfaz se describirán en la Sección \ref{sec:requisitos-interfaz}.
+    \item \textbf{Entorno de ejecución del resto de usuarios}: diseñado para la interacción habitual con la aplicación, enfocado en la experiencia de alquiler y consulta de suscripciones.
+\end{itemize}
 
-        
+La interfaz será un elemento clave del proyecto, actuando como medio de comunicación entre los usuarios y la aplicación web. Su diseño será intuitivo, accesible y responsivo. Los requisitos específicos se detallarán en la Sección \ref{sec:requisitos-interfaz}.
+
 \subsection{Vida esperada}
     
-    El ciclo de vida esperado para dicha aplicación web será alto...
-    
-\subsection{Ciclo de mantenimiento} \label{subsec:ciclo_mantenimiento}
+El ciclo de vida esperado de la aplicación es elevado, ya que se pretende que el sistema pueda seguir ampliándose, integrándose con nuevas funcionalidades y adaptándose a las necesidades del mercado.
 
  Teniendo en cuenta que el propósito de la creación de esta aplicación web es la realización de un proyecto, el mantenimiento de dicha aplicación no correrá a cargo de su autor.
 
  No obstante, se realizará un diseño modular de cada una de las partes de la aplicación web para facilitar, en el futuro, posibles tareas de mantenimiento y mejoras.
 
-
 \subsection{Competencia}
 
+Actualmente existen pocos servicios relacionados con el alquiler de material deportivo, aunque la mayoría se centran en grandes empresas, equipamiento especializado o modelos mas centrados en la compra que en el alquiler de material. Sin embargo, no son frecuentes las plataformas orientadas a gimnasios pequeños, empresas con recursos limitados o usuarios particulares que deseen acceder a un catálogo amplio mediante un sistema de suscripción flexible.
 
-
+El proyecto pretende cubrir este nicho ofreciendo un servicio accesible, escalable y con precios adaptados a distintos niveles de uso.
 
 \subsection{Aspecto externo}
 
@@ -76,23 +95,26 @@ En relación con el aspecto externo, se tendrán en cuenta los siguientes aspect
     \end{itemize}
     \item \textbf{Distribución de la aplicación: formato de almacenamiento}
      \begin{itemize}
-         \item La aplicación se podrá distribuir a través...
+        \item La aplicación podrá distribuirse a través de un servidor web alojado en un entorno local, facilitando su instalación y despliegue en distintos escenarios.
      \end{itemize}
 \end{itemize}
 
 
 \subsection{Estandarización}
 
- Para el desarrollo de la aplicación web, se revisarán las recomendaciones propuestas por \textit{World Wide Web Consortium} (W3C) \cite{w3c}, que ``promueve el uso de estándares para reducir el coste y la complejidad del desarrollo, así como para incrementar la accesibilidad y usabilidad de cualquier documento publicado en la web''.
+Para el desarrollo de la aplicación se seguirán las recomendaciones del \textit{World Wide Web Consortium} (W3C) \cite{w3c}, que promueve estándares que favorecen la accesibilidad, la interoperabilidad y la calidad del software. Asimismo, se emplearán herramientas, frameworks y tecnologías que cuentan con el respaldo de organizaciones reconocidas y cumplen estándares internacionales.
 
- También se debe tener en cuenta que los recursos  que se van a utilizar son herramientas informáticas que están validadas por prestigiosas organizaciones que indican que cumplen con los estándares. Véase el capítulo \ref{cap:recursos} de Recursos. 
+También se debe tener en cuenta que los recursos  que se van a utilizar son herramientas informáticas que están validadas por prestigiosas organizaciones que indican que cumplen con los estándares. Véase el capítulo \ref{cap:recursos} de Recursos. 
 
 \subsection{Calidad y fiabilidad}
 
- La calidad y la fiabilidad de la aplicación web estará garantizadas por las siguientes razones.
- \begin{itemize}
-     \item 
- \end{itemize}
+La calidad y la fiabilidad de la aplicación web estará garantizadas por las siguientes razones.
+\begin{itemize}
+    \item El uso de tecnologías estables, ampliamente documentadas y mantenidas por comunidades activas.
+    \item La realización de pruebas exhaustivas unitarias, funcionales y de integración.
+    \item Un diseño modular que facilite la detección y corrección de errores.
+    \item La implementación de buenas prácticas de programación y arquitectura.
+\end{itemize}
 
 \subsection{Programa de tareas}
 
