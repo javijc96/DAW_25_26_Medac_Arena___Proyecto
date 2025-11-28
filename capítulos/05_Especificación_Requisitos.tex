@@ -2,35 +2,60 @@
 
 \section{Introducción}
 
-Se desea desarrollar una aplicación web que permita la la gestión de.... Las siguientes secciones describen los actores del sistema (Sección \ref{sec:actores}), la descripción modular (Sección \ref{sec:modulos}), los requisitos del sistema (Sección  \ref{sec:requisitos-del-sistema}).
+
+Se desea desarrollar una aplicación web que permita la gestión de servicios de suscripción para el alquiler de material de gimnasia. Esta plataforma estará orientada tanto a gimnasios como a empresas con recursos limitados y a usuarios particulares que deseen acceder a material deportivo sin realizar una inversión elevada. 
+
+Las siguientes secciones describen los actores del sistema (Sección \ref{sec:actores}), la descripción modular (Sección \ref{sec:modulos}) y los requisitos del sistema (Sección \ref{sec:requisitos-del-sistema}).
+
 
 \section{Actores del sistema}\label{sec:actores}
+Se consideran los siguientes tipos de usuario en la aplicación web:
 
-Se van a considerar los siguientes tipos de usuario en la aplicación web: 
-    \begin{itemize}
-    \item Usuario 
-    \item Administrador: usuario registrado en el sistema que...   
-    \end{itemize}
+\begin{itemize}
+    \item \textbf{Usuario invitado}: usuario no registrado que puede consultar información general sobre la plataforma, el catálogo básico y los niveles de suscripción.
+    \item \textbf{Usuario registrado}: usuario que dispone de una cuenta activa y puede gestionar su suscripción, consultar material disponible según su plan, realizar solicitudes de alquiler o renovación y modificar su información personal.
+    \item \textbf{Administrador}: usuario registrado con permisos avanzados con un control total sobre la aplicación. Será responsable de la gestión de usuarios, suscripciones, material, inventario y operaciones internas.
+\end{itemize}
 
 \section{Módulos de la aplicación}\label{sec:modulos}
 
-La aplicación web va a estar compuesta por módulos que corresponderán a cada uno de los tipos de usuario considerados y que se describen en las siguientes secciones.
+La aplicación web estará compuesta por módulos correspondientes a cada tipo de usuario. En las siguientes subsecciones se detalla la funcionalidad de cada uno de ellos.
 
-\subsection{Módulo del usuario...}
+\subsection{Módulo del usuario}
 
-El usuario... podrá :
+El usuario registrado podrá realizar las siguientes acciones:
 \begin{itemize}
-    \item 
+    \item Consultar el catálogo de material disponible según su nivel de suscripción.
+    \item Solicitar el alquiler de material deportivo.
+    \item Gestionar sus renovaciones o devoluciones.
+    \item Modificar sus datos personales.
+    \item Consultar su historial de uso y facturación.
+    \item Acceder a soporte y documentación de ayuda.
+\end{itemize}
+
+El usuario invitado podrá:
+\begin{itemize}
+    \item Consultar la información general de la plataforma.
+    \item Visualizar los distintos niveles de suscripción.
+    \item Consultar un catálogo básico del material disponible.
+    \item Registrarse en la plataforma para acceder a las funcionalidades completas.
 \end{itemize}
 
 \subsection{Módulo del administrador}
 
-El usuario de tipo Administrador tendrá un control total de la aplicación. Además, se encargará de forma exclusiva de los siguientes módulos:
+El usuario administrador tendrá control total de la aplicación y será responsable de los siguientes módulos:
+
 \begin{itemize}
-    \item Gestión...
+    \item Gestión del catálogo de material deportivo disponible.
+    \item Gestión de usuarios registrados.
+    \item Gestión de los niveles o planes de suscripción.
+    \item Supervisión de pedidos, renovaciones y devoluciones.
+    \item Control del inventario y del estado del material.
+    \item Gestión de incidencias y solicitudes especiales.
+    \item Acceso al registro de actividad de la aplicación.
 \end{itemize}
 
-En principio, la aplicación solamente tendrá un único administrador.
+En principio, la aplicación solo tendrá un único usuario con rol de administrador.
 
 \section{Requisitos del sistema}\label{sec:requisitos-del-sistema}
 
@@ -51,62 +76,104 @@ Los requisitos funcionales indican lo que el sistema debe hacer. Cada uno de est
     \item Ser cerrado: el requisito debe ser claro y no estar abierto a múltiples interpretaciones, sino solamente a una.
 \end{itemize}
 
-Los requisitos funcionales que se van a considerar se agruparán según los módulos de los tipos de usuario y se denotarán como RF-<nº requisito>.
+Los requisitos funcionales que se van a considerar se agruparán según los módulos de los tipos de usuario y se denotarán como RF-\textit{n}, donde \textit{n} es el número de requisito.
 
  \begin{itemize}
- \item \textbf{Módulo del usuario...}
+ \item \textbf{Módulo del usuario}
  \item[] La aplicación debe permitir que el usuario público pueda realizar las siguientes acciones:
-     \begin{itemize}
-         \item RF-1. Consultar 
-     \end{itemize}
+    \begin{itemize}
+        \item RF-1. Consultar el catálogo de material disponible.
+        \item RF-2. Registrarse en la plataforma mediante un formulario.
+        \item RF-3. Iniciar sesión con sus credenciales.
+        \item RF-4. Seleccionar o modificar su plan de suscripción.
+        \item RF-5. Solicitar el alquiler de material según su suscripción.
+        \item RF-6. Consultar su historial de pedidos.
+        \item RF-7. Gestionar renovaciones y devoluciones.
+        \item RF-8. Modificar sus datos personales.
+        \item RF-9. Consultar documentación de ayuda.
+    \end{itemize}
 
  \item \textbf{Módulo del administrador}
  \item[] La aplicación debe permitir que el administrador pueda realizar las siguientes acciones:
-     \begin{itemize}
-        \item RF-2. Gestionar... .
-             \begin{itemize}
-                  \item RF-2.1. Crear un .
-                  \item RF-2.2. Buscar un .
-                  \item RF-2.3. Consultar un .
-                  \item RF-2.4. Modificar un .
-                  \item RF-2.5. Eliminar un .
-             \end{itemize} 
-        \item RF-3. Gestionar los ...
-             \begin{itemize}
-                  \item RF-3.1. Crear...
-             \end{itemize} 
-     \end{itemize}
- \end{itemize}
+    \begin{itemize}
+        \item RF-10. Gestionar usuarios registrados.
+            \begin{itemize}
+                \item RF-10.1. Crear un usuario.
+                \item RF-10.2. Buscar un usuario.
+                \item RF-10.3. Consultar un usuario.
+                \item RF-10.4. Modificar un usuario.
+                \item RF-10.5. Eliminar un usuario.
+            \end{itemize}
+
+        \item RF-11. Gestionar el catálogo de material deportivo.
+            \begin{itemize}
+                \item RF-11.1. Registrar nuevo material.
+                \item RF-11.2. Consultar material.
+                \item RF-11.3. Modificar información del material.
+                \item RF-11.4. Dar de baja material (borrado lógico).
+            \end{itemize}
+
+        \item RF-12. Gestionar los planes de suscripción.
+            \begin{itemize}
+                \item RF-12.1. Crear un plan de suscripción.
+                \item RF-12.2. Modificar un plan existente.
+                \item RF-12.3. Eliminar un plan (soft delete).
+            \end{itemize}
+
+        \item RF-13. Supervisar pedidos de usuarios.
+        \item RF-14. Gestionar incidencias reportadas por los usuarios.
+        \item RF-15. Consultar reportes y estadísticas del sistema.
+    \end{itemize}
+
+\end{itemize}
 
 \subsection{Requisitos no funcionales}\label{sec:requisitos-no-funcionales}
 
-Los requisitos no funcionales representan cómo tiene que trabajar la aplicación. Los requisitos no funcionales se denotarán como RNF-<nº requisito>.
+Los requisitos no funcionales representan cómo tiene que trabajar la aplicación. Los requisitos no funcionales se denotarán como RNF-\textit{n}, donde \textit{n} es el número de requisito.
+
 
 \begin{itemize}
-    \item RNF-1. La aplicación solamente tendrá un usuario con el rol de administrador.
-    \item RNF-2. El borrado de todos registros en la base de datos serán borrados lógicos (soft delete), mediante actualización de un campo.
-    \item ...
+    \item RNF-1. La aplicación solo tendrá un usuario con rol de administrador.
+    \item RNF-2. El borrado de registros se realizará mediante soft delete.
+    \item RNF-3. La aplicación debe ser accesible desde cualquier navegador moderno.
+    \item RNF-4. La interfaz debe ser completamente responsiva.
+    \item RNF-5. Las operaciones deben ejecutarse con un tiempo de respuesta inferior a 2 segundos.
+    \item RNF-6. La aplicación debe seguir estándares de seguridad como HTTPS, hash de contraseñas y validación del lado del servidor.
+    \item RNF-7. El sistema debe permitir una escalabilidad mínima para soportar al menos 500 usuarios simultáneos.
+    \item RNF-8. La base de datos debe permitir integridad referencial y transacciones seguras.
 \end{itemize}
 
 
 \subsection{Requisitos de la interfaz}\label{sec:requisitos-interfaz}
-  
+
   La interfaz es el dispositivo que permite la comunicación entre el usuario y el sistema. En esta sección, se enumeran los requisitos que debe tener la interfaz para que pueda ser utilizada por todos los tipos de usuario.
   
-  Los requisitos la interfaz  especifican cómo deber la comunicación entre el usuario y la parte visible de la aplicación. Se denotarán como RINT-<nº de requisito> 
+Los requisitos de la interfaz especifican cómo debe ser la comunicación entre el usuario y la parte visible de la aplicación. Se denotarán como RINT-\textit{n}, donde \textit{n} es el número de requisito.
 
 
 \begin{itemize}
-    \item RINT-1. 
+    \item RINT-1. La interfaz debe ser clara, intuitiva y coherente en todas las pantallas.
+    \item RINT-2. Debe cumplir con los criterios básicos de accesibilidad WCAG.
+    \item RINT-3. Debe permitir una navegación sencilla entre módulos.
+    \item RINT-4. Los formularios deben incluir validaciones tanto visuales como textuales.
+    \item RINT-5. Todos los mensajes de error deben mostrarse de forma visible y comprensible.
+    \item RINT-6. El usuario debe recibir retroalimentación en cada acción (confirmaciones, avisos, alertas).
+    
 \end{itemize}
 
 \subsection{Requisitos de información}\label{sec:requisitos-información}
 
-Los requisitos de información hacen referencia a los datos que debe gestionar la aplicación web. Se denotarán como RI-<no de requisito>.
+Los requisitos de información hacen referencia a los datos que debe gestionar la aplicación web. Se denotarán como RI-\textit{n}, donde \textit{n} es el número de requisito.
+
 
 Se deberá almacenar la siguiente información:
 \begin{itemize}
-    \item RI-1. 
+    \item RI-1. Se debe almacenar la información personal de los usuarios (nombre, email, dirección, contraseña).
+    \item RI-2. Se debe almacenar información de cada suscripción (nivel, fecha de inicio, renovación, estado).
+    \item RI-3. Se debe registrar el catálogo completo de material deportivo disponible.
+    \item RI-4. Se debe almacenar información sobre pedidos, devoluciones y renovaciones.
+    \item RI-5. Se debe guardar el historial de actividad del administrador.
+    \item RI-6. Se deben almacenar incidencias reportadas por los usuarios.
 \end{itemize}
 
         
