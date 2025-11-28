@@ -11,7 +11,7 @@
 \contentsline {subsection}{\numberline {1.3.5}Aspecto externo}{6}{subsection.1.3.5}%
 \contentsline {subsection}{\numberline {1.3.6}Estandarización}{6}{subsection.1.3.6}%
 \contentsline {subsection}{\numberline {1.3.7}Calidad y fiabilidad}{6}{subsection.1.3.7}%
-\contentsline {subsection}{\numberline {1.3.8}Programa de tareas}{7}{subsection.1.3.8}%
+\contentsline {subsection}{\numberline {1.3.8}Programa de tareas}{6}{subsection.1.3.8}%
 \contentsline {subsection}{\numberline {1.3.9}Pruebas}{7}{subsection.1.3.9}%
 \contentsline {subsection}{\numberline {1.3.10}Seguridad}{8}{subsection.1.3.10}%
 \contentsline {chapter}{\numberline {2}Objetivos}{9}{chapter.2}%
@@ -46,63 +46,63 @@
 \contentsline {section}{\numberline {6.1}Introducción}{25}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Tipos de entidad}{25}{section.6.2}%
 \contentsline {subsection}{\numberline {6.2.1}Entidad Usuario}{27}{subsection.6.2.1}%
-\contentsline {section}{\numberline {6.3}Tipos de interrelación}{29}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Diagrama del Modelo Entidad-Interrelación}{31}{section.6.4}%
-\contentsline {chapter}{\numberline {7}Análisis funcional}{32}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Introducción}{32}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Actores}{32}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Casos de uso}{32}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Caso de Uso 0. Diagrama de Contexto}{33}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}CU-1. }{34}{subsection.7.3.2}%
-\contentsline {section}{\numberline {7.4}Validación de casos de uso}{35}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Diagrama de secuencia}{36}{section.7.5}%
-\contentsline {part}{IV\hspace {1em}Diseño}{37}{part.4}%
-\contentsline {chapter}{\numberline {8}Diseño de datos}{39}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Introducción}{39}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Modelo Relacional}{39}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Tabla Usuario}{40}{subsection.8.2.1}%
-\contentsline {section}{\numberline {8.3}Normalización del modelo}{40}{section.8.3}%
-\contentsline {subsection}{\numberline {8.3.1}Tabla Usuario}{41}{subsection.8.3.1}%
-\contentsline {section}{\numberline {8.4}Esquema relacional}{41}{section.8.4}%
-\contentsline {section}{\numberline {8.5}Diagrama relacional}{41}{section.8.5}%
-\contentsline {chapter}{\numberline {9}Diseño arquitectónico}{43}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Introducción}{43}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Diagrama de despliegue}{43}{section.9.2}%
-\contentsline {subsection}{\numberline {9.2.1}Descripción de los nodos}{43}{subsection.9.2.1}%
-\contentsline {subsection}{\numberline {9.2.2}Descripción de los componentes}{43}{subsection.9.2.2}%
-\contentsline {chapter}{\numberline {10}Diseño de la interfaz}{44}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Introducción}{44}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Características comunes}{44}{section.10.2}%
-\contentsline {section}{\numberline {10.3}Interfaz del módulo Usuario...}{44}{section.10.3}%
-\contentsline {subsection}{\numberline {10.3.1}Descripción general}{44}{subsection.10.3.1}%
-\contentsline {subsection}{\numberline {10.3.2}Descripción detallada}{44}{subsection.10.3.2}%
-\contentsline {subsection}{\numberline {10.3.3}Otros elementos de la interfaz}{44}{subsection.10.3.3}%
-\contentsline {section}{\numberline {10.4}Interfaz del módulo Administrador}{44}{section.10.4}%
-\contentsline {subsection}{\numberline {10.4.1}Descripción general}{44}{subsection.10.4.1}%
-\contentsline {subsection}{\numberline {10.4.2}Descripción detallada}{45}{subsection.10.4.2}%
-\contentsline {subsection}{\numberline {10.4.3}Otros elementos de la interfaz}{45}{subsection.10.4.3}%
-\contentsline {part}{V\hspace {1em}Pruebas}{46}{part.5}%
-\contentsline {chapter}{\numberline {11}Pruebas}{48}{chapter.11}%
-\contentsline {section}{\numberline {11.1}Introducción}{48}{section.11.1}%
-\contentsline {section}{\numberline {11.2}Prueba de usuarios públicos}{48}{section.11.2}%
-\contentsline {subsection}{\numberline {11.2.1}Pruebas CU-1.1}{48}{subsection.11.2.1}%
-\contentsline {part}{VI\hspace {1em}Conclusiones y futuras mejoras}{49}{part.6}%
-\contentsline {chapter}{\numberline {12}Conclusiones}{51}{chapter.12}%
-\contentsline {section}{\numberline {12.1}Introducción}{51}{section.12.1}%
-\contentsline {section}{\numberline {12.2}Conclusiones específicas}{51}{section.12.2}%
-\contentsline {section}{\numberline {12.3}Conclusiones personales y profesionales}{51}{section.12.3}%
-\contentsline {chapter}{\numberline {13}Futuras mejoras}{52}{chapter.13}%
-\contentsline {section}{\numberline {13.1}Introducción}{52}{section.13.1}%
-\contentsline {section}{\numberline {13.2}Mejoras y nuevas funciones}{52}{section.13.2}%
-\contentsline {subsection}{\numberline {13.2.1}Mejoras para usuarios}{52}{subsection.13.2.1}%
-\contentsline {subsection}{\numberline {13.2.2}Mejoras para administrador}{52}{subsection.13.2.2}%
-\contentsline {subsection}{\numberline {13.2.3}Mejoras de funcionamiento}{52}{subsection.13.2.3}%
-\contentsline {subsection}{\numberline {13.2.4}Integración con otras aplicaciones}{53}{subsection.13.2.4}%
-\contentsline {subsection}{\numberline {13.2.5}Exportabilidad}{53}{subsection.13.2.5}%
-\contentsline {chapter}{\numberline {14}ANEXOS}{54}{chapter.14}%
-\contentsline {chapter}{BIBLIOGRAFÍA}{54}{chapter.14}%
-\contentsline {chapter}{\numberline {15}README (BORRAR EN EL main.tex)}{56}{chapter.15}%
-\contentsline {section}{\numberline {15.1}Ejemplos uso Overleaf comunes}{56}{section.15.1}%
-\contentsline {section}{\numberline {15.2}Justificación}{56}{section.15.2}%
-\contentsline {section}{\numberline {15.3}Formato}{57}{section.15.3}%
-\contentsline {section}{\numberline {15.4}Orientaciones sobre evaluación}{58}{section.15.4}%
+\contentsline {section}{\numberline {6.3}Tipos de interrelación}{28}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Diagrama del Modelo Entidad-Interrelación}{30}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Análisis funcional}{31}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Introducción}{31}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Actores}{31}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Casos de uso}{31}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Caso de Uso 0. Diagrama de Contexto}{32}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}CU-1. }{33}{subsection.7.3.2}%
+\contentsline {section}{\numberline {7.4}Validación de casos de uso}{34}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Diagrama de secuencia}{35}{section.7.5}%
+\contentsline {part}{IV\hspace {1em}Diseño}{36}{part.4}%
+\contentsline {chapter}{\numberline {8}Diseño de datos}{38}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Introducción}{38}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Modelo Relacional}{38}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Tabla Usuario}{39}{subsection.8.2.1}%
+\contentsline {section}{\numberline {8.3}Normalización del modelo}{39}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Tabla Usuario}{40}{subsection.8.3.1}%
+\contentsline {section}{\numberline {8.4}Esquema relacional}{40}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Diagrama relacional}{40}{section.8.5}%
+\contentsline {chapter}{\numberline {9}Diseño arquitectónico}{42}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Introducción}{42}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Diagrama de despliegue}{42}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Descripción de los nodos}{42}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}Descripción de los componentes}{42}{subsection.9.2.2}%
+\contentsline {chapter}{\numberline {10}Diseño de la interfaz}{43}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Introducción}{43}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Características comunes}{43}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Interfaz del módulo Usuario...}{43}{section.10.3}%
+\contentsline {subsection}{\numberline {10.3.1}Descripción general}{43}{subsection.10.3.1}%
+\contentsline {subsection}{\numberline {10.3.2}Descripción detallada}{43}{subsection.10.3.2}%
+\contentsline {subsection}{\numberline {10.3.3}Otros elementos de la interfaz}{43}{subsection.10.3.3}%
+\contentsline {section}{\numberline {10.4}Interfaz del módulo Administrador}{43}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}Descripción general}{43}{subsection.10.4.1}%
+\contentsline {subsection}{\numberline {10.4.2}Descripción detallada}{44}{subsection.10.4.2}%
+\contentsline {subsection}{\numberline {10.4.3}Otros elementos de la interfaz}{44}{subsection.10.4.3}%
+\contentsline {part}{V\hspace {1em}Pruebas}{45}{part.5}%
+\contentsline {chapter}{\numberline {11}Pruebas}{47}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Introducción}{47}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Prueba de usuarios públicos}{47}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1}Pruebas CU-1.1}{47}{subsection.11.2.1}%
+\contentsline {part}{VI\hspace {1em}Conclusiones y futuras mejoras}{48}{part.6}%
+\contentsline {chapter}{\numberline {12}Conclusiones}{50}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Introducción}{50}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Conclusiones específicas}{50}{section.12.2}%
+\contentsline {section}{\numberline {12.3}Conclusiones personales y profesionales}{50}{section.12.3}%
+\contentsline {chapter}{\numberline {13}Futuras mejoras}{51}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Introducción}{51}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Mejoras y nuevas funciones}{51}{section.13.2}%
+\contentsline {subsection}{\numberline {13.2.1}Mejoras para usuarios}{51}{subsection.13.2.1}%
+\contentsline {subsection}{\numberline {13.2.2}Mejoras para administrador}{51}{subsection.13.2.2}%
+\contentsline {subsection}{\numberline {13.2.3}Mejoras de funcionamiento}{51}{subsection.13.2.3}%
+\contentsline {subsection}{\numberline {13.2.4}Integración con otras aplicaciones}{52}{subsection.13.2.4}%
+\contentsline {subsection}{\numberline {13.2.5}Exportabilidad}{52}{subsection.13.2.5}%
+\contentsline {chapter}{\numberline {14}ANEXOS}{53}{chapter.14}%
+\contentsline {chapter}{BIBLIOGRAFÍA}{53}{chapter.14}%
+\contentsline {chapter}{\numberline {15}README (BORRAR EN EL main.tex)}{55}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Ejemplos uso Overleaf comunes}{55}{section.15.1}%
+\contentsline {section}{\numberline {15.2}Justificación}{55}{section.15.2}%
+\contentsline {section}{\numberline {15.3}Formato}{56}{section.15.3}%
+\contentsline {section}{\numberline {15.4}Orientaciones sobre evaluación}{57}{section.15.4}%

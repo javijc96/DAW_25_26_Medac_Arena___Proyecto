@@ -1,14 +1,11 @@
 \chapter{Introducción}
 
 \section{Contexto del problema a resolver}
-    
     En la actualidad, la práctica deportiva y las actividades orientadas al bienestar físico han experimentado un crecimiento significativo. Este auge ha provocado que tanto gimnasios como centros deportivos, empresas dedicadas al acondicionamiento físico y usuarios particulares presenten una necesidad cada vez mayor de disponer de material de gimnasia actualizado, en buen estado y adaptado a sus necesidades.
 
     Sin embargo, el acceso a este tipo de equipamiento supone un reto para muchas organizaciones debido a sus elevados costes, la rápida obsolescencia del material, los costes de mantenimiento asociados y la falta de flexibilidad en los modelos tradicionales de compra. Todo ello genera barreras económicas y logísticas que dificultan la renovación del material o incluso su adquisición inicial.
 
     Este contexto ha impulsado la búsqueda de nuevos modelos que permitan una gestión más eficiente y accesible del material deportivo, promoviendo soluciones basadas en la suscripción y el alquiler, capaces de adaptarse a distintos perfiles de usuario.
-
-
 \section{Definición del problema real}
     
     Existe un problema generalizado con respecto al material de gimnasia, se dan muchos casos en que tanto empresas
@@ -17,7 +14,6 @@
 
     En resumen, el problema real que se desea resolver con el desarrollo de este proyecto es el siguiente: 
     resolver el problema de que muchas empresas no se puedan permitir la adquisición de mucho material de gimnasia, 
-    
 \section{Definición del problema técnico}
 
     Para dar solución al problema identificado, se plantea el desarrollo de una aplicación web basada en un modelo de suscripción para el alquiler de material de gimnasia. Esta aplicación permitirá gestionar los servicios, controlar los diferentes niveles de suscripción y garantizar que los usuarios puedan acceder al material que necesiten.
@@ -74,9 +70,9 @@ La interfaz será un elemento clave del proyecto, actuando como medio de comunic
     
 El ciclo de vida esperado de la aplicación es elevado, ya que se pretende que el sistema pueda seguir ampliándose, integrándose con nuevas funcionalidades y adaptándose a las necesidades del mercado.
 
- Teniendo en cuenta que el propósito de la creación de esta aplicación web es la realización de un proyecto, el mantenimiento de dicha aplicación no correrá a cargo de su autor.
+Teniendo en cuenta que el propósito de la creación de esta aplicación web es la realización de un proyecto, el mantenimiento de dicha aplicación no correrá a cargo de su autor.
 
- No obstante, se realizará un diseño modular de cada una de las partes de la aplicación web para facilitar, en el futuro, posibles tareas de mantenimiento y mejoras.
+No obstante, se realizará un diseño modular de cada una de las partes de la aplicación web para facilitar, en el futuro, posibles tareas de mantenimiento y mejoras.
 
 \subsection{Competencia}
 
@@ -94,11 +90,10 @@ En relación con el aspecto externo, se tendrán en cuenta los siguientes aspect
         \item Se realizará una interfaz totalmente responsiva, intuitiva y amigable para que el usuario pueda navegar de la manera más cómoda posible. El Capítulo \ref{cap:diseño_interfaz} describirá el Diseño de la Interfaz de la aplicación web que se va  a desarrollar.
     \end{itemize}
     \item \textbf{Distribución de la aplicación: formato de almacenamiento}
-     \begin{itemize}
+    \begin{itemize}
         \item La aplicación podrá distribuirse a través de un servidor web alojado en un entorno local, facilitando su instalación y despliegue en distintos escenarios.
-     \end{itemize}
+    \end{itemize}
 \end{itemize}
-
 
 \subsection{Estandarización}
 
@@ -108,7 +103,8 @@ También se debe tener en cuenta que los recursos  que se van a utilizar son her
 
 \subsection{Calidad y fiabilidad}
 
-La calidad y la fiabilidad de la aplicación web estará garantizadas por las siguientes razones.
+La calidad y la fiabilidad de la aplicación web estarán garantizadas por:
+
 \begin{itemize}
     \item El uso de tecnologías estables, ampliamente documentadas y mantenidas por comunidades activas.
     \item La realización de pruebas exhaustivas unitarias, funcionales y de integración.
@@ -118,18 +114,17 @@ La calidad y la fiabilidad de la aplicación web estará garantizadas por las si
 
 \subsection{Programa de tareas}
 
- El desarrollo del presente proyecto va estar compuesto por la siguientes fases:
- \begin{itemize}
-     \item Introducción: descripción del problema, establecimiento de los objetivos, revisión de antecedentes, identificación de restricciones iniciales y estratégicas y selección de recursos.
-     \item Análisis: especificación de requisitos (funcionales, no funcionales, de información y de la interfaz), descripción del modelo de datos y análisis funcional (casos de uso y diagramas de secuencia).
-    
-     \item Diseño: descripción del diseño de datos, clases, paquetes y de la interfaz.
-    
-     \item Implementación: codificación de la aplicación web teniendo en cuenta el diseño desarrollado.
-    
-     \item Pruebas: comprobación de que la aplicación web funciona correctamente, es robusta y amigable.
- \end{itemize}
+El desarrollo del presente proyecto va estar compuesto por la siguientes fases:
+\begin{itemize}
+    \item Introducción: descripción del problema, establecimiento de los objetivos, revisión de antecedentes, identificación de restricciones iniciales y estratégicas y selección de recursos.
+    \item Análisis: especificación de requisitos (funcionales, no funcionales, de información y de la interfaz), descripción del modelo de datos y análisis funcional (casos de uso y diagramas de secuencia).
 
+    \item Diseño: descripción del diseño de datos, clases, paquetes y de la interfaz.
+    
+    \item Implementación: codificación de la aplicación web teniendo en cuenta el diseño desarrollado.
+    
+    \item Pruebas: comprobación de que la aplicación web funciona correctamente, es robusta y amigable.
+\end{itemize}
 
 \subsection{Pruebas}
 
@@ -155,9 +150,11 @@ El Capítulo \ref{cap:pruebas} de Pruebas describirá las pruebas realizadas.
 Hay varias consideraciones de seguridad que se deben tener en cuenta al desarrollar una aplicación web moderna. Algunas de las más importantes son:
 
 \begin{itemize}
-    \item Autenticación y autorización: 
-
-    \item Protección contra ataques de inyección...
+    \item \textbf{Autenticación y autorización}: gestión segura de credenciales, control de accesos y privilegios.
+    \item \textbf{Protección contra ataques de inyección}: filtrado de datos, consultas preparadas y validación estricta.
+    \item \textbf{Cifrado de la información sensible}: uso de HTTPS y almacenamiento seguro de credenciales.
+    \item \textbf{Protección frente a ataques de fuerza bruta}: limitación de intentos y uso de captchas.
+    \item \textbf{Gestión segura de sesiones}: expiración automática, tokens seguros y protección contra secuestro de sesiones.
 \end{itemize}
 
 

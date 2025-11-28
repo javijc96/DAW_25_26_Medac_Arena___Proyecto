@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.10)  25 NOV 2025 18:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.10)  25 NOV 2025 19:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1255,7 +1255,12 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
- (c:\Users\DAVANTE\Desktop\clases\proyecto\documentación\DAW_25_26_Medac_Arena___Proyecto\build\main.aux)
+ (c:\Users\DAVANTE\Desktop\clases\proyecto\documentación\DAW_25_26_Medac_Arena___Proyecto\build\main.aux
+LaTeX Info: Redefining \. on input line 13.
+LaTeX Info: Redefining \% on input line 13.
+Package babel Info: 'spanish' activates 'spanish' shorthands.
+(babel)             Reported on input line 13.
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 130.
@@ -1278,8 +1283,6 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 130.
 LaTeX Font Info:    ... okay on input line 130.
 LaTeX Info: Redefining \. on input line 130.
 LaTeX Info: Redefining \% on input line 130.
-Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 130.
 Package biblatex Info: Trying to load language 'spanish'...
 Package biblatex Info: ... file 'spanish.lbx' found.
  (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\spanish.lbx
@@ -1349,6 +1352,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 130.
+(c:\Users\DAVANTE\Desktop\clases\proyecto\documentación\DAW_25_26_Medac_Arena___Proyecto\build\main.out) (c:\Users\DAVANTE\Desktop\clases\proyecto\documentación\DAW_25_26_Medac_Arena___Proyecto\build\main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
 
@@ -1357,18 +1361,18 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: rotating package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
-<img/topMEDAC.pdf, id=6, 759.0759pt x 275.83049pt>
+<img/topMEDAC.pdf, id=433, 759.0759pt x 275.83049pt>
 File: img/topMEDAC.pdf Graphic file (type pdf)
 <use img/topMEDAC.pdf>
 Package pdftex.def Info: img/topMEDAC.pdf  used on input line 140.
 (pdftex.def)             Requested size: 313.20375pt x 113.81102pt.
-<img/bottomMEDAC.pdf, id=7, 627.34375pt x 1080.035pt>
+<img/bottomMEDAC.pdf, id=434, 627.34375pt x 1080.035pt>
 File: img/bottomMEDAC.pdf Graphic file (type pdf)
 <use img/bottomMEDAC.pdf>
 Package pdftex.def Info: img/bottomMEDAC.pdf  used on input line 144.
 (pdftex.def)             Requested size: 297.48402pt x 512.1496pt.
 LaTeX Font Info:    Trying to load font information for T1+fvs on input line 151.
-(C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/bera\t1fvs.fd
+ (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/bera\t1fvs.fd
 File: t1fvs.fd 2004/09/07 scalable font definitions for T1/fvs.
 )
 LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
@@ -1386,28 +1390,226 @@ LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
 
 {C:/Users/DAVANTE/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./img/topMEDAC.pdf> <./img/bottomMEDAC.pdf>] [2
 
-]
-No file main.toc.
-\tf@toc=\write7
-\openout7 = `main.toc'.
+] (c:\Users\DAVANTE\Desktop\clases\proyecto\documentación\DAW_25_26_Medac_Arena___Proyecto\build\main.toc
+LaTeX Info: Redefining \sptext on input line 1.
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
+(Font)              scaled to size 12.9599pt on input line 2.
+LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 2.
+LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 4.
+
+Overfull \hbox (3.21837pt too wide) detected at line 16
+\T1/fvs/m/n/12 1.3.10. 
+ []
+
+
+Underfull \vbox (badness 1629) has occurred while \output is active []
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.212 \tableofcontents\cleardoublepage
-                                       [1
+l.26 ...EXTUALIZACIÓN EMPRESARIAL}{15}{chapter.4}
+                                                  % [1
 
 
 
 ]
+LaTeX Info: Redefining \sptext on input line 55.
+LaTeX Info: Redefining \. on input line 55.
+LaTeX Info: Redefining \% on input line 55.
+Package babel Info: 'spanish' activates 'spanish' shorthands.
+(babel)             Reported on input line 55.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.212 \tableofcontents\cleardoublepage
-                                       [2
+l.55 ...iagrama de Contexto}{32}{subsection.7.3.1}
+                                                  % [2]
+Overfull \hbox (2.93756pt too wide) detected at line 73
+\T1/fvs/b/n/12 10. 
+ []
 
-] [1
+
+Overfull \hbox (2.63512pt too wide) detected at line 74
+\T1/fvs/m/n/12 10.1. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 75
+\T1/fvs/m/n/12 10.2. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 76
+\T1/fvs/m/n/12 10.3. 
+ []
+
+
+Overfull \hbox (3.21837pt too wide) detected at line 77
+\T1/fvs/m/n/12 10.3.1. 
+ []
+
+
+Overfull \hbox (3.21837pt too wide) detected at line 78
+\T1/fvs/m/n/12 10.3.2. 
+ []
+
+
+Overfull \hbox (3.21837pt too wide) detected at line 79
+\T1/fvs/m/n/12 10.3.3. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 80
+\T1/fvs/m/n/12 10.4. 
+ []
+
+
+Overfull \hbox (3.21837pt too wide) detected at line 81
+\T1/fvs/m/n/12 10.4.1. 
+ []
+
+
+Overfull \hbox (3.21837pt too wide) detected at line 82
+\T1/fvs/m/n/12 10.4.2. 
+ []
+
+
+Overfull \hbox (3.21837pt too wide) detected at line 83
+\T1/fvs/m/n/12 10.4.3. 
+ []
+
+LaTeX Info: Redefining \sptext on input line 84.
+LaTeX Info: Redefining \. on input line 84.
+LaTeX Info: Redefining \% on input line 84.
+[3]
+Overfull \hbox (2.93756pt too wide) detected at line 85
+\T1/fvs/b/n/12 11. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 86
+\T1/fvs/m/n/12 11.1. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 87
+\T1/fvs/m/n/12 11.2. 
+ []
+
+
+Overfull \hbox (3.21837pt too wide) detected at line 88
+\T1/fvs/m/n/12 11.2.1. 
+ []
+
+
+Overfull \hbox (2.93756pt too wide) detected at line 90
+\T1/fvs/b/n/12 12. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 91
+\T1/fvs/m/n/12 12.1. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 92
+\T1/fvs/m/n/12 12.2. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 93
+\T1/fvs/m/n/12 12.3. 
+ []
+
+
+Overfull \hbox (2.93756pt too wide) detected at line 94
+\T1/fvs/b/n/12 13. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 95
+\T1/fvs/m/n/12 13.1. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 96
+\T1/fvs/m/n/12 13.2. 
+ []
+
+
+Overfull \hbox (3.21837pt too wide) detected at line 97
+\T1/fvs/m/n/12 13.2.1. 
+ []
+
+
+Overfull \hbox (3.21837pt too wide) detected at line 98
+\T1/fvs/m/n/12 13.2.2. 
+ []
+
+
+Overfull \hbox (3.21837pt too wide) detected at line 99
+\T1/fvs/m/n/12 13.2.3. 
+ []
+
+
+Overfull \hbox (3.21837pt too wide) detected at line 100
+\T1/fvs/m/n/12 13.2.4. 
+ []
+
+
+Overfull \hbox (3.21837pt too wide) detected at line 101
+\T1/fvs/m/n/12 13.2.5. 
+ []
+
+
+Overfull \hbox (2.93756pt too wide) detected at line 102
+\T1/fvs/b/n/12 14. 
+ []
+
+
+Overfull \hbox (2.93756pt too wide) detected at line 104
+\T1/fvs/b/n/12 15. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 105
+\T1/fvs/m/n/12 15.1. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 106
+\T1/fvs/m/n/12 15.2. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 107
+\T1/fvs/m/n/12 15.3. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 108
+\T1/fvs/m/n/12 15.4. 
+ []
+
+)
+\tf@toc=\write7
+\openout7 = `main.toc'.
+
+LaTeX Info: Redefining \. on input line 212.
+LaTeX Info: Redefining \% on input line 212.
+ [4] [1
+
 
 
 ] [2] (capítulos/01_Introducción.tex
@@ -1418,52 +1620,30 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [3
 
 ]
-LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 34.
-LaTeX Font Info:    Trying to load font information for TS1+fvs on input line 36.
+LaTeX Font Info:    Trying to load font information for TS1+fvs on input line 32.
  (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/bera\ts1fvs.fd
 File: ts1fvs.fd 2004/09/07 scalable font definitions for TS1/fvs.
 )
 LaTeX Font Info:    Font shape `TS1/fvs/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 36.
-LaTeX Info: Redefining \. on input line 59.
-LaTeX Info: Redefining \% on input line 59.
-Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 59.
+(Font)              scaled to size 10.79993pt on input line 32.
+LaTeX Info: Redefining \. on input line 55.
+LaTeX Info: Redefining \% on input line 55.
  [4]
-
-LaTeX Warning: Reference `sec:requisitos-interfaz' on page 5 undefined on input line 71.
-
-LaTeX Info: Redefining \. on input line 92.
-LaTeX Info: Redefining \% on input line 92.
-[5]
-
-LaTeX Warning: Reference `cap:diseño_interfaz' on page 6 undefined on input line 94.
-
+LaTeX Info: Redefining \. on input line 88.
+LaTeX Info: Redefining \% on input line 88.
+ [5]
 LaTeX Font Info:    Font shape `T1/fvs/m/it' will be
-(Font)              scaled to size 10.79993pt on input line 105.
-
-LaTeX Warning: Reference `cap:recursos' on page 6 undefined on input line 107.
-
-LaTeX Info: Redefining \. on input line 124.
-LaTeX Info: Redefining \% on input line 124.
-[6]
-
-LaTeX Warning: Reference `cap:pruebas' on page 7 undefined on input line 151.
-
-LaTeX Info: Redefining \. on input line 158.
-LaTeX Info: Redefining \% on input line 158.
-[7]) (capítulos/02_Objetivos.tex
+(Font)              scaled to size 10.79993pt on input line 100.
+LaTeX Info: Redefining \. on input line 120.
+LaTeX Info: Redefining \% on input line 120.
+ [6]
+LaTeX Info: Redefining \. on input line 155.
+LaTeX Info: Redefining \% on input line 155.
+ [7]) (capítulos/02_Objetivos.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [8]
 Cap\'{\i }tulo 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 15.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 15.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 15.
 [9
 
 ]) (capítulos/03_Recursos.tex
@@ -1500,37 +1680,12 @@ LaTeX Info: Redefining \% on input line 226.
 
 ] [20] (capítulos/05_Especificación_Requisitos.tex
 Cap\'{\i }tulo 5.
-
-LaTeX Warning: Reference `sec:actores' on page 21 undefined on input line 5.
-
-
-LaTeX Warning: Reference `sec:modulos' on page 21 undefined on input line 5.
-
-
-LaTeX Warning: Reference `sec:requisitos-del-sistema' on page 21 undefined on input line 5.
-
 [21
 
 ]
-
-LaTeX Warning: Reference `sec:requisitos-funcionales' on page 22 undefined on input line 39.
-
-
-LaTeX Warning: Reference `sec:requisitos-no-funcionales' on page 22 undefined on input line 40.
-
-
-LaTeX Warning: Reference `sec:requisitos-interfaz' on page 22 undefined on input line 41.
-
-
-LaTeX Warning: Reference `sec:requisitos-información' on page 22 undefined on input line 42.
-
 LaTeX Info: Redefining \. on input line 66.
 LaTeX Info: Redefining \% on input line 66.
-[22]
-
-LaTeX Warning: Reference `cap:modelo_de_datos' on page 23 undefined on input line 113.
-
-) (capítulos/06_Modelo_de_datos.tex
+ [22]) (capítulos/06_Modelo_de_datos.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [23]
@@ -1547,245 +1702,90 @@ LaTeX Info: Redefining \% on input line 73.
 LaTeX Info: Redefining \. on input line 122.
 LaTeX Info: Redefining \% on input line 122.
  [27]
-capítulos/06_Modelo_de_datos.tex:142: Missing $ inserted.
-<inserted text> 
-                $
-l.142         \item fecha_
-                          alta
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-capítulos/06_Modelo_de_datos.tex:143: Missing $ inserted.
-<inserted text> 
-                $
-l.143         \begin{itemize}
-                             
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-capítulos/06_Modelo_de_datos.tex:143: Missing } inserted.
-<inserted text> 
-                }
-l.143         \begin{itemize}
-                             
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-capítulos/06_Modelo_de_datos.tex:143: Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.143         \begin{itemize}
-                             
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-capítulos/06_Modelo_de_datos.tex:143: Extra }, or forgotten \endgroup.
-\@par ... \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.143         \begin{itemize}
-                             
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-capítulos/06_Modelo_de_datos.tex:153: LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.153     \item D
-                 iagrama (Figura \ref{fig:E-Usuario}):
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 153
-[][]
- []
-
-
-LaTeX Warning: Reference `fig:E-Usuario' on page 28 undefined on input line 153.
-
-
-capítulos/06_Modelo_de_datos.tex:162: LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.162     \item E
-                 jemplo de entidad (Tabla \ref{table:T-Usuario}):
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 162
-[][]
- []
-
-
-LaTeX Warning: Reference `table:T-Usuario' on page 28 undefined on input line 162.
-
-
-capítulos/06_Modelo_de_datos.tex:188: LaTeX Error: \begin{document} ended by \end{itemize}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.188 \end{itemize}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-capítulos/06_Modelo_de_datos.tex:188: Extra \endgroup.
-\end  ...end#1\endcsname \@checkend {#1}\endgroup 
-                                                  \UseHook {env/#1/after}\if...
-l.188 \end{itemize}
-                   
-Things are pretty mixed up, but I think the worst is over.
-
-LaTeX Info: Redefining \. on input line 198.
-LaTeX Info: Redefining \% on input line 198.
-[28]
-LaTeX Info: Redefining \. on input line 224.
-LaTeX Info: Redefining \% on input line 224.
+LaTeX Info: Redefining \. on input line 195.
+LaTeX Info: Redefining \% on input line 195.
+ [28]
+LaTeX Info: Redefining \. on input line 220.
+LaTeX Info: Redefining \% on input line 220.
  [29]
 LaTeX Info: Redefining \. on input line 229.
 LaTeX Info: Redefining \% on input line 229.
- [30]
-
-LaTeX Warning: Reference `fig:EER_v5' on page 31 undefined on input line 231.
-
-LaTeX Info: Redefining \. on input line 238.
-LaTeX Info: Redefining \% on input line 238.
-[31
+ [30
 
 ]) (capítulos/07_Análisis_Funcional.tex
 Cap\'{\i }tulo 7.
-
-LaTeX Warning: Reference `sec:CU-0' on page 32 undefined on input line 22.
-
-
-LaTeX Warning: Reference `sec:CU-1' on page 32 undefined on input line 23.
-
-
-LaTeX Warning: Reference `fig:Diagrama-Contexto' on page 32 undefined on input line 28.
-
-
-LaTeX Warning: Reference `tab:CU-0' on page 32 undefined on input line 28.
-
-[32
+[31
 
 
 ]
 LaTeX Info: Redefining \. on input line 61.
 LaTeX Info: Redefining \% on input line 61.
- [33]
-
-LaTeX Warning: Reference `tab:CU-1' on page 34 undefined on input line 65.
-
-
-LaTeX Warning: Reference `fig:Diagrama-Caso de uso 1.' on page 34 undefined on input line 65.
-
+ [32]
 LaTeX Info: Redefining \. on input line 99.
 LaTeX Info: Redefining \% on input line 99.
-[34]
-
-LaTeX Warning: Reference `tab:Validación CU' on page 35 undefined on input line 102.
-
-
-LaTeX Warning: Reference `sec:requisitos-funcionales' on page 35 undefined on input line 102.
-
+ [33]
 LaTeX Info: Redefining \. on input line 118.
 LaTeX Info: Redefining \% on input line 118.
-[35]
-
-LaTeX Warning: Reference `fig:Diagrama de secuencia crear' on page 36 undefined on input line 122.
-
-
-LaTeX Warning: Reference `fig:Diagrama de secuencia buscar' on page 36 undefined on input line 122.
-
-
-LaTeX Warning: Reference `fig:Diagrama de secuencia modificar' on page 36 undefined on input line 122.
-
-
-LaTeX Warning: Reference `fig:Diagrama de secuencia borrar' on page 36 undefined on input line 122.
-
-)
+ [34])
 LaTeX Info: Redefining \. on input line 231.
 LaTeX Info: Redefining \% on input line 231.
- [36] [37
+ [35] [36
 
-] [38] (capítulos/08_Diseno_de_datos.tex
+] [37] (capítulos/08_Diseno_de_datos.tex
 Cap\'{\i }tulo 8.
-[39
+[38
 
 ]
 LaTeX Info: Redefining \. on input line 59.
 LaTeX Info: Redefining \% on input line 59.
- [40]
-
-LaTeX Warning: Reference `fig:Diagrama Relacional' on page 41 undefined on input line 93.
-
+ [39]
 LaTeX Info: Redefining \. on input line 95.
 LaTeX Info: Redefining \% on input line 95.
-[41]
+ [40]
 LaTeX Info: Redefining \. on input line 101.
 LaTeX Info: Redefining \% on input line 101.
- [42
+ [41
 
 ]) (capítulos/09_Diseno_arquitectonico.tex
 Cap\'{\i }tulo 9.
-) (capítulos/10_Diseno_de_la_interfaz.tex [43
+) (capítulos/10_Diseno_de_la_interfaz.tex [42
 
 
 ]
 Cap\'{\i }tulo 10.
-[44
+[43
 
 ])
 LaTeX Info: Redefining \. on input line 236.
 LaTeX Info: Redefining \% on input line 236.
- [45] [46
+ [44] [45
 
-] [47] (capítulos/11_Pruebas.tex
+] [46] (capítulos/11_Pruebas.tex
 Cap\'{\i }tulo 11.
-) [48
+) [47
 
-] [49
+] [48
 
-] [50] (capítulos/12_Conclusiones.tex
+] [49] (capítulos/12_Conclusiones.tex
 Cap\'{\i }tulo 12.
-) (capítulos/13_Futuras_mejoras.tex [51
+) (capítulos/13_Futuras_mejoras.tex [50
 
 ]
 Cap\'{\i }tulo 13.
-) (capítulos/20_Anexos.tex [52
+) (capítulos/20_Anexos.tex [51
 
 ]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [53]
+ [52]
 Cap\'{\i }tulo 14.
-) [54
+) [53
 
-] (capítulos/99_Readme.tex [55
+] (capítulos/99_Readme.tex [54
 
 ]
 Cap\'{\i }tulo 15.
-<img/diagramas/Modelo-Físico-ER.png, id=429, 505.89pt x 289.08pt>
+<img/diagramas/Modelo-Físico-ER.png, id=892, 505.89pt x 289.08pt>
 File: img/diagramas/Modelo-Físico-ER.png Graphic file (type png)
 <use img/diagramas/Modelo-Físico-ER.png>
 Package pdftex.def Info: img/diagramas/Modelo-Físico-ER.png  used on input line 25.
@@ -1798,18 +1798,21 @@ LaTeX Font Info:    Font shape `T1/fvs/m/it' will be
 LaTeX Font Warning: Font shape `T1/fvs/m/sc' undefined
 (Font)              using `T1/fvs/m/n' instead on input line 35.
 
-[56
+[55
 
 ]
 LaTeX Info: Redefining \. on input line 70.
 LaTeX Info: Redefining \% on input line 70.
- [57 <./img/diagramas/Modelo-Físico-ER.png>]
+ [56 <./img/diagramas/Modelo-Físico-ER.png>]
 LaTeX Info: Redefining \. on input line 99.
 LaTeX Info: Redefining \% on input line 99.
- [58])
+ [57])
 LaTeX Info: Redefining \. on input line 257.
 LaTeX Info: Redefining \% on input line 257.
- [59] (c:\Users\DAVANTE\Desktop\clases\proyecto\documentación\DAW_25_26_Medac_Arena___Proyecto\build\main.aux
+ [58]
+runsystem(latexminted cleantemp  --timestamp 20251125190124 FAD58DE7366495DB4650CFEFAC2FCD61)...disabled (restricted).
+
+ (c:\Users\DAVANTE\Desktop\clases\proyecto\documentación\DAW_25_26_Medac_Arena___Proyecto\build\main.aux
 LaTeX Info: Redefining \sptext on input line 13.
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
@@ -1822,41 +1825,24 @@ L3 programming layer <2025-10-24>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  BDE01289D686C9906B193915D9576D89;17221.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: BDE01289D686C9906B193915D9576D89;17221.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40800 strings out of 467871
- 808817 string characters out of 5417407
- 1755239 words of memory out of 5000000
- 68816 multiletter control sequences out of 15000+600000
- 668848 words of font info for 76 fonts, out of 8000000 for 9000
+ 40920 strings out of 467871
+ 811065 string characters out of 5417407
+ 1758871 words of memory out of 5000000
+ 68928 multiletter control sequences out of 15000+600000
+ 676330 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,14n,117p,1286b,1817s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsb8a.pfb><C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsr8a.pfb><C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsro8a.pfb>
-Output written on c:\Users\DAVANTE\Desktop\clases\proyecto\documentación\DAW_25_26_Medac_Arena___Proyecto\build\main.pdf (63 pages, 2030117 bytes).
+ 84i,14n,117p,1286b,2384s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsb8a.pfb><C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsr8a.pfb><C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsro8a.pfb>
+Output written on c:\Users\DAVANTE\Desktop\clases\proyecto\documentación\DAW_25_26_Medac_Arena___Proyecto\build\main.pdf (64 pages, 2080051 bytes).
 PDF statistics:
- 910 PDF objects out of 1000 (max. 8388607)
- 193 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1360 PDF objects out of 1440 (max. 8388607)
+ 194 named destinations out of 1000 (max. 500000)
+ 884 words of extra memory for PDF output out of 10000 (max. 10000000)
 
