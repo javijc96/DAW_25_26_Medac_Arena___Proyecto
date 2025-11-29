@@ -64,21 +64,33 @@ En esta sección se describirán todos los tipos de entidad que se han identific
 Los tipos de entidad que se han identificado y que se describirán a continuación son los siguientes:
 \begin{itemize}
     \item Tipo de entidad: Usuario
-    \item ...
+    \item Tipo de entidad: Rol
+    \item Tipo de entidad: Dirección
+    \item Tipo de entidad: Envio\_Servicio
+    \item Tipo de entidad: Contrato
+    \item Tipo de entidad: Subscricion
+    \item Tipo de entidad: Tipo
+    \item Tipo de entidad: Producto
+    \item Tipo de entidad: Categorias
+    \item Tipo de entidad: Contrato\_productos
 \end{itemize}
+
 
 \subsection{Entidad Usuario}
 \begin{itemize}
-    \item Descripción: este tipo de entidad representa a los usuarios registrados en el sistema que contratan los servicios de subscripciones para acceder a los productos
-    \item Restricciones: es una entidad fuerte por lo que no depende de otro tipo de entidad.
-    \item Características:
+    \item \textbf{Descripción:} este tipo de entidad representa a los usuarios registrados en el sistema que pueden contratar servicios de suscripción, gestionar productos y realizar operaciones dentro de la plataforma. Cada usuario dispone de un rol que determina sus permisos de acceso y funcionalidades disponibles.
+
+    \item \textbf{Restricciones:} es una entidad fuerte, por lo que no depende de ningún otro tipo de entidad para existir.
+
+
+    \item \textbf{Características:}
     \begin{itemize}
-        \item Nombre de la entidad: Usuario.
-        \item Tipo: fuerte.
-        \item Atributos heredados: ninguno.
+        \item Nombre del tipo de entidad: Usuario.
+        \item Tipo: Fuerte.
+        \item Atributos heredados: Ninguno.
         \item Atributo identificador primario: id.
-        \item Atributo identificador alternativo: ninguno.
-        \item Número de atributos: 7 propios.
+        \item Atributo identificador alternativo: email.
+        \item Número de atributos: 8 propios.
     \end{itemize}
 
     \item Atributos propios:
@@ -92,93 +104,952 @@ Los tipos de entidad que se han identificado y que se describirán a continuaci�
             \item Ejemplo: 13
         \end{itemize}
 
-        \item name
+        \item \textbf{nombre}
         \begin{itemize}
-            \item Definición: nombre que identifica al usuario.
-            \item Dominio: conjunto de 150 caracteres.
+            \item Definición: nombre del usuario.
+            \item Dominio: cadena de hasta 150 caracteres.
             \item Tipo: atributo simple.
-            \item Opcional: no
-            \item Ejemplo: Juan 
+            \item Opcional: no.
+            \item Ejemplo: Javier.
         \end{itemize}
 
-        \item apellidos
+        \item \textbf{apellidos}
         \begin{itemize}
-            \item Definicion
             \item Definición: apellidos del usuario.
-            \item Dominio: conjunto de 150 caracteres.
+            \item Dominio: cadena de hasta 150 caracteres.
             \item Tipo: atributo simple.
-            \item Opcional: no
-            \item Ejemplo: Bautista
+            \item Opcional: no.
+            \item Ejemplo: Martínez López.
         \end{itemize}
 
-        \item telefono
+        \item \textbf{telefono}
         \begin{itemize}
-            \item Definicion
-            \item Definición: número de teléfono del usuario.
-            \item Dominio: conjunto de 150 caracteres.
+            \item Definición: número de teléfono de contacto del usuario.
+            \item Dominio: cadena numérica de entre 9 y 15 dígitos.
             \item Tipo: atributo simple.
-            \item Opcional: no
-            \item Ejemplo: 649543987
-        \end{itemize} 
-            
-        \item email
-        \begin{itemize}
-            \item Definición: dirección de correo del usuario.
-            \item Dominio: conjunto de 250 caracteres.
-            \item Tipo: atributo simple.
-            \item Opcional: no
-            \item Ejemplo: moyano@gmail.com
+            \item Opcional: no.
+            \item Ejemplo: 678945321.
         \end{itemize}
 
-        \item password
+        \item \textbf{email}
         \begin{itemize}
-            \item Definición: contraseña del usuario.
-            \item Dominio: conjunto de 250 caracteres encriptados.
-            \item Tipo: atributo simple.
-            \item Opcional: no
-            \item Ejemplo: 
+            \item Definición: dirección de correo electrónico del usuario.
+            \item Dominio: cadena de hasta 250 caracteres con formato email válido.
+            \item Tipo: atributo simple / clave alternativa.
+            \item Opcional: no.
+            \item Ejemplo: usuario@example.com.
         \end{itemize}
 
-    \end{itemize}   
+        \item \textbf{contraseña}
+        \begin{itemize}
+            \item Definición: contraseña encriptada utilizada para autenticar al usuario.
+            \item Dominio: cadena de hasta 250 caracteres.
+            \item Tipo: atributo simple.
+            \item Opcional: no.
+            \item Ejemplo: \$2y\$10\$XHfj23bd.... (hash).
+        \end{itemize}
 
-    \item Diagrama (Figura \ref{fig:E-Usuario}):
+        \item \textbf{fecha\_alta}
+        \begin{itemize}
+            \item Definición: fecha en la que el usuario se registró en la plataforma.
+            \item Dominio: tipo fecha.
+            \item Tipo: atributo simple.
+            \item Opcional: no.
+            \item Ejemplo: 2025-02-10.
+        \end{itemize}
+
+        \item \textbf{id\_rol}
+        \begin{itemize}
+            \item Definición: identificador del rol que tiene asignado el usuario.
+            \item Dominio: número entero positivo.
+            \item Tipo: clave foránea.
+            \item Opcional: no.
+            \item Ejemplo: 1.
+        \end{itemize}
+
+    \end{itemize}
+
+  \item \textbf{Diagrama (Figura \ref{fig:E-Usuario}):}
 
     \begin{figure}[H]
         \centering
-        %\includegraphics[scale=0.8]{img/diagramas/EER/E-Usuario.png}
+    \includegraphics[scale=0.3]{img/diagramas/usuario.png}
         \caption{Entidad Usuario}
         \label{fig:E-Usuario}
     \end{figure}
 
-    \item Ejemplo de entidad (Tabla \ref{table:T-Usuario}):
+    \item \textbf{Ejemplo de entidad (Tabla \ref{table:T-Usuario}):}
 
     \begin{table}[H]
     \centering
         \begin{tabular}{ |p{6cm}||p{6cm}|  }
              \hline
-                \multicolumn{2}{|c|}{\textbf{Usuario}} \\
-             \hline
-                 \textbf{Atributo} & \textbf{Valor} \\
-             \hline
-                 id & 1 \\
-             \hline
-                 nombre & Ciencias \\
-            \hline
-                apellidos & Galisteo \\
-            \hline
-                teléfono & 695586666 \\
-             \hline
-                 email &  \\
-            \hline
-                 password &  \\
-             \hline
+                \multicolumn{2}{|c|}{\textbf{Usuario}} \\ \hline
+                 \textbf{Atributo} & \textbf{Valor} \\ \hline
+                 id & 5 \\ \hline
+                 nombre & Antonio \\ \hline
+                 apellidos & Núñez Ortega \\ \hline
+                 telefono & 665874321 \\ \hline
+                 email & antonio@ejemplo.com \\ \hline
+                 contraseña & \$2y\$10\$7sd... \\ \hline
+                 fecha\_alta & 2025-01-12 \\ \hline
+                 id\_rol & 2 \\ \hline
         \end{tabular}
         \caption{Ejemplo de la entidad \textit{Usuario}}
         \label{table:T-Usuario}
     \end{table}
+
+\end{itemize}
+
+\subsection{Entidad Rol}
+\begin{itemize}
+    \item \textbf{Descripción:} este tipo de entidad representa los distintos roles que pueden tener los usuarios dentro del sistema (por ejemplo, administrador o usuario estándar). El rol determina los permisos y funcionalidades a las que puede acceder cada usuario.
+
+    \item \textbf{Restricciones:} es una entidad fuerte.
+
+    \item \textbf{Características:}
+    \begin{itemize}
+        \item Nombre del tipo de entidad: Rol.
+        \item Tipo: Fuerte.
+        \item Atributos heredados: Ninguno.
+        \item Atributo identificador primario: id.
+        \item Atributo identificador alternativo: ninguno.
+        \item Número de atributos: 2 propios.
+    \end{itemize}
+
+    \item Atributos propios:
+    \begin{itemize}
+        \item \textbf{id}
+        \begin{itemize}
+            \item Definición: identificador único del rol.
+            \item Dominio: números enteros mayores que 0.
+            \item Tipo: clave primaria.
+            \item Opcional: no.
+            \item Ejemplo: 1.
+        \end{itemize}
+
+        \item \textbf{nombre}
+        \begin{itemize}
+            \item Definición: nombre del rol asignado a los usuarios.
+            \item Dominio: cadena de hasta 100 caracteres.
+            \item Tipo: atributo simple.
+            \item Opcional: no.
+            \item Ejemplo: Administrador.
+        \end{itemize}
+    \end{itemize}
+
+    \item \textbf{Diagrama (Figura \ref{fig:E-Rol}):}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.3]{img/diagramas/rol.png}
+        \caption{Entidad Rol}
+        \label{fig:E-Rol}
+    \end{figure}
+
+    \item \textbf{Ejemplo de entidad (Tabla \ref{table:T-Rol}):}
+
+    \begin{table}[H]
+    \centering
+        \begin{tabular}{ |p{6cm}||p{6cm}|  }
+             \hline
+                \multicolumn{2}{|c|}{\textbf{Rol}} \\ \hline
+                 \textbf{Atributo} & \textbf{Valor} \\ \hline
+                 id & 1 \\ \hline
+                 nombre & Administrador \\ \hline
+        \end{tabular}
+        \caption{Ejemplo de la entidad \textit{Rol}}
+        \label{table:T-Rol}
+    \end{table}
+
 \end{itemize}
 
 
+
+\subsection{Entidad Dirección}
+\begin{itemize}
+    \item \textbf{Descripción:} este tipo de entidad almacena las direcciones asociadas a los usuarios, utilizadas para la entrega de material o prestación de servicios.
+
+    \item \textbf{Restricciones:} es una entidad fuerte.
+
+    \item \textbf{Características:}
+    \begin{itemize}
+        \item Nombre del tipo de entidad: Dirección.
+        \item Tipo: Fuerte.
+        \item Atributos heredados: Ninguno.
+        \item Atributo identificador primario: id.
+        \item Atributo identificador alternativo: ninguno.
+        \item Número de atributos: 5 propios.
+    \end{itemize}
+
+    \item Atributos propios:
+    \begin{itemize}
+
+        \item \textbf{id}
+        \begin{itemize}
+            \item Definición: identificador único de la dirección.
+            \item Dominio: entero positivo.
+            \item Tipo: clave primaria.
+            \item Opcional: no.
+            \item Ejemplo: 3.
+        \end{itemize}
+
+        \item \textbf{id\_usuario}
+        \begin{itemize}
+            \item Definición: identificador del usuario al que pertenece la dirección.
+            \item Dominio: entero positivo.
+            \item Tipo: clave foránea.
+            \item Opcional: no.
+            \item Ejemplo: 5.
+        \end{itemize}
+
+        \item \textbf{via}
+        \begin{itemize}
+            \item Definición: nombre de la vía y número (calle, avenida, etc.).
+            \item Dominio: cadena de hasta 200 caracteres.
+            \item Tipo: atributo simple.
+            \item Opcional: no.
+            \item Ejemplo: Calle Mayor 15, 3ºB.
+        \end{itemize}
+
+        \item \textbf{cod\_postal}
+        \begin{itemize}
+            \item Definición: código postal de la dirección.
+            \item Dominio: cadena de 5 a 10 caracteres.
+            \item Tipo: atributo simple.
+            \item Opcional: no.
+            \item Ejemplo: 14004.
+        \end{itemize}
+
+        \item \textbf{Ciudad}
+        \begin{itemize}
+            \item Definición: ciudad en la que se encuentra la dirección.
+            \item Dominio: cadena de hasta 100 caracteres.
+            \item Tipo: atributo simple.
+            \item Opcional: no.
+            \item Ejemplo: Córdoba.
+        \end{itemize}
+
+    \end{itemize}
+
+    \item \textbf{Diagrama (Figura \ref{fig:E-Direccion}):}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.3]{img/diagramas/direccion.png}
+        \caption{Entidad Dirección}
+        \label{fig:E-Direccion}
+    \end{figure}
+
+    \item \textbf{Ejemplo de entidad (Tabla \ref{table:T-Direccion}):}
+
+    \begin{table}[H]
+    \centering
+        \begin{tabular}{ |p{6cm}||p{6cm}|  }
+             \hline
+                \multicolumn{2}{|c|}{\textbf{Dirección}} \\ \hline
+                 \textbf{Atributo} & \textbf{Valor} \\ \hline
+                 id & 3 \\ \hline
+                 id\_usuario & 5 \\ \hline
+                 via & Calle Mayor 15, 3ºB \\ \hline
+                 cod\_postal & 14004 \\ \hline
+                 Ciudad & Córdoba \\ \hline
+        \end{tabular}
+        \caption{Ejemplo de la entidad \textit{Dirección}}
+        \label{table:T-Direccion}
+    \end{table}
+
+\end{itemize}
+
+
+
+\subsection{Entidad Envio\_Servicio}
+\begin{itemize}
+    \item \textbf{Descripción:} este tipo de entidad representa los servicios de envío disponibles para una determinada dirección, incluyendo su coste y tiempo de envío.
+
+    \item \textbf{Restricciones:} entidad fuerte.
+
+    \item \textbf{Características:}
+    \begin{itemize}
+        \item Nombre del tipo de entidad: Envio\_Servicio.
+        \item Tipo: Fuerte.
+        \item Atributos heredados: Ninguno.
+        \item Atributo identificador primario: id.
+        \item Atributo identificador alternativo: ninguno.
+        \item Número de atributos: 6 propios.
+    \end{itemize}
+
+    \item Atributos propios:
+    \begin{itemize}
+
+        \item \textbf{id}
+        \begin{itemize}
+            \item Definición: identificador único del servicio de envío.
+            \item Dominio: entero positivo.
+            \item Tipo: clave primaria.
+            \item Opcional: no.
+            \item Ejemplo: 2.
+        \end{itemize}
+
+        \item \textbf{nombre}
+        \begin{itemize}
+            \item Definición: nombre comercial del servicio de envío.
+            \item Dominio: cadena de hasta 150 caracteres.
+            \item Tipo: atributo simple.
+            \item Opcional: no.
+            \item Ejemplo: Envío estándar 48h.
+        \end{itemize}
+
+        \item \textbf{tempo\_envio}
+        \begin{itemize}
+            \item Definición: tiempo estimado de envío.
+            \item Dominio: cadena de hasta 50 caracteres.
+            \item Tipo: atributo simple.
+            \item Opcional: no.
+            \item Ejemplo: 48 horas.
+        \end{itemize}
+
+        \item \textbf{coste\_base}
+        \begin{itemize}
+            \item Definición: coste base asociado al servicio de envío.
+            \item Dominio: número real positivo.
+            \item Tipo: atributo simple.
+            \item Opcional: no.
+            \item Ejemplo: 9.99.
+        \end{itemize}
+
+        \item \textbf{activo}
+        \begin{itemize}
+            \item Definición: indica si el servicio de envío está disponible.
+            \item Dominio: valor booleano (true/false).
+            \item Tipo: atributo simple.
+            \item Opcional: no.
+            \item Ejemplo: true.
+        \end{itemize}
+
+        \item \textbf{id\_direccion}
+        \begin{itemize}
+            \item Definición: identificador de la dirección asociada al servicio de envío.
+            \item Dominio: entero positivo.
+            \item Tipo: clave foránea.
+            \item Opcional: no.
+            \item Ejemplo: 3.
+        \end{itemize}
+
+    \end{itemize}
+
+    \item \textbf{Diagrama (Figura \ref{fig:E-EnvioServicio}):}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.3]{img/diagramas/envio_servicio.png}
+        \caption{Entidad Envio\_Servicio}
+        \label{fig:E-EnvioServicio}
+    \end{figure}
+
+    \item \textbf{Ejemplo de entidad (Tabla \ref{table:T-EnvioServicio}):}
+
+    \begin{table}[H]
+    \centering
+        \begin{tabular}{ |p{6cm}||p{6cm}|  }
+             \hline
+                \multicolumn{2}{|c|}{\textbf{Envio\_Servicio}} \\ \hline
+                 \textbf{Atributo} & \textbf{Valor} \\ \hline
+                 id & 2 \\ \hline
+                 nombre & Envío estándar 48h \\ \hline
+                 tempo\_envio & 48 horas \\ \hline
+                 coste\_base & 9.99 \\ \hline
+                 activo & true \\ \hline
+                 id\_direccion & 3 \\ \hline
+        \end{tabular}
+        \caption{Ejemplo de la entidad \textit{Envio\_Servicio}}
+        \label{table:T-EnvioServicio}
+    \end{table}
+
+\end{itemize}
+
+
+
+\subsection{Entidad Contrato}
+\begin{itemize}
+    \item \textbf{Descripción:} este tipo de entidad representa los contratos que realiza un usuario para la adquisición temporal de productos o servicios de suscripción.
+
+    \item \textbf{Restricciones:} entidad fuerte.
+
+    \item \textbf{Características:}
+    \begin{itemize}
+        \item Nombre del tipo de entidad: Contrato.
+        \item Tipo: Fuerte.
+        \item Atributos heredados: Ninguno.
+        \item Atributo identificador primario: id.
+        \item Atributo identificador alternativo: ninguno.
+        \item Número de atributos: 6 propios.
+    \end{itemize}
+
+    \item Atributos propios:
+    \begin{itemize}
+
+        \item \textbf{id}
+        \begin{itemize}
+            \item Definición: identificador único del contrato.
+            \item Dominio: entero positivo.
+            \item Tipo: clave primaria.
+            \item Opcional: no.
+            \item Ejemplo: 10.
+        \end{itemize}
+
+        \item \textbf{id\_usuario}
+        \begin{itemize}
+            \item Definición: identificador del usuario que realiza el contrato.
+            \item Dominio: entero positivo.
+            \item Tipo: clave foránea.
+            \item Opcional: no.
+            \item Ejemplo: 5.
+        \end{itemize}
+
+        \item \textbf{id\_direccion}
+        \begin{itemize}
+            \item Definición: identificador de la dirección asociada al contrato.
+            \item Dominio: entero positivo.
+            \item Tipo: clave foránea.
+            \item Opcional: no.
+            \item Ejemplo: 3.
+        \end{itemize}
+
+        \item \textbf{fecha\_inicio}
+        \begin{itemize}
+            \item Definición: fecha de inicio del contrato.
+            \item Dominio: tipo fecha.
+            \item Tipo: atributo simple.
+            \item Opcional: no.
+            \item Ejemplo: 2025-03-01.
+        \end{itemize}
+
+        \item \textbf{fecha\_fin}
+        \begin{itemize}
+            \item Definición: fecha de finalización del contrato.
+            \item Dominio: tipo fecha.
+            \item Tipo: atributo simple.
+            \item Opcional: sí (en caso de contratos abiertos).
+            \item Ejemplo: 2025-09-01.
+        \end{itemize}
+
+        \item \textbf{descripcion}
+        \begin{itemize}
+            \item Definición: información adicional sobre el contrato.
+            \item Dominio: texto de hasta 500 caracteres.
+            \item Tipo: atributo simple.
+            \item Opcional: sí.
+            \item Ejemplo: Contrato de suscripción Premium para 6 meses.
+        \end{itemize}
+
+    \end{itemize}
+
+    \item \textbf{Diagrama (Figura \ref{fig:E-Contrato}):}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.3]{img/diagramas/contrato.png}
+        \caption{Entidad Contrato}
+        \label{fig:E-Contrato}
+    \end{figure}
+
+    \item \textbf{Ejemplo de entidad (Tabla \ref{table:T-Contrato}):}
+
+    \begin{table}[H]
+    \centering
+        \begin{tabular}{ |p{6cm}||p{6cm}|  }
+             \hline
+                \multicolumn{2}{|c|}{\textbf{Contrato}} \\ \hline
+                 \textbf{Atributo} & \textbf{Valor} \\ \hline
+                 id & 10 \\ \hline
+                 id\_usuario & 5 \\ \hline
+                 id\_direccion & 3 \\ \hline
+                 fecha\_inicio & 2025-03-01 \\ \hline
+                 fecha\_fin & 2025-09-01 \\ \hline
+                 descripcion & Contrato de suscripción Premium para 6 meses \\ \hline
+        \end{tabular}
+        \caption{Ejemplo de la entidad \textit{Contrato}}
+        \label{table:T-Contrato}
+    \end{table}
+
+\end{itemize}
+\subsection{Entidad Subscricion}
+\begin{itemize}
+    \item \textbf{Descripción:} este tipo de entidad representa las suscripciones activas o históricas asociadas a los contratos. Una suscripción define el tipo de plan contratado y su coste mensual.
+
+    \item \textbf{Restricciones:} entidad fuerte.
+
+    \item \textbf{Características:}
+    \begin{itemize}
+        \item Nombre del tipo de entidad: Subscricion.
+        \item Tipo: Fuerte.
+        \item Atributos heredados: Ninguno.
+        \item Atributo identificador primario: id.
+        \item Atributo identificador alternativo: ninguno.
+        \item Número de atributos: 4 propios.
+    \end{itemize}
+
+    \item Atributos propios:
+    \begin{itemize}
+
+        \item \textbf{id}
+        \begin{itemize}
+            \item Definición: identificador único de la suscripción.
+            \item Dominio: entero positivo.
+            \item Tipo: clave primaria.
+            \item Opcional: no.
+            \item Ejemplo: 7.
+        \end{itemize}
+
+        \item \textbf{ID\_tipo}
+        \begin{itemize}
+            \item Definición: tipo de suscripción contratada.
+            \item Dominio: entero positivo.
+            \item Tipo: clave foránea.
+            \item Opcional: no.
+            \item Ejemplo: 2.
+        \end{itemize}
+
+        \item \textbf{ID\_contrato}
+        \begin{itemize}
+            \item Definición: identificador del contrato asociado.
+            \item Dominio: entero positivo.
+            \item Tipo: clave foránea.
+            \item Opcional: no.
+            \item Ejemplo: 10.
+        \end{itemize}
+
+        \item \textbf{mensualidad}
+        \begin{itemize}
+            \item Definición: coste mensual de la suscripción.
+            \item Dominio: número real positivo.
+            \item Tipo: atributo simple.
+            \item Opcional: no.
+            \item Ejemplo: 29.99.
+        \end{itemize}
+
+    \end{itemize}
+
+    \item \textbf{Diagrama (Figura \ref{fig:E-Subscricion}):}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.3]{img/diagramas/subscricion.png}
+        \caption{Entidad Subscricion}
+        \label{fig:E-Subscricion}
+    \end{figure}
+
+    \item \textbf{Ejemplo de entidad (Tabla \ref{table:T-Subscricion}):}
+
+    \begin{table}[H]
+    \centering
+        \begin{tabular}{ |p{6cm}||p{6cm}| }
+             \hline
+             \multicolumn{2}{|c|}{\textbf{Subscricion}} \\ \hline
+             \textbf{Atributo} & \textbf{Valor} \\ \hline
+             id & 7 \\ \hline
+             ID\_tipo & 2 \\ \hline
+             ID\_contrato & 10 \\ \hline
+             mensualidad & 29.99 \\ \hline
+        \end{tabular}
+        \caption{Ejemplo de la entidad \textit{Subscricion}}
+        \label{table:T-Subscricion}
+    \end{table}
+
+\end{itemize}
+
+\subsection{Entidad Tipo}
+\begin{itemize}
+    \item \textbf{Descripción:} este tipo de entidad define los tipos de suscripción disponibles (por ejemplo, Básica, Premium o Profesional), cada uno asociado a un precio, descripción y una imagen representativa.
+
+    \item \textbf{Restricciones:} entidad fuerte.
+
+    \item \textbf{Características:}
+    \begin{itemize}
+        \item Nombre del tipo de entidad: Tipo.
+        \item Tipo: Fuerte.
+        \item Atributos heredados: Ninguno.
+        \item Atributo identificador primario: ID.
+        \item Atributo identificador alternativo: ninguno.
+        \item Número de atributos: 4 propios.
+    \end{itemize}
+
+    \item Atributos propios:
+    \begin{itemize}
+
+        \item \textbf{ID}
+        \begin{itemize}
+            \item Definición: identificador único del tipo de suscripción.
+            \item Dominio: entero positivo.
+            \item Tipo: clave primaria.
+            \item Opcional: no.
+            \item Ejemplo: 2.
+        \end{itemize}
+
+        \item \textbf{Nombre}
+        \begin{itemize}
+            \item Definición: nombre del tipo de suscripción.
+            \item Dominio: cadena de hasta 150 caracteres.
+            \item Tipo: atributo simple.
+            \item Opcional: no.
+            \item Ejemplo: Premium.
+        \end{itemize}
+
+        \item \textbf{Precio}
+        \begin{itemize}
+            \item Definición: coste base mensual del tipo de suscripción.
+            \item Dominio: número real positivo.
+            \item Tipo: atributo simple.
+            \item Opcional: no.
+            \item Ejemplo: 29.99.
+        \end{itemize}
+
+        \item \textbf{Descripcion}
+        \begin{itemize}
+            \item Definición: detalle del plan y sus beneficios.
+            \item Dominio: cadena de hasta 500 caracteres.
+            \item Tipo: atributo simple.
+            \item Opcional: sí.
+            \item Ejemplo: Acceso ilimitado a todo el catálogo.
+        \end{itemize}
+
+        \item \textbf{imagen}
+        \begin{itemize}
+            \item Definición: imagen asociada al tipo de suscripción.
+            \item Dominio: ruta o nombre de archivo.
+            \item Tipo: atributo simple.
+            \item Opcional: sí.
+            \item Ejemplo: premium.png.
+        \end{itemize}
+
+    \end{itemize}
+
+    \item \textbf{Diagrama (Figura \ref{fig:E-Tipo}):}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.3]{img/diagramas/tipo.png}
+        \caption{Entidad Tipo}
+        \label{fig:E-Tipo}
+    \end{figure}
+
+    \item \textbf{Ejemplo de entidad (Tabla \ref{table:T-Tipo}):}
+
+    \begin{table}[H]
+    \centering
+        \begin{tabular}{ |p{6cm}||p{6cm}| }
+             \hline
+             \multicolumn{2}{|c|}{\textbf{Tipo}} \\ \hline
+             \textbf{Atributo} & \textbf{Valor} \\ \hline
+             ID & 2 \\ \hline
+             Nombre & Premium \\ \hline
+             Precio & 29.99 \\ \hline
+             Descripcion & Acceso ilimitado a todo el catálogo \\ \hline
+             imagen & premium.png \\ \hline
+        \end{tabular}
+        \caption{Ejemplo de la entidad \textit{Tipo}}
+        \label{table:T-Tipo}
+    \end{table}
+
+\end{itemize}
+
+
+\subsection{Entidad Producto}
+\begin{itemize}
+    \item \textbf{Descripción:} este tipo de entidad representa los productos deportivos disponibles para alquiler, con información como nombre, categoría, cantidad, imagen y características adicionales.
+
+    \item \textbf{Restricciones:} entidad fuerte.
+
+    \item \textbf{Características:}
+    \begin{itemize}
+        \item Nombre del tipo de entidad: Producto.
+        \item Tipo: Fuerte.
+        \item Atributos heredados: Ninguno.
+        \item Atributo identificador primario: ID.
+        \item Atributo identificador alternativo: ninguno.
+        \item Número de atributos: 8 propios.
+    \end{itemize}
+
+    \item Atributos propios:
+    \begin{itemize}
+
+        \item \textbf{ID}
+        \begin{itemize}
+            \item Definición: identificador único del producto.
+            \item Dominio: entero positivo.
+            \item Tipo: clave primaria.
+            \item Opcional: no.
+            \item Ejemplo: 15.
+        \end{itemize}
+
+        \item \textbf{ID\_Categoria}
+        \begin{itemize}
+            \item Definición: categoría a la que pertenece el producto.
+            \item Dominio: entero positivo.
+            \item Tipo: clave foránea.
+            \item Opcional: no.
+            \item Ejemplo: 3.
+        \end{itemize}
+
+        \item \textbf{Nombre}
+        \begin{itemize}
+            \item Definición: nombre del producto.
+            \item Dominio: cadena de hasta 150 caracteres.
+            \item Tipo: atributo simple.
+            \item Opcional: no.
+            \item Ejemplo: Mancuernas 10 kg.
+        \end{itemize}
+
+        \item \textbf{Descripcion}
+        \begin{itemize}
+            \item Definición: información descriptiva del producto.
+            \item Dominio: hasta 500 caracteres.
+            \item Tipo: atributo simple.
+            \item Opcional: sí.
+            \item Ejemplo: Mancuernas recubiertas de goma antideslizante.
+        \end{itemize}
+
+        \item \textbf{Cantidad}
+        \begin{itemize}
+            \item Definición: número de unidades disponibles.
+            \item Dominio: entero positivo.
+            \item Tipo: atributo simple.
+            \item Opcional: no.
+            \item Ejemplo: 20.
+        \end{itemize}
+
+        \item \textbf{Instalacion}
+        \begin{itemize}
+            \item Definición: indica si el producto requiere instalación.
+            \item Dominio: booleano.
+            \item Tipo: atributo simple.
+            \item Opcional: no.
+            \item Ejemplo: false.
+        \end{itemize}
+
+        \item \textbf{espacio}
+        \begin{itemize}
+            \item Definición: espacio aproximado necesario para el producto.
+            \item Dominio: cadena de hasta 50 caracteres.
+            \item Tipo: atributo simple.
+            \item Opcional: sí.
+            \item Ejemplo: 1 m\textsuperscript{2}.
+        \end{itemize}
+
+        \item \textbf{Precio}
+        \begin{itemize}
+            \item Definición: precio del alquiler mensual.
+            \item Dominio: número real positivo.
+            \item Tipo: atributo simple.
+            \item Opcional: no.
+            \item Ejemplo: 12.99.
+        \end{itemize}
+
+        \item \textbf{Imagen}
+        \begin{itemize}
+            \item Definición: imagen ilustrativa del producto.
+            \item Dominio: cadena con ruta o nombre de archivo.
+            \item Tipo: atributo simple.
+            \item Opcional: sí.
+        \end{itemize}
+
+    \end{itemize}
+
+    \item \textbf{Diagrama (Figura \ref{fig:E-Producto}):}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.3]{img/diagramas/producto.png}
+        \caption{Entidad Producto}
+        \label{fig:E-Producto}
+    \end{figure}
+
+    \item \textbf{Ejemplo de entidad (Tabla \ref{table:T-Producto}):}
+
+    \begin{table}[H]
+    \centering
+        \begin{tabular}{ |p{6cm}||p{6cm}| }
+             \hline
+             \multicolumn{2}{|c|}{\textbf{Producto}} \\ \hline
+             \textbf{Atributo} & \textbf{Valor} \\ \hline
+             ID & 15 \\ \hline
+             ID\_Categoria & 3 \\ \hline
+             Nombre & Mancuernas 10 kg \\ \hline
+             Descripcion & Mancuernas recubiertas de goma antideslizante \\ \hline
+             Cantidad & 20 \\ \hline
+             Instalacion & false \\ \hline
+             espacio & 1 m\textsuperscript{2} \\ \hline
+             Precio & 12.99 \\ \hline
+             Imagen & imagen \\ \hline
+        \end{tabular}
+        \caption{Ejemplo de la entidad \textit{Producto}}
+        \label{table:T-Producto}
+    \end{table}
+
+\end{itemize}
+
+\subsection{Entidad Categorias}
+\begin{itemize}
+    \item \textbf{Descripción:} este tipo de entidad representa las categorías del catálogo de productos. Las categorías pueden estar organizadas jerárquicamente mediante el atributo padre\_id.
+
+    \item \textbf{Restricciones:} entidad fuerte.
+
+    \item \textbf{Características:}
+    \begin{itemize}
+        \item Nombre del tipo de entidad: Categorias.
+        \item Tipo: Fuerte.
+        \item Atributos heredados: Ninguno.
+        \item Atributo identificador primario: ID.
+        \item Atributo identificador alternativo: ninguno.
+        \item Número de atributos: 3 propios.
+    \end{itemize}
+
+    \item Atributos propios:
+    \begin{itemize}
+
+        \item \textbf{ID}
+        \begin{itemize}
+            \item Definición: identificador único de la categoría.
+            \item Dominio: entero positivo.
+            \item Tipo: clave primaria.
+            \item Opcional: no.
+            \item Ejemplo: 3.
+        \end{itemize}
+
+        \item \textbf{Nombre}
+        \begin{itemize}
+            \item Definición: nombre de la categoría.
+            \item Dominio: cadena de 150 caracteres.
+            \item Tipo: atributo simple.
+            \item Opcional: no.
+            \item Ejemplo: Pesas libres.
+        \end{itemize}
+
+        \item \textbf{padre\_id}
+        \begin{itemize}
+            \item Definición: referencia a la categoría padre (si existe jerarquía).
+            \item Dominio: entero positivo o nulo.
+            \item Tipo: clave foránea opcional.
+            \item Opcional: sí.
+            \item Ejemplo: null.
+        \end{itemize}
+
+    \end{itemize}
+
+    \item \textbf{Diagrama (Figura \ref{fig:E-Categorias}):}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.3]{img/diagramas/categoria.png}
+        \caption{Entidad Categorias}
+        \label{fig:E-Categorias}
+    \end{figure}
+
+    \item \textbf{Ejemplo de entidad (Tabla \ref{table:T-Categorias}):}
+
+    \begin{table}[H]
+    \centering
+        \begin{tabular}{ |p{6cm}||p{6cm}| }
+             \hline
+             \multicolumn{2}{|c|}{\textbf{Categorias}} \\ \hline
+             \textbf{Atributo} & \textbf{Valor} \\ \hline
+             ID & 3 \\ \hline
+             Nombre & Pesas libres \\ \hline
+             padre\_id & null \\ \hline
+        \end{tabular}
+        \caption{Ejemplo de la entidad \textit{Categorias}}
+        \label{table:T-Categorias}
+    \end{table}
+
+\end{itemize}
+
+
+
+\subsection{Entidad Contrato\_productos}
+\begin{itemize}
+    \item \textbf{Descripción:} esta entidad representa la relación entre un contrato y los productos asociados al mismo. Permite registrar qué productos forman parte de cada contrato y su coste mensual individual.
+
+    \item \textbf{Restricciones:} entidad fuerte (aunque conceptualmente actúa como una entidad intermedia de relación N:N).
+
+    \item \textbf{Características:}
+    \begin{itemize}
+        \item Nombre del tipo de entidad: Contrato\_productos.
+        \item Tipo: Fuerte.
+        \item Atributos heredados: Ninguno.
+        \item Atributo identificador primario: ID.
+        \item Atributo identificador alternativo: ninguno.
+        \item Número de atributos: 4 propios.
+    \end{itemize}
+
+    \item Atributos propios:
+    \begin{itemize}
+
+        \item \textbf{ID}
+        \begin{itemize}
+            \item Definición: identificador único del registro de producto asociado a contrato.
+            \item Dominio: entero positivo.
+            \item Tipo: clave primaria.
+            \item Opcional: no.
+            \item Ejemplo: 40.
+        \end{itemize}
+
+        \item \textbf{ID\_producto}
+        \begin{itemize}
+            \item Definición: identificador del producto asociado al contrato.
+            \item Dominio: entero positivo.
+            \item Tipo: clave foránea.
+            \item Opcional: no.
+            \item Ejemplo: 15.
+        \end{itemize}
+
+        \item \textbf{ID\_contrato}
+        \begin{itemize}
+            \item Definición: identificador del contrato.
+            \item Dominio: entero positivo.
+            \item Tipo: clave foránea.
+            \item Opcional: no.
+            \item Ejemplo: 10.
+        \end{itemize}
+
+        \item \textbf{mensualidad}
+        \begin{itemize}
+            \item Definición: coste mensual del producto dentro del contrato.
+            \item Dominio: número real positivo.
+            \item Tipo: atributo simple.
+            \item Opcional: no.
+            \item Ejemplo: 12.99.
+        \end{itemize}
+
+    \end{itemize}
+
+    \item \textbf{Diagrama (Figura \ref{fig:E-ContratoProductos}):}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.3]{img/diagramas/contrato_productos.png}
+        \caption{Entidad Contrato\_productos}
+        \label{fig:E-ContratoProductos}
+    \end{figure}
+
+    \item \textbf{Ejemplo de entidad (Tabla \ref{table:T-ContratoProductos}):}
+
+    \begin{table}[H]
+    \centering
+        \begin{tabular}{ |p{6cm}||p{6cm}| }
+             \hline
+             \multicolumn{2}{|c|}{\textbf{Contrato\_productos}} \\ \hline
+             \textbf{Atributo} & \textbf{Valor} \\ \hline
+             ID & 40 \\ \hline
+             ID\_producto & 15 \\ \hline
+             ID\_contrato & 10 \\ \hline
+             mensualidad & 12.99 \\ \hline
+        \end{tabular}
+        \caption{Ejemplo de la entidad \textit{Contrato\_productos}}
+        \label{table:T-ContratoProductos}
+    \end{table}
+
+\end{itemize}
 
 \section{Tipos de interrelación} \label{sec:relaciones}
 En esta sección se identificarán y describirán las interrelaciones entre los tipos de entidad descritos en la sección 7.2.
@@ -214,7 +1085,174 @@ Para cada una de las interrelaciones que se han identificado en la definición d
 Se han identificado las interrelaciones que se indican a continuación y que se describirán en las siguientes subsecciones:
 
 \begin{itemize}
-    \item Tipo de Interrelación: Usuario - ...
+    \item Tipo de interrelación: Usuario - Rol
+    \item Tipo de interrelación: Usuario - Dirección
+    \item Tipo de interrelación: Dirección - Envio\_Servicio
+    \item Tipo de interrelación: Usuario - Contrato
+    \item Tipo de interrelación: Dirección - Contrato
+    \item Tipo de interrelación: Contrato - Subscricion
+    \item Tipo de interrelación: Subscricion - Tipo
+    \item Tipo de interrelación: Contrato - Contrato\_productos
+    \item Tipo de interrelación: Contrato\_productos - Producto
+    \item Tipo de interrelación: Categorias - Producto
+\end{itemize}
+\subsection{Interrelación Usuario - Rol}
+
+\begin{itemize}
+    \item \textbf{Nombre}. Usuario - Rol.
+
+    \item \textbf{Descripción}. Relación que vincula a cada usuario con el rol que tiene asignado en el sistema. Un usuario desempeña exactamente un rol, mientras que un rol puede estar asociado a varios usuarios.
+
+    \item \textbf{Tipo}. Interrelación fuerte entre dos entidades fuertes (Usuario y Rol).
+
+    \item \textbf{Cardinalidad}.  
+    Un rol puede estar asociado a entre 0 y N usuarios \((0,N)\).  
+    Cada usuario pertenece exactamente a un único rol \((1,1)\).  
+    Por tanto, se trata de una interrelación de tipo \(N:1\) (muchos usuarios a un rol).
+
+    \item \textbf{Atributos}. La interrelación no tiene atributos propios; la relación se identifica mediante las claves ajenas en la entidad Usuario (id\_rol).
+
+    \item \textbf{Diagrama}. Se representa mediante un rombo que conecta las entidades Usuario y Rol.
+
+    \item \textbf{Ejemplo}.  
+    Un usuario con id = 5, nombre = “Antonio”, pertenece al rol con id = 1, nombre = “Administrador”.
+\end{itemize}
+
+
+\subsection{Interrelación Usuario - Dirección}
+
+\begin{itemize}
+    \item \textbf{Nombre}. Usuario - Dirección.
+
+    \item \textbf{Descripción}. Relación que indica qué direcciones pertenecen a cada usuario. Un usuario puede registrar varias direcciones, mientras que cada dirección está asociada a un único usuario.
+
+    \item \textbf{Tipo}. Interrelación fuerte entre las entidades Usuario y Dirección.
+
+    \item \textbf{Cardinalidad}.  
+    Un usuario puede tener entre 0 y N direcciones \((0,N)\).  
+    Cada dirección pertenece exactamente a un usuario \((1,1)\).  
+    Se trata de una relación de tipo \(1:N\) (un usuario, muchas direcciones).
+
+    \item \textbf{Atributos}. La interrelación no tiene atributos propios; se materializa mediante el atributo id\_usuario en la entidad Dirección.
+
+    \item \textbf{Diagrama}. Representada mediante un rombo que conecta Usuario y Dirección.
+
+    \item \textbf{Ejemplo}.  
+    El usuario con id = 5 tiene asociadas las direcciones con id = 3 (Calle Mayor 15) y id = 4 (Avenida del Deporte 2).
+\end{itemize}
+
+\subsection{Interrelación Contrato - Subscricion}
+
+\begin{itemize}
+    \item \textbf{Nombre}. Contrato - Subscricion.
+
+    \item \textbf{Descripción}. Relación que vincula los contratos con las suscripciones que incluyen. Un contrato puede estar compuesto por una o varias suscripciones.
+
+    \item \textbf{Tipo}. Interrelación fuerte entre Contrato y Subscricion.
+
+    \item \textbf{Cardinalidad}.  
+    Un contrato puede tener entre 0 y N suscripciones \((0,N)\).  
+    Cada suscripción pertenece exactamente a un contrato \((1,1)\).  
+    Es una interrelación \(1:N\).
+
+    \item \textbf{Atributos}. Sin atributos propios; se refleja mediante ID\_contrato en Subscricion.
+
+    \item \textbf{Diagrama}. Rombo entre Contrato y Subscricion.
+
+    \item \textbf{Ejemplo}.  
+    El contrato con id = 10 incluye la suscripción con id = 7.
+\end{itemize}
+
+
+\subsection{Interrelación Subscricion - Tipo}
+
+\begin{itemize}
+    \item \textbf{Nombre}. Subscricion - Tipo.
+
+    \item \textbf{Descripción}. Relación que indica de qué tipo es cada suscripción (por ejemplo, Básica, Premium, etc.).
+
+    \item \textbf{Tipo}. Interrelación fuerte entre Subscricion y Tipo.
+
+    \item \textbf{Cardinalidad}.  
+    Un tipo de suscripción puede estar asociado a entre 0 y N subscripciones \((0,N)\).  
+    Cada subscripción pertenece exactamente a un tipo \((1,1)\).  
+    Es una relación \(N:1\).
+
+    \item \textbf{Atributos}. Sin atributos propios; se implementa mediante ID\_tipo en Subscricion.
+
+    \item \textbf{Diagrama}. Rombo entre Subscricion y Tipo.
+
+    \item \textbf{Ejemplo}.  
+    La subscripción con id = 7 pertenece al tipo con ID = 2 (Premium).
+\end{itemize}
+
+
+\subsection{Interrelación Contrato - Contrato\_productos}
+
+\begin{itemize}
+    \item \textbf{Nombre}. Contrato - Contrato\_productos.
+
+    \item \textbf{Descripción}. Relación que asocia un contrato con los distintos productos incluidos en él. Cada contrato puede tener varios registros en Contrato\_productos.
+
+    \item \textbf{Tipo}. Interrelación fuerte entre Contrato y Contrato\_productos.
+
+    \item \textbf{Cardinalidad}.  
+    Un contrato puede tener entre 0 y N filas en Contrato\_productos \((0,N)\).  
+    Cada registro de Contrato\_productos pertenece a un único contrato \((1,1)\).  
+    Es una interrelación \(1:N\).
+
+    \item \textbf{Atributos}. Los atributos propios de la relación (como mensualidad) se almacenan en la entidad Contrato\_productos.
+
+    \item \textbf{Diagrama}. Rombo entre Contrato y Contrato\_productos.
+
+    \item \textbf{Ejemplo}.  
+    El contrato con id = 10 tiene los registros Contrato\_productos con ID = 40 y 41.
+\end{itemize}
+
+
+\subsection{Interrelación Contrato\_productos - Producto}
+
+\begin{itemize}
+    \item \textbf{Nombre}. Contrato\_productos - Producto.
+
+    \item \textbf{Descripción}. Relación que indica qué producto concreto está asociado a cada registro de Contrato\_productos.
+
+    \item \textbf{Tipo}. Interrelación fuerte entre Contrato\_productos y Producto.
+
+    \item \textbf{Cardinalidad}.  
+    Un producto puede formar parte de entre 0 y N registros en Contrato\_productos \((0,N)\).  
+    Cada registro de Contrato\_productos hace referencia a un único producto \((1,1)\).  
+    Es una interrelación \(N:1\).
+
+    \item \textbf{Atributos}. Sin atributos adicionales; la mensualidad está en Contrato\_productos.
+
+    \item \textbf{Diagrama}. Rombo entre Contrato\_productos y Producto.
+
+    \item \textbf{Ejemplo}.  
+    El registro Contrato\_productos con ID = 40 hace referencia al producto con ID = 15.
+\end{itemize}
+
+
+\subsection{Interrelación Categorias - Producto}
+
+\begin{itemize}
+    \item \textbf{Nombre}. Categorias - Producto.
+
+    \item \textbf{Descripción}. Relación que establece la categoría a la que pertenece cada producto del catálogo.
+
+    \item \textbf{Tipo}. Interrelación fuerte entre Categorias y Producto.
+
+    \item \textbf{Cardinalidad}.  
+    Una categoría puede tener entre 0 y N productos \((0,N)\).  
+    Cada producto pertenece exactamente a una categoría \((1,1)\).  
+    Es una interrelación \(1:N\).
+
+    \item \textbf{Atributos}. No tiene atributos propios; se modela mediante ID\_Categoria en Producto.
+
+    \item \textbf{Diagrama}. Rombo entre Categorias y Producto.
+
+    \item \textbf{Ejemplo}.  
+    La categoría con ID = 3 (Pesas libres) contiene el producto con ID = 15 (Mancuernas 10 kg).
 \end{itemize}
 
 \begin{landscape}
@@ -222,7 +1260,7 @@ Se han identificado las interrelaciones que se indican a continuación y que se 
 El diagrama completo se muestra en la figura \ref{fig:EER_v5}
 \begin{figure}[H]
     \centering
-    %\includegraphics[scale=0.35]{img/diagramas/EER/EER_v5.png}
+    \includegraphics[scale=0.35]{img/diagramas/diagrama_Proyecto.jpg}
     \caption{Diagrama del modelo Entidad - Interrelación}
     \label{fig:EER_v5}
 \end{figure}
