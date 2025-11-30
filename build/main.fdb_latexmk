@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber build/main"] 1764499040.57361 "build/main.bcf" "build/main.bbl" "build/main" 1764499582.11105 0
-  "build/main.bcf" 1764499581 108810 123eba98dd2be28d281fccb2e9e3aacf "pdflatex"
+["biber build/main"] 0 "build/main.bcf" "build/main.bbl" "build/main" 1764501652.57547 -1
+  "build/main.bcf" 1764501652 108810 123eba98dd2be28d281fccb2e9e3aacf "pdflatex"
   "references.bib" 1764441441 4052 596c8e73c777f91de4fb0a28d62b8a9b ""
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["pdflatex"] 1764499578.93781 "d:/clase/2º/documentacion/DAW_25_26_Medac_Arena___Proyecto/main.tex" "build/main.pdf" "main" 1764499582.11157 0
+["pdflatex"] 1764501649.22571 "d:/clase/2º/documentacion/DAW_25_26_Medac_Arena___Proyecto/main.tex" "build/main.pdf" "main" 1764501652.57605 0
   "C:/Users/javij/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1764451317 83486 9208647d054da4672a050e7ed94c9aa5 ""
   "C:/Users/javij/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1764451326 31952 c54faf7eaebb9e4994b859c4173aa24a ""
   "C:/Users/javij/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk" 1764451327 40136 303979397ea1cf002ed9eedd4f64175a ""
@@ -263,11 +263,11 @@
   "C:/Users/javij/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/svgnam.def" 1729265222 4705 34614fec2d4cfd7794c82198c9076871 ""
   "C:/Users/javij/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/javij/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "build/main.aux" 1764499581 31132 18e3fe62abcdc858651a1cea55e86527 "pdflatex"
+  "build/main.aux" 1764501652 31132 d3234342856b1ac3e2b1d97b21d6eec1 "pdflatex"
   "build/main.bbl" 1764499045 3709 5aa2bbf05922fe7af87b8a9aedc7df08 "biber build/main"
-  "build/main.out" 1764499581 21986 368e65c8baaa4ec201fc502f3ee10f23 "pdflatex"
-  "build/main.run.xml" 1764499581 2305 76c44fea4789d1f6305c2f013e1aba2a "pdflatex"
-  "build/main.toc" 1764499581 11573 f57deab862b524b6d46dd4af32fbae09 "pdflatex"
+  "build/main.out" 1764501652 21986 368e65c8baaa4ec201fc502f3ee10f23 "pdflatex"
+  "build/main.run.xml" 1764501652 2305 76c44fea4789d1f6305c2f013e1aba2a "pdflatex"
+  "build/main.toc" 1764501652 11573 caba85434c43e20a1e67b9073aa6d43e "pdflatex"
   "capítulos/01_Introducción.tex" 1764441441 11267 75bab7b7e9ff7c4e522903c0e904fe65 ""
   "capítulos/02_Objetivos.tex" 1764441441 5088 f8831d70cd24ad93fdf50fe9aa625707 ""
   "capítulos/03_Recursos.tex" 1764441441 2852 22afd377d6c6dd7437b66ee2395ec385 ""
@@ -275,7 +275,7 @@
   "capítulos/05_Especificación_Requisitos.tex" 1764441441 10299 70e1bd05b795c86b09d0671cce6ba301 ""
   "capítulos/06_Modelo_de_datos.tex" 1764456707 49099 83419d4b4b62411c663e1f0ba9399e20 ""
   "capítulos/07_Análisis_Funcional.tex" 1764441441 6532 0657aad80e3d6e34ea40158f349b5e6f ""
-  "capítulos/08_Diseno_de_datos.tex" 1764499576 15735 3593a21601bfe7ac9ce4f4c9f7441a63 ""
+  "capítulos/08_Diseno_de_datos.tex" 1764501648 15688 2ab855db90776076548899dacfcfc171 ""
   "capítulos/09_Diseno_arquitectonico.tex" 1764441441 211 a17dd943fc75d2ce373d746f6b99aa5a ""
   "capítulos/10_Diseno_de_la_interfaz.tex" 1764441441 487 ebb85800477a147b972faa6b2504865e ""
   "capítulos/11_Pruebas.tex" 1764441441 300 5d8e23c14dd7e08dc8e064781f808b8d ""
@@ -284,6 +284,16 @@
   "capítulos/20_Anexos.tex" 1764441441 125 54892153bf116464fc6e96d0c3f22c8f ""
   "d:/clase/2º/documentacion/DAW_25_26_Medac_Arena___Proyecto/main.tex" 1764499225 6741 95c7d26b7a5b538169aaf8e80f04af19 ""
   "img/bottomMEDAC.pdf" 1764441441 90289 7b2017f85df7764fc3c6bdb151fa9b94 ""
+  "img/diagramas/Datos/categorias.png" 1764501006 6433 f65da08102f8e8229da521591989b41b ""
+  "img/diagramas/Datos/contrato.png" 1764500652 10452 fa32e1840f3511fd12d443fae199035b ""
+  "img/diagramas/Datos/contrato_productos.png" 1764501284 8472 acd1b46ed17e01fff695a7e86b2c48d5 ""
+  "img/diagramas/Datos/direccion.png" 1764500740 8710 fd7ab96c313495091ec444cb58edb463 ""
+  "img/diagramas/Datos/envio_servicio.png" 1764500579 10948 d0c8238ab603aeb05cf307d4437c1a73 ""
+  "img/diagramas/Datos/producto.png" 1764500488 14370 1da1e8f8b3d549b02bb86190a435edc3 ""
+  "img/diagramas/Datos/rol.png" 1764500246 4401 2712711ecaa27b4857b7115c64dec5cd ""
+  "img/diagramas/Datos/subscripcion.png" 1764500911 8063 f6cd7b1b20836e26fb016fe6700c6104 ""
+  "img/diagramas/Datos/tipo.png" 1764500803 8365 e4aeee5f9c846dfa3a432d2a1421d9a7 ""
+  "img/diagramas/Datos/usuario.png" 1764500365 12500 8c35abe21f597f3ac4ac94e189c1641b ""
   "img/diagramas/categoria.png" 1764452222 1033191 232e994b9d20953b16830d63cb69bc89 ""
   "img/diagramas/contrato.png" 1764454561 702138 499dfc4f3a32301dbbf0e9076d1f289f ""
   "img/diagramas/contrato_productos.png" 1764456687 604017 67e3c87ca275d06bb14407debee7756d ""
