@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber build/main"] 1764506468.28707 "build/main.bcf" "build/main.bbl" "build/main" 1764507021.95256 0
-  "build/main.bcf" 1764507021 108810 123eba98dd2be28d281fccb2e9e3aacf "pdflatex"
+["biber build/main"] 1764507899.28702 "build/main.bcf" "build/main.bbl" "build/main" 1764508328.82065 0
+  "build/main.bcf" 1764508328 108810 123eba98dd2be28d281fccb2e9e3aacf "pdflatex"
   "references.bib" 1764441441 4052 596c8e73c777f91de4fb0a28d62b8a9b ""
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["pdflatex"] 1764507018.56338 "d:/clase/2º/documentacion/DAW_25_26_Medac_Arena___Proyecto/main.tex" "build/main.pdf" "main" 1764507021.95309 0
+["pdflatex"] 1764508325.39413 "d:/clase/2º/documentacion/DAW_25_26_Medac_Arena___Proyecto/main.tex" "build/main.pdf" "main" 1764508328.8212 0
   "C:/Users/javij/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1764451317 83486 9208647d054da4672a050e7ed94c9aa5 ""
   "C:/Users/javij/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1764451326 31952 c54faf7eaebb9e4994b859c4173aa24a ""
   "C:/Users/javij/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk" 1764451327 40136 303979397ea1cf002ed9eedd4f64175a ""
@@ -263,18 +263,18 @@
   "C:/Users/javij/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/svgnam.def" 1729265222 4705 34614fec2d4cfd7794c82198c9076871 ""
   "C:/Users/javij/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/javij/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "build/main.aux" 1764507021 33438 837022c7ab7c4d2e6c661d840756ab2e "pdflatex"
-  "build/main.bbl" 1764506472 3709 5aa2bbf05922fe7af87b8a9aedc7df08 "biber build/main"
-  "build/main.out" 1764507021 22759 15d3ac0bbd47407536e93a3176393832 "pdflatex"
-  "build/main.run.xml" 1764507021 2305 76c44fea4789d1f6305c2f013e1aba2a "pdflatex"
-  "build/main.toc" 1764507021 11897 8071ab27d83f341b45d34739b8347ea1 "pdflatex"
+  "build/main.aux" 1764508328 36346 969b62967c09633fbc2e6ab39fee59f6 "pdflatex"
+  "build/main.bbl" 1764507900 3709 5aa2bbf05922fe7af87b8a9aedc7df08 "biber build/main"
+  "build/main.out" 1764508328 23810 4dc5027fe5bb47f4428a37d07b16bb3e "pdflatex"
+  "build/main.run.xml" 1764508328 2305 76c44fea4789d1f6305c2f013e1aba2a "pdflatex"
+  "build/main.toc" 1764508328 12331 84d54f581eb0f659cb4a5d63fbe0bb1a "pdflatex"
   "capítulos/01_Introducción.tex" 1764441441 11267 75bab7b7e9ff7c4e522903c0e904fe65 ""
   "capítulos/02_Objetivos.tex" 1764441441 5088 f8831d70cd24ad93fdf50fe9aa625707 ""
   "capítulos/03_Recursos.tex" 1764441441 2852 22afd377d6c6dd7437b66ee2395ec385 ""
   "capítulos/04_Contextualización_Empresarial.tex" 1764441441 6657 66306332db891b91bcf26c3e836ec3c6 ""
   "capítulos/05_Especificación_Requisitos.tex" 1764441441 10299 70e1bd05b795c86b09d0671cce6ba301 ""
   "capítulos/06_Modelo_de_datos.tex" 1764456707 49099 83419d4b4b62411c663e1f0ba9399e20 ""
-  "capítulos/07_Análisis_Funcional.tex" 1764507016 20007 ded8cab5e93cebacf9b65ee2eaa5c9e9 ""
+  "capítulos/07_Análisis_Funcional.tex" 1764508324 31803 9ab42dcd2ff822e6df5dbd10229dd429 ""
   "capítulos/08_Diseno_de_datos.tex" 1764503024 15686 89c98a904d5e6ecfd68df86fe7336f61 ""
   "capítulos/09_Diseno_arquitectonico.tex" 1764441441 211 a17dd943fc75d2ce373d746f6b99aa5a ""
   "capítulos/10_Diseno_de_la_interfaz.tex" 1764441441 487 ebb85800477a147b972faa6b2504865e ""

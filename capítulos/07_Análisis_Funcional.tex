@@ -42,7 +42,7 @@ Un actor es una representación de una persona, proceso o entidad externa que in
     \item \textbf{CU-0. Diagrama de contexto} (Sección \ref{sec:CU-0}).  
     \item \textbf{CU-1. Gestionar cuenta de usuario} (Sección \ref{sec:CU-1}). 
     \item \textbf{CU-2. Consultar catálogo de productos} (Sección \ref{sec:CU-2}).
-    \item \textbf{CU-3. Gestionar carrito y contratos puntuales} (Sección \ref{sec:CU-3}).
+    \item \textbf{CU-3. Gestionar carrito y contratos} (Sección \ref{sec:CU-3}).
     \item \textbf{CU-4. Gestionar suscripción} (Sección \ref{sec:CU-4}).
     \item \textbf{CU-5. Gestionar direcciones y envíos} (Sección \ref{sec:CU-5}).
     \item \textbf{CU-6. Gestionar pagos y facturas} (Sección \ref{sec:CU-6}).
@@ -52,7 +52,7 @@ Un actor es una representación de una persona, proceso o entidad externa que in
 
 \subsection{Caso de Uso 0. Diagrama de Contexto}\label{sec:CU-0}
 
-  El diagrama de contexto engloba los casos de uso principales que componen el sistemas. Véanse la Figura \ref{fig:Diagrama-Contexto} y la Tabla \ref{tab:CU-0}.
+  El diagrama de contexto engloba los casos de uso principales que componen el sistema. Véanse la Figura \ref{fig:Diagrama-Contexto} y la Tabla \ref{tab:CU-0}.
 
 %Diagrama de contexto
 \begin{figure}[H]
@@ -69,18 +69,17 @@ Un actor es una representación de una persona, proceso o entidad externa que in
     \hline
     \multicolumn{2}{|c|}{Caso de uso 0 - Diagrama de contexto} \\ 
     \hline \hline
-    Actores                 &   Usuario público, Cliente, Administrador, Pasarela de pago, Sistema de notificaciones \\ \hline
+    Actores                 &   Usuario público, Cliente, Administrador, Pasarela de pago \\ \hline
     Descripción             &   Visión general de las acciones principales del sistema de alquiler de material de gimnasio. \\  \hline
     Precondiciones          &   El usuario debe acceder a la página inicial de la aplicación web mediante un navegador compatible.   \\  \hline
     Casos de uso            &   CU-1. Gestionar cuenta de usuario. \\  
     &   CU-2. Consultar catálogo de productos. \\
-    &   CU-3. Gestionar carrito y contratos puntuales. \\
-    &   CU-4. Gestionar suscripción por metros cuadrados. \\
+    &   CU-3. Gestionar carrito y contratos. \\
+    &   CU-4. Gestionar suscripción. \\
     &   CU-5. Gestionar direcciones y envíos. \\
     &   CU-6. Gestionar pagos y facturas. \\
     &   CU-7. Consultar panel del cliente. \\
-    &   CU-8. Administrar la plataforma. \\
-    &   CU-9. Gestionar notificaciones automáticas. \\ \hline
+    &   CU-8. Administrar la plataforma. \\ \hline
     Flujo principal     &  1a. El usuario público accede a la aplicación sin necesidad de iniciar sesión y puede consultar la página inicial y el catálogo básico de productos. \\
         & 1b. El cliente o el administrador se identifican en el sistema para acceder a las funcionalidades asociadas a su rol (gestión de cuenta, alquiler de productos, administración del catálogo, etc.).
     \\ \hline
@@ -94,7 +93,7 @@ Un actor es una representación de una persona, proceso o entidad externa que in
 
 \newpage
 
-\subsection{CU-1. }\label{sec:CU-1}
+\subsection{CU-1. Gestionar cuenta de usuario}\label{sec:CU-1}
 
 El caso de uso \textit{CU-1.  Gestionar cuenta de usuario} describe las acciones que puede realizar  (véanse la Tabla \ref{tab:CU-1} y la Figura \ref{fig:Diagrama-Caso de uso 1.}.). Este caso de uso está compuesto por los siguientes sub-casos de uso que se describen en las tablas que se indican:
 \begin{itemize}
@@ -188,9 +187,9 @@ El caso de uso \textit{CU-2. Consultar catálogo de productos} describe las acci
         \end{center}
     \end{table}
 
-\subsection{CU-3. Gestionar carrito y contratos puntuales}\label{sec:CU-3}
+\subsection{CU-3. Gestionar carrito y contratos}\label{sec:CU-3}
 
-El caso de uso \textit{CU-3. Gestionar carrito y contratos puntuales} describe las acciones que puede realizar un cliente para añadir productos al carrito, configurar la duración del alquiler, calcular el precio final y generar un contrato. Véanse la Tabla \ref{tab:CU-3} y la Figura \ref{fig:Diagrama-CU3}. Este caso de uso está compuesto por los siguientes sub-casos de uso:
+El caso de uso \textit{CU-3. Gestionar carrito y contratos} describe las acciones que puede realizar un cliente para añadir productos al carrito, configurar la duración del alquiler, calcular el precio final y generar un contrato. Véanse la Tabla \ref{tab:CU-3} y la Figura \ref{fig:Diagrama-CU3}. Este caso de uso está compuesto por los siguientes sub-casos de uso:
 \begin{itemize}
     \item CU-3.1. Añadir producto al carrito.
     \item CU-3.2. Modificar o eliminar productos del carrito.
@@ -201,15 +200,15 @@ El caso de uso \textit{CU-3. Gestionar carrito y contratos puntuales} describe l
 \begin{figure}[H]
 \centering
 %\includegraphics[scale=0.75]{img/diagramas/Funcional/CU-3.png}
-\caption{CU-3. Gestionar carrito y contratos puntuales}\label{fig:Diagrama-CU3}   
+\caption{CU-3. Gestionar carrito y contratos}\label{fig:Diagrama-CU3}   
 \end{figure}
 
 \begin{table}[H]
-\caption{CU-3. Gestionar carrito y contratos puntuales}\label{tab:CU-3}
+\caption{CU-3. Gestionar carrito y contratos}\label{tab:CU-3}
 \begin{center}
     \begin{tabular}{|l|p{12cm}|}
     \hline
-    \multicolumn{2}{|c|}{Caso de uso 3 - Gestionar carrito y contratos puntuales} \\ 
+    \multicolumn{2}{|c|}{Caso de uso 3 - Gestionar carrito y contratos} \\ 
     \hline \hline
 
     Actores                 &   Cliente \\ \hline
@@ -280,6 +279,195 @@ El caso de uso \textit{CU-4. Gestionar suscripción} describe las acciones que r
     Flujo alternativo    &  1. El usuario intenta contratar un plan pero su método de pago falla o no está disponible.  \\ 
                             &  2. El sistema muestra un mensaje de error indicando la incidencia. \\ 
                             &  3. El usuario puede actualizar su método de pago o intentar de nuevo la contratación. \\ \hline    
+            \end{tabular}
+        \end{center}
+    \end{table}
+
+    \subsection{CU-5. Gestionar direcciones y envíos}\label{sec:CU-5}
+
+El caso de uso \textit{CU-5. Gestionar direcciones y envíos} describe las acciones que puede realizar el cliente para gestionar sus direcciones de entrega/recogida y las órdenes de logística asociadas a los contratos. Véanse la Tabla \ref{tab:CU-5} y la Figura \ref{fig:Diagrama-CU5}. Este caso de uso está compuesto por los siguientes sub-casos de uso:
+\begin{itemize}
+    \item CU-5.1. Gestionar direcciones del cliente (crear, modificar, eliminar).
+    \item CU-5.2. Seleccionar dirección de entrega y recogida en un contrato.
+    \item CU-5.3. Gestionar órdenes de logística (consulta de estado).
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+%\includegraphics[scale=0.75]{img/diagramas/Funcional/CU-5.png}
+\caption{CU-5. Gestionar direcciones y envíos}\label{fig:Diagrama-CU5}   
+\end{figure}
+
+\begin{table}[H]
+\caption{CU-5. Gestionar direcciones y envíos}\label{tab:CU-5}
+\begin{center}
+    \begin{tabular}{|l|p{12cm}|}
+    \hline
+    \multicolumn{2}{|c|}{Caso de uso 5 - Gestionar direcciones y envíos} \\ 
+    \hline \hline
+
+    Actores                 &   Cliente, Administrador \\ \hline
+
+    Descripción             &   Permite al cliente gestionar sus direcciones de entrega y recogida, seleccionar una dirección durante la creación de un contrato y consultar las órdenes de logística generadas para los envíos y recogidas. \\  \hline
+
+    Precondiciones          &   El usuario debe estar autenticado para gestionar sus direcciones. Debe existir al menos una dirección para poder asociarla a un contrato. \\  \hline
+
+    Casos de uso            &   CU-5.1. Gestionar direcciones del cliente. \\  
+                            &   CU-5.2. Seleccionar dirección de entrega y recogida. \\ 
+                            &   CU-5.3. Gestionar órdenes de logística. \\ \hline
+
+    Flujo principal         &   1. El usuario accede a la sección de direcciones en su cuenta. \\ 
+                            &   2. El sistema muestra el listado de direcciones registradas. \\ 
+                            &   3. El usuario puede crear una nueva dirección o modificar/eliminar una existente. \\ 
+                            &   4. Durante la creación de un contrato, el usuario selecciona la dirección de entrega y, en su caso, de recogida. \\ 
+                            &   5. El sistema registra la dirección en el contrato y genera la orden de logística correspondiente. \\ \hline
+
+    Flujo alternativo       &   1. El usuario introduce datos de dirección incompletos o no válidos. \\ 
+                            &   2. El sistema muestra mensajes de error indicando los campos a corregir. \\ 
+                            &   3. Si no existen direcciones válidas, el sistema impide continuar con la creación del contrato hasta que se registre al menos una dirección correcta. \\ \hline    
+            \end{tabular}
+        \end{center}
+    \end{table}
+
+    \subsection{CU-6. Gestionar pagos y facturas}\label{sec:CU-6}
+
+El caso de uso \textit{CU-6. Gestionar pagos y facturas} describe las acciones que realiza el cliente para efectuar el pago de contratos y suscripciones, así como la generación y consulta de las facturas asociadas. Véanse la Tabla \ref{tab:CU-6} y la Figura \ref{fig:Diagrama-CU6}. Este caso de uso está compuesto por los siguientes sub-casos de uso:
+\begin{itemize}
+    \item CU-6.1. Realizar pago de contrato o suscripción.
+    \item CU-6.2. Validar el pago con la pasarela.
+    \item CU-6.3. Generar y consultar factura.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+%\includegraphics[scale=0.75]{img/diagramas/Funcional/CU-6.png}
+\caption{CU-6. Gestionar pagos y facturas}\label{fig:Diagrama-CU6}   
+\end{figure}
+
+\begin{table}[H]
+\caption{CU-6. Gestionar pagos y facturas}\label{tab:CU-6}
+\begin{center}
+    \begin{tabular}{|l|p{12cm}|}
+    \hline
+    \multicolumn{2}{|c|}{Caso de uso 6 - Gestionar pagos y facturas} \\ 
+    \hline \hline
+
+    Actores                 &   Cliente, Pasarela de pago, Administrador \\ \hline
+
+    Descripción             &   Permite realizar el pago de contratos y suscripciones a través de una pasarela de pago, validar la transacción y generar la factura asociada, que quedará disponible para su consulta y descarga. \\  \hline
+
+    Precondiciones          &   Debe existir un contrato o una suscripción pendiente de pago. La pasarela de pago debe estar disponible. El usuario debe estar autenticado. \\  \hline
+
+    Casos de uso            &   CU-6.1. Realizar pago de contrato o suscripción. \\  
+                            &   CU-6.2. Validar el pago con la pasarela. \\ 
+                            &   CU-6.3. Generar y consultar factura. \\ \hline
+
+    Flujo principal         &   1. El usuario accede al resumen del contrato o suscripción pendiente de pago. \\ 
+                            &   2. Selecciona el método de pago y confirma la operación. \\ 
+                            &   3. El sistema envía la información a la pasarela de pago. \\ 
+                            &   4. La pasarela de pago procesa la transacción y devuelve el resultado (éxito o fallo). \\ 
+                            &   5. Si el pago es aceptado, el sistema marca el contrato o la suscripción como activa y genera la factura en formato PDF. \\ 
+                            &   6. El usuario puede consultar y descargar la factura desde su panel. \\ \hline
+
+    Flujo alternativo       &   1. La pasarela de pago rechaza la operación o se produce un error en la transacción. \\ 
+                            &   2. El sistema informa al usuario del fallo en el pago. \\ 
+                            &   3. El contrato o la suscripción permanecen en estado pendiente y no se activan. \\ 
+                            &   4. El usuario puede intentar de nuevo el pago o cancelar la operación. \\ \hline    
+            \end{tabular}
+        \end{center}
+    \end{table}
+
+    \subsection{CU-7. Consultar panel del cliente}\label{sec:CU-7}
+
+El caso de uso \textit{CU-7. Consultar panel del cliente} describe las acciones que realiza el cliente para visualizar un resumen de sus contratos, suscripciones, direcciones y facturas dentro de la plataforma. Véanse la Tabla \ref{tab:CU-7} y la Figura \ref{fig:Diagrama-CU7}. Este caso de uso está compuesto por los siguientes sub-casos de uso:
+\begin{itemize}
+    \item CU-7.1. Consultar contratos.
+    \item CU-7.2. Consultar suscripciones.
+    \item CU-7.3. Consultar y descargar facturas.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+%\includegraphics[scale=0.75]{img/diagramas/Funcional/CU-7.png}
+\caption{CU-7. Consultar panel del cliente}\label{fig:Diagrama-CU7}   
+\end{figure}
+
+\begin{table}[H]
+\caption{CU-7. Consultar panel del cliente}\label{tab:CU-7}
+\begin{center}
+    \begin{tabular}{|l|p{12cm}|}
+    \hline
+    \multicolumn{2}{|c|}{Caso de uso 7 - Consultar panel del cliente} \\ 
+    \hline \hline
+
+    Actores                 &   Cliente \\ \hline
+
+    Descripción             &   Permite al cliente consultar de forma centralizada la información relacionada con sus contratos, suscripciones, direcciones y facturas, así como acceder al detalle de cada elemento. \\  \hline
+
+    Precondiciones          &   El usuario debe estar autenticado en la plataforma. \\  \hline
+
+    Casos de uso            &   CU-7.1. Consultar contratos. \\  
+                            &   CU-7.2. Consultar suscripciones. \\ 
+                            &   CU-7.3. Consultar y descargar facturas. \\ \hline
+
+    Flujo principal         &   1. El usuario accede al panel de cliente desde el menú principal. \\ 
+                            &   2. El sistema muestra un resumen de sus contratos, suscripciones y facturas. \\ 
+                            &   3. El usuario selecciona el apartado que desea consultar (contratos, suscripciones o facturas). \\ 
+                            &   4. El sistema muestra el listado detallado del apartado seleccionado. \\ 
+                            &   5. El usuario puede acceder al detalle de un elemento concreto o descargar la factura correspondiente, en su caso. \\ \hline
+
+    Flujo alternativo       &   1. El usuario no dispone de contratos, suscripciones o facturas en alguno de los apartados. \\ 
+                            &   2. El sistema muestra un mensaje indicando que no existen registros disponibles en esa sección. \\ 
+                            &   3. Se ofrecen enlaces o acciones para guiar al usuario (por ejemplo, acceder al catálogo o contratar un plan). \\ \hline    
+            \end{tabular}
+        \end{center}
+    \end{table}
+
+    \subsection{CU-8. Administrar la plataforma}\label{sec:CU-8}
+
+El caso de uso \textit{CU-8. Administrar la plataforma} describe las acciones que realiza el administrador para gestionar los elementos principales del sistema: productos, categorías, planes, usuarios, contratos y órdenes de logística. Véanse la Tabla \ref{tab:CU-8} y la Figura \ref{fig:Diagrama-CU8}. Este caso de uso está compuesto por los siguientes sub-casos de uso:
+\begin{itemize}
+    \item CU-8.1. Gestionar productos.
+    \item CU-8.2. Gestionar categorías y planes.
+    \item CU-8.3. Gestionar usuarios y roles.
+    \item CU-8.4. Gestionar contratos y órdenes de logística.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+%\includegraphics[scale=0.75]{img/diagramas/Funcional/CU-8.png}
+\caption{CU-8. Administrar la plataforma}\label{fig:Diagrama-CU8}   
+\end{figure}
+
+\begin{table}[H]
+\caption{CU-8. Administrar la plataforma}\label{tab:CU-8}
+\begin{center}
+    \begin{tabular}{|l|p{12cm}|}
+    \hline
+    \multicolumn{2}{|c|}{Caso de uso 8 - Administrar la plataforma} \\ 
+    \hline \hline
+
+    Actores                 &   Administrador \\ \hline
+
+    Descripción             &   Permite al administrador gestionar el catálogo de productos y categorías, los planes de suscripción, los usuarios y sus roles, así como revisar y mantener los contratos y las órdenes de logística. \\  \hline
+
+    Precondiciones          &   El usuario debe estar autenticado y disponer de permisos de administrador. \\  \hline
+
+    Casos de uso            &   CU-8.1. Gestionar productos. \\  
+                            &   CU-8.2. Gestionar categorías y planes. \\ 
+                            &   CU-8.3. Gestionar usuarios y roles. \\
+                            &   CU-8.4. Gestionar contratos y órdenes de logística. \\ \hline
+
+    Flujo principal         &   1. El administrador accede al panel de administración de la plataforma. \\ 
+                            &   2. El sistema muestra las opciones de gestión disponibles (productos, categorías, planes, usuarios, contratos, logística). \\ 
+                            &   3. El administrador selecciona el módulo que desea gestionar. \\ 
+                            &   4. El sistema muestra el listado de registros asociados (por ejemplo, productos o usuarios). \\ 
+                            &   5. El administrador puede crear, modificar o eliminar registros, según las necesidades de la plataforma. \\ 
+                            &   6. El sistema valida los datos introducidos y actualiza la información en la base de datos. \\ \hline
+
+    Flujo alternativo       &   1. El administrador introduce datos incompletos o no válidos al crear o modificar un registro. \\ 
+                            &   2. El sistema muestra mensajes de error indicando los campos que deben corregirse. \\ 
+                            &   3. Si la eliminación de un registro afecta a otros elementos (por ejemplo, productos asociados a contratos), el sistema puede impedir la operación o solicitar confirmación adicional. \\ \hline    
             \end{tabular}
         \end{center}
     \end{table}
