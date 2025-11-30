@@ -595,6 +595,8 @@ INPUT capítulos\07_Análisis_Funcional.tex
 INPUT .\capítulos\08_Diseno_de_datos.tex
 INPUT .\capítulos\08_Diseno_de_datos.tex
 INPUT capítulos\08_Diseno_de_datos.tex
+INPUT C:\Users\javij\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecss1200.tfm
+INPUT C:\Users\javij\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcss1200.tfm
 INPUT .\capítulos\09_Diseno_arquitectonico.tex
 INPUT .\capítulos\09_Diseno_arquitectonico.tex
 INPUT capítulos\09_Diseno_arquitectonico.tex
@@ -622,16 +624,6 @@ INPUT .\capítulos\20_Anexos.tex
 INPUT .\capítulos\20_Anexos.tex
 INPUT capítulos\20_Anexos.tex
 INPUT C:\Users\javij\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ectt1200.tfm
-INPUT .\capítulos\99_Readme.tex
-INPUT .\capítulos\99_Readme.tex
-INPUT capítulos\99_Readme.tex
-INPUT .\img\diagramas\Modelo-Físico-ER.png
-INPUT .\img\diagramas\Modelo-Físico-ER.png
-INPUT .\img\diagramas\Modelo-Físico-ER.png
-INPUT .\img\diagramas\Modelo-Físico-ER.png
-INPUT .\img\diagramas\Modelo-Físico-ER.png
-INPUT .\img\diagramas\Modelo-Físico-ER.png
-INPUT .\img\diagramas\Modelo-Físico-ER.png
 INPUT d:\clase\2º\documentacion\DAW_25_26_Medac_Arena___Proyecto\build\main.aux
 INPUT d:\clase\2º\documentacion\DAW_25_26_Medac_Arena___Proyecto\build\main.out
 INPUT d:\clase\2º\documentacion\DAW_25_26_Medac_Arena___Proyecto\build\main.out
@@ -639,6 +631,8 @@ INPUT d:\clase\2º\documentacion\DAW_25_26_Medac_Arena___Proyecto\build\main.run
 OUTPUT d:\clase\2º\documentacion\DAW_25_26_Medac_Arena___Proyecto\build\main.run.xml
 INPUT C:\Users\javij\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
 INPUT C:\Users\javij\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
+INPUT C:\Users\javij\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcss1200.pk
+INPUT C:\Users\javij\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcss1200.pk
 INPUT C:\Users\javij\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
 INPUT C:\Users\javij\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
 INPUT C:\Users\javij\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk

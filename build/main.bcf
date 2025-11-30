@@ -2377,10 +2377,6 @@
     <bcf:citekey order="2" intorder="1">visualStudioCode</bcf:citekey>
     <bcf:citekey order="3" intorder="1">reglasBD</bcf:citekey>
     <bcf:citekey order="4" intorder="1">reglasBD</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">medac</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">arquitecturaMariadb</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">administracionMysql</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">mongodbEnterprise</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

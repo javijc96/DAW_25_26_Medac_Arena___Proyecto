@@ -8,6 +8,7 @@ En este capítulo se definirán las estructuras de datos que conforman el sistem
     \item Normalización del modelo. Refinamiento del modelo, para la eliminación de errores de integridad.
     \item Obtención del esquema relacional.
     \item Diagrama relacional.
+    \item 
 \end{itemize}
 
  \section{Modelo Relacional}\label{sec:modelo-relacional}
@@ -34,21 +35,130 @@ Para cada tabla se mostrará la siguiente información:
 \end{itemize}
 
 \subsection{Tabla Usuario}
+\begin{itemize}
+    \item \textbf{Descripción}: la tabla Usuario se obtiene a partir de la entidad \textit{Usuario}.
+    \item \textbf{Nombre de la tabla}: usuario
+    \item \textbf{Atributos}:
     \begin{itemize}
-        \item \textbf{Descripción}: la tabla Usuario se obtiene a partir de la entidad \textit{Usuario}.
-        \item \textbf{Nombre de la tabla}:
-        \item \textbf{Atributos}:
-            \begin{itemize}
-                \item Clave primaria: \underline{id}
-                \item Clave alterna: 
-                \item Clave foránea: \textbf{}
-                \item Resto de atributos: 
-            \end{itemize}
-        \item \textbf{Esquema relacional}: 
-            Usuario(\textbf{\underline{id}}, name, email, password, estado)
+        \item Clave primaria: \underline{id}
+        \item Clave alterna: email
+        \item Claves foráneas: \textbf{id\_rol}
+        \item Resto de atributos: nombre, apellidos, telefono, password, fecha\_alta
     \end{itemize}
+    \item \textbf{Esquema relacional}:  
+    Usuario(\underline{id}, nombre, apellidos, telefono, email, password, fecha\_alta, id\_rol)
+\end{itemize}
 
-    
+\subsection{Tabla Categoria}
+\begin{itemize}
+    \item \textbf{Descripción}: tabla derivada de la entidad \textit{Categoría}.
+    \item \textbf{Nombre de la tabla}: categoria
+    \item \textbf{Atributos}:
+    \begin{itemize}
+        \item Clave primaria: \underline{id}
+        \item Resto de atributos: nombre, descripcion
+    \end{itemize}
+    \item \textbf{Esquema relacional}:  
+    Categoria(\underline{id}, nombre, descripcion)
+\end{itemize}
+
+\subsection{Tabla Producto}
+\begin{itemize}
+    \item \textbf{Descripción}: procede de la entidad \textit{Producto}.
+    \item \textbf{Nombre de la tabla}: producto
+    \item \textbf{Atributos}:
+    \begin{itemize}
+        \item Clave primaria: \underline{id}
+        \item Claves foráneas: \textbf{id\_categoria}
+        \item Resto de atributos: nombre, descripcion, espacio, instalacion, precio, cantidad, imagen
+    \end{itemize}
+    \item \textbf{Esquema relacional}:  
+    Producto(\underline{id}, id\_categoria, nombre, descripcion, espacio, instalacion, precio, cantidad, imagen)
+\end{itemize}
+
+\subsection{Tabla Direccion}
+\begin{itemize}
+    \item \textbf{Descripción}: procede de la entidad \textit{Dirección}.
+    \item \textbf{Nombre de la tabla}: direccion
+    \item \textbf{Atributos}:
+    \begin{itemize}
+        \item Clave primaria: \underline{id}
+        \item Claves foráneas: \textbf{id\_usuario}
+        \item Resto de atributos: via, cod\_postal, ciudad
+    \end{itemize}
+    \item \textbf{Esquema relacional}:  
+    Direccion(\underline{id}, id\_usuario, via, cod\_postal, ciudad)
+\end{itemize}
+
+\subsection{Tabla Envio\_servicio}
+\begin{itemize}
+    \item \textbf{Descripción}: procede de la entidad \textit{Envio\_Servicio}.
+    \item \textbf{Nombre de la tabla}: envio\_servicio
+    \item \textbf{Atributos}:
+    \begin{itemize}
+        \item Clave primaria: \underline{id}
+        \item Claves foráneas: \textbf{id\_direccion}
+        \item Resto de atributos: tiempo\_envio, coste\_base, activo
+    \end{itemize}
+    \item \textbf{Esquema relacional}:  
+    Envio\_servicio(\underline{id}, tiempo\_envio, coste\_base, activo, id\_direccion)
+\end{itemize}
+
+\subsection{Tabla Contrato}
+\begin{itemize}
+    \item \textbf{Descripción}: procede de la entidad \textit{Contrato}.
+    \item \textbf{Nombre de la tabla}: contrato
+    \item \textbf{Atributos}:
+    \begin{itemize}
+        \item Clave primaria: \underline{id}
+        \item Claves foráneas: \textbf{id\_usuario}, \textbf{id\_direccion}
+        \item Resto de atributos: fecha\_inicio, fecha\_fin, descripcion
+    \end{itemize}
+    \item \textbf{Esquema relacional}:  
+    Contrato(\underline{id}, id\_usuario, id\_direccion, fecha\_inicio, fecha\_fin, descripcion)
+\end{itemize}
+
+\subsection{Tabla Contrato\_productos}
+\begin{itemize}
+    \item \textbf{Descripción}: tabla procedente de la interrelación N:N entre \textit{Contrato} y \textit{Producto}.
+    \item \textbf{Nombre de la tabla}: contrato\_productos
+    \item \textbf{Atributos}:
+    \begin{itemize}
+        \item Clave primaria: \underline{id}
+        \item Claves foráneas: \textbf{id\_producto}, \textbf{id\_contrato}
+        \item Resto de atributos: mensualidad
+    \end{itemize}
+    \item \textbf{Esquema relacional}:  
+    Contrato\_productos(\underline{id}, id\_producto, id\_contrato, mensualidad)
+\end{itemize} 
+
+\subsection{Tabla Tipo}
+\begin{itemize}
+    \item \textbf{Descripción}: procede de la entidad \textit{Tipo}.
+    \item \textbf{Nombre de la tabla}: tipo
+    \item \textbf{Atributos}:
+    \begin{itemize}
+        \item Clave primaria: \underline{id}
+        \item Resto de atributos: nombre, precio, descripcion, imagen
+    \end{itemize}
+    \item \textbf{Esquema relacional}:  
+    Tipo(\underline{id}, nombre, precio, descripcion, imagen)
+\end{itemize}
+
+\subsection{Tabla Subscripcion}
+\begin{itemize}
+    \item \textbf{Descripción}: procede de la entidad \textit{Subscripción}.
+    \item \textbf{Nombre de la tabla}: subscripcion
+    \item \textbf{Atributos}:
+    \begin{itemize}
+        \item Clave primaria: \underline{id}
+        \item Claves foráneas: \textbf{id\_tipo}, \textbf{id\_contrato}
+        \item Resto de atributos: mensualidad
+    \end{itemize}
+    \item \textbf{Esquema relacional}:  
+    Subscripcion(\underline{id}, id\_tipo, id\_contrato, mensualidad)
+\end{itemize}
+
  \section{Normalización del modelo}\label{sec:normalizacion}
 La normalización del modelo descrito en la sección anterior pretende detectar y corregir redundancias e inconsistencias en la información representada, para lo cual se aplicarán las medidas correctoras que garanticen que las tablas obtenidas cumplen las siguientes formas normalizadas \cite{reglasBD}.
 
@@ -73,7 +183,138 @@ Todas las tablas definidas se encuentran en la Primera Forma Normal, puesto que 
 \caption{Tabla Usuario en FNBC}\label{fig:Tabla Usuario en FNBC}   
 \end{figure}
 
+\subsection{Tabla Rol}
+\begin{itemize}
+    \item \textbf{Claves candidatas}: id.
+    \item \textbf{Normalización}: La tabla posee solo dos atributos y una dependencia funcional id → nombre. Cumple 1FN, 2FN, 3FN y FNBC.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+%\includegraphics[scale=0.75]{img/diagramas/Datos/FNBC-Usuario.png}
+\caption{Tabla Rol en FNBC}\label{fig:Tabla Rol en FNBC}   
+\end{figure}
+
+\subsection{Tabla Categoria}
+\begin{itemize}
+    \item \textbf{Claves candidatas}: id.
+    \item \textbf{Normalización}: Todos los atributos dependen completamente de la clave id, sin dependencias transitivas. La tabla se encuentra en FNBC.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+%\includegraphics[scale=0.75]{img/diagramas/Datos/FNBC-Usuario.png}
+\caption{Tabla Categoria en FNBC}\label{fig:Tabla Categoria en FNBC}   
+\end{figure}
+
+\subsection{Tabla Producto}
+\begin{itemize}
+    \item \textbf{Claves candidatas}: id.
+    \item \textbf{Normalización}: 
+    Los atributos dependen totalmente de id.  
+    La clave foránea i\_categoria no genera dependencias transitivas dentro de la tabla.  
+    La tabla se encuentra en FNBC.
+\end{itemize}
+
+
+\begin{figure}[H]
+\centering
+%\includegraphics[scale=0.75]{img/diagramas/Datos/FNBC-Usuario.png}
+\caption{Tabla Producto en FNBC}\label{fig:Tabla Producto en FNBC}   
+\end{figure}
+
+\subsection{Tabla Direccion}
+\begin{itemize}
+    \item \textbf{Claves candidatas}: id.
+    \item \textbf{Normalización}: 
+    Todos los atributos dependen directamente de id.  
+    id\_usuario es clave foránea y no genera nuevas dependencias internas.  
+    La tabla está en FNBC.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+%\includegraphics[scale=0.75]{img/diagramas/Datos/FNBC-Usuario.png}
+\caption{Tabla Direccion en FNBC}\label{fig:Tabla Direccion en FNBC}   
+\end{figure}
+
+\subsection{Tabla Envio\_servicio}
+\begin{itemize}
+    \item \textbf{Claves candidatas}: id.
+    \item \textbf{Normalización}: 
+    Todos los atributos dependen totalmente de id.  
+    No hay atributos derivados ni dependencias transitivas.  
+    La tabla se encuentra en FNBC.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+%\includegraphics[scale=0.75]{img/diagramas/Datos/FNBC-Usuario.png}
+\caption{Tabla Envio\_Servicio en FNBC}\label{fig:Tabla Envio_Servicio en FNBC}   
+\end{figure}
+
+\subsection{Tabla Contrato}
+\begin{itemize}
+    \item \textbf{Claves candidatas}: id.
+    \item \textbf{Normalización}: 
+    No existen dependencias parciales ni transitivas.  
+    id\_usuario e id\_direccion son claves foráneas y no afectan a la normalización interna.  
+    La tabla se encuentra en FNBC.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+%\includegraphics[scale=0.75]{img/diagramas/Datos/FNBC-Usuario.png}
+\caption{Tabla Contrato en FNBC}\label{fig:Tabla Contrato en FNBC}   
+\end{figure}
+
+\subsection{Tabla Contrato\_productos}
+\begin{itemize}
+    \item \textbf{Claves candidatas}: id.
+    \item \textbf{Normalización}: 
+    Todos los atributos dependen completamente de id.  
+    id\_producto e id\_contrato actúan como claves foráneas.  
+    No existen dependencias transitivas.  
+    La tabla está en FNBC.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+%\includegraphics[scale=0.75]{img/diagramas/Datos/FNBC-Usuario.png}
+\caption{Tabla Contrato\_productos en FNBC}\label{fig:Tabla Contrato_productos en FNBC}   
+\end{figure}
+
+\subsection{Tabla Tipo}
+\begin{itemize}
+    \item \textbf{Claves candidatas}: id.
+    \item \textbf{Normalización}: 
+    Todos los atributos se determinan por la clave id.  
+    La tabla se encuentra en FNBC.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+%\includegraphics[scale=0.75]{img/diagramas/Datos/FNBC-Usuario.png}
+\caption{Tabla Tipo en FNBC}\label{fig:Tabla Tipo en FNBC}   
+\end{figure}
+
+\subsection{Tabla Subscripcion}
+\begin{itemize}
+    \item \textbf{Claves candidatas}: id.
+    \item \textbf{Normalización}: 
+    Los atributos dependen totalmente de id.  
+    id\_tipo e id\_contrato son claves foráneas y no generan dependencias internas.  
+    La tabla cumple la FNBC.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+%\includegraphics[scale=0.75]{img/diagramas/Datos/FNBC-Usuario.png}
+\caption{Tabla Subscripcion en FNBC}\label{fig:Tabla Subscripcion en FNBC}   
+\end{figure}
+
  \section{Esquema relacional}\label{sec:esquema-relacional}
+
 
 \begin{table}[H]
 \begin{center}
@@ -81,12 +322,30 @@ Todas las tablas definidas se encuentran en la Primera Forma Normal, puesto que 
     \hline
     Tabla                 &   Atributos          
     \\ \hline
-    Usuario             &   (\textbf{\underline{id}}, name, email, password, estado) 
-    \\  \hline
-            \end{tabular}
-        \end{center}
-    \end{table}
 
+    Usuario & (\textbf{\underline{id}}, nombre, apellidos, telefono, email, password, fecha\_alta, id\_rol) \\ \hline
+
+    Rol & (\textbf{\underline{id}}, nombre) \\ \hline
+
+    Direccion & (\textbf{\underline{id}}, id\_usuario, via, cod\_postal, ciudad) \\ \hline
+
+    Envio\_Servicio & (\textbf{\underline{id}}, nombre, tiempo\_envio, coste\_base, activo, id\_direccion) \\ \hline
+
+    Contrato & (\textbf{\underline{id}}, id\_usuario, id\_direccion, fecha\_inicio, fecha\_fin, descripcion) \\ \hline
+
+    Subscricion & (\textbf{\underline{id}}, id\_tipo, id\_contrato, mensualidad) \\ \hline
+
+    Tipo & (\textbf{\underline{id}}, nombre, precio, descripcion, imagen) \\ \hline
+
+    Producto & (\textbf{\underline{id}}, id\_categoria, nombre, descripcion, espacio, instalacion, precio, cantidad, imagen) \\ \hline
+
+    Categorias & (\textbf{\underline{id}}, nombre, padre\_id) \\ \hline
+
+    Contrato\_productos & (\textbf{\underline{id}}, id\_producto, id\_contrato, mensualidad) \\ \hline
+
+    \end{tabular}
+\end{center}
+\end{table}
 
 
 \section{Diagrama relacional}\label{sec:diagrama-relacional}

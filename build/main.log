@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.29)  29 NOV 2025 23:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.29)  30 NOV 2025 11:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1254,12 +1254,12 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: rotating package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
-<img/topMEDAC.pdf, id=497, 759.0759pt x 275.83049pt>
+<img/topMEDAC.pdf, id=545, 759.0759pt x 275.83049pt>
 File: img/topMEDAC.pdf Graphic file (type pdf)
 <use img/topMEDAC.pdf>
 Package pdftex.def Info: img/topMEDAC.pdf  used on input line 140.
 (pdftex.def)             Requested size: 313.20375pt x 113.81102pt.
-<img/bottomMEDAC.pdf, id=498, 627.34375pt x 1080.035pt>
+<img/bottomMEDAC.pdf, id=546, 627.34375pt x 1080.035pt>
 File: img/bottomMEDAC.pdf Graphic file (type pdf)
 <use img/bottomMEDAC.pdf>
 Package pdftex.def Info: img/bottomMEDAC.pdf  used on input line 144.
@@ -1339,171 +1339,151 @@ LaTeX Info: Redefining \sptext on input line 84.
 LaTeX Info: Redefining \. on input line 84.
 LaTeX Info: Redefining \% on input line 84.
  [3]
-Overfull \hbox (2.93756pt too wide) detected at line 89
-\T1/fvs/b/n/12 10. 
- []
-
-
-Overfull \hbox (2.63512pt too wide) detected at line 90
-\T1/fvs/m/n/12 10.1. 
- []
-
-
-Overfull \hbox (2.63512pt too wide) detected at line 91
-\T1/fvs/m/n/12 10.2. 
- []
-
-
-Overfull \hbox (2.63512pt too wide) detected at line 92
-\T1/fvs/m/n/12 10.3. 
- []
-
-
-Overfull \hbox (3.21837pt too wide) detected at line 93
-\T1/fvs/m/n/12 10.3.1. 
- []
-
-
-Overfull \hbox (3.21837pt too wide) detected at line 94
-\T1/fvs/m/n/12 10.3.2. 
- []
-
-
-Overfull \hbox (3.21837pt too wide) detected at line 95
-\T1/fvs/m/n/12 10.3.3. 
- []
-
-
-Overfull \hbox (2.63512pt too wide) detected at line 96
-\T1/fvs/m/n/12 10.4. 
- []
-
-
-Overfull \hbox (3.21837pt too wide) detected at line 97
-\T1/fvs/m/n/12 10.4.1. 
- []
-
-
 Overfull \hbox (3.21837pt too wide) detected at line 98
-\T1/fvs/m/n/12 10.4.2. 
- []
-
-
-Overfull \hbox (3.21837pt too wide) detected at line 99
-\T1/fvs/m/n/12 10.4.3. 
- []
-
-
-Overfull \hbox (2.93756pt too wide) detected at line 101
-\T1/fvs/b/n/12 11. 
- []
-
-
-Overfull \hbox (2.63512pt too wide) detected at line 102
-\T1/fvs/m/n/12 11.1. 
- []
-
-
-Overfull \hbox (2.63512pt too wide) detected at line 103
-\T1/fvs/m/n/12 11.2. 
- []
-
-
-Overfull \hbox (3.21837pt too wide) detected at line 104
-\T1/fvs/m/n/12 11.2.1. 
+\T1/fvs/m/n/12 8.3.10. 
  []
 
 
 Overfull \hbox (2.93756pt too wide) detected at line 106
-\T1/fvs/b/n/12 12. 
+\T1/fvs/b/n/12 10. 
  []
 
 
 Overfull \hbox (2.63512pt too wide) detected at line 107
-\T1/fvs/m/n/12 12.1. 
+\T1/fvs/m/n/12 10.1. 
  []
 
 
 Overfull \hbox (2.63512pt too wide) detected at line 108
-\T1/fvs/m/n/12 12.2. 
+\T1/fvs/m/n/12 10.2. 
  []
 
 
 Overfull \hbox (2.63512pt too wide) detected at line 109
-\T1/fvs/m/n/12 12.3. 
+\T1/fvs/m/n/12 10.3. 
  []
 
 
-Overfull \hbox (2.93756pt too wide) detected at line 110
-\T1/fvs/b/n/12 13. 
- []
-
-LaTeX Info: Redefining \sptext on input line 110.
-LaTeX Info: Redefining \. on input line 110.
-LaTeX Info: Redefining \% on input line 110.
-[4]
-Overfull \hbox (2.63512pt too wide) detected at line 111
-\T1/fvs/m/n/12 13.1. 
+Overfull \hbox (3.21837pt too wide) detected at line 110
+\T1/fvs/m/n/12 10.3.1. 
  []
 
 
-Overfull \hbox (2.63512pt too wide) detected at line 112
-\T1/fvs/m/n/12 13.2. 
+Overfull \hbox (3.21837pt too wide) detected at line 111
+\T1/fvs/m/n/12 10.3.2. 
  []
 
 
-Overfull \hbox (3.21837pt too wide) detected at line 113
-\T1/fvs/m/n/12 13.2.1. 
+Overfull \hbox (3.21837pt too wide) detected at line 112
+\T1/fvs/m/n/12 10.3.3. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 113
+\T1/fvs/m/n/12 10.4. 
  []
 
 
 Overfull \hbox (3.21837pt too wide) detected at line 114
-\T1/fvs/m/n/12 13.2.2. 
+\T1/fvs/m/n/12 10.4.1. 
  []
 
-
+LaTeX Info: Redefining \sptext on input line 115.
+LaTeX Info: Redefining \. on input line 115.
+LaTeX Info: Redefining \% on input line 115.
+[4]
 Overfull \hbox (3.21837pt too wide) detected at line 115
-\T1/fvs/m/n/12 13.2.3. 
+\T1/fvs/m/n/12 10.4.2. 
  []
 
 
 Overfull \hbox (3.21837pt too wide) detected at line 116
-\T1/fvs/m/n/12 13.2.4. 
- []
-
-
-Overfull \hbox (3.21837pt too wide) detected at line 117
-\T1/fvs/m/n/12 13.2.5. 
+\T1/fvs/m/n/12 10.4.3. 
  []
 
 
 Overfull \hbox (2.93756pt too wide) detected at line 118
-\T1/fvs/b/n/12 14. 
+\T1/fvs/b/n/12 11. 
  []
 
 
-Overfull \hbox (2.93756pt too wide) detected at line 120
-\T1/fvs/b/n/12 15. 
+Overfull \hbox (2.63512pt too wide) detected at line 119
+\T1/fvs/m/n/12 11.1. 
  []
 
 
-Overfull \hbox (2.63512pt too wide) detected at line 121
-\T1/fvs/m/n/12 15.1. 
+Overfull \hbox (2.63512pt too wide) detected at line 120
+\T1/fvs/m/n/12 11.2. 
  []
 
 
-Overfull \hbox (2.63512pt too wide) detected at line 122
-\T1/fvs/m/n/12 15.2. 
+Overfull \hbox (3.21837pt too wide) detected at line 121
+\T1/fvs/m/n/12 11.2.1. 
  []
 
 
-Overfull \hbox (2.63512pt too wide) detected at line 123
-\T1/fvs/m/n/12 15.3. 
+Overfull \hbox (2.93756pt too wide) detected at line 123
+\T1/fvs/b/n/12 12. 
  []
 
 
 Overfull \hbox (2.63512pt too wide) detected at line 124
-\T1/fvs/m/n/12 15.4. 
+\T1/fvs/m/n/12 12.1. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 125
+\T1/fvs/m/n/12 12.2. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 126
+\T1/fvs/m/n/12 12.3. 
+ []
+
+
+Overfull \hbox (2.93756pt too wide) detected at line 127
+\T1/fvs/b/n/12 13. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 128
+\T1/fvs/m/n/12 13.1. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 129
+\T1/fvs/m/n/12 13.2. 
+ []
+
+
+Overfull \hbox (3.21837pt too wide) detected at line 130
+\T1/fvs/m/n/12 13.2.1. 
+ []
+
+
+Overfull \hbox (3.21837pt too wide) detected at line 131
+\T1/fvs/m/n/12 13.2.2. 
+ []
+
+
+Overfull \hbox (3.21837pt too wide) detected at line 132
+\T1/fvs/m/n/12 13.2.3. 
+ []
+
+
+Overfull \hbox (3.21837pt too wide) detected at line 133
+\T1/fvs/m/n/12 13.2.4. 
+ []
+
+
+Overfull \hbox (3.21837pt too wide) detected at line 134
+\T1/fvs/m/n/12 13.2.5. 
+ []
+
+
+Overfull \hbox (2.93756pt too wide) detected at line 135
+\T1/fvs/b/n/12 14. 
  []
 
 )
@@ -1624,7 +1604,7 @@ LaTeX Info: Redefining \% on input line 71.
 LaTeX Info: Redefining \. on input line 118.
 LaTeX Info: Redefining \% on input line 118.
  [30]
-<img/diagramas/usuario.png, id=826, 1027.84pt x 1027.84pt>
+<img/diagramas/usuario.png, id=886, 1027.84pt x 1027.84pt>
 File: img/diagramas/usuario.png Graphic file (type png)
 <use img/diagramas/usuario.png>
 Package pdftex.def Info: img/diagramas/usuario.png  used on input line 176.
@@ -1635,7 +1615,7 @@ LaTeX Info: Redefining \% on input line 180.
 LaTeX Info: Redefining \. on input line 210.
 LaTeX Info: Redefining \% on input line 210.
  [32 <./img/diagramas/usuario.png (PNG copy)>]
-<img/diagramas/rol.png, id=841, 1027.84pt x 1027.84pt>
+<img/diagramas/rol.png, id=901, 1027.84pt x 1027.84pt>
 File: img/diagramas/rol.png Graphic file (type png)
 <use img/diagramas/rol.png>
 Package pdftex.def Info: img/diagramas/rol.png  used on input line 245.
@@ -1649,7 +1629,7 @@ LaTeX Info: Redefining \% on input line 249.
 LaTeX Info: Redefining \. on input line 288.
 LaTeX Info: Redefining \% on input line 288.
  [34 <./img/diagramas/rol.png (PNG copy)>]
-<img/diagramas/direccion.png, id=854, 1027.84pt x 1027.84pt>
+<img/diagramas/direccion.png, id=914, 1027.84pt x 1027.84pt>
 File: img/diagramas/direccion.png Graphic file (type png)
 <use img/diagramas/direccion.png>
 Package pdftex.def Info: img/diagramas/direccion.png  used on input line 339.
@@ -1660,7 +1640,7 @@ LaTeX Info: Redefining \% on input line 343.
 LaTeX Info: Redefining \. on input line 378.
 LaTeX Info: Redefining \% on input line 378.
  [36 <./img/diagramas/direccion.png (PNG copy)>]
-<img/diagramas/envio_servicio.png, id=869, 1027.84pt x 1027.84pt>
+<img/diagramas/envio_servicio.png, id=929, 1027.84pt x 1027.84pt>
 File: img/diagramas/envio_servicio.png Graphic file (type png)
 <use img/diagramas/envio_servicio.png>
 Package pdftex.def Info: img/diagramas/envio_servicio.png  used on input line 445.
@@ -1674,7 +1654,7 @@ LaTeX Info: Redefining \% on input line 481.
 LaTeX Info: Redefining \. on input line 542.
 LaTeX Info: Redefining \% on input line 542.
  [39]
-<img/diagramas/contrato.png, id=886, 1027.84pt x 1027.84pt>
+<img/diagramas/contrato.png, id=946, 1027.84pt x 1027.84pt>
 File: img/diagramas/contrato.png Graphic file (type png)
 <use img/diagramas/contrato.png>
 Package pdftex.def Info: img/diagramas/contrato.png  used on input line 552.
@@ -1682,7 +1662,7 @@ Package pdftex.def Info: img/diagramas/contrato.png  used on input line 552.
 LaTeX Info: Redefining \. on input line 580.
 LaTeX Info: Redefining \% on input line 580.
  [40 <./img/diagramas/contrato.png (PNG copy)>]
-<img/diagramas/subscricion.png, id=895, 1027.84pt x 1027.84pt>
+<img/diagramas/subscricion.png, id=955, 1027.84pt x 1027.84pt>
 File: img/diagramas/subscricion.png Graphic file (type png)
 <use img/diagramas/subscricion.png>
 Package pdftex.def Info: img/diagramas/subscricion.png  used on input line 638.
@@ -1693,7 +1673,7 @@ LaTeX Info: Redefining \% on input line 642.
 LaTeX Info: Redefining \. on input line 673.
 LaTeX Info: Redefining \% on input line 673.
  [42 <./img/diagramas/subscricion.png (PNG copy)>]
-<img/diagramas/tipo.png, id=909, 1027.84pt x 1027.84pt>
+<img/diagramas/tipo.png, id=969, 1027.84pt x 1027.84pt>
 File: img/diagramas/tipo.png Graphic file (type png)
 <use img/diagramas/tipo.png>
 Package pdftex.def Info: img/diagramas/tipo.png  used on input line 732.
@@ -1709,7 +1689,7 @@ LaTeX Info: Redefining \% on input line 829.
  [45]
 LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
 (Font)              scaled to size 7.19995pt on input line 837.
-<img/diagramas/producto.png, id=926, 1027.84pt x 1027.84pt>
+<img/diagramas/producto.png, id=986, 1027.84pt x 1027.84pt>
 File: img/diagramas/producto.png Graphic file (type png)
 <use img/diagramas/producto.png>
 Package pdftex.def Info: img/diagramas/producto.png  used on input line 863.
@@ -1720,7 +1700,7 @@ LaTeX Info: Redefining \% on input line 888.
 LaTeX Info: Redefining \. on input line 927.
 LaTeX Info: Redefining \% on input line 927.
  [47]
-<img/diagramas/categoria.png, id=941, 1027.84pt x 1027.84pt>
+<img/diagramas/categoria.png, id=1001, 1027.84pt x 1027.84pt>
 File: img/diagramas/categoria.png Graphic file (type png)
 <use img/diagramas/categoria.png>
 Package pdftex.def Info: img/diagramas/categoria.png  used on input line 944.
@@ -1728,7 +1708,7 @@ Package pdftex.def Info: img/diagramas/categoria.png  used on input line 944.
 LaTeX Info: Redefining \. on input line 972.
 LaTeX Info: Redefining \% on input line 972.
  [48 <./img/diagramas/categoria.png (PNG copy)>]
-<img/diagramas/contrato_productos.png, id=950, 1027.84pt x 1027.84pt>
+<img/diagramas/contrato_productos.png, id=1010, 1027.84pt x 1027.84pt>
 File: img/diagramas/contrato_productos.png Graphic file (type png)
 <use img/diagramas/contrato_productos.png>
 Package pdftex.def Info: img/diagramas/contrato_productos.png  used on input line 1030.
@@ -1763,7 +1743,7 @@ LaTeX Info: Redefining \% on input line 1251.
 LaTeX Info: Redefining \. on input line 1258.
 LaTeX Info: Redefining \% on input line 1258.
  [55]
-<img/diagramas/diagrama_Proyecto.jpg, id=986, 977.6525pt x 727.71875pt>
+<img/diagramas/diagrama_Proyecto.jpg, id=1046, 977.6525pt x 727.71875pt>
 File: img/diagramas/diagrama_Proyecto.jpg Graphic file (type jpg)
 <use img/diagramas/diagrama_Proyecto.jpg>
 Package pdftex.def Info: img/diagramas/diagrama_Proyecto.jpg  used on input line 1263.
@@ -1796,81 +1776,89 @@ Cap\'{\i }tulo 8.
 [64
 
 ]
-LaTeX Info: Redefining \. on input line 59.
-LaTeX Info: Redefining \% on input line 59.
- [65]
-LaTeX Info: Redefining \. on input line 95.
-LaTeX Info: Redefining \% on input line 95.
- [66]
-LaTeX Info: Redefining \. on input line 101.
-LaTeX Info: Redefining \% on input line 101.
- [67
+Overfull \hbox (1.66231pt too wide) in paragraph at lines 48--50
+[]\T1/fvs/b/n/12 Esquema re-la-cio-nal\T1/fvs/m/n/12 : Usuario($[]$, nom-bre, ape-lli-dos, te-le-fono, email, pass-word,
+ []
+
+LaTeX Info: Redefining \. on input line 68.
+LaTeX Info: Redefining \% on input line 68.
+[65]
+Overfull \hbox (47.10757pt too wide) in paragraph at lines 103--105
+[]\T1/fvs/b/n/12 Esquema re-la-cio-nal\T1/fvs/m/n/12 : Envio_servicio($[]$, tiem-po_envio, cos-te_base, ac-ti-vo, id_direccion) 
+ []
+
+LaTeX Info: Redefining \. on input line 114.
+LaTeX Info: Redefining \% on input line 114.
+[66]
+LaTeX Info: Redefining \. on input line 155.
+LaTeX Info: Redefining \% on input line 155.
+ [67]
+LaTeX Info: Redefining \. on input line 178.
+LaTeX Info: Redefining \% on input line 178.
+ [68]
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family fvs in TS1 encoding.
+            Default family used instead on input line 189.
+LaTeX Info: Redefining \. on input line 233.
+LaTeX Info: Redefining \% on input line 233.
+ [69]
+Overfull \hbox (8.28345pt too wide) in paragraph at lines 274--279
+[]\T1/fvs/b/n/12 Normalizaci�n\T1/fvs/m/n/12 : To-dos los atri-bu-tos de-pen-den com-ple-ta-men-te de id. id_producto
+ []
+
+LaTeX Info: Redefining \. on input line 293.
+LaTeX Info: Redefining \% on input line 293.
+[70]
+Underfull \hbox (badness 1546) in paragraph at lines 344--344
+[]|\T1/cmr/m/n/12 ($[]$, id_producto, id_contrato, men-sua-li-
+ []
+
+LaTeX Info: Redefining \. on input line 354.
+LaTeX Info: Redefining \% on input line 354.
+[71]
+LaTeX Info: Redefining \. on input line 360.
+LaTeX Info: Redefining \% on input line 360.
+ [72
 
 ]) (capítulos/09_Diseno_arquitectonico.tex
 Cap\'{\i }tulo 9.
-) (capítulos/10_Diseno_de_la_interfaz.tex [68
+) (capítulos/10_Diseno_de_la_interfaz.tex [73
 
 
 ]
 Cap\'{\i }tulo 10.
-[69
+[74
 
 ])
 LaTeX Info: Redefining \. on input line 236.
 LaTeX Info: Redefining \% on input line 236.
- [70] [71
+ [75] [76
 
-] [72] (capítulos/11_Pruebas.tex
+] [77] (capítulos/11_Pruebas.tex
 Cap\'{\i }tulo 11.
-) [73
+) [78
 
-] [74
+] [79
 
-] [75] (capítulos/12_Conclusiones.tex
+] [80] (capítulos/12_Conclusiones.tex
 Cap\'{\i }tulo 12.
-) (capítulos/13_Futuras_mejoras.tex [76
+) (capítulos/13_Futuras_mejoras.tex [81
 
 ]
 Cap\'{\i }tulo 13.
-) (capítulos/20_Anexos.tex [77
+) (capítulos/20_Anexos.tex [82
 
 ]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [78]
+ [83]
 Cap\'{\i }tulo 14.
-) [79
+) [84
 
-] (capítulos/99_Readme.tex [80
-
-]
-Cap\'{\i }tulo 15.
-<img/diagramas/Modelo-Físico-ER.png, id=1140, 505.89pt x 289.08pt>
-File: img/diagramas/Modelo-Físico-ER.png Graphic file (type png)
-<use img/diagramas/Modelo-Físico-ER.png>
-Package pdftex.def Info: img/diagramas/Modelo-Físico-ER.png  used on input line 25.
-(pdftex.def)             Requested size: 455.29678pt x 260.16959pt.
-LaTeX Font Info:    Font shape `T1/fvs/m/sl' in size <12> not available
-(Font)              Font shape `T1/fvs/m/it' tried instead on input line 34.
-LaTeX Font Info:    Font shape `T1/fvs/m/it' will be
-(Font)              scaled to size 10.79993pt on input line 34.
-
-LaTeX Font Warning: Font shape `T1/fvs/m/sc' undefined
-(Font)              using `T1/fvs/m/n' instead on input line 35.
-
-[81
+] [85
 
 ]
-LaTeX Info: Redefining \. on input line 70.
-LaTeX Info: Redefining \% on input line 70.
- [82 <./img/diagramas/Modelo-Físico-ER.png>]
-LaTeX Info: Redefining \. on input line 99.
-LaTeX Info: Redefining \% on input line 99.
- [83])
-LaTeX Info: Redefining \. on input line 257.
-LaTeX Info: Redefining \% on input line 257.
- [84]
-runsystem(latexminted cleantemp  --timestamp 20251129235151 FAD58DE7366495DB4650CFEFAC2FCD61)...disabled (restricted).
+runsystem(latexminted cleantemp  --timestamp 20251130114619 FAD58DE7366495DB4650CFEFAC2FCD61)...disabled (restricted).
 
  (d:\clase\2º\documentacion\DAW_25_26_Medac_Arena___Proyecto\build\main.aux
 LaTeX Info: Redefining \sptext on input line 13.
@@ -1881,28 +1869,24 @@ LaTeX Info: Redefining \% on input line 13.
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
  ***********
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A72B1E2E45359B0F3233CEB9B4323CF4;20374.
+(rerunfilecheck)             Checksum: 368E65C8BAAA4EC201FC502F3EE10F23;21986.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41087 strings out of 467871
- 813004 string characters out of 5418375
- 1759718 words of memory out of 5000000
- 69030 multiletter control sequences out of 15000+600000
- 683501 words of font info for 83 fonts, out of 8000000 for 9000
+ 41102 strings out of 467871
+ 812684 string characters out of 5418375
+ 1759907 words of memory out of 5000000
+ 69029 multiletter control sequences out of 15000+600000
+ 684614 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,15n,117p,1257b,2411s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/javij/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/javij/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/javij/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/javij/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsb8a.pfb><C:/Users/javij/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsr8a.pfb><C:/Users/javij/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsro8a.pfb>
-Output written on d:\clase\2º\documentacion\DAW_25_26_Medac_Arena___Proyecto\build\main.pdf (92 pages, 9661570 bytes).
+ 84i,15n,117p,1257b,2398s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1200.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/javij/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/javij/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/javij/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/javij/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsb8a.pfb><C:/Users/javij/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsr8a.pfb><C:/Users/javij/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsro8a.pfb>
+Output written on d:\clase\2º\documentacion\DAW_25_26_Medac_Arena___Proyecto\build\main.pdf (93 pages, 9407470 bytes).
 PDF statistics:
- 1658 PDF objects out of 1728 (max. 8388607)
- 256 named destinations out of 1000 (max. 500000)
- 1067 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1682 PDF objects out of 1728 (max. 8388607)
+ 273 named destinations out of 1000 (max. 500000)
+ 1158 words of extra memory for PDF output out of 10000 (max. 10000000)
 
