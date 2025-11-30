@@ -7,23 +7,50 @@ Este capítulo identificará a los tipos de actores que podrán interactuar con 
 \section{Actores}
 
 Un actor es una representación de una persona, proceso o entidad externa que interactúa con el sistema. Se van a considerar los siguientes tipos de actores:
-    \begin{itemize}
-        \item Administrador
+   \begin{itemize}
+        \item \textbf{Administrador}
         \begin{itemize}
-            \item Este tipo de usuario estará registrado en el sistema y tendrá un control completo de la aplicación. 
-            \item En particular, tendrá las competencias exclusivas de la gestión de...
+            \item Este tipo de usuario estará registrado en el sistema y tendrá un control completo de la aplicación.
+            \item Tendrá competencias exclusivas para la gestión del catálogo de productos, categorías, planes, contratos, usuarios y órdenes de logística.
         \end{itemize}
+
+        \item \textbf{Cliente}
+        \begin{itemize}
+            \item Usuario registrado que utiliza la plataforma para alquilar material de gimnasio.
+            \item Podrá gestionar su cuenta, consultar el catálogo de productos, añadir productos al carrito, contratar planes, gestionar sus direcciones, contratos, suscripciones y pagos.
+        \end{itemize}
+
+        \item \textbf{Usuario público}
+        \begin{itemize}
+            \item Usuario no autenticado que accede a la página web sin necesidad de registro.
+            \item Podrá consultar la página inicial y una vista general del catálogo antes de registrarse o iniciar sesión.
+        \end{itemize}
+
+        \item \textbf{Pasarela de pago}
+        \begin{itemize}
+            \item Sistema externo encargado de autorizar y capturar los pagos realizados por el cliente.
+            \item Permite confirmar o rechazar las operaciones de pago asociadas a los contratos y suscripciones.
+        \end{itemize}
+
      \end{itemize}
+
 
 \section{Casos de uso}
 
   Los casos de uso describen las acciones que pueden desarrollar los actores del sistema. Se ha identificado los siguientes casos de uso principales, que son descritos en las secciones que se indican:
-    \begin{itemize}
+\begin{itemize}
     \item \textbf{CU-0. Diagrama de contexto} (Sección \ref{sec:CU-0}).  
-    \item \textbf{CU-1. Administrar...} (Sección \ref{sec:CU-1}). 
+    \item \textbf{CU-1. Gestionar cuenta de usuario} (Sección \ref{sec:CU-1}). 
+    \item \textbf{CU-2. Consultar catálogo de productos} (Sección \ref{sec:CU-2}).
+    \item \textbf{CU-3. Gestionar carrito y contratos puntuales} (Sección \ref{sec:CU-3}).
+    \item \textbf{CU-4. Gestionar suscripción} (Sección \ref{sec:CU-4}).
+    \item \textbf{CU-5. Gestionar direcciones y envíos} (Sección \ref{sec:CU-5}).
+    \item \textbf{CU-6. Gestionar pagos y facturas} (Sección \ref{sec:CU-6}).
+    \item \textbf{CU-7. Consultar panel del cliente} (Sección \ref{sec:CU-7}).
+    \item \textbf{CU-8. Administrar la plataforma} (Sección \ref{sec:CU-8}).
 \end{itemize}
 
-\subsection{Caso de Uso 0. Diagrama de Contexto}\label{sec:CU-0}         
+\subsection{Caso de Uso 0. Diagrama de Contexto}\label{sec:CU-0}
 
   El diagrama de contexto engloba los casos de uso principales que componen el sistemas. Véanse la Figura \ref{fig:Diagrama-Contexto} y la Tabla \ref{tab:CU-0}.
 
@@ -34,6 +61,7 @@ Un actor es una representación de una persona, proceso o entidad externa que in
         \caption{Diagrama de Contexto}\label{fig:Diagrama-Contexto}
 \end{figure}
 
+
 \begin{table}[H]
 \caption{CU-0. Diagrama de contexto}\label{tab:CU-0}
 \begin{center}
@@ -41,18 +69,24 @@ Un actor es una representación de una persona, proceso o entidad externa que in
     \hline
     \multicolumn{2}{|c|}{Caso de uso 0 - Diagrama de contexto} \\ 
     \hline \hline
-    Actores                 &   Administrador \\ \hline
-    Descripción             &   Acciones principales del sistema\\  \hline
-    Precondiciones          &   El usuario debe acceder a la página inicial de la aplicación   \\  \hline
-    Casos de uso            &   CU-1. \\  
-    & CU-2. Administrar \\ 
-    \hline
-    Flujo principal     &  1a. El usuario público accede a la aplicación sin necesidad de iniciar sesión y podrá. \\
-        & 1b. El resto de usuarios se deberá identificar para acceder a los módulos correspondientes dentro de la aplicación.
+    Actores                 &   Usuario público, Cliente, Administrador, Pasarela de pago, Sistema de notificaciones \\ \hline
+    Descripción             &   Visión general de las acciones principales del sistema de alquiler de material de gimnasio. \\  \hline
+    Precondiciones          &   El usuario debe acceder a la página inicial de la aplicación web mediante un navegador compatible.   \\  \hline
+    Casos de uso            &   CU-1. Gestionar cuenta de usuario. \\  
+    &   CU-2. Consultar catálogo de productos. \\
+    &   CU-3. Gestionar carrito y contratos puntuales. \\
+    &   CU-4. Gestionar suscripción por metros cuadrados. \\
+    &   CU-5. Gestionar direcciones y envíos. \\
+    &   CU-6. Gestionar pagos y facturas. \\
+    &   CU-7. Consultar panel del cliente. \\
+    &   CU-8. Administrar la plataforma. \\
+    &   CU-9. Gestionar notificaciones automáticas. \\ \hline
+    Flujo principal     &  1a. El usuario público accede a la aplicación sin necesidad de iniciar sesión y puede consultar la página inicial y el catálogo básico de productos. \\
+        & 1b. El cliente o el administrador se identifican en el sistema para acceder a las funcionalidades asociadas a su rol (gestión de cuenta, alquiler de productos, administración del catálogo, etc.).
     \\ \hline
-    Flujo alternativo    & 1. La aplicación no se carga correctamente. \\
-      & 2. Se informa del error al usuario. \\
-      & 3. Se informa al usuario que puede intentar cargar de nuevo la aplicación.
+    Flujo alternativo    & 1. La aplicación no se carga correctamente o se produce un error en el servidor. \\
+      & 2. Se informa del error al usuario mediante un mensaje adecuado. \\
+      & 3. Se indica al usuario que puede intentar cargar de nuevo la aplicación o volver a intentarlo más tarde.
     \\  \hline
     \end{tabular}
     \end{center}
@@ -62,59 +96,248 @@ Un actor es una representación de una persona, proceso o entidad externa que in
 
 \subsection{CU-1. }\label{sec:CU-1}
 
-El caso de uso \textit{CU-1. } describe las acciones que puede realizar  (véanse la Tabla \ref{tab:CU-1} y la Figura \ref{fig:Diagrama-Caso de uso 1.}.). Este caso de uso está compuesto por los siguientes sub-casos de uso que se describen en las tablas que se indican:
+El caso de uso \textit{CU-1.  Gestionar cuenta de usuario} describe las acciones que puede realizar  (véanse la Tabla \ref{tab:CU-1} y la Figura \ref{fig:Diagrama-Caso de uso 1.}.). Este caso de uso está compuesto por los siguientes sub-casos de uso que se describen en las tablas que se indican:
 \begin{itemize}
-    \item CU-1.1 
+    \item CU-1.1. Registrarse en la plataforma.
+    \item CU-1.2. Iniciar sesión.
+    \item CU-1.3. Cerrar sesión.
+    \item CU-1.4. Recuperar contraseña.
+    \item CU-1.5. Editar perfil de usuario.
 \end{itemize}
-
 \begin{figure}[H]
 \centering
 %\includegraphics[scale=0.75]{img/diagramas/Funcional/CU-1.png}
-\caption{CU-1.}\label{fig:Diagrama-Caso de uso 1.}   
+\caption{CU-1.}\label{fig:Diagrama-Caso de uso 1.}
 \end{figure}
 
+
 \begin{table}[H]
-\caption{CU-1.}\label{tab:CU-1}
+\caption{CU-1. Gestionar cuenta de usuario}\label{tab:CU-1}
 \begin{center}
     \begin{tabular}{|l|p{12cm}|}
     \hline
-    \multicolumn{2}{|c|}{Caso de uso 1 - } \\ 
+    \multicolumn{2}{|c|}{Caso de uso 1 - Gestionar cuenta de usuario} \\ 
     \hline \hline
-    Actores                 &   Usua          \\ \hline
-    Descripción             &   Acciones que puede realizar el usuario  \\  \hline
-    Precondiciones          &   El usuario debe haber accedido a la página principal de la aplicación y elegido el caso de uso CU-1..   \\  \hline
-    Casos de uso            &   CU-1.1.  \\  
-    & CU-1.2. Administrar  \\ 
+    Actores                 &   Usuario público, Cliente, Administrador \\ \hline
+    Descripción             &   Permite registrar una nueva cuenta, iniciar y cerrar sesión, recuperar la contraseña y editar los datos básicos del perfil de usuario. \\  \hline
+    Precondiciones          &   El usuario debe haber accedido a la página principal de la aplicación. Para editar el perfil o cerrar sesión, el usuario debe estar autenticado.   \\  \hline
+    Casos de uso            &   CU-1.1. Registrarse en la plataforma.  \\  
+                            &   CU-1.2. Iniciar sesión.  \\
+                            &   CU-1.3. Cerrar sesión.  \\
+                            &   CU-1.4. Recuperar contraseña.  \\
+                            &   CU-1.5. Editar perfil de usuario.  \\ \hline
 
-    \hline
-    Flujo principal     &   1. El usuario elige un \\ 
-    & 2. El sistema muestra  \\ \hline
-    Flujo alternativo    &  1. Se produce un error al intentar ejecutar la información elegida. \\ 
-                            &  2. Se informa al usuario del error.  \\  
-                            &  3. El sistema vuelve a mostrar las opciones disponibles.  \\  \hline    
+    Flujo principal     &   1. El usuario selecciona una opción relacionada con la gestión de su cuenta (registro, inicio de sesión, recuperación de contraseña o edición de perfil). \\ 
+                        &   2. El sistema muestra el formulario correspondiente. \\
+                        &   3. El usuario introduce la información requerida (datos personales, credenciales, correo de recuperación, etc.). \\
+                        &   4. El sistema valida la información introducida. \\
+                        &   5. Si la información es correcta, el sistema realiza la acción solicitada (creación de cuenta, inicio/cierre de sesión, actualización de datos o envío de correo de recuperación). \\ \hline
+
+    Flujo alternativo    &  1. Se introduce información incompleta o no válida en el formulario. \\ 
+                            &  2. El sistema muestra mensajes de error indicando los campos que deben corregirse.  \\  
+                            &  3. El usuario modifica los datos y vuelve a enviar el formulario.  \\  
+                            &  4. Si el problema persiste (por ejemplo, correo ya registrado o credenciales incorrectas), se informa al usuario y se le permite volver a intentarlo o cancelar la operación. \\  \hline    
             \end{tabular}
         \end{center}
     \end{table}
 
 \newpage
 
+\subsection{CU-2. Consultar catálogo de productos}\label{sec:CU-2}
+
+El caso de uso \textit{CU-2. Consultar catálogo de productos} describe las acciones que puede realizar un usuario (público, cliente o administrador) para visualizar el catálogo, aplicar filtros y consultar la ficha detallada de un producto. Véanse la Tabla \ref{tab:CU-2} y la Figura \ref{fig:Diagrama-CU2}. Este caso de uso está compuesto por los siguientes sub-casos de uso:
+\begin{itemize}
+    \item CU-2.1. Listar productos.
+    \item CU-2.2. Buscar productos mediante filtros.
+    \item CU-2.3. Consultar ficha de producto.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+%\includegraphics[scale=0.75]{img/diagramas/Funcional/CU-2.png}
+\caption{CU-2. Consultar catálogo de productos}\label{fig:Diagrama-CU2}   
+\end{figure}
+
+\begin{table}[H]
+\caption{CU-2. Consultar catálogo de productos}\label{tab:CU-2}
+\begin{center}
+    \begin{tabular}{|l|p{12cm}|}
+    \hline
+    \multicolumn{2}{|c|}{Caso de uso 2 - Consultar catálogo de productos} \\ 
+    \hline \hline
+    Actores                 &   Usuario público, Cliente, Administrador \\ \hline
+
+    Descripción             &   Permite visualizar el catálogo completo de productos disponibles, aplicar filtros de búsqueda (categoría, precio, espacio en m², instalación), y acceder a la ficha de un producto. \\  \hline
+
+    Precondiciones          &   El usuario debe haber accedido a la página principal de la aplicación o a la sección del catálogo. \\  \hline
+
+    Casos de uso            &   CU-2.1. Listar productos.  \\  
+    &   CU-2.2. Buscar productos mediante filtros.  \\ 
+    &   CU-2.3. Consultar ficha de producto. \\ \hline
+
+    Flujo principal     &   1. El usuario accede al catálogo de productos. \\ 
+    &   2. El sistema muestra la lista de productos disponibles. \\ 
+    &   3. El usuario puede aplicar filtros (categoría, precio, m², instalación). \\ 
+    &   4. El sistema actualiza la lista en función de los filtros. \\ 
+    &   5. El usuario selecciona un producto para ver su ficha detallada. \\ 
+    &   6. El sistema muestra la información completa del producto (fotos, descripción, m², tarifas, disponibilidad). \\ \hline
+    Flujo alternativo    &  1. No existen productos que cumplan los filtros seleccionados.  \\ 
+    &  2. El sistema muestra un mensaje indicando que no hay resultados. \\ 
+    &  3. Permite modificar los filtros o limpiar la búsqueda. \\ \hline    
+            \end{tabular}
+        \end{center}
+    \end{table}
+
+\subsection{CU-3. Gestionar carrito y contratos puntuales}\label{sec:CU-3}
+
+El caso de uso \textit{CU-3. Gestionar carrito y contratos puntuales} describe las acciones que puede realizar un cliente para añadir productos al carrito, configurar la duración del alquiler, calcular el precio final y generar un contrato. Véanse la Tabla \ref{tab:CU-3} y la Figura \ref{fig:Diagrama-CU3}. Este caso de uso está compuesto por los siguientes sub-casos de uso:
+\begin{itemize}
+    \item CU-3.1. Añadir producto al carrito.
+    \item CU-3.2. Modificar o eliminar productos del carrito.
+    \item CU-3.3. Calcular precio del contrato.
+    \item CU-3.4. Generar contrato.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+%\includegraphics[scale=0.75]{img/diagramas/Funcional/CU-3.png}
+\caption{CU-3. Gestionar carrito y contratos puntuales}\label{fig:Diagrama-CU3}   
+\end{figure}
+
+\begin{table}[H]
+\caption{CU-3. Gestionar carrito y contratos puntuales}\label{tab:CU-3}
+\begin{center}
+    \begin{tabular}{|l|p{12cm}|}
+    \hline
+    \multicolumn{2}{|c|}{Caso de uso 3 - Gestionar carrito y contratos puntuales} \\ 
+    \hline \hline
+
+    Actores                 &   Cliente \\ \hline
+
+    Descripción             &   Permite añadir productos al carrito, configurar la duración del alquiler, calcular el precio final y generar un contrato con dirección y fechas seleccionadas. \\  \hline
+
+    Precondiciones          &   El usuario debe estar autenticado para generar un contrato; para usar el carrito puede estar o no registrado. \\  \hline
+
+    Casos de uso            &   CU-3.1. Añadir producto al carrito.  \\  
+                            &   CU-3.2. Modificar o eliminar productos del carrito.  \\ 
+                            &   CU-3.3. Calcular precio del contrato. \\ 
+                            &   CU-3.4. Generar contrato. \\ \hline
+
+    Flujo principal     &   1. El usuario selecciona un producto del catálogo. \\ 
+                        &   2. Añade el producto al carrito indicando su duración (días/semanas/meses). \\ 
+                        &   3. El sistema actualiza el carrito y calcula el precio del alquiler. \\ 
+                        &   4. El usuario selecciona la dirección de entrega y recogida. \\ 
+                        &   5. El sistema genera un resumen del contrato. \\ 
+                        &   6. El usuario confirma la operación y se genera el contrato pendiente de pago. \\ \hline
+
+    Flujo alternativo    &  1. Un producto ya no está disponible.  \\ 
+                            &  2. El sistema avisa al usuario y lo elimina del carrito. \\ 
+                            &  3. El usuario puede modificar la duración o seleccionar otro producto.  \\ \hline    
+            \end{tabular}
+        \end{center}
+    \end{table}
+\newpage
+
+\subsection{CU-4. Gestionar suscripción}\label{sec:CU-4}
+
+El caso de uso \textit{CU-4. Gestionar suscripción} describe las acciones que realiza el cliente para contratar, gestionar y cancelar una suscripción mensual a un plan de servicio. Véanse la Tabla \ref{tab:CU-4} y la Figura \ref{fig:Diagrama-CU4}. Este caso de uso está compuesto por los siguientes sub-casos de uso:
+\begin{itemize}
+    \item CU-4.1. Contratar suscripción.
+    \item CU-4.2. Consultar estado de la suscripción.
+    \item CU-4.3. Pausar o cancelar la suscripción.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+%\includegraphics[scale=0.75]{img/diagramas/Funcional/CU-4.png}
+\caption{CU-4. Gestionar suscripción}\label{fig:Diagrama-CU4}   
+\end{figure}
+
+\begin{table}[H]
+\caption{CU-4. Gestionar suscripción}\label{tab:CU-4}
+\begin{center}
+    \begin{tabular}{|l|p{12cm}|}
+    \hline
+    \multicolumn{2}{|c|}{Caso de uso 4 - Gestionar suscripción} \\ 
+    \hline \hline
+
+    Actores                 &   Cliente \\ \hline
+
+    Descripción             &   Permite contratar un plan de suscripción mensual, consultar su estado actual (activa, pausada, cancelada) y gestionarla, incluyendo pausarla temporalmente o cancelarla de forma permanente. \\  \hline
+
+    Precondiciones          &   El usuario debe estar autenticado. Debe existir al menos un plan de suscripción disponible. \\  \hline
+
+    Casos de uso            &   CU-4.1. Contratar suscripción.  \\  
+                            &   CU-4.2. Consultar estado de la suscripción.  \\ 
+                            &   CU-4.3. Pausar o cancelar la suscripción. \\ \hline
+
+    Flujo principal     &   1. El usuario accede a la sección de planes de suscripción. \\ 
+                        &   2. Selecciona uno de los planes disponibles. \\ 
+                        &   3. El sistema muestra la información completa del plan (precio, características, período de facturación). \\ 
+                        &   4. El usuario confirma la contratación del plan. \\ 
+                        &   5. El sistema activa la suscripción y registra la fecha de inicio y el método de pago. \\ \hline
+
+    Flujo alternativo    &  1. El usuario intenta contratar un plan pero su método de pago falla o no está disponible.  \\ 
+                            &  2. El sistema muestra un mensaje de error indicando la incidencia. \\ 
+                            &  3. El usuario puede actualizar su método de pago o intentar de nuevo la contratación. \\ \hline    
+            \end{tabular}
+        \end{center}
+    \end{table}
+
+
 \section{Validación de casos de uso}
-La tabla \ref{tab:Validación CU} permite comprobar que los casos de uso cubren todos los requisitos funcionales de la aplicación web propuestos en la Sección \ref{sec:requisitos-funcionales}.
+La tabla \ref{tab:ValidacionCU} permite comprobar que los casos de uso cubren todos los requisitos funcionales de la aplicación web propuestos en la Sección \ref{sec:requisitos-funcionales}.
+
 \begin{table}[H]
     \centering
-    \caption{Tabla validación casos de uso} \label{tab:Validación CU}
+    \caption{Tabla de validación casos de uso} \label{tab:ValidacionCU}
     \begin{tabular}{|l|l|}
         \hline
             \textbf{Requisito funcional} & \textbf{Caso de uso} \\ 
         \hline 
         \hline         
-            \textbf{RF-1}  & CU 1.1 \\
+            \textbf{RF-01}  & CU-1 \\ % Gestionar cuenta de usuario
         \hline
-            \textbf{RF-8}  & CU 2.1 \\
+            \textbf{RF-02}  & CU-1 \\ % Gestionar cuenta de usuario
         \hline
-    \end{tabular}%
-    \end{table}
-    
+            \textbf{RF-03}  & CU-1, CU-8 \\ % Roles y administración
+        \hline
+            \textbf{RF-04}  & CU-2 \\ % Consultar catálogo
+        \hline
+            \textbf{RF-05}  & CU-2 \\ % Ficha de producto
+        \hline
+            \textbf{RF-06}  & CU-3 \\ % Carrito
+        \hline
+            \textbf{RF-07}  & CU-3 \\ % Cálculo de precio
+        \hline
+            \textbf{RF-08}  & CU-3 \\ % Checkout / contrato
+        \hline
+            \textbf{RF-09}  & CU-4 \\ % Gestionar suscripción
+        \hline
+            \textbf{RF-10}  & CU-4 \\ % Validación de suscripción
+        \hline
+            \textbf{RF-11}  & CU-4 \\ % Alta/pausa/cancelación
+        \hline
+            \textbf{RF-12}  & CU-5 \\ % CRUD direcciones
+        \hline
+            \textbf{RF-13}  & CU-3, CU-5 \\ % Seleccionar dirección en contrato
+        \hline
+            \textbf{RF-14}  & CU-5 \\ % Orden logística
+        \hline
+            \textbf{RF-15}  & CU-6 \\ % Pasarela de pago
+        \hline
+            \textbf{RF-16}  & CU-3, CU-6 \\ % Contrato solo si pago OK
+        \hline
+            \textbf{RF-17}  & CU-6 \\ % Factura PDF
+        \hline
+            \textbf{RF-18}  & CU-7 \\ % Panel cliente
+        \hline
+            \textbf{RF-19}  & CU-8 \\ % Backoffice admin
+        \hline
+    \end{tabular}
+\end{table}
+
+
 \newpage 
 
 \section{Diagrama de secuencia}
