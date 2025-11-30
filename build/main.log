@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.29)  30 NOV 2025 12:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.29)  30 NOV 2025 12:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1885,11 +1885,16 @@ LaTeX Info: Redefining \% on input line 349.
 LaTeX Info: Redefining \. on input line 354.
 LaTeX Info: Redefining \% on input line 354.
  [74]
+<img/diagramas/Datos/diagramaRelacional.png, id=1186, 1319.93124pt x 1004.75375pt>
+File: img/diagramas/Datos/diagramaRelacional.png Graphic file (type png)
+<use img/diagramas/Datos/diagramaRelacional.png>
+Package pdftex.def Info: img/diagramas/Datos/diagramaRelacional.png  used on input line 357.
+(pdftex.def)             Requested size: 395.98242pt x 301.42845pt.
 LaTeX Info: Redefining \. on input line 360.
 LaTeX Info: Redefining \% on input line 360.
  [75
 
-]) (capítulos/09_Diseno_arquitectonico.tex
+ <./img/diagramas/Datos/diagramaRelacional.png>]) (capítulos/09_Diseno_arquitectonico.tex
 Cap\'{\i }tulo 9.
 ) (capítulos/10_Diseno_de_la_interfaz.tex [76
 
@@ -1927,7 +1932,7 @@ Cap\'{\i }tulo 14.
 ] [88
 
 ]
-runsystem(latexminted cleantemp  --timestamp 20251130122049 FAD58DE7366495DB4650CFEFAC2FCD61)...disabled (restricted).
+runsystem(latexminted cleantemp  --timestamp 20251130124346 FAD58DE7366495DB4650CFEFAC2FCD61)...disabled (restricted).
 
  (d:\clase\2º\documentacion\DAW_25_26_Medac_Arena___Proyecto\build\main.aux
 LaTeX Info: Redefining \sptext on input line 13.
@@ -1945,17 +1950,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41175 strings out of 467871
- 815516 string characters out of 5418375
+ 41182 strings out of 467871
+ 815858 string characters out of 5418375
  1759907 words of memory out of 5000000
- 69099 multiletter control sequences out of 15000+600000
+ 69106 multiletter control sequences out of 15000+600000
  684614 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,15n,117p,1257b,2398s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1200.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/javij/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/javij/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/javij/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/javij/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsb8a.pfb><C:/Users/javij/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsr8a.pfb><C:/Users/javij/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsro8a.pfb>
-Output written on d:\clase\2º\documentacion\DAW_25_26_Medac_Arena___Proyecto\build\main.pdf (96 pages, 9427782 bytes).
+Output written on d:\clase\2º\documentacion\DAW_25_26_Medac_Arena___Proyecto\build\main.pdf (96 pages, 9451629 bytes).
 PDF statistics:
- 1714 PDF objects out of 1728 (max. 8388607)
+ 1716 PDF objects out of 1728 (max. 8388607)
  276 named destinations out of 1000 (max. 500000)
- 1208 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1213 words of extra memory for PDF output out of 10000 (max. 10000000)
 
