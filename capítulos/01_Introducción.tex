@@ -16,42 +16,54 @@
 
 \section{Definición del problema real}
     
-Existe un problema con respecto a la gestión de las guardias del hospital de Pozoblanco.
+    Existe un problema con respecto a la gestión de las guardias del hospital de Pozoblanco.
 
-En resumen, el problema real que se desea resolver con el desarrollo de este proyecto es el siguiente:
+    En resumen, el problema real que se desea resolver con el desarrollo de este proyecto es el siguiente:
 
-Actualmente, el sistema de guardias del hospital de Pozoblanco se gestiona mediante hojas de cálculo en formato Excel, 
-las cuales son administradas manualmente por los empleados responsables. Estos empleados deciden, 
-utilizando distintos términos y patrones no estandarizados, qué trabajadores se encargan de las guardias de cada día, 
-plasmando finalmente la información en un documento PDF.
+    Actualmente, el sistema de guardias del hospital de Pozoblanco se gestiona mediante hojas de cálculo en formato Excel, 
+    las cuales son administradas manualmente por los empleados responsables. Estos empleados deciden, 
+    utilizando distintos términos y patrones no estandarizados, qué trabajadores se encargan de las guardias de cada día, 
+    plasmando finalmente la información en un documento PDF.
 
-Este proceso resulta tedioso y propenso a errores, ya que gran parte de la gestión de guardias, 
-horas trabajadas y días libres (entre otros aspectos) depende del factor humano. 
-Esto puede provocar inconsistencias en los datos, errores de cálculo y dificultades a la hora de realizar modificaciones 
-o auditorías posteriores.
+    Este proceso resulta tedioso y propenso a errores, ya que gran parte de la gestión de guardias, 
+    horas trabajadas y días libres (entre otros aspectos) depende del factor humano. 
+    Esto puede provocar inconsistencias en los datos, errores de cálculo y dificultades a la hora de realizar modificaciones 
+    o auditorías posteriores.
 \section{Definición del problema técnico}
 
-    Se va a utilizar la metodología denominada 
+    El problema técnico consiste en la ausencia de una herramienta software específica que permita
+    gestionar de forma automatizada, segura y centralizada las guardias del hospital de Pozoblanco.
+
+    Desde el punto de vista técnico, se requiere el desarrollo de una aplicación web capaz de
+    gestionar usuarios con distintos niveles de acceso, almacenar información estructurada sobre
+    guardias y profesionales, y aplicar reglas de negocio para la planificación y validación de los
+    turnos.
+
+    Para abordar este problema, se utilizará una arquitectura basada en una aplicación web con un
+    backend encargado de la lógica de negocio y un frontend responsable de la interacción con el
+    usuario, comunicados mediante una API REST.
 
 \subsection{Funcionamiento}
-Se desea implementar una aplicación web que permita realizar una gestión más automatizada de las guardias mencionadas, reduciendo la dependencia del factor humano y minimizando los errores derivados de la gestión manual.
 
-Los usuarios que interactuarán con la aplicación son los siguientes:
+    Se desea implementar una aplicación web que permita realizar una gestión automatizada de las
+    guardias del hospital, reduciendo la dependencia del factor humano y minimizando los errores
+    derivados de la gestión manual.
 
-\begin{itemize}
-\item \textbf{Administrador}
+    Los usuarios que interactuarán con la aplicación son los siguientes:
+
     \begin{itemize}
-    \item Este tipo de usuario estará registrado en el sistema y dispondrá de credenciales de acceso.
-    \item Tendrá competencias exclusivas para la gestión de usuarios, creación y modificación de guardias, asignación de turnos y generación de informes.
-    \end{itemize}
+    \item \textbf{Administrador}
+        \begin{itemize}
+        \item Usuario con acceso completo a las funcionalidades del sistema.
+        \item Responsable de la gestión de usuarios, guardias, jefaturas y validaciones.
+        \end{itemize}
 
-\item \textbf{Usuario estándar}
-    \begin{itemize}
-        \item Podrá consultar sus guardias asignadas, horas trabajadas y días libres.
-        \item No tendrá permisos para modificar información crítica del sistema.
+    \item \textbf{Usuario de consulta}
+        \begin{itemize}
+            \item Usuario con acceso a funcionalidades de consulta de guardias.
+            \item Sin permisos para modificar información crítica del sistema.
+        \end{itemize}
     \end{itemize}
-\end{itemize}
-
 \subsection{Entorno}
 Existirán dos entornos de trabajo para esta aplicación:
 
@@ -70,18 +82,28 @@ Asimismo, existirán dos entornos de ejecución:
 La interfaz será el medio de comunicación entre los usuarios y la aplicación web. Es fundamental que sea intuitiva y amigable para garantizar una buena experiencia de usuario. Los requisitos de la interfaz se describirán en la Sección \ref{sec:requisitos-interfaz}.  
 \subsection{Vida esperada}
 
-    El ciclo de vida esperado de la aplicación web será alto, ya que se ha diseñado con una arquitectura modular y escalable que permite su adaptación a futuras necesidades del hospital, como la inclusión de nuevos tipos de usuarios o funcionalidades adicionales.
+    El ciclo de vida esperado de la aplicación web será elevado, ya que se ha diseñado siguiendo una
+    arquitectura modular y escalable que permite su adaptación a futuras necesidades del hospital,
+    como la incorporación de nuevas funcionalidades o la ampliación de los tipos de usuario.
 
 \subsection{Ciclo de mantenimiento} \label{subsec:ciclo_mantenimiento}
 
- Teniendo en cuenta que el propósito de la creación de esta aplicación web es la realización de un proyecto, el mantenimiento de dicha aplicación no correrá a cargo de su autor.
+\subsection{Ciclo de mantenimiento}\label{subsec:ciclo_mantenimiento}
 
- No obstante, se realizará un diseño modular de cada una de las partes de la aplicación web para facilitar, en el futuro, posibles tareas de mantenimiento y mejoras.
+Dado que el desarrollo de la aplicación web se enmarca dentro de un proyecto académico, el
+mantenimiento posterior de la aplicación no correrá a cargo de su autor.
 
+No obstante, se ha diseñado una estructura modular que facilite posibles tareas de mantenimiento,
+corrección de errores o ampliaciones futuras por parte de terceros.
 
 \subsection{Competencia}
 
-En la actualidad existen soluciones comerciales para la gestión de turnos y guardias. Sin embargo, muchas de ellas son genéricas, de coste inadecuado o no se adaptan completamente a las necesidades específicas del hospital de Pozoblanco. El presente proyecto se plantea como una solución personalizada y ajustada a dicho contexto.
+    En la actualidad existen soluciones comerciales para la gestión de turnos y guardias, así como
+    herramientas genéricas utilizadas para este fin. No obstante, muchas de estas soluciones no se
+    adaptan completamente a las necesidades específicas del hospital de Pozoblanco.
+
+    Este proyecto se plantea como una solución personalizada, orientada a cubrir de forma concreta
+    los requisitos del contexto hospitalario descrito.
 
 \subsection{Aspecto externo}
 
@@ -101,18 +123,18 @@ En relación con el aspecto externo, se tendrán en cuenta los siguientes aspect
 
 \subsection{Estandarización}
 
- Para el desarrollo de la aplicación web, se revisarán las recomendaciones propuestas por \textit{World Wide Web Consortium} (W3C) \cite{w3c}, que ``promueve el uso de estándares para reducir el coste y la complejidad del desarrollo, así como para incrementar la accesibilidad y usabilidad de cualquier documento publicado en la web''.
+    Para el desarrollo de la aplicación web, se revisarán las recomendaciones propuestas por \textit{World Wide Web Consortium} (W3C) \cite{w3c}, que ``promueve el uso de estándares para reducir el coste y la complejidad del desarrollo, así como para incrementar la accesibilidad y usabilidad de cualquier documento publicado en la web''.
 
- También se debe tener en cuenta que los recursos  que se van a utilizar son herramientas informáticas que están validadas por prestigiosas organizaciones que indican que cumplen con los estándares. Véase el capítulo \ref{cap:recursos} de Recursos. 
+    También se debe tener en cuenta que los recursos  que se van a utilizar son herramientas informáticas que están validadas por prestigiosas organizaciones que indican que cumplen con los estándares. Véase el capítulo \ref{cap:recursos} de Recursos. 
 
 \subsection{Calidad y fiabilidad}
 
 La calidad y fiabilidad de la aplicación web estarán garantizadas por:
 
 \begin{itemize}
-\item Uso de un framework consolidado como Laravel y React.
-\item Aplicación de buenas prácticas de programación.
-\item Realización de pruebas funcionales y de seguridad.
+    \item Uso de un framework consolidado como Laravel y React.
+    \item Aplicación de buenas prácticas de programación.
+    \item Realización de pruebas funcionales y de seguridad.
 \end{itemize}
 
 \subsection{Programa de tareas}
@@ -151,11 +173,14 @@ El Capítulo \ref{cap:pruebas} de Pruebas describirá las pruebas realizadas.
 
 \subsection{Seguridad}
 
-Al desarrollar la aplicación web se tendrán en cuenta aspectos de seguridad fundamentales, entre ellos:
+    Durante el desarrollo de la aplicación web se tendrán en cuenta aspectos fundamentales de
+    seguridad, entre los que se incluyen:
 
-\begin{itemize}
-\item Autenticación y autorización de usuarios.
-\item Protección contra ataques de inyección SQL.
-\item Gestión segura de sesiones.
-\item Protección de datos sensibles.
-\end{itemize}
+    \begin{itemize}
+    \item Autenticación y autorización de usuarios.
+    \item Protección contra ataques de inyección SQL.
+    \item Gestión segura de sesiones.
+    \item Protección de datos sensibles.
+    \end{itemize}
+
+Estos aspectos se describirán con mayor detalle en los capítulos correspondientes.
