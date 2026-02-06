@@ -1,50 +1,54 @@
 \chapter{Introducción}
 
 \section{Contexto del problema a resolver}
-    En la actualidad, la práctica deportiva y las actividades orientadas al bienestar físico han experimentado un crecimiento significativo. Este auge ha provocado que tanto gimnasios como centros deportivos, empresas dedicadas al acondicionamiento físico y usuarios particulares presenten una necesidad cada vez mayor de disponer de material de gimnasia actualizado, en buen estado y adaptado a sus necesidades.
 
-    Sin embargo, el acceso a este tipo de equipamiento supone un reto para muchas organizaciones debido a sus elevados costes, la rápida obsolescencia del material, los costes de mantenimiento asociados y la falta de flexibilidad en los modelos tradicionales de compra. Todo ello genera barreras económicas y logísticas que dificultan la renovación del material o incluso su adquisición inicial.
+    La gestión de turnos y guardias en instituciones sanitarias es una tarea crítica que requiere precisión,
+    organización y una correcta asignación de recursos humanos.
+    En hospitales de tamaño medio, como el hospital de Pozoblanco, 
+    esta gestión influye directamente tanto en el correcto funcionamiento del servicio como en la satisfacción laboral 
+    del personal sanitario.
 
-    Este contexto ha impulsado la búsqueda de nuevos modelos que permitan una gestión más eficiente y accesible del material deportivo, promoviendo soluciones basadas en la suscripción y el alquiler, capaces de adaptarse a distintos perfiles de usuario.
+    Actualmente, muchas de estas tareas siguen realizándose mediante herramientas genéricas como hojas de cálculo,
+    lo que dificulta la automatización de procesos, la trazabilidad de la información y la reducción de errores humanos. 
+    
+    La ausencia de un sistema específico adaptado a las necesidades reales del hospital provoca ineficiencias que pueden 
+    derivar en conflictos organizativos y errores en la planificación.
+
 \section{Definición del problema real}
     
-    Existe un problema generalizado con respecto al material de gimnasia, se dan muchos casos en que tanto empresas
-    como gimnasios o particulares dependan de material obsoleto o ya muy desgastado o que incluso no puedan alcanzar a 
-    adquirir ciertos productos debido a que requieren una inversión demasiado elevada para su situación económica actual.
+Existe un problema con respecto a la gestión de las guardias del hospital de Pozoblanco.
 
-    En resumen, el problema real que se desea resolver con el desarrollo de este proyecto es el siguiente: 
-    resolver el problema de que muchas empresas no se puedan permitir la adquisición de mucho material de gimnasia, 
+En resumen, el problema real que se desea resolver con el desarrollo de este proyecto es el siguiente:
+
+Actualmente, el sistema de guardias del hospital de Pozoblanco se gestiona mediante hojas de cálculo en formato Excel, 
+las cuales son administradas manualmente por los empleados responsables. Estos empleados deciden, 
+utilizando distintos términos y patrones no estandarizados, qué trabajadores se encargan de las guardias de cada día, 
+plasmando finalmente la información en un documento PDF.
+
+Este proceso resulta tedioso y propenso a errores, ya que gran parte de la gestión de guardias, 
+horas trabajadas y días libres (entre otros aspectos) depende del factor humano. 
+Esto puede provocar inconsistencias en los datos, errores de cálculo y dificultades a la hora de realizar modificaciones 
+o auditorías posteriores.
 \section{Definición del problema técnico}
 
-    Para dar solución al problema identificado, se plantea el desarrollo de una aplicación web basada en un modelo de suscripción para el alquiler de material de gimnasia. Esta aplicación permitirá gestionar los servicios, controlar los diferentes niveles de suscripción y garantizar que los usuarios puedan acceder al material que necesiten.
-
-    Se utilizará una metodología de desarrollo incremental y modular, lo que permitirá construir la aplicación por fases, integrar las funcionalidades de manera progresiva y facilitar el mantenimiento y escalabilidad del sistema.
+    Se va a utilizar la metodología denominada 
 
 \subsection{Funcionamiento}
-    La aplicación web ofrecerá un sistema de gestión de servicios de suscripción mediante el cual los usuarios podrán alquilar material de gimnasia. El objetivo principal es proporcionar precios competitivos que permitan el acceso a cualquier tipo de cliente, desde empresas hasta usuarios particulares.
+Se desea implementar una aplicación web que permita realizar una gestión más automatizada de las guardias mencionadas, reduciendo la dependencia del factor humano y minimizando los errores derivados de la gestión manual.
 
-    Los tipos de usuarios que interactuarán con la aplicación son los siguientes:
+Los usuarios que interactuarán con la aplicación son los siguientes:
 
-    Los usuarios que interactuarán con la aplicación son los siguientes:
+\begin{itemize}
+\item \textbf{Administrador}
     \begin{itemize}
-    \item \textbf{Administrador}
-    \begin{itemize}
-        \item Estará registrado en el sistema y tendrá acceso a un panel de administración.
-        \item Podrá gestionar el catálogo de material disponible, crear o modificar planes de suscripción, supervisar el estado del inventario y gestionar las cuentas de los usuarios registrados.
-        \item Tendrá competencias exclusivas como la actualización de los datos del sistema, la revisión de reportes y el control de la facturación.
+    \item Este tipo de usuario estará registrado en el sistema y dispondrá de credenciales de acceso.
+    \item Tendrá competencias exclusivas para la gestión de usuarios, creación y modificación de guardias, asignación de turnos y generación de informes.
     \end{itemize}
 
-    \item \textbf{Usuario suscrito}
+\item \textbf{Usuario estándar}
     \begin{itemize}
-        \item Podrá registrarse en la plataforma y seleccionar el tipo de suscripción más adecuado a sus necesidades.
-        \item Tendrá acceso al material incluido en su plan y podrá solicitar cambios, ampliaciones o renovaciones.
-        \item Podrá consultar su historial de alquileres, pagos y configuración de cuenta.
-    \end{itemize}
-
-    \item \textbf{Usuario invitado}
-    \begin{itemize}
-        \item Tendrá acceso limitado a la plataforma y podrá consultar la información general, los niveles de suscripción y el catálogo.
-        \item No podrá alquilar material hasta completar el registro.
+        \item Podrá consultar sus guardias asignadas, horas trabajadas y días libres.
+        \item No tendrá permisos para modificar información crítica del sistema.
     \end{itemize}
 \end{itemize}
 
@@ -52,79 +56,79 @@
 Existirán dos entornos de trabajo para esta aplicación:
 
 \begin{itemize}
-    \item Entorno de desarrollo y testeo: entorno que se utilizará para desarrollar, probar y depurar la aplicación web antes de su lanzamiento al entorno de producción.
-    \item Entorno de producción: entorno en el que se encontrará la versión final de la aplicación web...
+\item \textbf{Entorno de desarrollo y testeo}: entorno utilizado para desarrollar, probar y depurar la aplicación web antes de su despliegue.
+\item \textbf{Entorno de producción}: entorno en el que se encontrará la versión final de la aplicación web accesible para los usuarios finales.
 \end{itemize}
 
-Existirán dos entornos de ejecución para esta aplicación. 
+Asimismo, existirán dos entornos de ejecución:
 
 \begin{itemize}
-    \item \textbf{Entorno de ejecución del administrador}: incluirá herramientas avanzadas de gestión, paneles de control y funciones exclusivas.
-
-    \item \textbf{Entorno de ejecución del resto de usuarios}: diseñado para la interacción habitual con la aplicación, enfocado en la experiencia de alquiler y consulta de suscripciones.
+\item \textbf{Entorno de ejecución del administrador}: acceso completo a las funcionalidades del sistema.
+\item \textbf{Entorno de ejecución del resto de usuarios}: acceso limitado a funcionalidades de consulta.
 \end{itemize}
 
-La interfaz será un elemento clave del proyecto, actuando como medio de comunicación entre los usuarios y la aplicación web. Su diseño será intuitivo, accesible y responsivo. Los requisitos específicos se detallarán en la Sección \ref{sec:requisitos-interfaz}.
-
+La interfaz será el medio de comunicación entre los usuarios y la aplicación web. Es fundamental que sea intuitiva y amigable para garantizar una buena experiencia de usuario. Los requisitos de la interfaz se describirán en la Sección \ref{sec:requisitos-interfaz}.  
 \subsection{Vida esperada}
-    
-El ciclo de vida esperado de la aplicación es elevado, ya que se pretende que el sistema pueda seguir ampliándose, integrándose con nuevas funcionalidades y adaptándose a las necesidades del mercado.
 
-Teniendo en cuenta que el propósito de la creación de esta aplicación web es la realización de un proyecto, el mantenimiento de dicha aplicación no correrá a cargo de su autor.
+    El ciclo de vida esperado de la aplicación web será alto, ya que se ha diseñado con una arquitectura modular y escalable que permite su adaptación a futuras necesidades del hospital, como la inclusión de nuevos tipos de usuarios o funcionalidades adicionales.
 
-No obstante, se realizará un diseño modular de cada una de las partes de la aplicación web para facilitar, en el futuro, posibles tareas de mantenimiento y mejoras.
+\subsection{Ciclo de mantenimiento} \label{subsec:ciclo_mantenimiento}
+
+ Teniendo en cuenta que el propósito de la creación de esta aplicación web es la realización de un proyecto, el mantenimiento de dicha aplicación no correrá a cargo de su autor.
+
+ No obstante, se realizará un diseño modular de cada una de las partes de la aplicación web para facilitar, en el futuro, posibles tareas de mantenimiento y mejoras.
+
 
 \subsection{Competencia}
 
-Actualmente existen pocos servicios relacionados con el alquiler de material deportivo, aunque la mayoría se centran en grandes empresas, equipamiento especializado o modelos mas centrados en la compra que en el alquiler de material. Sin embargo, no son frecuentes las plataformas orientadas a gimnasios pequeños, empresas con recursos limitados o usuarios particulares que deseen acceder a un catálogo amplio mediante un sistema de suscripción flexible.
-
-El proyecto pretende cubrir este nicho ofreciendo un servicio accesible, escalable y con precios adaptados a distintos niveles de uso.
+En la actualidad existen soluciones comerciales para la gestión de turnos y guardias. Sin embargo, muchas de ellas son genéricas, de coste inadecuado o no se adaptan completamente a las necesidades específicas del hospital de Pozoblanco. El presente proyecto se plantea como una solución personalizada y ajustada a dicho contexto.
 
 \subsection{Aspecto externo}
 
 En relación con el aspecto externo, se tendrán en cuenta los siguientes aspectos:
 
 \begin{itemize}
-    \item \textbf{Interfaz de usuario}
-    \begin{itemize}
-        \item Se realizará una interfaz totalmente responsiva, intuitiva y amigable para que el usuario pueda navegar de la manera más cómoda posible. El Capítulo \ref{cap:diseño_interfaz} describirá el Diseño de la Interfaz de la aplicación web que se va  a desarrollar.
-    \end{itemize}
-    \item \textbf{Distribución de la aplicación: formato de almacenamiento}
-    \begin{itemize}
-        \item La aplicación podrá distribuirse a través de un servidor web alojado en un entorno local, facilitando su instalación y despliegue en distintos escenarios.
-    \end{itemize}
+\item \textbf{Interfaz de usuario}
+\begin{itemize}
+\item Se desarrollará una interfaz totalmente responsiva, intuitiva y amigable. El Capítulo \ref{cap:diseño_interfaz} describirá el diseño de la interfaz de la aplicación web.
 \end{itemize}
+\item \textbf{Distribución de la aplicación}
+\begin{itemize}
+\item La aplicación se podrá distribuir mediante un servidor web accesible a través de un navegador estándar.
+\end{itemize}
+\end{itemize}
+
 
 \subsection{Estandarización}
 
-Para el desarrollo de la aplicación se seguirán las recomendaciones del \textit{World Wide Web Consortium} (W3C) \cite{w3c}, que promueve estándares que favorecen la accesibilidad, la interoperabilidad y la calidad del software. Asimismo, se emplearán herramientas, frameworks y tecnologías que cuentan con el respaldo de organizaciones reconocidas y cumplen estándares internacionales.
+ Para el desarrollo de la aplicación web, se revisarán las recomendaciones propuestas por \textit{World Wide Web Consortium} (W3C) \cite{w3c}, que ``promueve el uso de estándares para reducir el coste y la complejidad del desarrollo, así como para incrementar la accesibilidad y usabilidad de cualquier documento publicado en la web''.
 
-También se debe tener en cuenta que los recursos  que se van a utilizar son herramientas informáticas que están validadas por prestigiosas organizaciones que indican que cumplen con los estándares. Véase el capítulo \ref{cap:recursos} de Recursos. 
+ También se debe tener en cuenta que los recursos  que se van a utilizar son herramientas informáticas que están validadas por prestigiosas organizaciones que indican que cumplen con los estándares. Véase el capítulo \ref{cap:recursos} de Recursos. 
 
 \subsection{Calidad y fiabilidad}
 
-La calidad y la fiabilidad de la aplicación web estarán garantizadas por:
+La calidad y fiabilidad de la aplicación web estarán garantizadas por:
 
 \begin{itemize}
-    \item El uso de tecnologías estables, ampliamente documentadas y mantenidas por comunidades activas.
-    \item La realización de pruebas exhaustivas unitarias, funcionales y de integración.
-    \item Un diseño modular que facilite la detección y corrección de errores.
-    \item La implementación de buenas prácticas de programación y arquitectura.
+\item Uso de un framework consolidado como Laravel y React.
+\item Aplicación de buenas prácticas de programación.
+\item Realización de pruebas funcionales y de seguridad.
 \end{itemize}
 
 \subsection{Programa de tareas}
 
-El desarrollo del presente proyecto va estar compuesto por la siguientes fases:
-\begin{itemize}
-    \item Introducción: descripción del problema, establecimiento de los objetivos, revisión de antecedentes, identificación de restricciones iniciales y estratégicas y selección de recursos.
-    \item Análisis: especificación de requisitos (funcionales, no funcionales, de información y de la interfaz), descripción del modelo de datos y análisis funcional (casos de uso y diagramas de secuencia).
+ El desarrollo del presente proyecto va estar compuesto por la siguientes fases:
+ \begin{itemize}
+     \item Introducción: descripción del problema, establecimiento de los objetivos, revisión de antecedentes, identificación de restricciones iniciales y estratégicas y selección de recursos.
+     \item Análisis: especificación de requisitos (funcionales, no funcionales, de información y de la interfaz), descripción del modelo de datos y análisis funcional (casos de uso y diagramas de secuencia).
+    
+     \item Diseño: descripción del diseño de datos, clases, paquetes y de la interfaz.
+    
+     \item Implementación: codificación de la aplicación web teniendo en cuenta el diseño desarrollado.
+    
+     \item Pruebas: comprobación de que la aplicación web funciona correctamente, es robusta y amigable.
+ \end{itemize}
 
-    \item Diseño: descripción del diseño de datos, clases, paquetes y de la interfaz.
-    
-    \item Implementación: codificación de la aplicación web teniendo en cuenta el diseño desarrollado.
-    
-    \item Pruebas: comprobación de que la aplicación web funciona correctamente, es robusta y amigable.
-\end{itemize}
 
 \subsection{Pruebas}
 
@@ -147,14 +151,11 @@ El Capítulo \ref{cap:pruebas} de Pruebas describirá las pruebas realizadas.
 
 \subsection{Seguridad}
 
-Hay varias consideraciones de seguridad que se deben tener en cuenta al desarrollar una aplicación web moderna. Algunas de las más importantes son:
+Al desarrollar la aplicación web se tendrán en cuenta aspectos de seguridad fundamentales, entre ellos:
 
 \begin{itemize}
-    \item \textbf{Autenticación y autorización}: gestión segura de credenciales, control de accesos y privilegios.
-    \item \textbf{Protección contra ataques de inyección}: filtrado de datos, consultas preparadas y validación estricta.
-    \item \textbf{Cifrado de la información sensible}: uso de HTTPS y almacenamiento seguro de credenciales.
-    \item \textbf{Protección frente a ataques de fuerza bruta}: limitación de intentos y uso de captchas.
-    \item \textbf{Gestión segura de sesiones}: expiración automática, tokens seguros y protección contra secuestro de sesiones.
+\item Autenticación y autorización de usuarios.
+\item Protección contra ataques de inyección SQL.
+\item Gestión segura de sesiones.
+\item Protección de datos sensibles.
 \end{itemize}
-
-
