@@ -14,11 +14,16 @@ incluyendo requisitos funcionales, no funcionales, de interfaz y de información
 
 Se van a considerar los siguientes tipos de usuario en la aplicación web:
 \begin{itemize}
-    \item \textbf{Administrador}: usuario registrado en el sistema con permisos completos para la gestión de datos, importaciones,
-    cierres de mes, configuración de tarifas, generación y envío de documentos, así como administración de usuarios y auditoría.
-    \item \textbf{Usuario de consulta (usuario estándar)}: usuario registrado con permisos limitados,
-    orientado a la consulta de información (guardias, vistas diaria/mensual, búsquedas y resúmenes de horas e importes cuando corresponda).
+    \item \textbf{Administrador}: usuario registrado en el sistema con permisos completos para la gestión de datos,
+    profesionales, especialidades y guardias. Es responsable de la generación automática de los cuadrantes mensuales,
+    la asignación y validación de jefes de guardia, la aprobación de cambios de guardia, el cierre de meses y
+    la administración de usuarios y auditoría.
+
+    \item \textbf{Usuario de consulta}: usuario registrado con permisos limitados,
+    orientado a la consulta de información, que puede visualizar guardias, vistas diaria y mensual por sección,
+    y realizar solicitudes de cambio de guardia que deberán ser validadas.
 \end{itemize}
+
 
 \section{Módulos de la aplicación}\label{sec:modulos}
 
@@ -28,27 +33,26 @@ La aplicación web estará compuesta por módulos que corresponden a cada tipo d
 
 El usuario de consulta podrá:
 \begin{itemize}
-    \item Consultar guardias por mes, especialidad y profesional.
-    \item Visualizar la vista diaria con guardias agrupadas por especialidad, incluyendo profesional, tipo de guardia y jefe de guardia global.
-    \item Buscar profesionales por nombre o identificador.
-    \item Consultar el desglose de horas (según permisos establecidos).
-    \item Descargar documentos disponibles (según permisos establecidos).
+    \item Consultar guardias por mes, sección y profesional.
+    \item Visualizar la vista diaria con guardias agrupadas por sección,
+    incluyendo profesional, tipo de guardia y jefe de guardia global.
+    \item Consultar sus guardias asignadas en un mes determinado.
+    \item Solicitar cambios de guardia con otros profesionales.
+    \item Consultar el estado de las solicitudes de cambio realizadas.
 \end{itemize}
+
 
 \subsection{Módulo del administrador}
 
-El usuario Administrador tendrá control total de la aplicación y, además, se encargará de forma exclusiva de:
+El usuario Administrador tendrá control total de la aplicación y se encargará de:
 \begin{itemize}
-    \item Importación de cuadrantes mensuales desde Excel, validación e informes de importación.
-    \item Gestión de datos maestros (especialidades, profesionales y asociaciones).
-    \item Gestión del mes de guardias (consulta, cierre y reapertura con control de permisos).
-    \item Asignación automática y manual del jefe de guardia global con restricciones.
-    \item Configuración de tarifas y pluses, cálculo de importes.
-    \item Generación y envío por correo de documentos (PDF diario, Excel mensual).
+    \item Generación automática de los cuadrantes mensuales de guardias por sección.
+    \item Gestión manual de guardias y jefes de guardia cuando sea necesario.
+    \item Validación y aprobación de solicitudes de cambio de guardia.
+    \item Gestión de profesionales, secciones y asociaciones entre ellos.
+    \item Cierre y reapertura de meses de guardias con control de permisos.
     \item Gestión de usuarios, roles y auditoría de acciones.
 \end{itemize}
-
-En principio, la aplicación solamente tendrá un único administrador.
 
 \section{Requisitos del sistema}\label{sec:requisitos-del-sistema}
 
@@ -65,6 +69,14 @@ Los requisitos del sistema hacen referencia a todas las características relacio
 Los requisitos funcionales indican lo que el sistema debe hacer. Se denotarán como RF-<nº requisito> y se agrupan por funcionalidades del sistema.
 
 \begin{itemize}
+        \item \textbf{Generación automática del cuadrante de guardias}
+    \begin{itemize}
+        \item RF-00. Generación automática del cuadrante mensual de guardias por sección del hospital.
+        \item RF-00.1. Garantizar que todas las guardias necesarias estén cubiertas para cada día del mes.
+        \item RF-00.2. Asociar cada guardia generada a una sección y a un profesional.
+        \item RF-00.3. Permitir la revisión y modificación manual del cuadrante generado por un administrador.
+    \end{itemize}
+
     \item \textbf{Importación del cuadrante de guardias}
     \begin{itemize}
         \item RF-01. Subida de un fichero Excel correspondiente al cuadrante mensual.
@@ -148,6 +160,17 @@ Los requisitos funcionales indican lo que el sistema debe hacer. Se denotarán c
         \item RF-43. Gestión de roles diferenciando al menos Administrador y Usuario de consulta.
         \item RF-44. Registro de historial de acciones (importaciones, cambios manuales, cierres de mes y envíos de correo).
     \end{itemize}
+    \item \textbf{Gestión de cambios de guardia}
+    \begin{itemize}
+        \item RF-45. Solicitud de cambio de guardia por parte de un usuario de consulta.
+        \item RF-46. Asociación de la solicitud a una guardia concreta y a un profesional receptor.
+        \item RF-47. Aceptación o rechazo inicial de la solicitud por el profesional receptor.
+        \item RF-48. Validación del cambio por el jefe de guardia del día afectado.
+        \item RF-49. Aprobación o rechazo final del cambio por parte de un administrador.
+        \item RF-50. Actualización automática del cuadrante tras la aprobación del cambio.
+        \item RF-51. Registro del cambio de guardia en el sistema de auditoría.
+    \end{itemize}
+
 \end{itemize}
 
 \subsection{Requisitos no funcionales}\label{sec:requisitos-no-funcionales}
@@ -177,6 +200,8 @@ Los requisitos no funcionales representan cómo tiene que trabajar la aplicació
 
     \item RNF-16. El código deberá seguir buenas prácticas de desarrollo y una estructura modular que facilite el mantenimiento y la escalabilidad.
     \item RNF-17. El proyecto deberá incluir control de versiones (por ejemplo, Git) y un flujo de trabajo en equipo que facilite la integración de cambios.
+    \item RNF-18. Las solicitudes de cambio de guardia deberán seguir un flujo de validación que incluya al jefe de guardia y a un administrador.
+
 \end{itemize}
 
 \subsection{Requisitos de la interfaz}\label{sec:requisitos-interfaz}
@@ -209,6 +234,8 @@ Se deberá almacenar la siguiente información:
     \item RI-7. Información de tarifas por tipo de guardia y plus de jefatura.
     \item RI-8. Información de documentos generados (PDF diario y Excel mensual).
     \item RI-9. Registro de auditoría de acciones relevantes realizadas en el sistema.
+    \item RI-10. Información de las solicitudes de cambio de guardia, incluyendo guardia afectada, usuario solicitante, profesional receptor, estado de la solicitud y validaciones realizadas.
+
 \end{itemize}
 
 Una descripción más detallada de la información que se va a gestionar se puede consultar en el capítulo \ref{cap:modelo_de_datos} de Modelo de Datos.

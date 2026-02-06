@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.10)  6 FEB 2026 19:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.10)  6 FEB 2026 20:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1680,32 +1680,27 @@ LaTeX Info: Redefining \% on input line 226.
 
 ] [18] (cap√≠tulos/05_Especificaci√≥n_Requisitos.tex
 Cap\'{\i }tulo 5.
-
-Overfull \hbox (4.11992pt too wide) in paragraph at lines 19--21
-\T1/fvs/m/n/12 mi-ta-dos, orien-ta-do a la con-sul-ta de in-for-ma-ciÛn (guar-dias, vis-tas dia-ria/mensual,
- []
-
 [19
 
 ]
-LaTeX Info: Redefining \. on input line 61.
-LaTeX Info: Redefining \% on input line 61.
+LaTeX Info: Redefining \. on input line 72.
+LaTeX Info: Redefining \% on input line 72.
  [20]
-Overfull \hbox (40.92613pt too wide) in paragraph at lines 102--103
+Overfull \hbox (40.92613pt too wide) in paragraph at lines 114--115
 []\T1/fvs/m/n/12 RF-17. Can-di-da-tos: pro-fe-sio-na-les con guar-dia ese dÌa (cual-quier ti-po/especialidad). 
  []
 
-LaTeX Info: Redefining \. on input line 106.
-LaTeX Info: Redefining \% on input line 106.
+LaTeX Info: Redefining \. on input line 116.
+LaTeX Info: Redefining \% on input line 116.
 [21]
-LaTeX Info: Redefining \. on input line 147.
-LaTeX Info: Redefining \% on input line 147.
+LaTeX Info: Redefining \. on input line 155.
+LaTeX Info: Redefining \% on input line 155.
  [22]
-LaTeX Info: Redefining \. on input line 174.
-LaTeX Info: Redefining \% on input line 174.
+LaTeX Info: Redefining \. on input line 190.
+LaTeX Info: Redefining \% on input line 190.
  [23]
-LaTeX Info: Redefining \. on input line 204.
-LaTeX Info: Redefining \% on input line 204.
+LaTeX Info: Redefining \. on input line 216.
+LaTeX Info: Redefining \% on input line 216.
  [24]) (cap√≠tulos/06_Modelo_de_datos.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -1831,7 +1826,7 @@ LaTeX Info: Redefining \% on input line 99.
 LaTeX Info: Redefining \. on input line 257.
 LaTeX Info: Redefining \% on input line 257.
  [59]
-runsystem(latexminted cleantemp  --timestamp 20260206192544 FAD58DE7366495DB4650CFEFAC2FCD61)...disabled (restricted).
+runsystem(latexminted cleantemp  --timestamp 20260206200025 FAD58DE7366495DB4650CFEFAC2FCD61)...disabled (restricted).
 
  (c:\Users\DAVANTE\Desktop\DAW_25_26_Medac_Arena___Proyecto\build\main.aux
 LaTeX Info: Redefining \sptext on input line 13.
@@ -1864,7 +1859,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  84i,14n,117p,1255b,2411s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsb8a.pfb><C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsr8a.pfb><C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsro8a.pfb>
-Output written on c:\Users\DAVANTE\Desktop\DAW_25_26_Medac_Arena___Proyecto\build\main.pdf (67 pages, 2088629 bytes).
+Output written on c:\Users\DAVANTE\Desktop\DAW_25_26_Medac_Arena___Proyecto\build\main.pdf (67 pages, 2089439 bytes).
 PDF statistics:
  1377 PDF objects out of 1440 (max. 8388607)
  198 named destinations out of 1000 (max. 500000)
