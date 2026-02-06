@@ -38,6 +38,114 @@
       \field{labelnamesource}{author}
       \field{note}{[]}
     \endentry
+    \entry{administracionMysql}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=239c7361d9dff735316c57706294de37}{%
+           family={{Alejandro Castán Salinas}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{239c7361d9dff735316c57706294de37}
+      \strng{fullhash}{239c7361d9dff735316c57706294de37}
+      \strng{fullhashraw}{239c7361d9dff735316c57706294de37}
+      \strng{bibnamehash}{239c7361d9dff735316c57706294de37}
+      \strng{authorbibnamehash}{239c7361d9dff735316c57706294de37}
+      \strng{authornamehash}{239c7361d9dff735316c57706294de37}
+      \strng{authorfullhash}{239c7361d9dff735316c57706294de37}
+      \strng{authorfullhashraw}{239c7361d9dff735316c57706294de37}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[En línea. Última consulta: ]}
+      \field{title}{Guía rápida de administración de MySQL}
+      \verb{urlraw}
+      \verb http://www.xtec.cat/~acastan/textos/Administracion%20de%20MySQL.html
+      \endverb
+      \verb{url}
+      \verb http://www.xtec.cat/~acastan/textos/Administracion%20de%20MySQL.html
+      \endverb
+    \endentry
+    \entry{medac}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=bc419436798bc181199077774cd86945}{%
+           family={{Centro Formación Profesional}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{bc419436798bc181199077774cd86945}
+      \strng{fullhash}{bc419436798bc181199077774cd86945}
+      \strng{fullhashraw}{bc419436798bc181199077774cd86945}
+      \strng{bibnamehash}{bc419436798bc181199077774cd86945}
+      \strng{authorbibnamehash}{bc419436798bc181199077774cd86945}
+      \strng{authornamehash}{bc419436798bc181199077774cd86945}
+      \strng{authorfullhash}{bc419436798bc181199077774cd86945}
+      \strng{authorfullhashraw}{bc419436798bc181199077774cd86945}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[En línea. Última consulta: ]}
+      \field{title}{Centro Formación Profesional}
+      \verb{urlraw}
+      \verb https://medac.es/fp-cordoba/escritora-maria-goyri-sn
+      \endverb
+      \verb{url}
+      \verb https://medac.es/fp-cordoba/escritora-maria-goyri-sn
+      \endverb
+    \endentry
+    \entry{arquitecturaMariadb}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=ddede6986fcb62ae8c9ba6c8311570da}{%
+           family={{Jessica Navil}},
+           familyi={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{ddede6986fcb62ae8c9ba6c8311570da}
+      \strng{fullhash}{ddede6986fcb62ae8c9ba6c8311570da}
+      \strng{fullhashraw}{ddede6986fcb62ae8c9ba6c8311570da}
+      \strng{bibnamehash}{ddede6986fcb62ae8c9ba6c8311570da}
+      \strng{authorbibnamehash}{ddede6986fcb62ae8c9ba6c8311570da}
+      \strng{authornamehash}{ddede6986fcb62ae8c9ba6c8311570da}
+      \strng{authorfullhash}{ddede6986fcb62ae8c9ba6c8311570da}
+      \strng{authorfullhashraw}{ddede6986fcb62ae8c9ba6c8311570da}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[En línea. Última consulta: ]}
+      \field{title}{Arquitectura de MariaDB}
+      \verb{urlraw}
+      \verb https://prezi.com/oz6eimbnuyq4/arquitectura-de-mariadb/
+      \endverb
+      \verb{url}
+      \verb https://prezi.com/oz6eimbnuyq4/arquitectura-de-mariadb/
+      \endverb
+    \endentry
+    \entry{mongodbEnterprise}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=c8bae9f9e58f1bd038d0be43f580d9d8}{%
+           family={{Luismi Gracia}},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{c8bae9f9e58f1bd038d0be43f580d9d8}
+      \strng{fullhash}{c8bae9f9e58f1bd038d0be43f580d9d8}
+      \strng{fullhashraw}{c8bae9f9e58f1bd038d0be43f580d9d8}
+      \strng{bibnamehash}{c8bae9f9e58f1bd038d0be43f580d9d8}
+      \strng{authorbibnamehash}{c8bae9f9e58f1bd038d0be43f580d9d8}
+      \strng{authornamehash}{c8bae9f9e58f1bd038d0be43f580d9d8}
+      \strng{authorfullhash}{c8bae9f9e58f1bd038d0be43f580d9d8}
+      \strng{authorfullhashraw}{c8bae9f9e58f1bd038d0be43f580d9d8}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[En línea. Última consulta: ]}
+      \field{title}{¿Qué ofrece MongoDB Enterprise Advanced?}
+      \verb{urlraw}
+      \verb https://unpocodejava.com/2019/07/22/que-ofrece-mongodb-enterprise-advanced/
+      \endverb
+      \verb{url}
+      \verb https://unpocodejava.com/2019/07/22/que-ofrece-mongodb-enterprise-advanced/
+      \endverb
+    \endentry
     \entry{visualStudioCode}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=140864078aeca1c7c35b4beb33c53c34}{%

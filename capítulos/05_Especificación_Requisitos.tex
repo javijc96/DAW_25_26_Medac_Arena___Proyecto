@@ -3,59 +3,52 @@
 \section{Introducción}
 
 
-Se desea desarrollar una aplicación web que permita la gestión de servicios de suscripción para el alquiler de material de gimnasia. Esta plataforma estará orientada tanto a gimnasios como a empresas con recursos limitados y a usuarios particulares que deseen acceder a material deportivo sin realizar una inversión elevada. 
+Se desea desarrollar una aplicación web que permita la gestión automatizada y centralizada de las guardias del hospital 
+de Pozoblanco, sustituyendo el proceso actual basado en hojas de cálculo y generación manual de documentos. 
 
-Las siguientes secciones describen los actores del sistema (Sección \ref{sec:actores}), la descripción modular (Sección \ref{sec:modulos}) y los requisitos del sistema (Sección \ref{sec:requisitos-del-sistema}).
-
+Las siguientes secciones describen los actores del sistema (Sección \ref{sec:actores}), la descripción 
+modular (Sección \ref{sec:modulos}) y los requisitos del sistema (Sección  \ref{sec:requisitos-del-sistema}), 
+incluyendo requisitos funcionales, no funcionales, de interfaz y de información.
 
 \section{Actores del sistema}\label{sec:actores}
-Se consideran los siguientes tipos de usuario en la aplicación web:
 
+Se van a considerar los siguientes tipos de usuario en la aplicación web:
 \begin{itemize}
-    \item \textbf{Usuario invitado}: usuario no registrado que puede consultar información general sobre la plataforma, el catálogo básico y los niveles de suscripción.
-    \item \textbf{Usuario registrado}: usuario que dispone de una cuenta activa y puede gestionar su suscripción, consultar material disponible según su plan, realizar solicitudes de alquiler o renovación y modificar su información personal.
-    \item \textbf{Administrador}: usuario registrado con permisos avanzados con un control total sobre la aplicación. Será responsable de la gestión de usuarios, suscripciones, material, inventario y operaciones internas.
+    \item \textbf{Administrador}: usuario registrado en el sistema con permisos completos para la gestión de datos, importaciones,
+    cierres de mes, configuración de tarifas, generación y envío de documentos, así como administración de usuarios y auditoría.
+    \item \textbf{Usuario de consulta (usuario estándar)}: usuario registrado con permisos limitados,
+    orientado a la consulta de información (guardias, vistas diaria/mensual, búsquedas y resúmenes de horas e importes cuando corresponda).
 \end{itemize}
 
 \section{Módulos de la aplicación}\label{sec:modulos}
 
-La aplicación web estará compuesta por módulos correspondientes a cada tipo de usuario. En las siguientes subsecciones se detalla la funcionalidad de cada uno de ellos.
+La aplicación web estará compuesta por módulos que corresponden a cada tipo de usuario.
 
-\subsection{Módulo del usuario}
+\subsection{Módulo del usuario de consulta}
 
-El usuario registrado podrá realizar las siguientes acciones:
+El usuario de consulta podrá:
 \begin{itemize}
-    \item Consultar el catálogo de material disponible según su nivel de suscripción.
-    \item Solicitar el alquiler de material deportivo.
-    \item Gestionar sus renovaciones o devoluciones.
-    \item Modificar sus datos personales.
-    \item Consultar su historial de uso y facturación.
-    \item Acceder a soporte y documentación de ayuda.
-\end{itemize}
-
-El usuario invitado podrá:
-\begin{itemize}
-    \item Consultar la información general de la plataforma.
-    \item Visualizar los distintos niveles de suscripción.
-    \item Consultar un catálogo básico del material disponible.
-    \item Registrarse en la plataforma para acceder a las funcionalidades completas.
+    \item Consultar guardias por mes, especialidad y profesional.
+    \item Visualizar la vista diaria con guardias agrupadas por especialidad, incluyendo profesional, tipo de guardia y jefe de guardia global.
+    \item Buscar profesionales por nombre o identificador.
+    \item Consultar el desglose de horas (según permisos establecidos).
+    \item Descargar documentos disponibles (según permisos establecidos).
 \end{itemize}
 
 \subsection{Módulo del administrador}
 
-El usuario administrador tendrá control total de la aplicación y será responsable de los siguientes módulos:
-
+El usuario Administrador tendrá control total de la aplicación y, además, se encargará de forma exclusiva de:
 \begin{itemize}
-    \item Gestión del catálogo de material deportivo disponible.
-    \item Gestión de usuarios registrados.
-    \item Gestión de los niveles o planes de suscripción.
-    \item Supervisión de pedidos, renovaciones y devoluciones.
-    \item Control del inventario y del estado del material.
-    \item Gestión de incidencias y solicitudes especiales.
-    \item Acceso al registro de actividad de la aplicación.
+    \item Importación de cuadrantes mensuales desde Excel, validación e informes de importación.
+    \item Gestión de datos maestros (especialidades, profesionales y asociaciones).
+    \item Gestión del mes de guardias (consulta, cierre y reapertura con control de permisos).
+    \item Asignación automática y manual del jefe de guardia global con restricciones.
+    \item Configuración de tarifas y pluses, cálculo de importes.
+    \item Generación y envío por correo de documentos (PDF diario, Excel mensual).
+    \item Gestión de usuarios, roles y auditoría de acciones.
 \end{itemize}
 
-En principio, la aplicación solo tendrá un único usuario con rol de administrador.
+En principio, la aplicación solamente tendrá un único administrador.
 
 \section{Requisitos del sistema}\label{sec:requisitos-del-sistema}
 
@@ -69,113 +62,153 @@ Los requisitos del sistema hacen referencia a todas las características relacio
 
 
 \subsection{Requisitos funcionales}\label{sec:requisitos-funcionales}
+Los requisitos funcionales indican lo que el sistema debe hacer. Se denotarán como RF-<nº requisito> y se agrupan por funcionalidades del sistema.
 
-Los requisitos funcionales indican lo que el sistema debe hacer. Cada uno de estos requisitos debe tener dos propiedades: 
 \begin{itemize}
-    \item Ser completo: el requisito debe mencionar exactamente lo que el sistema debe hacer
-    \item Ser cerrado: el requisito debe ser claro y no estar abierto a múltiples interpretaciones, sino solamente a una.
-\end{itemize}
-
-Los requisitos funcionales que se van a considerar se agruparán según los módulos de los tipos de usuario y se denotarán como RF-\textit{n}, donde \textit{n} es el número de requisito.
-
- \begin{itemize}
- \item \textbf{Módulo del usuario}
- \item[] La aplicación debe permitir que el usuario público pueda realizar las siguientes acciones:
+    \item \textbf{Importación del cuadrante de guardias}
     \begin{itemize}
-        \item RF-1. Consultar el catálogo de material disponible.
-        \item RF-2. Registrarse en la plataforma mediante un formulario.
-        \item RF-3. Iniciar sesión con sus credenciales.
-        \item RF-4. Seleccionar o modificar su plan de suscripción.
-        \item RF-5. Solicitar el alquiler de material según su suscripción.
-        \item RF-6. Consultar su historial de pedidos.
-        \item RF-7. Gestionar renovaciones y devoluciones.
-        \item RF-8. Modificar sus datos personales.
-        \item RF-9. Consultar documentación de ayuda.
+        \item RF-01. Subida de un fichero Excel correspondiente al cuadrante mensual.
+        \item RF-02. Validación de la estructura del Excel (columnas, formatos, especialidad, profesional, tipo CA/PF/LOC).
+        \item RF-03. Importación de guardias a la base de datos asociando mes, especialidad, profesional y tipo.
+        \item RF-04. Detección y evitación de guardias duplicadas.
+        \item RF-05. Informe de importación con registros correctos/erróneos y motivo.
+        \item RF-06. Repetición de importación de un mes solo con confirmación de un usuario autorizado.
     \end{itemize}
 
- \item \textbf{Módulo del administrador}
- \item[] La aplicación debe permitir que el administrador pueda realizar las siguientes acciones:
+    \item \textbf{Gestión de datos maestros}
     \begin{itemize}
-        \item RF-10. Gestionar usuarios registrados.
-            \begin{itemize}
-                \item RF-10.1. Crear un usuario.
-                \item RF-10.2. Buscar un usuario.
-                \item RF-10.3. Consultar un usuario.
-                \item RF-10.4. Modificar un usuario.
-                \item RF-10.5. Eliminar un usuario.
-            \end{itemize}
-
-        \item RF-11. Gestionar el catálogo de material deportivo.
-            \begin{itemize}
-                \item RF-11.1. Registrar nuevo material.
-                \item RF-11.2. Consultar material.
-                \item RF-11.3. Modificar información del material.
-                \item RF-11.4. Dar de baja material (borrado lógico).
-            \end{itemize}
-
-        \item RF-12. Gestionar los planes de suscripción.
-            \begin{itemize}
-                \item RF-12.1. Crear un plan de suscripción.
-                \item RF-12.2. Modificar un plan existente.
-                \item RF-12.3. Eliminar un plan (soft delete).
-            \end{itemize}
-
-        \item RF-13. Supervisar pedidos de usuarios.
-        \item RF-14. Gestionar incidencias reportadas por los usuarios.
-        \item RF-15. Consultar reportes y estadísticas del sistema.
+        \item RF-07. Gestión de especialidades (alta, baja y modificación).
+        \item RF-08. Importación de Excel con listado oficial de facultativos y fecha de inicio en el centro.
+        \item RF-09. Asociación de profesionales a una especialidad, si procede.
     \end{itemize}
 
+    \item \textbf{Gestión de tipos de guardia}
+    \begin{itemize}
+        \item RF-10. Tipos predefinidos: CA (15:00--20:00), PF (24h), LOC (24h).
+        \item RF-11. Toda guardia debe asociarse obligatoriamente a uno de estos tipos.
+        \item RF-12. Horas asociadas por tipo: CA=5, PF=24, LOC=24.
+    \end{itemize}
+
+    \item \textbf{Gestión del mes de guardias}
+    \begin{itemize}
+        \item RF-13. Consulta de meses de guardias importados.
+        \item RF-14. Cierre de mes para evitar modificaciones tras validación.
+        \item RF-15. Reapertura de mes cerrado solo por usuarios autorizados.
+    \end{itemize}
+
+    \item \textbf{Asignación de Jefe de Guardia Global}
+    \begin{itemize}
+        \item RF-16. Un único jefe de guardia por cada día del mes.
+        \item RF-17. Candidatos: profesionales con guardia ese día (cualquier tipo/especialidad).
+        \item RF-18. Asignación automática al profesional con mayor antigüedad.
+        \item RF-19. Ningún profesional debe tener más de 3 jefaturas en el mismo mes.
+        \item RF-20. Si el de mayor antigüedad supera el límite, asignar al siguiente que cumpla.
+        \item RF-21. Si nadie cumple, marcar el día como “pendiente de revisión”.
+        \item RF-22. Asignación manual en días pendientes, registrando motivo y usuario.
+        \item RF-23. Mostrar el jefe de guardia en las vistas diaria y mensual.
+    \end{itemize}
+
+    \item \textbf{Consultas y visualización de guardias}
+    \begin{itemize}
+        \item RF-24. Consulta por mes y especialidad.
+        \item RF-25. Consulta por profesional en un mes determinado.
+        \item RF-26. Vista diaria con guardias agrupadas por especialidad, profesional, tipo y jefe global.
+        \item RF-27. Búsqueda de profesionales por nombre o identificador.
+    \end{itemize}
+
+    \item \textbf{Cálculo de horas de guardia}
+    \begin{itemize}
+        \item RF-28. Cálculo automático de horas totales por profesional en un mes según tipo.
+        \item RF-29. Mostrar desglose de horas por día y por tipo (CA, PF, LOC).
+        \item RF-30. Exportación del resumen de horas por profesional y por especialidad.
+    \end{itemize}
+
+    \item \textbf{Cálculo de importe estimado por guardias}
+    \begin{itemize}
+        \item RF-31. Configuración de tarifas por tipo de guardia (CA, PF, LOC).
+        \item RF-32. Cálculo del importe estimado mensual por profesional (horas, tipo y tarifas).
+        \item RF-33. Contemplar plus de jefatura configurable sumado al total cuando corresponda.
+        \item RF-34. Mostrar desglose del importe (horas, tarifas y pluses).
+        \item RF-35. Generar informe mensual de importes por profesional y por especialidad.
+    \end{itemize}
+
+    \item \textbf{Generación de documentos y envío por correo}
+    \begin{itemize}
+        \item RF-36. Generar PDF diario con fecha, jefe global y guardias agrupadas por especialidad (profesional y tipo).
+        \item RF-37. Permitir descarga del PDF diario.
+        \item RF-38. Envío automático por email del PDF diario a destinatarios configurados.
+        \item RF-39. Generar Excel mensual con total de horas por profesional.
+        \item RF-40. El Excel incluirá profesional, especialidad, total de horas y desglose por tipo.
+        \item RF-41. Permitir descarga del Excel mensual.
+    \end{itemize}
+
+    \item \textbf{Usuarios, roles y auditoría}
+    \begin{itemize}
+        \item RF-42. Autenticación de usuarios.
+        \item RF-43. Gestión de roles diferenciando al menos Administrador y Usuario de consulta.
+        \item RF-44. Registro de historial de acciones (importaciones, cambios manuales, cierres de mes y envíos de correo).
+    \end{itemize}
 \end{itemize}
 
 \subsection{Requisitos no funcionales}\label{sec:requisitos-no-funcionales}
 
-Los requisitos no funcionales representan cómo tiene que trabajar la aplicación. Los requisitos no funcionales se denotarán como RNF-\textit{n}, donde \textit{n} es el número de requisito.
-
+Los requisitos no funcionales representan cómo tiene que trabajar la aplicación. Se denotarán como RNF-<nº requisito>.
 
 \begin{itemize}
-    \item RNF-1. La aplicación solo tendrá un usuario con rol de administrador.
-    \item RNF-2. El borrado de registros se realizará mediante soft delete.
-    \item RNF-3. La aplicación debe ser accesible desde cualquier navegador moderno.
-    \item RNF-4. La interfaz debe ser completamente responsiva.
-    \item RNF-5. Las operaciones deben ejecutarse con un tiempo de respuesta inferior a 2 segundos.
-    \item RNF-6. La aplicación debe seguir estándares de seguridad como HTTPS, hash de contraseñas y validación del lado del servidor.
-    \item RNF-7. El sistema debe permitir una escalabilidad mínima para soportar al menos 500 usuarios simultáneos.
-    \item RNF-8. La base de datos debe permitir integridad referencial y transacciones seguras.
-\end{itemize}
+    \item RNF-1. La aplicación solamente tendrá un usuario con el rol de administrador.
+    \item RNF-2. El borrado de registros en la base de datos se realizará mediante borrado lógico (soft delete), cuando aplique, mediante la actualización de un campo.
 
+    \item RNF-3. La aplicación deberá implementar autenticación segura mediante Laravel Sanctum para el acceso de usuarios registrados.
+    \item RNF-4. La autorización deberá estar basada en roles, de forma que cada usuario solo pueda acceder a las funcionalidades correspondientes.
+    \item RNF-5. Las contraseñas deberán almacenarse utilizando algoritmos de hash seguros proporcionados por el framework.
+    \item RNF-6. La aplicación deberá protegerse frente a ataques comunes en aplicaciones web, tales como inyección SQL, XSS y CSRF.
+
+    \item RNF-7. La comunicación entre el frontend (React) y el backend (Laravel) se realizará exclusivamente mediante una API REST.
+    \item RNF-8. La API deberá devolver respuestas consistentes con códigos HTTP apropiados y mensajes de error tratables por el frontend.
+    \item RNF-9. La API deberá permitir el acceso únicamente desde orígenes autorizados mediante una configuración de CORS.
+    \item RNF-10. La gestión de sesión/autenticación en la SPA deberá mantenerse de forma segura utilizando los mecanismos proporcionados por Sanctum.
+
+    \item RNF-11. Las operaciones críticas (importación de Excel, cierre/reapertura de mes y asignaciones manuales) deberán ejecutarse de forma transaccional para garantizar la integridad de los datos.
+    \item RNF-12. El sistema deberá garantizar la integridad referencial entre entidades (guardias, profesionales, especialidades, meses, etc.).
+    \item RNF-13. El sistema deberá registrar un historial/auditoría de acciones relevantes, indicando usuario, fecha y detalle de la operación.
+
+    \item RNF-14. La interfaz deberá ser responsiva y compatible con los principales navegadores web actuales.
+    \item RNF-15. La aplicación deberá ser usable por personal no técnico, priorizando claridad en textos, navegación y mensajes de validación.
+
+    \item RNF-16. El código deberá seguir buenas prácticas de desarrollo y una estructura modular que facilite el mantenimiento y la escalabilidad.
+    \item RNF-17. El proyecto deberá incluir control de versiones (por ejemplo, Git) y un flujo de trabajo en equipo que facilite la integración de cambios.
+\end{itemize}
 
 \subsection{Requisitos de la interfaz}\label{sec:requisitos-interfaz}
 
-  La interfaz es el dispositivo que permite la comunicación entre el usuario y el sistema. En esta sección, se enumeran los requisitos que debe tener la interfaz para que pueda ser utilizada por todos los tipos de usuario.
-  
-Los requisitos de la interfaz especifican cómo debe ser la comunicación entre el usuario y la parte visible de la aplicación. Se denotarán como RINT-\textit{n}, donde \textit{n} es el número de requisito.
+La interfaz es el medio que permite la comunicación entre el usuario y el sistema. En esta sección se enumeran los requisitos que debe cumplir la interfaz para que pueda ser utilizada por todos los tipos de usuario.
 
+Los requisitos de la interfaz especifican cómo debe ser la comunicación entre el usuario y la parte visible de la aplicación. Se denotarán como RINT-<nº de requisito>.
 
 \begin{itemize}
-    \item RINT-1. La interfaz debe ser clara, intuitiva y coherente en todas las pantallas.
-    \item RINT-2. Debe cumplir con los criterios básicos de accesibilidad WCAG.
-    \item RINT-3. Debe permitir una navegación sencilla entre módulos.
-    \item RINT-4. Los formularios deben incluir validaciones tanto visuales como textuales.
-    \item RINT-5. Todos los mensajes de error deben mostrarse de forma visible y comprensible.
-    \item RINT-6. El usuario debe recibir retroalimentación en cada acción (confirmaciones, avisos, alertas).
-    
+    \item RINT-1. La interfaz deberá ser responsiva y adaptarse a distintos tamaños de pantalla.
+    \item RINT-2. La navegación deberá ser clara y consistente en todas las vistas de la aplicación.
+    \item RINT-3. La interfaz deberá mostrar menús y opciones en función del rol del usuario autenticado.
+    \item RINT-4. La aplicación deberá informar al usuario mediante mensajes claros de éxito o error tras cada operación relevante.
+    \item RINT-5. La interfaz deberá mostrar indicadores de carga durante operaciones que requieran tiempo de procesamiento.
+    \item RINT-6. Las vistas diaria y mensual deberán presentar la información de guardias de forma estructurada y fácilmente legible.
 \end{itemize}
 
 \subsection{Requisitos de información}\label{sec:requisitos-información}
 
-Los requisitos de información hacen referencia a los datos que debe gestionar la aplicación web. Se denotarán como RI-\textit{n}, donde \textit{n} es el número de requisito.
-
+Los requisitos de información hacen referencia a los datos que debe gestionar la aplicación web. Se denotarán como RI-<nº de requisito>.
 
 Se deberá almacenar la siguiente información:
 \begin{itemize}
-    \item RI-1. Se debe almacenar la información personal de los usuarios (nombre, email, dirección, contraseña).
-    \item RI-2. Se debe almacenar información de cada suscripción (nivel, fecha de inicio, renovación, estado).
-    \item RI-3. Se debe registrar el catálogo completo de material deportivo disponible.
-    \item RI-4. Se debe almacenar información sobre pedidos, devoluciones y renovaciones.
-    \item RI-5. Se debe guardar el historial de actividad del administrador.
-    \item RI-6. Se deben almacenar incidencias reportadas por los usuarios.
+    \item RI-1. Información de usuarios del sistema, incluyendo credenciales y rol asociado.
+    \item RI-2. Información de profesionales (facultativos), incluyendo datos identificativos y fecha de inicio en el centro.
+    \item RI-3. Información de especialidades del hospital.
+    \item RI-4. Información de guardias, incluyendo fecha, profesional, especialidad y tipo de guardia (CA, PF, LOC).
+    \item RI-5. Información de los meses de guardias y su estado (abierto o cerrado).
+    \item RI-6. Información de la jefatura global diaria, incluyendo profesional asignado y motivo en caso de asignación manual.
+    \item RI-7. Información de tarifas por tipo de guardia y plus de jefatura.
+    \item RI-8. Información de documentos generados (PDF diario y Excel mensual).
+    \item RI-9. Registro de auditoría de acciones relevantes realizadas en el sistema.
 \end{itemize}
 
-        
 Una descripción más detallada de la información que se va a gestionar se puede consultar en el capítulo \ref{cap:modelo_de_datos} de Modelo de Datos.
-
