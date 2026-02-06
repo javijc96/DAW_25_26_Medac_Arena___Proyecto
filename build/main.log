@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.10)  6 FEB 2026 19:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.10)  6 FEB 2026 19:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1831,7 +1831,7 @@ LaTeX Info: Redefining \% on input line 99.
 LaTeX Info: Redefining \. on input line 257.
 LaTeX Info: Redefining \% on input line 257.
  [59]
-runsystem(latexminted cleantemp  --timestamp 20260206192301 FAD58DE7366495DB4650CFEFAC2FCD61)...disabled (restricted).
+runsystem(latexminted cleantemp  --timestamp 20260206192544 FAD58DE7366495DB4650CFEFAC2FCD61)...disabled (restricted).
 
  (c:\Users\DAVANTE\Desktop\DAW_25_26_Medac_Arena___Proyecto\build\main.aux
 LaTeX Info: Redefining \sptext on input line 13.
@@ -1864,7 +1864,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  84i,14n,117p,1255b,2411s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsb8a.pfb><C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsr8a.pfb><C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsro8a.pfb>
-Output written on c:\Users\DAVANTE\Desktop\DAW_25_26_Medac_Arena___Proyecto\build\main.pdf (67 pages, 2088875 bytes).
+Output written on c:\Users\DAVANTE\Desktop\DAW_25_26_Medac_Arena___Proyecto\build\main.pdf (67 pages, 2088629 bytes).
 PDF statistics:
  1377 PDF objects out of 1440 (max. 8388607)
  198 named destinations out of 1000 (max. 500000)
