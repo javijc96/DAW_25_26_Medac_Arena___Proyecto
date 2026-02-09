@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber build/main"] 0 "build/main.bcf" "build/main.bbl" "build/main" 1770405951.94909 -1
-  "build/main.bcf" 1770405951 109161 a8e0108af52657bf43b6bc5357b54740 "pdflatex"
+["biber build/main"] 0 "build/main.bcf" "build/main.bbl" "build/main" 1770407031.00132 -1
+  "build/main.bcf" 1770407030 109161 a8e0108af52657bf43b6bc5357b54740 "pdflatex"
   "references.bib" 1766069784 3891 2e43bc4cbe90cf5dcd159c16ad3e6fe5 ""
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["pdflatex"] 1770405946.40535 "c:/Users/DAVANTE/Desktop/DAW_25_26_Medac_Arena___Proyecto/main.tex" "build/main.pdf" "main" 1770405951.95041 0
+["pdflatex"] 1770407024.63537 "c:/Users/DAVANTE/Desktop/DAW_25_26_Medac_Arena___Proyecto/main.tex" "build/main.pdf" "main" 1770407031.00282 0
   "C:/Users/DAVANTE/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1762794423 83486 9208647d054da4672a050e7ed94c9aa5 ""
   "C:/Users/DAVANTE/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1762793542 31952 4be511694d2c106acb4c029ea0efded6 ""
   "C:/Users/DAVANTE/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk" 1762793544 40136 780b0c66943e3b941b6fd67d9f4250ee ""
@@ -254,16 +254,16 @@
   "C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/svgnam.def" 1729265222 4705 34614fec2d4cfd7794c82198c9076871 ""
   "C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "build/main.aux" 1770405951 22535 a57157780f22cef3e793102677f364e2 "pdflatex"
+  "build/main.aux" 1770407030 22395 1f7967354468875bb6388107ac51ea01 "pdflatex"
   "build/main.bbl" 1770316242 8628 a7cfd696b3b6c4b9849a348221091aca "biber build/main"
-  "build/main.out" 1770405951 18068 544588041aab42faa56192a5d4e8d088 "pdflatex"
-  "build/main.run.xml" 1770405951 2305 76c44fea4789d1f6305c2f013e1aba2a "pdflatex"
-  "build/main.toc" 1770405951 9289 16ab4ae322ebe5e8fea232240cacc496 "pdflatex"
+  "build/main.out" 1770407030 17809 1978cad654cd9c1bb52e9371d26a5ccb "pdflatex"
+  "build/main.run.xml" 1770407030 2305 76c44fea4789d1f6305c2f013e1aba2a "pdflatex"
+  "build/main.toc" 1770407030 9190 9a99392a89f5b4d17bcdb15852f53cd5 "pdflatex"
   "c:/Users/DAVANTE/Desktop/DAW_25_26_Medac_Arena___Proyecto/main.tex" 1770402342 7123 ff678a5308f9e03eb11552bd4a6b61b9 ""
   "capítulos/01_Introducción.tex" 1770405940 9933 94cdef71293490c02538bdb2f330326b ""
   "capítulos/02_Objetivos.tex" 1770404742 5197 118820c256f7e7004ec81847f46bfa37 ""
   "capítulos/03_Recursos.tex" 1766069223 2579 152dd439239df14752c7cf5aeb56c1e5 ""
-  "capítulos/04_Contextualización_Empresarial.tex" 1770405615 5257 5313b77930dd1a2802ffbbaed3893ea0 ""
+  "capítulos/04_Contextualización_Empresarial.tex" 1770407015 5208 64f7a6949cbf1557d51adc72a79af7ec ""
   "capítulos/05_Especificación_Requisitos.tex" 1770404408 15707 dfb4c6f2555561330a63d82458023b69 ""
   "capítulos/06_Modelo_de_datos.tex" 1766069784 10210 aeed623c74383aa304111a9e89fd2e48 ""
   "capítulos/07_Análisis_Funcional.tex" 1770316361 7320 d38488582f4779739d536661fcb00e96 ""
