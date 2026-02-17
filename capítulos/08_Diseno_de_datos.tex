@@ -34,29 +34,34 @@ Para cada tabla se mostrará la siguiente información:
 \end{itemize}
 
 \subsection{Tabla Usuario}
+\begin{itemize}
+    \item \textbf{Descripción}: la tabla \textit{Usuario} se obtiene a partir de la entidad \textit{Usuario}
+    (modelo \texttt{User}). Almacena las credenciales y datos básicos necesarios para la autenticación y
+    la identificación del usuario dentro del sistema. Además, se relaciona con la entidad \textit{Profesional/Trabajador}
+    mediante el atributo \texttt{worker\_id}.
+
+    \item \textbf{Nombre de la tabla}: Usuario (\texttt{users})
+
+    \item \textbf{Atributos}:
     \begin{itemize}
-        \item \textbf{Descripción}: la tabla Usuario se obtiene a partir de la entidad \textit{Usuario}.
-        \item \textbf{Nombre de la tabla}:
-        \item \textbf{Atributos}:
-            \begin{itemize}
-                \item Clave primaria: \underline{id}
-                \item Clave alterna: 
-                \item Clave foránea: \textbf{}
-                \item Resto de atributos: 
-            \end{itemize}
-        \item \textbf{Esquema relacional}: 
-            Usuario(\textbf{\underline{id}}, name, email, password, estado)
+        \item Clave primaria: \underline{id}
+        \item Claves alternas: email (único)
+        \item Claves foráneas: \textbf{worker\_id} $\rightarrow$ Trabajador(id) \ (si existe la tabla de trabajadores/profesionales)
+        \item Resto de atributos: name, password, avatarUrl, email\_verified\_at, remember\_token, created\_at, updated\_at
     \end{itemize}
 
-    
+    \item \textbf{Esquema relacional}:
+    Usuario(\textbf{\underline{id}}, name, \textit{email}, password, avatarUrl, \textbf{worker\_id}, email\_verified\_at, remember\_token, created\_at, updated\_at)
+\end{itemize}
+
+
  \section{Normalización del modelo}\label{sec:normalizacion}
 La normalización del modelo descrito en la sección anterior pretende detectar y corregir redundancias e inconsistencias en la información representada, para lo cual se aplicarán las medidas correctoras que garanticen que las tablas obtenidas cumplen las siguientes formas normalizadas \cite{reglasBD}.
 
 \begin{itemize}
-    \item Primera Forma Normal (FN1): una relación R satisface la FN1 si y solo si, todos los dominios subyacentes de la relación R (atributos) contienen valores atómicos.
-    \item Segunda Forma Normal (FN2): una relación R satisface la FN2 si y sólo si, satisface la FN1 y cada atributo de la relación depende funcionalmente de forma completa de la clave primaria de esa relación.
-    \item Tercera Forma Normal (FN3): una relación R satisface la FN3 si y sólo si, satisface la FN2 y cada atributo no primo de la relación no depende funcionalmente de forma transitiva de la clave primaria de esa relación, es decir, no pueden existir dependencias transitivas entre los atributos que no forman parte de la clave primaria de esa relación R.
-    \item Forma Normal de Boyce-Codd (FNBC): una relación R satisface la FNBC si y sólo si, se encuentra en FN1 y cada determinante funcional es una clave candidata de la relación R, denominándose determinante funcional a uno o un conjunto de atributos de una relación R del cual depende funcionalmente de forma completa algún otro atributo de la misma relación.
+    \item La tabla Usuario cumple la FN1 al almacenar valores atómicos en todos sus atributos.
+    \item Cumple FN2 y FN3 al depender todos los atributos no clave de forma completa y no transitiva de la clave primaria.
+    \item Además, se encuentra en FNBC, ya que los determinantes funcionales relevantes son claves candidatas (id y email).
 \end{itemize}
 
 Todas las tablas definidas se encuentran en la Primera Forma Normal, puesto que en ninguna de ellas existen atributos múltiples.
@@ -73,19 +78,127 @@ Todas las tablas definidas se encuentran en la Primera Forma Normal, puesto que 
 \caption{Tabla Usuario en FNBC}\label{fig:Tabla Usuario en FNBC}   
 \end{figure}
 
+
+\subsection{Tabla Trabajador}
+\begin{itemize}
+    \item \textbf{Descripción}: la tabla \textit{Trabajador} se obtiene a partir de la entidad \textit{Trabajador}
+    (modelo \texttt{Worker} de Laravel). Almacena la información laboral necesaria para la planificación de guardias,
+    incluyendo rango/categoría, fechas de alta y baja, y la especialidad a la que pertenece.
+
+    \item \textbf{Nombre de la tabla}: Trabajador (\texttt{worker})
+
+    \item \textbf{Atributos}:
+    \begin{itemize}
+        \item Clave primaria: \underline{id}
+        \item Claves alternas: ---
+        \item Claves foráneas: \textbf{id\_speciality} $\rightarrow$ Especialidad(id)
+        \item Resto de atributos: name, rank, registration\_date, discharge\_date
+    \end{itemize}
+
+    \item \textbf{Esquema relacional}:
+    Trabajador(\textbf{\underline{id}}, name, rank, registration\_date, discharge\_date, \textbf{id\_speciality})
+\end{itemize}
+
+\subsection{Tabla Trabajador}
+    \begin{itemize}
+        \item \textbf{Claves candidatas}: id
+        \item \textbf{Normalización}: La tabla Trabajador presenta una dependencia funcional formada por la clave primaria y el resto de atributos. La tabla se encuentra en FNBC: el único determinante funcional es la clave primaria, por lo que la dependencia funcional con el resto de atributos es completa.
+    \end{itemize}
+
+\begin{figure}[H]
+\centering
+%\includegraphics[scale=0.75]{img/diagramas/Datos/FNBC-Trabajador.png}
+\caption{Tabla Trabajador en FNBC}\label{fig:Tabla Trabajador en FNBC}   
+\end{figure}
+
+\subsection{Tabla Especialidad}
+\begin{itemize}
+    \item \textbf{Descripción}: la tabla \textit{Especialidad} se obtiene a partir de la entidad \textit{Especialidad}
+    (modelo \texttt{Speciality} de Laravel). Almacena las secciones/especialidades del hospital a las que pertenecen
+    los trabajadores y sobre las que se organizan las guardias.
+
+    \item \textbf{Nombre de la tabla}: Especialidad (\texttt{speciality})
+
+    \item \textbf{Atributos}:
+    \begin{itemize}
+        \item Clave primaria: \underline{id}
+        \item Claves alternas: ---
+        \item Claves foráneas: ---
+        \item Resto de atributos: name, active
+    \end{itemize}
+
+    \item \textbf{Esquema relacional}:
+    Especialidad(\textbf{\underline{id}}, name, active)
+\end{itemize}
+\subsection{Tabla Especialidad}
+    \begin{itemize}
+        \item \textbf{Claves candidatas}: id
+        \item \textbf{Normalización}: La tabla Especialidad presenta una dependencia funcional formada por la clave primaria y el resto de atributos. La tabla se encuentra en FNBC: el único determinante funcional es la clave primaria, por lo que la dependencia funcional con el resto de atributos es completa.
+    \end{itemize}
+
+\begin{figure}[H]
+\centering
+%\includegraphics[scale=0.75]{img/diagramas/Datos/FNBC-Especialidad.png}
+\caption{Tabla Especialidad en FNBC}\label{fig:Tabla Especialidad en FNBC}   
+\end{figure}
+
+\subsection{Tabla Guardia}
+\begin{itemize}
+    \item \textbf{Descripción}: la tabla \textit{Guardia} se obtiene a partir de la entidad \textit{Guardia}
+    (modelo \texttt{Duty} de Laravel). Representa cada guardia asignada en una fecha concreta, indicando su tipo,
+    la especialidad asociada, el trabajador asignado y, cuando corresponda, el trabajador que actúa como jefe de guardia.
+
+    \item \textbf{Nombre de la tabla}: Guardia (\texttt{duties})
+
+    \item \textbf{Atributos}:
+    \begin{itemize}
+        \item Clave primaria: \underline{id}
+        \item Claves alternas: ---
+        \item Claves foráneas: \textbf{id\_speciality} $\rightarrow$ Especialidad(id), \textbf{id\_worker} $\rightarrow$ Trabajador(id), \textbf{id\_chief\_worker} $\rightarrow$ Trabajador(id)
+        \item Resto de atributos: date, duty\_type
+    \end{itemize}
+
+    \item \textbf{Esquema relacional}:
+    Guardia(\textbf{\underline{id}}, date, duty\_type, \textbf{id\_speciality}, \textbf{id\_worker}, \textbf{id\_chief\_worker})
+\end{itemize}
+\subsection{Tabla Guardia}
+    \begin{itemize}
+        \item \textbf{Claves candidatas}: id
+        \item \textbf{Normalización}: La tabla Guardia presenta una dependencia funcional formada por la clave primaria y el resto de atributos. La tabla se encuentra en FNBC: el único determinante funcional es la clave primaria, por lo que la dependencia funcional con el resto de atributos es completa.
+    \end{itemize}
+
+\begin{figure}[H]
+\centering
+%\includegraphics[scale=0.75]{img/diagramas/Datos/FNBC-Guardia.png}
+\caption{Tabla Guardia en FNBC}\label{fig:Tabla Guardia en FNBC}   
+\end{figure}
+
+
+%%
  \section{Esquema relacional}\label{sec:esquema-relacional}
 
 \begin{table}[H]
 \begin{center}
     \begin{tabular}{|l|p{8cm}|}
     \hline
-    Tabla                 &   Atributos          
+    Tabla                 &   Atributos
     \\ \hline
-    Usuario             &   (\textbf{\underline{id}}, name, email, password, estado) 
-    \\  \hline
-            \end{tabular}
-        \end{center}
-    \end{table}
+
+    Usuario             &   (\textbf{\underline{id}}, name, email, password, avatarUrl, \textbf{worker\_id}, email\_verified)
+    \\ \hline
+
+    Trabajador          &   (\textbf{\underline{id}}, name, rank, registration\_date, discharge\_date, \textbf{id\_speciality})
+    \\ \hline
+
+    Especialidad        &   (\textbf{\underline{id}}, name, active)
+    \\ \hline
+
+    Guardia             &   (\textbf{\underline{id}}, date, duty\_type, \textbf{id\_speciality}, \textbf{id\_worker}, \textbf{id\_chief\_worker})
+    \\ \hline
+
+    \end{tabular}
+\end{center}
+\end{table}
 
 
 
@@ -99,6 +212,3 @@ El diagrama relacional del modelo propuesto se muestra en la figura \ref{fig:Dia
 \caption{Diagrama relacional}\label{fig:Diagrama Relacional}   
 \end{figure}
 \end{landscape}
-
-
-
