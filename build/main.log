@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.10)  17 FEB 2026 17:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.10)  17 FEB 2026 17:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1766,22 +1766,42 @@ Overfull \hbox (8.81186pt too wide) in paragraph at lines 53--55
 LaTeX Info: Redefining \. on input line 64.
 LaTeX Info: Redefining \% on input line 64.
 [41]
-LaTeX Info: Redefining \. on input line 106.
-LaTeX Info: Redefining \% on input line 106.
- [42]
-LaTeX Info: Redefining \. on input line 153.
-LaTeX Info: Redefining \% on input line 153.
- [43]
+<img/diagramas/Datos/User.png, id=863, 121.45375pt x 241.90375pt>
+File: img/diagramas/Datos/User.png Graphic file (type png)
+<use img/diagramas/Datos/User.png>
+Package pdftex.def Info: img/diagramas/Datos/User.png  used on input line 77.
+(pdftex.def)             Requested size: 91.09007pt x 181.42735pt.
+LaTeX Info: Redefining \. on input line 94.
+LaTeX Info: Redefining \% on input line 94.
+ [42 <./img/diagramas/Datos/User.png>]
+<img/diagramas/Datos/trabajador.png, id=871, 121.45375pt x 211.79124pt>
+File: img/diagramas/Datos/trabajador.png Graphic file (type png)
+<use img/diagramas/Datos/trabajador.png>
+Package pdftex.def Info: img/diagramas/Datos/trabajador.png  used on input line 110.
+(pdftex.def)             Requested size: 91.09007pt x 158.84303pt.
+LaTeX Info: Redefining \. on input line 136.
+LaTeX Info: Redefining \% on input line 136.
+ [43 <./img/diagramas/Datos/trabajador.png>]
+<img/diagramas/Datos/especialidad.png, id=878, 141.52875pt x 121.45375pt>
+File: img/diagramas/Datos/especialidad.png Graphic file (type png)
+<use img/diagramas/Datos/especialidad.png>
+Package pdftex.def Info: img/diagramas/Datos/especialidad.png  used on input line 141.
+(pdftex.def)             Requested size: 106.14629pt x 91.09007pt.
+<img/diagramas/Datos/guardia.png, id=879, 121.45375pt x 211.79124pt>
+File: img/diagramas/Datos/guardia.png Graphic file (type png)
+<use img/diagramas/Datos/guardia.png>
+Package pdftex.def Info: img/diagramas/Datos/guardia.png  used on input line 172.
+(pdftex.def)             Requested size: 91.09007pt x 158.84303pt.
+LaTeX Info: Redefining \. on input line 175.
+LaTeX Info: Redefining \% on input line 175.
+ [44 <./img/diagramas/Datos/especialidad.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 196--197
 []|\T1/cmr/m/n/12 ($[]$, da-te, duty_type, \T1/cmr/bx/n/12 id_speciality\T1/cmr/m/n/12 ,
  []
 
 LaTeX Info: Redefining \. on input line 208.
 LaTeX Info: Redefining \% on input line 208.
-[44]
-LaTeX Info: Redefining \. on input line 208.
-LaTeX Info: Redefining \% on input line 208.
- [45]
+[45 <./img/diagramas/Datos/guardia.png>]
 LaTeX Info: Redefining \. on input line 214.
 LaTeX Info: Redefining \% on input line 214.
  [46
@@ -1825,7 +1845,7 @@ Cap\'{\i }tulo 14.
 
 ]
 Cap\'{\i }tulo 15.
-<img/diagramas/Modelo-Físico-ER.png, id=964, 505.89pt x 289.08pt>
+<img/diagramas/Modelo-Físico-ER.png, id=973, 505.89pt x 289.08pt>
 File: img/diagramas/Modelo-Físico-ER.png Graphic file (type png)
 <use img/diagramas/Modelo-Físico-ER.png>
 Package pdftex.def Info: img/diagramas/Modelo-Físico-ER.png  used on input line 25.
@@ -1850,7 +1870,7 @@ LaTeX Info: Redefining \% on input line 99.
 LaTeX Info: Redefining \. on input line 257.
 LaTeX Info: Redefining \% on input line 257.
  [63]
-runsystem(latexminted cleantemp  --timestamp 20260217172601 FAD58DE7366495DB4650CFEFAC2FCD61)...disabled (restricted).
+runsystem(latexminted cleantemp  --timestamp 20260217175531 FAD58DE7366495DB4650CFEFAC2FCD61)...disabled (restricted).
 
  (c:\Users\DAVANTE\Desktop\DAW_25_26_Medac_Arena___Proyecto\build\main.aux
 LaTeX Info: Redefining \sptext on input line 13.
@@ -1878,17 +1898,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40952 strings out of 467871
- 810497 string characters out of 5417407
+ 40980 strings out of 467871
+ 811592 string characters out of 5417407
  1757211 words of memory out of 5000000
- 68942 multiletter control sequences out of 15000+600000
+ 68970 multiletter control sequences out of 15000+600000
  676330 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,14n,117p,1255b,2411s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsb8a.pfb><C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsr8a.pfb><C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsro8a.pfb>
-Output written on c:\Users\DAVANTE\Desktop\DAW_25_26_Medac_Arena___Proyecto\build\main.pdf (71 pages, 2110226 bytes).
+Output written on c:\Users\DAVANTE\Desktop\DAW_25_26_Medac_Arena___Proyecto\build\main.pdf (71 pages, 2119634 bytes).
 PDF statistics:
- 1448 PDF objects out of 1728 (max. 8388607)
+ 1457 PDF objects out of 1728 (max. 8388607)
  212 named destinations out of 1000 (max. 500000)
- 948 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 968 words of extra memory for PDF output out of 10000 (max. 10000000)
 
