@@ -64,68 +64,78 @@ En esta sección se describirán todos los tipos de entidad que se han identific
 Los tipos de entidad que se han identificado y que se describirán a continuación son los siguientes:
 \begin{itemize}
     \item Tipo de entidad: Usuario
-    \item ...
+    \item Tipo de entidad: Trabajador
+    \item Tipo de entidad: Especialidad
+    \item Tipo de entidad: Guardia
 \end{itemize}
 
 \subsection{Entidad Usuario}
 \begin{itemize}
-    \item Descripción: este tipo de entidad representa a los usuarios registrados en el sistema que...
-    \item Restricciones: es una entidad fuerte por lo que no depende de otro tipo de entidad.
+    \item Descripción: este tipo de entidad representa a los usuarios registrados en el sistema que pueden autenticarse y acceder a GuardiApp. Un usuario está asociado a un trabajador del hospital para relacionar la cuenta con la persona real.
+    \item Restricciones: es una entidad fuerte por lo que no depende de otro tipo de entidad para existir.
     \item Características:
     \begin{itemize}
         \item Nombre de la entidad: Usuario.
         \item Tipo: fuerte.
         \item Atributos heredados: ninguno.
         \item Atributo identificador primario: id.
-        \item Atributo identificador alternativo: ninguno.
-        \item Número de atributos: 5 propios.
+        \item Atributo identificador alternativo: email.
+        \item Número de atributos: 6 propios.
     \end{itemize}
 
     \item Atributos propios:
     \begin{itemize}
         \item id
         \begin{itemize}
-            \item Definición: código numérico secuencial e incremental que identifica el centro.
+            \item Definición: identificador numérico que permite distinguir de forma única a cada usuario.
             \item Dominio: números enteros mayores que 0.
             \item Tipo: clave primaria.
-            \item Opcional: no
-            \item Ejemplo: 13
+            \item Opcional: no.
+            \item Ejemplo: 1.
         \end{itemize}
 
         \item name
         \begin{itemize}
-            \item Definición: nombre que identifica al usuario.
-            \item Dominio: conjunto de 150 caracteres.
+            \item Definición: nombre visible del usuario.
+            \item Dominio: conjunto de hasta 150 caracteres.
             \item Tipo: atributo simple.
-            \item Opcional: no
-            \item Ejemplo: 
+            \item Opcional: no.
+            \item Ejemplo: Tomás de Aquino.
         \end{itemize}
 
         \item email
         \begin{itemize}
-            \item Definición: dirección de correo del usuario.
-            \item Dominio: conjunto de 250 caracteres.
-            \item Tipo: atributo simple.
-            \item Opcional: no
-            \item Ejemplo: 
+            \item Definición: correo electrónico utilizado para identificar y autenticar al usuario.
+            \item Dominio: conjunto de hasta 250 caracteres con formato email.
+            \item Tipo: clave alterna (única).
+            \item Opcional: no.
+            \item Ejemplo: santotomas@alu.medac.es.
         \end{itemize}
 
         \item password
         \begin{itemize}
-            \item Definición: contraseña del usuario.
-            \item Dominio: conjunto de 250 caracteres encriptados.
+            \item Definición: contraseña del usuario almacenada de forma segura.
+            \item Dominio: conjunto de caracteres (hash).
             \item Tipo: atributo simple.
-            \item Opcional: no
-            \item Ejemplo: 
+            \item Opcional: no.
+            \item Ejemplo: \$2y\$10\$....
         \end{itemize}
 
-        \item estado
+        \item avatarUrl
         \begin{itemize}
-            \item Definición: estado del usuario.
-            \item Dominio: 1 (Habilitado), 0 (Deshabilitado).
+            \item Definición: dirección o ruta del avatar asociado al usuario.
+            \item Dominio: conjunto de hasta 255 caracteres (URL o ruta).
             \item Tipo: atributo simple.
-            \item Opcional: no
-            \item Ejemplo: 1
+            \item Opcional: sí.
+        \end{itemize}
+
+        \item worker\_id
+        \begin{itemize}
+            \item Definición: identificador del trabajador al que está asociada la cuenta de usuario.
+            \item Dominio: números enteros mayores que 0.
+            \item Tipo: clave foránea.
+            \item Opcional: sí (según diseño; se permite usuario sin trabajador asociado).
+            \item Ejemplo: 12.
         \end{itemize}
     \end{itemize}
 
@@ -133,7 +143,7 @@ Los tipos de entidad que se han identificado y que se describirán a continuaci�
 
     \begin{figure}[H]
         \centering
-        %\includegraphics[scale=0.8]{img/diagramas/EER/E-Usuario.png}
+        \includegraphics[scale=0.8]{img/diagramas/Datos/User.png}
         \caption{Entidad Usuario}
         \label{fig:E-Usuario}
     \end{figure}
@@ -150,16 +160,310 @@ Los tipos de entidad que se han identificado y que se describirán a continuaci�
              \hline
                  id & 1 \\
              \hline
-                 nombre & Ciencias \\
+                 name & Tomás de Aquino \\
              \hline
-                 email &  \\
-            \hline
-                 password &  \\
+                 email & santotomas@alu.medac.es \\
              \hline
-                 estado & 1 \\
+                 password & \$2y\$10\$... \\
+             \hline
+                 avatarUrl & https://.../avatar.png \\
+             \hline
+                 worker\_id & 12 \\
+             \hline
         \end{tabular}
         \caption{Ejemplo de la entidad \textit{Usuario}}
         \label{table:T-Usuario}
+    \end{table}
+\end{itemize}
+
+\subsection{Entidad Trabajador}
+\begin{itemize}
+    \item Descripción: este tipo de entidad representa a los profesionales/trabajadores del hospital que pueden ser asignados a guardias. Almacena información laboral relevante, incluida la especialidad a la que pertenece.
+    \item Restricciones: es una entidad fuerte por lo que no depende de otro tipo de entidad para existir.
+    \item Características:
+    \begin{itemize}
+        \item Nombre de la entidad: Trabajador.
+        \item Tipo: fuerte.
+        \item Atributos heredados: ninguno.
+        \item Atributo identificador primario: id.
+        \item Atributo identificador alternativo: ninguno.
+        \item Número de atributos: 6 propios.
+    \end{itemize}
+
+    \item Atributos propios:
+    \begin{itemize}
+        \item id
+        \begin{itemize}
+            \item Definición: identificador numérico único del trabajador.
+            \item Dominio: números enteros mayores que 0.
+            \item Tipo: clave primaria.
+            \item Opcional: no.
+            \item Ejemplo: 12.
+        \end{itemize}
+
+        \item name
+        \begin{itemize}
+            \item Definición: nombre completo del trabajador.
+            \item Dominio: conjunto de hasta 150 caracteres.
+            \item Tipo: atributo simple.
+            \item Opcional: no.
+            \item Ejemplo: Tomás de Aquino.
+        \end{itemize}
+
+        \item rank
+        \begin{itemize}
+            \item Definición: categoría/rango profesional del trabajador.
+            \item Dominio: conjunto de hasta 100 caracteres.
+            \item Tipo: atributo simple.
+            \item Opcional: no.
+            \item Ejemplo: Adjunta.
+        \end{itemize}
+
+        \item registration\_date
+        \begin{itemize}
+            \item Definición: fecha de alta o incorporación del trabajador al centro.
+            \item Dominio: fecha (YYYY-MM-DD).
+            \item Tipo: atributo simple.
+            \item Opcional: no.
+            \item Ejemplo: 2016-09-01.
+        \end{itemize}
+
+        \item discharge\_date
+        \begin{itemize}
+            \item Definición: fecha de baja del trabajador en el centro, si aplica.
+            \item Dominio: fecha (YYYY-MM-DD).
+            \item Tipo: atributo simple.
+            \item Opcional: sí.
+            \item Ejemplo: 2025-06-30.
+        \end{itemize}
+
+        \item id\_speciality
+        \begin{itemize}
+            \item Definición: especialidad a la que pertenece el trabajador.
+            \item Dominio: números enteros mayores que 0.
+            \item Tipo: clave foránea.
+            \item Opcional: no.
+            \item Ejemplo: 3.
+        \end{itemize}
+    \end{itemize}
+
+    \item Diagrama (Figura \ref{fig:E-Trabajador}):
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.8]{img/diagramas/Datos/trabajador.png}
+        \caption{Entidad Trabajador}
+        \label{fig:E-Trabajador}
+    \end{figure}
+
+    \item Ejemplo de entidad (Tabla \ref{table:T-Trabajador}):
+
+    \begin{table}[H]
+    \centering
+        \begin{tabular}{ |p{6cm}||p{6cm}|  }
+             \hline
+                \multicolumn{2}{|c|}{\textbf{Trabajador}} \\
+             \hline
+                 \textbf{Atributo} & \textbf{Valor} \\
+             \hline
+                 id & 12 \\
+             \hline
+                 name & Tomás de Aquino \\
+             \hline
+                 rank & Adjunta \\
+             \hline
+                 registration\_date & 2016-09-01 \\
+             \hline
+                 discharge\_date &  \\
+             \hline
+                 id\_speciality & 3 \\
+             \hline
+        \end{tabular}
+        \caption{Ejemplo de la entidad \textit{Trabajador}}
+        \label{table:T-Trabajador}
+    \end{table}
+\end{itemize}
+
+\subsection{Entidad Especialidad}
+\begin{itemize}
+    \item Descripción: este tipo de entidad representa las especialidades o secciones del hospital (por ejemplo, urgencias, radiología, ginecología). Permite agrupar trabajadores y guardias por área.
+    \item Restricciones: es una entidad fuerte por lo que no depende de otro tipo de entidad para existir.
+    \item Características:
+    \begin{itemize}
+        \item Nombre de la entidad: Especialidad.
+        \item Tipo: fuerte.
+        \item Atributos heredados: ninguno.
+        \item Atributo identificador primario: id.
+        \item Atributo identificador alternativo: ninguno.
+        \item Número de atributos: 3 propios.
+    \end{itemize}
+
+    \item Atributos propios:
+    \begin{itemize}
+        \item id
+        \begin{itemize}
+            \item Definición: identificador numérico único de la especialidad.
+            \item Dominio: números enteros mayores que 0.
+            \item Tipo: clave primaria.
+            \item Opcional: no.
+            \item Ejemplo: 3.
+        \end{itemize}
+
+        \item name
+        \begin{itemize}
+            \item Definición: nombre de la especialidad.
+            \item Dominio: conjunto de hasta 150 caracteres.
+            \item Tipo: atributo simple.
+            \item Opcional: no.
+            \item Ejemplo: Urgencias.
+        \end{itemize}
+
+        \item active
+        \begin{itemize}
+            \item Definición: indica si la especialidad está activa en el sistema.
+            \item Dominio: 1 (Activa), 0 (Inactiva).
+            \item Tipo: atributo simple.
+            \item Opcional: no.
+            \item Ejemplo: 1.
+        \end{itemize}
+    \end{itemize}
+
+    \item Diagrama (Figura \ref{fig:E-Especialidad}):
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.8]{img/diagramas/Datos/especialidad.png}
+        \caption{Entidad Especialidad}
+        \label{fig:E-Especialidad}
+    \end{figure}
+
+    \item Ejemplo de entidad (Tabla \ref{table:T-Especialidad}):
+
+    \begin{table}[H]
+    \centering
+        \begin{tabular}{ |p{6cm}||p{6cm}|  }
+             \hline
+                \multicolumn{2}{|c|}{\textbf{Especialidad}} \\
+             \hline
+                 \textbf{Atributo} & \textbf{Valor} \\
+             \hline
+                 id & 3 \\
+             \hline
+                 name & Urgencias \\
+             \hline
+                 active & 1 \\
+             \hline
+        \end{tabular}
+        \caption{Ejemplo de la entidad \textit{Especialidad}}
+        \label{table:T-Especialidad}
+    \end{table}
+\end{itemize}
+
+\subsection{Entidad Guardia}
+\begin{itemize}
+    \item Descripción: este tipo de entidad representa una guardia asignada en una fecha concreta. Contiene el tipo de guardia, la especialidad a la que pertenece, el trabajador asignado y el jefe de guardia cuando se haya definido.
+    \item Restricciones: es una entidad fuerte por lo que no depende de otro tipo de entidad para existir.
+    \item Características:
+    \begin{itemize}
+        \item Nombre de la entidad: Guardia.
+        \item Tipo: fuerte.
+        \item Atributos heredados: ninguno.
+        \item Atributo identificador primario: id.
+        \item Atributo identificador alternativo: ninguno.
+        \item Número de atributos: 6 propios.
+    \end{itemize}
+
+    \item Atributos propios:
+    \begin{itemize}
+        \item id
+        \begin{itemize}
+            \item Definición: identificador numérico único de la guardia.
+            \item Dominio: números enteros mayores que 0.
+            \item Tipo: clave primaria.
+            \item Opcional: no.
+            \item Ejemplo: 120.
+        \end{itemize}
+
+        \item date
+        \begin{itemize}
+            \item Definición: fecha en la que se realiza la guardia.
+            \item Dominio: fecha (YYYY-MM-DD).
+            \item Tipo: atributo simple.
+            \item Opcional: no.
+            \item Ejemplo: 2026-03-10.
+        \end{itemize}
+
+        \item duty\_type
+        \begin{itemize}
+            \item Definición: tipo de guardia asignada.
+            \item Dominio: valores enumerados (por ejemplo: CA, PF, LOC).
+            \item Tipo: atributo simple.
+            \item Opcional: no.
+            \item Ejemplo: PF.
+        \end{itemize}
+
+        \item id\_speciality
+        \begin{itemize}
+            \item Definición: especialidad a la que pertenece la guardia.
+            \item Dominio: números enteros mayores que 0.
+            \item Tipo: clave foránea.
+            \item Opcional: no.
+            \item Ejemplo: 3.
+        \end{itemize}
+
+        \item id\_worker
+        \begin{itemize}
+            \item Definición: trabajador asignado a la guardia.
+            \item Dominio: números enteros mayores que 0.
+            \item Tipo: clave foránea.
+            \item Opcional: no.
+            \item Ejemplo: 12.
+        \end{itemize}
+
+        \item id\_chief\_worker
+        \begin{itemize}
+            \item Definición: trabajador designado como jefe de guardia asociado a la guardia.
+            \item Dominio: números enteros mayores que 0.
+            \item Tipo: clave foránea.
+            \item Opcional: sí.
+            \item Ejemplo: 7.
+        \end{itemize}
+    \end{itemize}
+
+    \item Diagrama (Figura \ref{fig:E-Guardia}):
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.8]{img/diagramas/Datos/guardia.png}
+        \caption{Entidad Guardia}
+        \label{fig:E-Guardia}
+    \end{figure}
+
+    \item Ejemplo de entidad (Tabla \ref{table:T-Guardia}):
+
+    \begin{table}[H]
+    \centering
+        \begin{tabular}{ |p{6cm}||p{6cm}|  }
+             \hline
+                \multicolumn{2}{|c|}{\textbf{Guardia}} \\
+             \hline
+                 \textbf{Atributo} & \textbf{Valor} \\
+             \hline
+                 id & 120 \\
+             \hline
+                 date & 2026-03-10 \\
+             \hline
+                 duty\_type & PF \\
+             \hline
+                 id\_speciality & 3 \\
+             \hline
+                 id\_worker & 12 \\
+             \hline
+                 id\_chief\_worker & 7 \\
+             \hline
+        \end{tabular}
+        \caption{Ejemplo de la entidad \textit{Guardia}}
+        \label{table:T-Guardia}
     \end{table}
 \end{itemize}
 
@@ -197,8 +501,94 @@ Para cada una de las interrelaciones que se han identificado en la definición d
 Se han identificado las interrelaciones que se indican a continuación y que se describirán en las siguientes subsecciones:
 
 \begin{itemize}
-    \item Tipo de Interrelación: Usuario - ...
+    \item Tipo de Interrelación: Usuario -- Trabajador
+    \item Tipo de Interrelación: Trabajador -- Especialidad
+    \item Tipo de Interrelación: Guardia -- Especialidad
+    \item Tipo de Interrelación: Guardia -- Trabajador (Asignación)
+    \item Tipo de Interrelación: Guardia -- Trabajador (Jefatura)
 \end{itemize}
+
+\subsection{Interrelación Usuario -- Trabajador}
+\begin{itemize}
+    \item \textbf{Nombre}: Asociado\_a.
+    \item \textbf{Descripción}: relaciona el tipo de entidad \textit{Usuario} con el tipo de entidad \textit{Trabajador},
+    indicando que una cuenta de usuario puede estar asociada a un trabajador del hospital.
+    \item \textbf{Tipo}: interrelación fuerte (participan dos entidades fuertes).
+    \item \textbf{Cardinalidad}: 1:1.
+    \begin{itemize}
+        \item Usuario: (0,1) (un usuario puede no estar asociado a ningún trabajador o estar asociado a uno).
+        \item Trabajador: (0,1) (un trabajador puede no tener usuario asociado o tener uno).
+    \end{itemize}
+    \item \textbf{Atributos}: no presenta atributos propios.
+    \item \textbf{Diagrama}: se representará en la figura correspondiente del diagrama E-R.
+    \item \textbf{Ejemplo}: el usuario con id=5 está asociado al trabajador con id=12.
+\end{itemize}
+
+\subsection{Interrelación Trabajador -- Especialidad}
+\begin{itemize}
+    \item \textbf{Nombre}: Pertenece\_a.
+    \item \textbf{Descripción}: relaciona el tipo de entidad \textit{Trabajador} con el tipo de entidad \textit{Especialidad},
+    indicando que cada trabajador pertenece a una única especialidad.
+    \item \textbf{Tipo}: interrelación fuerte.
+    \item \textbf{Cardinalidad}: N:1 (Trabajador -- Especialidad).
+    \begin{itemize}
+        \item Trabajador: (1,1) (cada trabajador pertenece obligatoriamente a una especialidad).
+        \item Especialidad: (0,n) (una especialidad puede tener cero o muchos trabajadores).
+    \end{itemize}
+    \item \textbf{Atributos}: no presenta atributos propios.
+    \item \textbf{Diagrama}: se representará en la figura correspondiente del diagrama E-R.
+    \item \textbf{Ejemplo}: el trabajador con id=12 pertenece a la especialidad con id=3.
+\end{itemize}
+
+\subsection{Interrelación Guardia -- Especialidad}
+\begin{itemize}
+    \item \textbf{Nombre}: Corresponde\_a.
+    \item \textbf{Descripción}: relaciona el tipo de entidad \textit{Guardia} con el tipo de entidad \textit{Especialidad},
+    indicando que cada guardia se asigna a una especialidad concreta.
+    \item \textbf{Tipo}: interrelación fuerte.
+    \item \textbf{Cardinalidad}: N:1 (Guardia -- Especialidad).
+    \begin{itemize}
+        \item Guardia: (1,1) (cada guardia está asociada obligatoriamente a una especialidad).
+        \item Especialidad: (0,n) (una especialidad puede tener cero o muchas guardias).
+    \end{itemize}
+    \item \textbf{Atributos}: no presenta atributos propios.
+    \item \textbf{Diagrama}: se representará en la figura correspondiente del diagrama E-R.
+    \item \textbf{Ejemplo}: la guardia con id=120 corresponde a la especialidad con id=3.
+\end{itemize}
+
+\subsection{Interrelación Guardia -- Trabajador (Asignación)}
+\begin{itemize}
+    \item \textbf{Nombre}: Asignada\_a.
+    \item \textbf{Descripción}: relaciona el tipo de entidad \textit{Guardia} con el tipo de entidad \textit{Trabajador},
+    indicando qué trabajador realiza una guardia concreta.
+    \item \textbf{Tipo}: interrelación fuerte.
+    \item \textbf{Cardinalidad}: N:1 (Guardia -- Trabajador).
+    \begin{itemize}
+        \item Guardia: (1,1) (cada guardia debe estar asignada a un trabajador).
+        \item Trabajador: (0,n) (un trabajador puede tener cero o muchas guardias asignadas).
+    \end{itemize}
+    \item \textbf{Atributos}: no presenta atributos propios.
+    \item \textbf{Diagrama}: se representará en la figura correspondiente del diagrama E-R.
+    \item \textbf{Ejemplo}: la guardia con id=120 está asignada al trabajador con id=12.
+\end{itemize}
+
+\subsection{Interrelación Guardia -- Trabajador (Jefatura)}
+\begin{itemize}
+    \item \textbf{Nombre}: Jefe\_de\_guardia.
+    \item \textbf{Descripción}: relaciona el tipo de entidad \textit{Guardia} con el tipo de entidad \textit{Trabajador},
+    indicando qué trabajador actúa como jefe de guardia en una guardia determinada. Esta asignación puede no existir
+    en el momento de creación de la guardia.
+    \item \textbf{Tipo}: interrelación fuerte.
+    \item \textbf{Cardinalidad}: N:1 (Guardia -- Trabajador).
+    \begin{itemize}
+        \item Guardia: (0,1) (una guardia puede no tener jefe asignado o tener uno).
+        \item Trabajador: (0,n) (un trabajador puede ser jefe de guardia en cero o muchas guardias).
+    \end{itemize}
+    \item \textbf{Atributos}: no presenta atributos propios.
+    \item \textbf{Diagrama}: se representará en la figura correspondiente del diagrama E-R.
+    \item \textbf{Ejemplo}: la guardia con id=120 tiene como jefe al trabajador con id=7.
+\end{itemize}
+
 
 \begin{landscape}
 \section{Diagrama del Modelo Entidad-Interrelación}\label{sec:diagrama-E-R}
