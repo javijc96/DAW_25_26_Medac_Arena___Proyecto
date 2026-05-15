@@ -1,0 +1,26 @@
+@startuml
+title Autenticacion: Cierre de Sesion (Logout)
+
+actor Usuario
+participant UI
+participant API
+
+Usuario -> UI : Click en Cerrar sesion
+activate UI
+
+UI --> Usuario : Confirmar salida
+Usuario -> UI : Confirmacion del usuario
+
+UI -> UI : Validacion local (Front-end)
+
+UI -> API : POST /logout (Token)
+activate API
+API -> API : Revocar Token (Back-end)
+API --> UI : Logout OK (200)
+deactivate API
+
+UI -> UI : Limpiar LocalStorage
+UI -> UI : Redirigir a Login
+UI --> Usuario : Sesion finalizada
+deactivate UI
+@enduml

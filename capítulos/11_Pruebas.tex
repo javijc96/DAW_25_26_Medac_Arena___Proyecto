@@ -1,15 +1,41 @@
-\chapter{Pruebas}\label{cap:pruebas}
+\chapter{Pruebas} \label{cap:pruebas}
 
 \section{Introducción}
+La fase de pruebas es crucial para garantizar que GuardiApp cumple con los requisitos funcionales y no funcionales definidos inicialmente. Se ha seguido un enfoque de pruebas iterativo durante todo el desarrollo, validando cada componente tras su implementación.
 
-\section{Prueba de usuarios públicos}
+\section{Estrategia de Pruebas}
+Se han aplicado diferentes niveles de pruebas para asegurar la robustez del sistema:
 
-\subsection{Pruebas CU-1.1}
- \begin{itemize}
-    \item Prueba realizada
-    \item Resultado de la prueba
-    \item Prueba realizada
-    \item Resultado de la prueba
- \end{itemize}
+\begin{itemize}
+    \item \textbf{Pruebas de Caja Negra}: Centradas en los requisitos funcionales. Se han introducido datos de prueba en la interfaz de React para verificar que el sistema responde según lo esperado (por ejemplo, intentar loguearse con una contraseña incorrecta).
+    \item \textbf{Pruebas de Integración}: Verificación de la comunicación entre el frontend y la API de Laravel mediante peticiones asíncronas.
+    \item \textbf{Pruebas de Regresión}: Tras cada modificación importante en el código, se han vuelto a probar las funcionalidades básicas para asegurar que los cambios no introdujeron nuevos errores.
+\end{itemize}
 
+\section{Plan de Pruebas Funcionales}
+A continuación se detallan algunos de los casos de prueba ejecutados con éxito:
 
+\begin{table}[H]
+\centering
+\caption{Resumen de pruebas funcionales ejecutadas}
+\begin{tabular}{|l|l|c|}
+\hline
+\textbf{Funcionalidad} & \textbf{Acción de Prueba} & \textbf{Resultado} \\ \hline
+Autenticación & Acceso con credenciales válidas e inválidas & Correcto \\ \hline
+Gestión de Guardias & Creación, edición y borrado de turnos & Correcto \\ \hline
+Intercambios & Solicitud de cambio y flujo de aprobación & Correcto \\ \hline
+Importación Excel & Carga masiva de trabajadores desde .xlsx & Correcto \\ \hline
+Fichaje GPS & Registro de entrada dentro y fuera del radio & Correcto \\ \hline
+\end{tabular}
+\end{table}
+
+\section{Pruebas de la API (Backend)}
+Para validar la lógica de negocio antes de integrarla con el frontend, se han utilizado herramientas de cliente REST (como \textbf{Postman} o \textbf{Insomnia}). Esto ha permitido verificar:
+\begin{itemize}
+    \item El correcto funcionamiento de los códigos de estado HTTP (200 OK, 201 Created, 401 Unauthorized, etc.).
+    \item La validación de los datos de entrada (Request Validation) en el servidor.
+    \item La seguridad de las rutas protegidas por el middleware \texttt{auth:sanctum}.
+\end{itemize}
+
+\section{Pruebas de Usuario (Aceptación)}
+Se han realizado demostraciones con usuarios potenciales (personal sanitario) para recoger feedback sobre la fluidez del calendario y la facilidad para solicitar intercambios. El resultado ha sido positivo, destacando la simplicidad de la interfaz frente a los sistemas manuales anteriores.

@@ -1,0 +1,22 @@
+@startuml
+title "Eliminar Especialidad"
+actor Administrador
+participant UI
+participant API
+database DB
+Administrador -> UI : Click Borrar
+activate UI
+UI --> Administrador : Confirmar Borrado
+Administrador -> UI : Confirmar
+UI -> API : DELETE /especialidad/id
+activate API
+API -> DB : DELETE especialidad
+activate DB
+DB --> API : OK
+deactivate DB
+API --> UI : Borrado 204
+deactivate API
+UI -> UI : Actualizar Lista
+UI --> Administrador : Eliminado
+deactivate UI
+@enduml

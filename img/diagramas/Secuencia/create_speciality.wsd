@@ -1,0 +1,24 @@
+@startuml
+title Creacion de Especialidad
+
+actor Administrador
+participant UI
+participant API
+database DB
+
+Administrador -> UI : Ingresar datos
+activate UI
+UI -> UI : Validar campos
+
+UI -> API : POST especialidad
+activate API
+API -> DB : INSERT especialidad
+activate DB
+DB --> API : OK
+deactivate DB
+API --> UI : Respuesta 201
+deactivate API
+
+UI --> Administrador : Mensaje exito
+deactivate UI
+@enduml

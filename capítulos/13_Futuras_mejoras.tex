@@ -1,30 +1,17 @@
-\chapter{Futuras mejoras}
+\chapter{Futuras mejoras} \label{cap:futuras_mejoras}
 
 \section{Introducción}
-El sistema desarrollado en este proyecto es susceptible de mejoras y ampliaciones, como cualquier otro software. De hecho, se identificaron muchas oportunidades durante el desarrollo.
+Aunque GuardiApp es una solución funcional y completa, el entorno hospitalario es dinámico y siempre existen oportunidades para evolucionar el sistema. En este capítulo se proponen varias líneas de mejora para futuras versiones.
 
-En las siguientes secciones se desglosan las mejoras y ampliaciones propuestas, según cada una de las categoría expuestas.
+\section{Propuestas de Evolución}
 
-\section{Mejoras y nuevas funciones}
-Basándonos en lo que se ha desarrollado hasta ahora, se identifican una serie de funciones adicionales y mejoras que se pueden realizar. Estas mejoras se describen a continuación, divididas por tipo de usuario y mejoras generales.
-
-\subsection{Mejoras para usuarios}
 \begin{itemize}
-    \item G
+    \item \textbf{Aplicación Móvil Nativa}: Desarrollar una versión nativa (iOS/Android) utilizando React Native para mejorar la experiencia de usuario en los fichajes y las notificaciones push.
+    \item \textbf{Inteligencia Artificial para Cuadrantes}: Implementar un algoritmo de aprendizaje automático que sugiera los cuadrantes mensuales optimizados, teniendo en cuenta las preferencias de los médicos, descansos obligatorios y equidad en el reparto de festivos.
+    \item \textbf{Integración con Calendarios Externos}: Ampliar la sincronización actual de Google Calendar a otros servicios como Microsoft Outlook o Apple Calendar.
+    \item \textbf{Módulo de Estadísticas Avanzadas}: Crear un panel de control para la dirección del hospital con métricas sobre horas trabajadas, absentismo y costes de guardias por especialidad.
+    \item \textbf{Sistema de Firma Digital}: Integrar la firma electrónica oficial para la aprobación de los informes PDF generados diariamente.
 \end{itemize}
 
-\subsection{Mejoras para administrador}
-\begin{itemize}
-    \item 
-\end{itemize}
-
-\subsection{Mejoras de funcionamiento}
-\begin{itemize}
-    \item 
-\end{itemize}
-
-\subsection{Integración con otras aplicaciones}
-
-
-\subsection{Exportabilidad}
-
+\section{Escalabilidad}
+El sistema está preparado para escalar a nivel de infraestructura (uso de contenedores Docker o servicios Cloud como AWS/Azure), lo que permitiría dar soporte a múltiples centros hospitalarios de forma simultánea (arquitectura multi-tenancy).

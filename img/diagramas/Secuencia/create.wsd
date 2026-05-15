@@ -1,0 +1,22 @@
+@startuml
+title CRUD: Creación de Usuario
+
+actor Administrador
+participant UI
+participant API
+database DB
+
+Administrador -> UI : Ingresar datos trabajador
+activate UI
+UI -> UI : Validar campos
+UI -> API : POST /usuarios
+activate API
+API -> DB : INSERT trabajador
+activate DB
+DB --> API : Confirmación
+deactivate DB
+API --> UI : Respuesta 201
+deactivate API
+UI --> Administrador : Mensaje de éxito
+deactivate UI
+@enduml

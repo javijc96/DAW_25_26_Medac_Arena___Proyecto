@@ -1,0 +1,32 @@
+@startuml
+title "Generación de PDF y Envío de Email"
+
+participant "Sistema (Cron Job)" as Sys
+participant "API (Laravel)" as API
+participant "PDF Engine\n(DomPDF/Snappy)" as PDF
+participant "Mail Server" as Mail
+database "DB" as DB
+
+Sys -> API: Trigger diario (08:00 AM)
+activate API
+
+API -> DB: Consultar guardias del día
+activate DB
+DB --> API: Lista de profesionales y jefes
+deactivate DB
+
+API -> PDF: Generar documento con plantilla oficial
+activate PDF
+PDF --> API: Archivo PDF (Buffer/Temporal)
+deactivate PDF
+
+API -> Mail: Enviar email a Responsables + PDF Adjunto
+activate Mail
+Mail --> API: Confirmación de envío
+deactivate Mail
+
+API -> DB: Log de envío realizado
+API --> Sys: Proceso completado
+deactivate API
+
+@enduml

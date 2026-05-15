@@ -1,9 +1,52 @@
-\chapter{Diseño arquitectónico} \label{cap:arquitectura}
+\chapter{Diseño arquitectónico} \label{cap:diseno-arquitectonico}
 
 \section{Introducción}
+El sistema GuardiApp ha sido diseñado siguiendo un modelo de arquitectura desacoplado, separando claramente la lógica de negocio y persistencia (Backend) de la interfaz de usuario y experiencia de usuario (Frontend). Esta estructura permite una mayor escalabilidad, facilita el mantenimiento independiente de ambos módulos y permite que la API sea consumida por diferentes clientes en el futuro.
 
-\section{Diagrama de despliegue}
+\section{Modelo de Arquitectura}
+La aplicación se basa en una arquitectura de tipo \textbf{Cliente-Servidor} mediante el uso de una \textbf{API RESTful}. 
 
-\subsection{Descripción de los nodos}
+\begin{itemize}
+    \item \textbf{Servidor (Backend)}: Desarrollado en Laravel, actúa como el núcleo del sistema, gestionando la base de datos, la seguridad y las reglas de negocio. Expone endpoints protegidos que devuelven información en formato JSON.
+    \item \textbf{Cliente (Frontend)}: Una Single Page Application (SPA) desarrollada en React que consume la API del servidor. Se encarga de la renderización dinámica y la interactividad con el usuario médico.
+\end{itemize}
 
-\subsection{Descripción de los componentes}
+\section{Tecnologías Utilizadas}
+El stack tecnológico seleccionado para el proyecto (denominado frecuentemente como parte del stack LAMP modificado) incluye:
+
+\begin{itemize}
+    \item \textbf{Lenguaje de Servidor}: PHP 8.x con el framework \textbf{Laravel 11}.
+    \item \textbf{Base de Datos}: \textbf{MySQL} para la persistencia de datos relacionales.
+    \item \textbf{Framework de Frontend}: \textbf{React 18} gestionado con el motor de construcción \textbf{Vite}.
+    \item \textbf{Autenticación}: \textbf{Laravel Sanctum} para la gestión de tokens de API seguros.
+    \item \textbf{Comunicación}: Protocolo HTTP/HTTPS mediante la librería \textbf{Axios}.
+\end{itemize}
+
+\section{Estructura y Organización}
+
+\subsection{Organización del Backend (Laravel)}
+La lógica del servidor se organiza siguiendo el patrón MVC (aunque la parte de "Vista" es delegada al cliente React):
+\begin{itemize}
+    \item \textbf{Controladores}: Ubicados en \texttt{app/Http/Controllers/}, gestionan las peticiones (Auth, Duty, Worker, Fichaje, etc.).
+    \item \textbf{Rutas API}: Definidas en \texttt{routes/api.php}, establecen los puntos de entrada para el frontend.
+    \item \textbf{Middlewares}: Capas de seguridad adicionales, como \texttt{isAdmin} para proteger rutas administrativas.
+\end{itemize}
+
+\subsection{Organización del Frontend (React)}
+El código fuente del cliente se organiza en el directorio \texttt{TFG-Nuevo-Frontend/src/}:
+\begin{itemize}
+    \item \textbf{Pages}: Componentes de página completa (Dashboard, Login, Gestión de Guardias).
+    \item \textbf{Components}: Elementos reutilizables (Botones, Modales, Calendarios).
+    \item \textbf{Services}: Lógica de comunicación con la API centralizada.
+    \item \textbf{Context}: Gestión del estado global (notificaciones, autenticación).
+\end{itemize}
+
+\section{Diagrama Arquitectónico}
+A continuación se presenta el diagrama de arquitectura del sistema, que ilustra el flujo de datos entre el navegador del usuario, el servidor web y la base de datos.
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{img/diagramas/Arquitectura/Diagrama_Arquitectura.png}
+    \caption{Diagrama de arquitectura general del sistema}
+    \label{fig:arquitectura-general}
+\end{figure}

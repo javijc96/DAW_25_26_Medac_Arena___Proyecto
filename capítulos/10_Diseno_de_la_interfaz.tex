@@ -1,27 +1,76 @@
-\chapter{Diseño de la interfaz} \label{cap:diseño_interfaz}
+\chapter{Diseño de la interfaz} \label{cap:diseno-interfaz}
 
 \section{Introducción}
+El diseño de la interfaz de GuardiApp se ha centrado en la usabilidad, la claridad visual y la eficiencia, dado que los profesionales médicos necesitan acceder a la información de sus guardias de forma rápida y sin distracciones. Se ha seguido un enfoque de diseño limpio, con una paleta de colores profesional y una navegación intuitiva.
 
-\section{Características comunes}
+\section{Principios de Diseño (UI/UX)}
+Para garantizar una experiencia de usuario óptima, se han aplicado los siguientes principios:
+\begin{itemize}
+    \item \textbf{Consistencia visual}: Uso de una hoja de estilos global basada en variables CSS para mantener colores, tipografías y espaciados uniformes en toda la aplicación.
+    \item \textbf{Diseño Responsive}: La interfaz se adapta a diferentes tamaños de pantalla, permitiendo que los médicos consulten sus guardias tanto desde ordenadores de escritorio en el hospital como desde sus dispositivos móviles.
+    \item \textbf{Retroalimentación inmediata}: Uso de notificaciones visuales (Toasts) para confirmar acciones como el éxito en un intercambio o errores en el login.
+\end{itemize}
 
-\section{Interfaz del módulo Usuario...}
-\subsection{Descripción general}
-hjk
-\subsection{Descripción detallada}
-hjk
-\subsection{Otros elementos de la interfaz}
-hjk
+\section{Descripción de las Vistas Principales}
 
-\section{Interfaz del módulo Administrador}
-\subsection{Descripción general}
-hjk
-\subsection{Descripción detallada}
-hjk
-\subsection{Otros elementos de la interfaz}
-hjk
+\subsection{Acceso al Sistema}
+La vista de login presenta un diseño minimalista centrado en el formulario de autenticación. Es el punto de entrada principal que garantiza la seguridad del sistema.
 
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.7\textwidth]{img/interfaz/login.png}
+    \caption{Interfaz de acceso al sistema (Login)}
+    \label{fig:ui-login}
+\end{figure}
 
+\subsection{Bandeja de Solicitudes (Requests Inbox)}
+Esta vista permite a los trabajadores gestionar las propuestas de intercambio mutuo recibidas.
+\begin{itemize}
+    \item \textbf{Funcionalidad}: Listado de solicitudes con detalles de las guardias implicadas (origen y destino). Botones de acción rápida para aceptar o rechazar.
+    \item \textbf{Componente}: \texttt{RequestsInbox.jsx}.
+\end{itemize}
 
+\begin{figure}[H]
+    \centering
+    % \includegraphics[scale=0.5]{img/interfaz/requests_inbox.png}
+    \caption{Bandeja de solicitudes de intercambio}
+    \label{fig:requests-inbox}
+\end{figure}
 
+\subsection{Panel Principal y Calendario}
+Es la vista central de la aplicación. Utiliza la librería \textit{FullCalendar} para mostrar las guardias de forma mensual. Permite filtrar por especialidad y visualizar rápidamente quién está de guardia cada día.
 
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.9\textwidth]{img/interfaz/dashboard_calendario.png}
+    \caption{Vista general del cuadrante de guardias}
+    \label{fig:ui-dashboard}
+\end{figure}
 
+\subsection{Gestión Administrativa}
+Los administradores disponen de vistas específicas para la gestión de personal e importación masiva de datos mediante archivos Excel. Estas tablas incluyen acciones de búsqueda, edición y borrado.
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{img/interfaz/gestion_usuarios.png}
+    \caption{Panel de administración de trabajadores}
+    \label{fig:ui-admin}
+\end{figure}
+
+\subsection{Gestión de Intercambios y Perfil}
+El sistema de intercambios se presenta de forma clara, mostrando las solicitudes pendientes de respuesta. Por otro lado, la vista de perfil permite al usuario gestionar su información personal y seguridad.
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.7\textwidth]{img/interfaz/intercambios_pendientes.png}
+    \caption{Gestión de solicitudes de intercambio entre profesionales}
+    \label{fig:ui-swaps}
+\end{figure}
+
+\section{Guía de Estilos}
+La aplicación utiliza un sistema de diseño basado en variables CSS que definen la identidad corporativa de GuardiApp:
+\begin{itemize}
+    \item \textbf{Colores primarios}: Tonos azules y blancos que transmiten limpieza y profesionalidad médica.
+    \item \textbf{Tipografía}: Fuentes sans-serif para mejorar la legibilidad en pantallas digitales.
+    \item \textbf{Componentes}: Uso de sombras suaves y bordes redondeados para un aspecto moderno y premium.
+\end{itemize}

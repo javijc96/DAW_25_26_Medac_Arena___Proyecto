@@ -1,15 +1,14 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.10)  17 FEB 2026 18:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.29)  15 MAY 2026 13:57
 entering extended mode
- restricted \write18 enabled.
- file:line:error style messages enabled.
+ \write18 enabled.
  %&-line parsing enabled.
-**c:/Users/DAVANTE/Desktop/DAW_25_26_Medac_Arena___Proyecto/main.tex
-(c:/Users/DAVANTE/Desktop/DAW_25_26_Medac_Arena___Proyecto/main.tex
+**./main.tex
+(main.tex
 LaTeX2e <2025-11-01>
-L3 programming layer <2025-10-24>
-(C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
+L3 programming layer <2025-11-06>
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
 Document Class: book 2025/01/22 v1.4n Standard LaTeX document class
-(C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/base\bk12.clo
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/base\bk12.clo
 File: bk12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count275
@@ -24,40 +23,54 @@ File: bk12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2025/10/22 v25.14 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2025/11/09 v25.15 The multilingual framework for LuaLaTeX, pdfLa
+TeX and XeLaTeX
 \babel@savecnt=\count284
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2050.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2052.
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2054.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2055.
-LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2056.
-LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2058.
-LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2083.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
+ne 2050.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
+ne 2052.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
+e 2054.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
+e 2055.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
+on input line 2056.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
+on input line 2058.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
+on input line 2083.
 \U@D=\dimen149
 \l@unhyphenated=\language79
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count285
-
-
-Package babel Warning: Configuration files are deprecated, as
-(babel)                they can break document portability.
-(babel)                Reported on input line 4172.
+Package babel Info: Configuration files are deprecated, as
+(babel)             they can break document portability.
+(babel)             Reported on input line 4175.
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\babel-spanish.tex)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\babel
+-spanish.tex)
 Package babel Info: Importing font and identification data for spanish
-(babel)             from babel-es.ini. Reported on input line 4295.
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanish.ldf
+(babel)             from babel-es.ini. Reported on input line 4298.
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanish.l
+df
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
 \es@quottoks=\toks19
 \es@quotdepth=\count286
@@ -65,40 +78,54 @@ Package babel Info: Making " an active character on input line 570.
 Package babel Info: Making < an active character on input line 722.
 Package babel Info: Making > an active character on input line 722.
 ))
-LaTeX Encoding Info:    Redeclaring text command \guillemotleft (encoding OT1) on input line 6.
-LaTeX Encoding Info:    Redeclaring text command \guillemotright (encoding OT1) on input line 6.
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
+LaTeX Encoding Info:    Redeclaring text command \guillemotleft (encoding OT1) 
+on input line 6.
+LaTeX Encoding Info:    Redeclaring text command \guillemotright (encoding OT1)
+ on input line 6.
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
 Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+) (C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+) (C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count287
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+) (C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks20
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-)) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
+)) (C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count288
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-)) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+))
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -161,7 +188,8 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \c@mincompwidth=\count334
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
 File: blx-dm.def 2025/07/10 v3.21 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
@@ -250,12 +278,13 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \localshorteditorwidth=\skip72
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
 File: blx-compat.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
+ (C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 \c@textcitecount=\count403
 \c@textcitetotal=\count404
@@ -273,18 +302,24 @@ File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric.bbx
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric.bb
+x
 File: numeric.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.b
+bx
 File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count412
 \c@bbx:relatedtotal=\count413
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\numeric.cbx
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\numeric.cb
+x
 File: numeric.cbx 2025/07/10 v3.21 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
@@ -300,37 +335,50 @@ Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg
 File: biblatex.cfg 
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2025-10-24 L3 programming layer (loader) 
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2025-11-06 L3 programming layer (loader) 
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count414
 ))
 Package biblatex Info: ... and expl3
-(biblatex)             2025-10-24 L3 programming layer (loader) 
+(biblatex)             2025-11-06 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3.sty (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3
+.sty
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e.sty
 Package: xparse 2025-10-09 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
-)) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+))
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 
-Package xcolor Warning: Package option `usenames' is obsolete and ignored on input line 265.
+Package xcolor Warning: Package option `usenames' is obsolete and ignored on in
+put line 265.
 
 Package xcolor Info: Driver file: pdftex.def on input line 274.
-(C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -340,13 +388,15 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
+) (C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\svgnam.def
+) (C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\svgnam.def
 File: svgnam.def 2024/09/29 v3.02 Predefined colors according to SVG 1.1 (UK)
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
 Package: colortbl 2024/10/29 v1.0k Color table columns (DPC)
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \col@sep=\dimen150
 \ar@mcellbox=\box53
@@ -359,36 +409,64 @@ Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \everycr=\toks22
 \minrowclearance=\skip75
 \rownum=\count415
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
-)) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+))
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
+sty
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
+y
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-common.tex
 \pgfutil@everybye=\toks23
 \pgfutil@tempdima=\dimen152
 \pgfutil@tempdimb=\dimen153
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-latex.def
 \pgfutil@abb=\box55
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
+code.tex
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
 Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
 ))
 Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
+sty
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
 \Gin@req@height=\dimen154
 \Gin@req@width=\dimen155
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
+sty
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s.code.tex
 Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex
 \pgfkeys@pathtoks=\toks24
 \pgfkeys@temptoks=\toks25
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+libraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks26
 ))
 \pgf@x=\dimen156
@@ -411,32 +489,76 @@ Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 \t@pgf@tokb=\toks28
 \t@pgf@tokc=\toks29
 \pgf@sys@id@count=\count420
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
+fg
 File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
 )
 Driver file for pgf: pgfsys-pdftex.def
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-pdftex.def
 File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-common-pdf.def
 File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
-))) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+)))
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+ssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfsyssoftpath@smallbuffer@items=\count421
 \pgfsyssoftpath@bigbuffer@items=\count422
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+sprotocol.code.tex
 File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
+))
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+e.code.tex
 Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
+code.tex)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
+r.code.tex
 \pgfmath@dimen=\dimen166
 \pgfmath@count=\count423
 \pgfmath@box=\box56
 \pgfmath@toks=\toks30
 \pgfmath@stack@operand=\toks31
 \pgfmath@stack@operation=\toks32
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.code.tex)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.basic.code.tex)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.trigonometric.code.tex)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.random.code.tex)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.comparison.code.tex)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.base.code.tex)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.round.code.tex)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.misc.code.tex)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.integerarithmetics.code.tex)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
+code.tex)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
+.code.tex
 \c@pgfmathroundto@lastzeros=\count424
-)) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+))
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
+tex)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epoints.code.tex
 File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@picminx=\dimen167
 \pgf@picmaxx=\dimen168
@@ -452,75 +574,130 @@ File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@yy=\dimen178
 \pgf@zx=\dimen179
 \pgf@zy=\dimen180
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@path@lastx=\dimen181
 \pgf@path@lasty=\dimen182
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathusage.code.tex
 File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@shorten@end@additional=\dimen183
 \pgf@shorten@start@additional=\dimen184
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+escopes.code.tex
 File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfpic=\box57
 \pgf@hbox=\box58
 \pgf@layerbox@main=\box59
 \pgf@picture@serial@count=\count425
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+egraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgflinewidth=\dimen185
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransformations.code.tex
 File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@pt@x=\dimen186
 \pgf@pt@y=\dimen187
 \pgf@pt@temp=\dimen188
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+equick.code.tex
 File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eobjects.code.tex
 File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+earrows.code.tex
 File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfarrowsep=\dimen189
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eshade.code.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@max=\dimen190
 \pgf@sys@shading@range@num=\count426
 \pgf@shadingcount=\count427
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eimage.code.tex
 File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eexternal.code.tex
 File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfexternal@startupbox=\box60
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+elayers.code.tex
 File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransparency.code.tex
 File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epatterns.code.tex
 File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+erdf.code.tex
 File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+)))
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+shapes.code.tex
 File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfnodeparttextbox=\box61
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+plot.code.tex
 File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-0-65.sty
 Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@nodesepstart=\dimen191
 \pgf@nodesepend=\dimen192
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-1-18.sty
 Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
-)) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+))
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
+y
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
+ty
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex))
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex))
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
+code.tex
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
 \pgffor@iter=\dimen193
 \pgffor@skip=\dimen194
 \pgffor@stack=\toks33
 \pgffor@toks=\toks34
-)) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+))
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z\tikz.code.tex
 Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@plot@mark@count=\count428
 \pgfplotmarksize=\dimen195
@@ -541,33 +718,46 @@ File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \tikznumberofchildren=\count430
 \tikznumberofcurrentchild=\count431
 \tikz@fig@count=\count432
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+matrix.code.tex
 File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfmatrixcurrentrow=\count433
 \pgfmatrixcurrentcolumn=\count434
 \pgf@matrix@numberofcolumns=\count435
 )
 \tikz@expandcount=\count436
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/datetime\datetime.sty
+)))
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/datetime\datetime.sty
 Package: datetime 2015/03/20 v2.60 Date Time Package
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fmtcount.sty
-Package: fmtcount 2025/08/23 v3.11 Displaying the values of LaTeX counters (NT,VB,NE)
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fmtcount.sty
+Package: fmtcount 2025/08/23 v3.11 Displaying the values of LaTeX counters (NT,
+VB,NE)
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
 \XKV@toks=\toks35
 \XKV@tempa@toks=\toks36
 )
 \XKV@depth=\count437
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fcprefix.sty
+))
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fcprefix.sty
 Package: fcprefix 2012/09/28
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fcnumparser.sty
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fcnumparser.st
+y
 Package: fcnumparser 2017/06/15
 \fc@digit@counter=\count438
-)) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+)) (C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks37
 \ex@=\dimen260
@@ -581,7 +771,9 @@ File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@tmpstrctr=\count445
 \@DT@loopN=\count446
 \@DT@X=\count447
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/datetime\datetime-defaults.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/datetime\datetime-defau
+lts.sty
 Package: datetime-defaults 2013/09/10
 )
 \@day=\count448
@@ -596,26 +788,32 @@ Package: datetime-defaults 2013/09/10
 \currenthour=\count457
 \currentminute=\count458
 \currentsecond=\count459
-Package datetime Info: No datetime.cfg file found, using default settings on input line 308.
+Package datetime Info: No datetime.cfg file found, using default settings on in
+put line 308.
 \@dtctr=\count460
 \dayofyear=\count461
 \dayofweek=\count462
 LaTeX Info: Redefining \today on input line 736.
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/datetime\dt-spanish.def
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/datetime\dt-spanish.def
 File: dt-spanish.def 2013/09/10
 LaTeX Info: Redefining \datespanish on input line 85.
 )
 \dt@a=\toks38
 \dt@b=\toks39
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+) (C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/bera\berasans.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/bera\berasans.sty
 Package: berasans 2004/01/30 (WaS)
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
 \Gm@cnth=\count463
@@ -630,8 +828,11 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen267
 \Gm@layoutvoffset=\dimen268
 \Gm@dimlist=\toks40
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
 \f@nch@headwidth=\skip76
 \f@nch@offset@elh=\skip77
 \f@nch@offset@erh=\skip78
@@ -647,12 +848,16 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthC=\skip88
 \f@nch@widthR=\skip89
 \@temptokenb=\toks41
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/todonotes\todonotes.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/todonotes\todonotes.sty
 Package: todonotes 2024/01/05 v1.1.7 Todonotes source and documentation.
 Package: todonotes 2024/01/05
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
 \calc@Acount=\count466
 \calc@Bcount=\count467
@@ -666,14 +871,16 @@ LaTeX Info: Redefining \addtolength on input line 87.
 \calc@Cskip=\skip92
 )
 \c@@todonotes@numberoftodonotes=\count469
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count470
 \float@exts=\toks42
 \float@box=\box66
 \@float@everytoks=\toks43
 \@floatcapt=\box67
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 \TX@col@width=\dimen271
 \TX@old@table=\dimen272
@@ -682,44 +889,56 @@ Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 \TX@delta=\dimen275
 \TX@cols=\count471
 \TX@ftn=\toks44
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/emptypage\emptypage.sty
-Package: emptypage 2010/05/30 v1.2 Suppress page numbers and headings on empty pages
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/appendix\appendix.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/emptypage\emptypage.sty
+Package: emptypage 2010/05/30 v1.2 Suppress page numbers and headings on empty 
+pages
+) (C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/appendix\appendix.sty
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
 \c@@pps=\count472
 \c@@ppsavesec=\count473
 \c@@ppsaveapp=\count474
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+) (C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+ty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+) (C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+) (C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count475
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.sty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
+ty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
 )
 \@linkdim=\dimen276
 \Hy@linkcounter=\count476
 \Hy@pagecounter=\count477
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+ (C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+) (C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count478
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+ (C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -736,10 +955,13 @@ Package hyperref Info: Bookmarks ON on input line 4462.
 LaTeX Info: Redefining \url on input line 4801.
 \XeTeXLinkMargin=\dimen277
 
-(C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
 ))
 \Fld@menulength=\count480
 \Field@Width=\dimen278
@@ -756,34 +978,43 @@ Package hyperref Info: PDF/A mode OFF on input line 6108.
 \c@Hfootnote=\count483
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
 \Fld@listcount=\count484
 \c@bookmark@seq@number=\count485
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+echeck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+ounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+84.
 )
 \Hy@SectionHShift=\skip93
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 84.
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty
 \wrapoverhang=\dimen280
 \WF@size=\dimen281
 \c@WF@wrappedlines=\count486
 \WF@box=\box68
 \WF@everypar=\toks45
 Package: wrapfig 2003/01/31  v 3.6
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip94
 \multirow@cntb=\count487
 \multirow@dima=\skip95
 \bigstrutjot=\dimen282
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
 Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
 \c@tracingmulticols=\count488
 \mult@box=\box69
@@ -853,9 +1084,11 @@ Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
 \colbreak@box=\box114
 \mc@col@check@num=\count497
 \g__mc_curr_col_int=\count498
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/tabu\tabu.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/tabu\tabu.sty
 Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box115
 \sift@deathcycles=\count499
@@ -885,31 +1118,42 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \tabu@hleads=\box118
 \tabu@vleads=\box119
 \tabu@cellskip=\skip98
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\pifont.sty
+) (C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\pifont.sty
 Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
 LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\upzd.fd
+
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
 LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\upsy.fd
+
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
-)) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/chngcntr\chngcntr.sty
+))
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/chngcntr\chngcntr.sty
 Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
 Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks48
 \verbatim@line=\toks49
 \verbatim@in@stream=\read5
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbox.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbox.sty
 Package: adjustbox 2025/02/26 v1.3c Adjusting TeX boxes (trim, clip, ...)
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.sty
-Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimclip.sty
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimclip.sty
 Package: trimclip 2025/02/21 v1.2a Trim and clip general TeX material
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbox.sty
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbox.s
+ty
 Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
 \collectedbox=\box120
 )
@@ -918,7 +1162,8 @@ Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
 \tc@urx=\dimen305
 \tc@ury=\dimen306
 Package trimclip Info: Using driver 'tc-pdftex.def'.
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\tc-pdftex.def
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\tc-pdftex.def
 File: tc-pdftex.def 2025/02/26 v2.3 Clipping driver for pdftex
 ))
 \adjbox@Width=\dimen307
@@ -929,154 +1174,58 @@ File: tc-pdftex.def 2025/02/26 v2.3 Clipping driver for pdftex
 \adjbox@pheight=\dimen312
 \adjbox@pdepth=\dimen313
 \adjbox@ptotalheight=\dimen314
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
 \c@checkoddpage=\count506
-)) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty \lstset,
+))
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
 \lst@mode=\count507
- 
-new hook `InitVars',
-
-new hook `EndGroup',
-
-new hook `ExitVars',
-
-new hook `ModeTrue',
-
-new hook `EOL',
 \lst@gtempboxa=\box121
 \lst@token=\toks50
 \lst@length=\count508
-
-new hook `InitVarsBOL',
 \lst@currlwidth=\dimen315
 \lst@column=\count509
 \lst@pos=\count510
 \lst@lostspace=\dimen316
 \lst@width=\dimen317
-basewidth, 
-new hook `FontAdjust',
-fontadjust, 
-new hook `PostOutput',
-
-new hook `OutputBox',
-
-new hook `InitBOL',
-columns, flexiblecolumns,
 \lst@newlines=\count511
- 
-new hook `OnNewLine',
-emptylines, 
-new hook `OnEmptyLine',
-identifierstyle, 
-new hook `EmptyStyle',
-
-new hook `OutputOther',
-
-new hook `Output',
-tabsize, showtabs, tab, showspaces, keepspaces, 
-new hook `Init',
-formfeed, upquote, SelectCharTable, MoreSelectCharTable, 
-new hook `SetLanguage',
-extendedchars, useoutput, rescanchars, alsoletter, alsodigit, alsoother, 
-new hook `SelectCharTable',
-excludedelims, delim, moredelim, deletedelim, literate, basicstyle, inputencoding, multicols, 
-new hook `EveryLine',
 \lst@lineno=\count512
-print, firstline, lastline, 
-new hook `PreSet',
-nolol, linerange, consecutivenumbers, rangeprefix, rangesuffix, rangebeginprefix, rangebeginsuffix, rangeendprefix, rangeendsuffix, includerangemarker, 
-new hook `DeInit',
-captionpos, abovecaptionskip, belowcaptionskip, label, title, caption, 
-new hook `TextStyle',
-\lstlistingname, \lstlistingnamestyle, numberbychapter, boxpos, float, floatplacement, aboveskip, belowskip, everydisplay, 
-new hook `DisplayStyle',
-
-new hook `PreInit',
-
-new hook `EveryPar',
-showlines,
 \lst@maxwidth=\dimen318
- 
-new hook `InitVarsEOL',
-gobble, name, \lstlistlistingname, \lstlistoflistings, inputpath, \lstnewenvironment, fancyvrb, (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
-File: lstpatch.sty 2025/10/06 1.11 (Carsten Heinz)
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
-File: lstmisc.sty 2025/10/06 1.11 (Carsten Heinz)
- 
-Define lst-aspect `strings': string, morestring, deletestring, stringstyle, showstringspaces, 
-new hook `ExcludeDelims',
 
-Allocs: none
-
-Define lst-aspect `comments': comment, morecomment, deletecomment, commentstyle, 
-new hook `AfterBeginComment',
-
-Allocs: none
-
-Define lst-aspect `escape': texcl, escapebegin, escapeend, escapechar, escapeinside, mathescape, 
-Allocs: none
-
-Define lst-aspect `keywords': sensitive, 
-new hook `TrackKeywords',
-
-new hook `PostTrackKeywords',
-
-new hook `DetectKeywords',
-classoffset, keywords, morekeywords, deletekeywords, keywordstyle, keywordstyle, ndkeywords, morendkeywords, deletendkeywords, ndkeywordstyle, keywordsprefix, otherkeywords, 
-Allocs: none
-
-Define lst-aspect `emph': emph, moreemph, deleteemph, emphstyle, 
-Allocs: none
-
-Define lst-aspect `index': index, moreindex, deleteindex, indexstyle, \lstindexmacro, 
-Allocs: none
-
-Define lst-aspect `style': \lststylefiles, \lstdefinestyle, \lst@definestyle, style, 
-new hook `SetStyle',
-
-Allocs: none
-
-Define lst-aspect `language': \lstlanguagefiles, \lstdefinelanguage, \lst@definelanguage, language, alsolanguage, \lstalias, defaultdialect, 
-Allocs: none
-
-Define lst-aspect `labels': numbers, stepnumber, numberfirstline, numberstyle, numbersep, numberblanklines, firstnumber,
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
+File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
 \c@lstnumber=\count513
 \lst@skipnumbers=\count514
- 
-Allocs: 2\count, 
-
-Define lst-aspect `lineshape': xleftmargin, xrightmargin, resetmargins, 
-new hook `BoxUnsafe',
-linewidth, lineskip, breaklines, breakindent, breakautoindent, breakatwhitespace, prebreak, postbreak, 
-Allocs: none
-
-Define lst-aspect `frames': framexleftmargin, framexrightmargin, framextopmargin, framexbottommargin, backgroundcolor, fillcolor, rulecolor, rulesepcolor, rulesep, framerule, framesep, frameshape, frameround, frame,
 \lst@framebox=\box122
- 
-Allocs: 1\box, 
-) 
-Allocs: 8\count, 4\dimen, 2\box, 1\toks, 
-(C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
-File: listings.cfg 2025/10/06 1.11 listings configuration
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2025/11/14 1.11b listings configuration
 ))
-Package: listings 2025/10/06 1.11 (Carsten Heinz)
-
+Package: listings 2025/11/14 1.11b (Carsten Heinz)
 ==> First Aid for listings.sty no longer applied!
     Expected:
         2024/09/23 1.10c (Carsten Heinz)
     but found:
-        2025/10/06 1.11 (Carsten Heinz)
+        2025/11/14 1.11b (Carsten Heinz)
     so I'm assuming it got fixed.
-(C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/minted\minted.sty
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/minted\minted.sty
 Package: minted 2025/05/14 v3.7.0 Yet another Pygments shim for LaTeX
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/catchfile\catchfile.sty
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/catchfile\catchfile.s
+ty
 Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/fvextra\fvextra.sty
-Package: fvextra 2025/05/29 v1.13.2 fvextra - extensions and patches for fancyvrb
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/fancyvrb\fancyvrb.sty
+)) (C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/fvextra\fvextra.sty
+Package: fvextra 2025/05/29 v1.13.2 fvextra - extensions and patches for fancyv
+rb
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/fancyvrb\fancyvrb.sty
 Package: fancyvrb 2025/07/28 4.6 verbatim text (tvz,hv)
 \FV@CodeLineNo=\count515
 \FV@InFile=\read6
@@ -1084,9 +1233,12 @@ Package: fancyvrb 2025/07/28 4.6 verbatim text (tvz,hv)
 \c@FancyVerbLine=\count516
 \FV@StepNumber=\count517
 \FV@OutFile=\write5
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/upquote\upquote.sty
-Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/lineno\lineno.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/upquote\upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/lineno\lineno.sty
 Package: lineno 2025/05/13 line numbers on paragraphs v5.5
 \linenopenalty=\count518
 \output=\toks51
@@ -1129,23 +1281,29 @@ Package: lineno 2025/05/13 line numbers on paragraphs v5.5
 \FV@LineIndentBox=\box129
 \c@FV@BreakBufferDepth=\count538
 \FV@LineWidth=\dimen329
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/latex2pydata\latex2pydata.sty
-Package: latex2pydata 2025/03/26 v0.6.0 latex2pydata - write data to file in Python literal format
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/pgfopts\pgfopts.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/latex2pydata\latex2pyda
+ta.sty
+Package: latex2pydata 2025/03/26 v0.6.0 latex2pydata - write data to file in Py
+thon literal format
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/pgfopts\pgfopts.sty
 Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
 \pgfopts@list@add@a@toks=\toks52
 \pgfopts@list@add@b@toks=\toks53
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.sty
 Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
-Package shellesc Info: Restricted shell escape enabled on input line 77.
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
 )
 
-Package minted Warning: Package option "final" no longer has any effect with minted v3+ on input line 282.
+Package minted Warning: Package option "final" no longer has any effect with mi
+nted v3+ on input line 282.
 
 \c@minted@FancyVerbLineTemp=\count539
 \@float@every@listing=\toks54
 \c@listing=\count540
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+) (C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen330
 \lightrulewidth=\dimen331
@@ -1164,9 +1322,10 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count543
 \@lastruleclass=\count544
 \@thisrulewidth=\dimen342
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+) (C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@tempdima=\dimen343
 \captionmargin=\dimen344
@@ -1184,20 +1343,33 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: wrapfig package is loaded.
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/threeparttable\threeparttable.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/threeparttable\threepar
+ttable.sty
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box130
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/verbatimbox\verbatimbox.sty
-Package: verbatimbox 2023/08/08 v3.2\ Routines for placing verbatim text into boxes, useful in places where the verbatim environment is inaccessible. Secondarily, for adding vertical buffer around an object.
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/readarray\readarray.sty
-Package: readarray 2021/09/17\ 3.1\ Routines for inputting 2D and 3D array data and recalling it on an element-by-element basis.
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/forloop\forloop.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/verbatimbox\verbatimbox
+.sty
+Package: verbatimbox 2023/08/08 v3.2\ Routines for placing verbatim text into b
+oxes, useful in places where the verbatim environment is inaccessible. Secondar
+ily, for adding vertical buffer around an object.
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/readarray\readarray.sty
+Package: readarray 2021/09/17\ 3.1\ Routines for inputting 2D and 3D array data
+ and recalling it on an element-by-element basis.
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/forloop\forloop.sty
 Package: forloop 2023/05/03 v3.0 For Loops for LaTeX
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/listofitems\listofitems.sty (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/generic/listofitems\listofitems.tex
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/listofitems\listofitems
+.sty
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/generic/listofitems\listofite
+ms.tex
 \loi_cnt_foreach_nest=\count547
 \loi_nestcnt=\count548
 )
-Package: listofitems 2024/03/09 v1.65 Grab items in lists using user-specified sep char (CT)
+Package: listofitems 2024/03/09 v1.65 Grab items in lists using user-specified 
+sep char (CT)
 )
 \c@@index=\count549
 \c@@plane=\count550
@@ -1221,12 +1393,12 @@ readarray: bounds checking OFF
 \ps@tempboxa=\box132
 \boxtop@sep=\skip100
 \boxbottom@sep=\skip101
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/tools\afterpage.sty
+) (C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/tools\afterpage.sty
 Package: afterpage 2023/07/04 v1.08 After-Page Package (DPC)
 \AP@output=\toks57
 \AP@partial=\box133
 \AP@footins=\box134
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
+) (C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
 Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
 \csq@reset=\count558
 \csq@gtype=\count559
@@ -1235,14 +1407,17 @@ Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
 \csq@maxlvl=\count562
 \csq@tshold=\count563
 \csq@ltx@everypar=\toks58
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def
 File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg
 File: csquotes.cfg 
-)) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/graphics\rotating.sty
+)) (C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/graphics\rotating.st
+y
 Package: rotating 2025/01/14 v2.16e rotated objects in LaTeX
 \c@r@tfl@t=\count564
 \rotFPtop=\skip102
@@ -1255,7 +1430,8 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
- (c:\Users\DAVANTE\Desktop\DAW_25_26_Medac_Arena___Proyecto\build\main.aux
+
+(D:\clase\segundo\documentacion\DAW_25_26_Medac_Arena___Proyecto\build\main.aux
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
@@ -1285,7 +1461,9 @@ LaTeX Info: Redefining \. on input line 130.
 LaTeX Info: Redefining \% on input line 130.
 Package biblatex Info: Trying to load language 'spanish'...
 Package biblatex Info: ... file 'spanish.lbx' found.
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\spanish.lbx
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\spanish.lb
+x
 File: spanish.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
@@ -1295,10 +1473,14 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (c:\Users\DAVANTE\Desktop\DAW_25_26_Medac_Arena___Proyecto\build\main.bbl)
+
+(D:\clase\segundo\documentacion\DAW_25_26_Medac_Arena___Proyecto\build\main.bbl
+)
 Package biblatex Info: Reference section=0 on input line 130.
 Package biblatex Info: Reference segment=0 on input line 130.
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count565
 \scratchdimen=\dimen354
@@ -1311,10 +1493,15 @@ Package biblatex Info: Reference segment=0 on input line 130.
 \MPnumerator=\count569
 \makeMPintoPDFobject=\count570
 \everyMPtoPDFconversion=\toks61
-) (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+)
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 *geometry* driver: auto-detecting
@@ -1352,7 +1539,11 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 130.
-(c:\Users\DAVANTE\Desktop\DAW_25_26_Medac_Arena___Proyecto\build\main.out) (c:\Users\DAVANTE\Desktop\DAW_25_26_Medac_Arena___Proyecto\build\main.out)
+
+(D:\clase\segundo\documentacion\DAW_25_26_Medac_Arena___Proyecto\build\main.out
+)
+(D:\clase\segundo\documentacion\DAW_25_26_Medac_Arena___Proyecto\build\main.out
+)
 \@outlinefile=\write6
 \openout6 = `main.out'.
 
@@ -1361,18 +1552,19 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: rotating package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
-<img/topMEDAC.pdf, id=493, 759.0759pt x 275.83049pt>
+<img/topMEDAC.pdf, id=553, 759.0759pt x 275.83049pt>
 File: img/topMEDAC.pdf Graphic file (type pdf)
 <use img/topMEDAC.pdf>
 Package pdftex.def Info: img/topMEDAC.pdf  used on input line 140.
 (pdftex.def)             Requested size: 313.20375pt x 113.81102pt.
-<img/bottomMEDAC.pdf, id=494, 627.34375pt x 1080.035pt>
+<img/bottomMEDAC.pdf, id=554, 627.34375pt x 1080.035pt>
 File: img/bottomMEDAC.pdf Graphic file (type pdf)
 <use img/bottomMEDAC.pdf>
 Package pdftex.def Info: img/bottomMEDAC.pdf  used on input line 144.
 (pdftex.def)             Requested size: 297.48402pt x 512.1496pt.
-LaTeX Font Info:    Trying to load font information for T1+fvs on input line 151.
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/bera\t1fvs.fd
+LaTeX Font Info:    Trying to load font information for T1+fvs on input line 15
+1.
+ (C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/bera\t1fvs.fd
 File: t1fvs.fd 2004/09/07 scalable font definitions for T1/fvs.
 )
 LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
@@ -1385,12 +1577,16 @@ LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
 (Font)              scaled to size 15.55188pt on input line 164.
 LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
 (Font)              scaled to size 15.55188pt on input line 166.
- [1
+
+[1
 
 
-{C:/Users/DAVANTE/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./img/topMEDAC.pdf> <./img/bottomMEDAC.pdf>] [2
+{C:/Users/javij/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/javi
+j/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./img/topMEDAC.pd
+f> <./img/bottomMEDAC.pdf>] [2
 
-] (c:\Users\DAVANTE\Desktop\DAW_25_26_Medac_Arena___Proyecto\build\main.toc
+]
+(D:\clase\segundo\documentacion\DAW_25_26_Medac_Arena___Proyecto\build\main.toc
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -1420,7 +1616,8 @@ Overfull \hbox (3.21837pt too wide) detected at line 17
 Underfull \vbox (badness 1629) has occurred while \output is active []
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.26 ...ontextualización empresarial}{13}{part.2}
@@ -1435,10 +1632,11 @@ LaTeX Info: Redefining \% on input line 54.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
 (babel)             Reported on input line 54.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.54 ...uario -- Trabajador}{38}{subsection.6.3.1}
+l.54 ...Entidad Intercambio}{36}{subsection.6.2.6}
                                                   % [2]
 Underfull \vbox (badness 2057) has occurred while \output is active []
 
@@ -1446,170 +1644,160 @@ LaTeX Info: Redefining \sptext on input line 83.
 LaTeX Info: Redefining \. on input line 83.
 LaTeX Info: Redefining \% on input line 83.
  [3]
-Overfull \hbox (2.93756pt too wide) detected at line 88
+Overfull \hbox (3.21837pt too wide) detected at line 95
+\T1/fvs/m/n/12 8.3.10. 
+ []
+
+
+Overfull \hbox (2.93756pt too wide) detected at line 106
 \T1/fvs/b/n/12 10. 
  []
 
 
-Overfull \hbox (2.63512pt too wide) detected at line 89
+Overfull \hbox (2.63512pt too wide) detected at line 107
 \T1/fvs/m/n/12 10.1. 
  []
 
 
-Overfull \hbox (2.63512pt too wide) detected at line 90
+Overfull \hbox (2.63512pt too wide) detected at line 108
 \T1/fvs/m/n/12 10.2. 
  []
 
 
-Overfull \hbox (2.63512pt too wide) detected at line 91
+Overfull \hbox (2.63512pt too wide) detected at line 109
 \T1/fvs/m/n/12 10.3. 
  []
 
 
-Overfull \hbox (3.21837pt too wide) detected at line 92
+Overfull \hbox (3.21837pt too wide) detected at line 110
 \T1/fvs/m/n/12 10.3.1. 
  []
 
 
-Overfull \hbox (3.21837pt too wide) detected at line 93
+Overfull \hbox (3.21837pt too wide) detected at line 111
 \T1/fvs/m/n/12 10.3.2. 
  []
 
 
-Overfull \hbox (3.21837pt too wide) detected at line 94
+Overfull \hbox (3.21837pt too wide) detected at line 112
 \T1/fvs/m/n/12 10.3.3. 
  []
 
 
-Overfull \hbox (2.63512pt too wide) detected at line 95
+Overfull \hbox (3.21837pt too wide) detected at line 113
+\T1/fvs/m/n/12 10.3.4. 
+ []
+
+LaTeX Info: Redefining \sptext on input line 114.
+LaTeX Info: Redefining \. on input line 114.
+LaTeX Info: Redefining \% on input line 114.
+[4]
+Overfull \hbox (3.21837pt too wide) detected at line 114
+\T1/fvs/m/n/12 10.3.5. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 115
 \T1/fvs/m/n/12 10.4. 
  []
 
 
-Overfull \hbox (3.21837pt too wide) detected at line 96
-\T1/fvs/m/n/12 10.4.1. 
- []
-
-
-Overfull \hbox (3.21837pt too wide) detected at line 97
-\T1/fvs/m/n/12 10.4.2. 
- []
-
-
-Overfull \hbox (3.21837pt too wide) detected at line 98
-\T1/fvs/m/n/12 10.4.3. 
- []
-
-
-Overfull \hbox (2.93756pt too wide) detected at line 100
+Overfull \hbox (2.93756pt too wide) detected at line 117
 \T1/fvs/b/n/12 11. 
  []
 
 
-Overfull \hbox (2.63512pt too wide) detected at line 101
+Overfull \hbox (2.63512pt too wide) detected at line 118
 \T1/fvs/m/n/12 11.1. 
  []
 
 
-Overfull \hbox (2.63512pt too wide) detected at line 102
+Overfull \hbox (2.63512pt too wide) detected at line 119
 \T1/fvs/m/n/12 11.2. 
  []
 
 
-Overfull \hbox (3.21837pt too wide) detected at line 103
-\T1/fvs/m/n/12 11.2.1. 
- []
-
-
-Overfull \hbox (2.93756pt too wide) detected at line 105
-\T1/fvs/b/n/12 12. 
- []
-
-
-Overfull \hbox (2.63512pt too wide) detected at line 106
-\T1/fvs/m/n/12 12.1. 
- []
-
-
-Overfull \hbox (2.63512pt too wide) detected at line 107
-\T1/fvs/m/n/12 12.2. 
- []
-
-
-Overfull \hbox (2.63512pt too wide) detected at line 108
-\T1/fvs/m/n/12 12.3. 
- []
-
-
-Overfull \hbox (2.93756pt too wide) detected at line 109
-\T1/fvs/b/n/12 13. 
- []
-
-LaTeX Info: Redefining \sptext on input line 109.
-LaTeX Info: Redefining \. on input line 109.
-LaTeX Info: Redefining \% on input line 109.
-[4]
-Overfull \hbox (2.63512pt too wide) detected at line 110
-\T1/fvs/m/n/12 13.1. 
- []
-
-
-Overfull \hbox (2.63512pt too wide) detected at line 111
-\T1/fvs/m/n/12 13.2. 
- []
-
-
-Overfull \hbox (3.21837pt too wide) detected at line 112
-\T1/fvs/m/n/12 13.2.1. 
- []
-
-
-Overfull \hbox (3.21837pt too wide) detected at line 113
-\T1/fvs/m/n/12 13.2.2. 
- []
-
-
-Overfull \hbox (3.21837pt too wide) detected at line 114
-\T1/fvs/m/n/12 13.2.3. 
- []
-
-
-Overfull \hbox (3.21837pt too wide) detected at line 115
-\T1/fvs/m/n/12 13.2.4. 
- []
-
-
-Overfull \hbox (3.21837pt too wide) detected at line 116
-\T1/fvs/m/n/12 13.2.5. 
- []
-
-
-Overfull \hbox (2.93756pt too wide) detected at line 117
-\T1/fvs/b/n/12 14. 
- []
-
-
-Overfull \hbox (2.93756pt too wide) detected at line 119
-\T1/fvs/b/n/12 15. 
- []
-
-
 Overfull \hbox (2.63512pt too wide) detected at line 120
-\T1/fvs/m/n/12 15.1. 
+\T1/fvs/m/n/12 11.3. 
  []
 
 
 Overfull \hbox (2.63512pt too wide) detected at line 121
-\T1/fvs/m/n/12 15.2. 
+\T1/fvs/m/n/12 11.4. 
  []
 
 
 Overfull \hbox (2.63512pt too wide) detected at line 122
+\T1/fvs/m/n/12 11.5. 
+ []
+
+
+Overfull \hbox (2.93756pt too wide) detected at line 124
+\T1/fvs/b/n/12 12. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 125
+\T1/fvs/m/n/12 12.1. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 126
+\T1/fvs/m/n/12 12.2. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 127
+\T1/fvs/m/n/12 12.3. 
+ []
+
+
+Overfull \hbox (2.93756pt too wide) detected at line 128
+\T1/fvs/b/n/12 13. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 129
+\T1/fvs/m/n/12 13.1. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 130
+\T1/fvs/m/n/12 13.2. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 131
+\T1/fvs/m/n/12 13.3. 
+ []
+
+
+Overfull \hbox (2.93756pt too wide) detected at line 132
+\T1/fvs/b/n/12 14. 
+ []
+
+
+Overfull \hbox (2.93756pt too wide) detected at line 134
+\T1/fvs/b/n/12 15. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 135
+\T1/fvs/m/n/12 15.1. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 136
+\T1/fvs/m/n/12 15.2. 
+ []
+
+
+Overfull \hbox (2.63512pt too wide) detected at line 137
 \T1/fvs/m/n/12 15.3. 
  []
 
 
-Overfull \hbox (2.63512pt too wide) detected at line 123
+Overfull \hbox (2.63512pt too wide) detected at line 138
 \T1/fvs/m/n/12 15.4. 
  []
 
@@ -1629,22 +1817,24 @@ Cap\'{\i }tulo 1.
 [3
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+fvs on input line 57.
- (C:\Users\DAVANTE\AppData\Local\Programs\MiKTeX\tex/latex/bera\ts1fvs.fd
+LaTeX Font Info:    Trying to load font information for TS1+fvs on input line 5
+7.
+ (C:\Users\javij\AppData\Local\Programs\MiKTeX\tex/latex/bera\ts1fvs.fd
 File: ts1fvs.fd 2004/09/07 scalable font definitions for TS1/fvs.
 )
 LaTeX Font Info:    Font shape `TS1/fvs/m/n' will be
 (Font)              scaled to size 10.79993pt on input line 57.
-LaTeX Info: Redefining \. on input line 79.
-LaTeX Info: Redefining \% on input line 79.
- [4]
-LaTeX Info: Redefining \. on input line 114.
-LaTeX Info: Redefining \% on input line 114.
+LaTeX Info: Redefining \. on input line 78.
+LaTeX Info: Redefining \% on input line 78.
+
+[4]
+LaTeX Info: Redefining \. on input line 117.
+LaTeX Info: Redefining \% on input line 117.
  [5]
 LaTeX Font Info:    Font shape `T1/fvs/m/it' will be
-(Font)              scaled to size 10.79993pt on input line 124.
-LaTeX Info: Redefining \. on input line 150.
-LaTeX Info: Redefining \% on input line 150.
+(Font)              scaled to size 10.79993pt on input line 130.
+LaTeX Info: Redefining \. on input line 154.
+LaTeX Info: Redefining \% on input line 154.
  [6]) (capítulos/02_Objetivos.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -1688,7 +1878,8 @@ LaTeX Info: Redefining \. on input line 72.
 LaTeX Info: Redefining \% on input line 72.
  [21]
 Overfull \hbox (40.92613pt too wide) in paragraph at lines 114--115
-[]\T1/fvs/m/n/12 RF-17. Can-di-da-tos: pro-fe-sio-na-les con guar-dia ese d�a (cual-quier ti-po/especialidad). 
+[]\T1/fvs/m/n/12 RF-17. Can-di-da-tos: pro-fe-sio-na-les con guar-dia ese d�a (
+cual-quier ti-po/especialidad). 
  []
 
 LaTeX Info: Redefining \. on input line 116.
@@ -1710,186 +1901,382 @@ Cap\'{\i }tulo 6.
 [27
 
 ]
-LaTeX Info: Redefining \. on input line 75.
-LaTeX Info: Redefining \% on input line 75.
+LaTeX Info: Redefining \. on input line 71.
+LaTeX Info: Redefining \% on input line 71.
  [28]
-LaTeX Info: Redefining \. on input line 126.
-LaTeX Info: Redefining \% on input line 126.
+LaTeX Info: Redefining \. on input line 115.
+LaTeX Info: Redefining \% on input line 115.
  [29]
-<img/diagramas/Datos/User.png, id=818, 121.45375pt x 241.90375pt>
+<img/diagramas/Datos/User.png, id=893, 121.45375pt x 241.90375pt>
 File: img/diagramas/Datos/User.png Graphic file (type png)
 <use img/diagramas/Datos/User.png>
-Package pdftex.def Info: img/diagramas/Datos/User.png  used on input line 146.
+Package pdftex.def Info: img/diagramas/Datos/User.png  used on input line 149.
 (pdftex.def)             Requested size: 97.1631pt x 193.52325pt.
-LaTeX Info: Redefining \. on input line 182.
-LaTeX Info: Redefining \% on input line 182.
+LaTeX Info: Redefining \. on input line 180.
+LaTeX Info: Redefining \% on input line 180.
  [30 <./img/diagramas/Datos/User.png>]
-LaTeX Info: Redefining \. on input line 235.
-LaTeX Info: Redefining \% on input line 235.
+LaTeX Info: Redefining \. on input line 221.
+LaTeX Info: Redefining \% on input line 221.
  [31]
-<img/diagramas/Datos/trabajador.png, id=835, 121.45375pt x 211.79124pt>
+<img/diagramas/Datos/trabajador.png, id=910, 121.45375pt x 211.79124pt>
 File: img/diagramas/Datos/trabajador.png Graphic file (type png)
 <use img/diagramas/Datos/trabajador.png>
-Package pdftex.def Info: img/diagramas/Datos/trabajador.png  used on input line 254.
+Package pdftex.def Info: img/diagramas/Datos/trabajador.png  used on input line
+ 257.
 (pdftex.def)             Requested size: 97.1631pt x 169.43321pt.
-LaTeX Info: Redefining \. on input line 290.
-LaTeX Info: Redefining \% on input line 290.
+LaTeX Info: Redefining \. on input line 288.
+LaTeX Info: Redefining \% on input line 288.
  [32 <./img/diagramas/Datos/trabajador.png>]
-<img/diagramas/Datos/especialidad.png, id=845, 141.52875pt x 121.45375pt>
+LaTeX Info: Redefining \. on input line 329.
+LaTeX Info: Redefining \% on input line 329.
+ [33]
+<img/diagramas/Datos/especialidad.png, id=924, 141.52875pt x 121.45375pt>
 File: img/diagramas/Datos/especialidad.png Graphic file (type png)
 <use img/diagramas/Datos/especialidad.png>
-Package pdftex.def Info: img/diagramas/Datos/especialidad.png  used on input line 335.
+Package pdftex.def Info: img/diagramas/Datos/especialidad.png  used on input li
+ne 338.
 (pdftex.def)             Requested size: 113.22314pt x 97.1631pt.
-LaTeX Info: Redefining \. on input line 339.
-LaTeX Info: Redefining \% on input line 339.
- [33]
-LaTeX Info: Redefining \. on input line 391.
-LaTeX Info: Redefining \% on input line 391.
+LaTeX Info: Redefining \. on input line 384.
+LaTeX Info: Redefining \% on input line 384.
  [34 <./img/diagramas/Datos/especialidad.png>]
-<img/diagramas/Datos/guardia.png, id=859, 121.45375pt x 211.79124pt>
+<img/diagramas/Datos/guardia.png, id=934, 121.45375pt x 211.79124pt>
 File: img/diagramas/Datos/guardia.png Graphic file (type png)
 <use img/diagramas/Datos/guardia.png>
-Package pdftex.def Info: img/diagramas/Datos/guardia.png  used on input line 437.
+Package pdftex.def Info: img/diagramas/Datos/guardia.png  used on input line 44
+0.
 (pdftex.def)             Requested size: 97.1631pt x 169.43321pt.
+LaTeX Info: Redefining \. on input line 444.
+LaTeX Info: Redefining \% on input line 444.
 
-Underfull \vbox (badness 3291) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 441.
-LaTeX Info: Redefining \% on input line 441.
- [35]
-LaTeX Info: Redefining \. on input line 484.
-LaTeX Info: Redefining \% on input line 484.
+[35]
+LaTeX Info: Redefining \. on input line 490.
+LaTeX Info: Redefining \% on input line 490.
  [36 <./img/diagramas/Datos/guardia.png>]
-LaTeX Info: Redefining \. on input line 516.
-LaTeX Info: Redefining \% on input line 516.
+LaTeX Info: Redefining \. on input line 520.
+LaTeX Info: Redefining \% on input line 520.
  [37]
-LaTeX Info: Redefining \. on input line 551.
-LaTeX Info: Redefining \% on input line 551.
+LaTeX Info: Redefining \. on input line 555.
+LaTeX Info: Redefining \% on input line 555.
  [38]
-LaTeX Info: Redefining \. on input line 584.
-LaTeX Info: Redefining \% on input line 584.
+LaTeX Info: Redefining \. on input line 594.
+LaTeX Info: Redefining \% on input line 594.
  [39]
-LaTeX Info: Redefining \. on input line 593.
-LaTeX Info: Redefining \% on input line 593.
+LaTeX Info: Redefining \. on input line 632.
+LaTeX Info: Redefining \% on input line 632.
  [40]
-LaTeX Info: Redefining \. on input line 602.
-LaTeX Info: Redefining \% on input line 602.
- [41
+LaTeX Info: Redefining \. on input line 641.
+LaTeX Info: Redefining \% on input line 641.
+ [41]
+LaTeX Info: Redefining \. on input line 650.
+LaTeX Info: Redefining \% on input line 650.
+ [42
 
-]) (capítulos/07_Análisis_Funcional.tex
+])
+(capítulos/07_Análisis_Funcional.tex
 Cap\'{\i }tulo 7.
-[42
+
+Overfull \hbox (0.48198pt too wide) in paragraph at lines 9--10
+[]\T1/fvs/b/n/12 Administrador\T1/fvs/m/n/12 : Res-pon-sa-ble de la ges-ti�n gl
+o-bal, im-por-ta-ci�n de da-tos y apro-
+ []
+
+[43
 
 
 ]
+Underfull \vbox (badness 3780) has occurred while \output is active []
 
-LaTeX Warning: Reference `sec:CU-2' on page 43 undefined on input line 31.
-
-LaTeX Info: Redefining \. on input line 69.
-LaTeX Info: Redefining \% on input line 69.
-[43]
-LaTeX Info: Redefining \. on input line 110.
-LaTeX Info: Redefining \% on input line 110.
+LaTeX Info: Redefining \. on input line 72.
+LaTeX Info: Redefining \% on input line 72.
  [44]
-LaTeX Info: Redefining \. on input line 133.
-LaTeX Info: Redefining \% on input line 133.
- [45])
+LaTeX Info: Redefining \. on input line 107.
+LaTeX Info: Redefining \% on input line 107.
+
+[45]
+<img/diagramas/Secuencia/login.png, id=993, 964.60374pt x 940.51375pt>
+File: img/diagramas/Secuencia/login.png Graphic file (type png)
+<use img/diagramas/Secuencia/login.png>
+Package pdftex.def Info: img/diagramas/Secuencia/login.png  used on input line 
+113.
+(pdftex.def)             Requested size: 530.5337pt x 517.28416pt.
+
+Overfull \hbox (75.2896pt too wide) in paragraph at lines 113--114
+ [][] 
+ []
+
+<img/diagramas/Secuencia/logout.png, id=994, 557.08125pt x 586.19pt>
+File: img/diagramas/Secuencia/logout.png Graphic file (type png)
+<use img/diagramas/Secuencia/logout.png>
+Package pdftex.def Info: img/diagramas/Secuencia/logout.png  used on input line
+ 118.
+(pdftex.def)             Requested size: 306.39563pt x 322.40549pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 121.
+LaTeX Info: Redefining \% on input line 121.
+ [46 <./img/diagramas/Secuencia/login.png (PNG copy)>]
+<img/diagramas/Secuencia/create.png, id=1000, 500.87125pt x 455.7025pt>
+File: img/diagramas/Secuencia/create.png Graphic file (type png)
+<use img/diagramas/Secuencia/create.png>
+Package pdftex.def Info: img/diagramas/Secuencia/create.png  used on input line
+ 125.
+(pdftex.def)             Requested size: 275.48003pt x 250.63713pt.
+<img/diagramas/Secuencia/edit.png, id=1001, 780.9175pt x 595.22375pt>
+File: img/diagramas/Secuencia/edit.png Graphic file (type png)
+<use img/diagramas/Secuencia/edit.png>
+Package pdftex.def Info: img/diagramas/Secuencia/edit.png  used on input line 1
+30.
+(pdftex.def)             Requested size: 429.50595pt x 327.37407pt.
+<img/diagramas/Secuencia/delete.png, id=1002, 706.64pt x 516.93124pt>
+File: img/diagramas/Secuencia/delete.png Graphic file (type png)
+<use img/diagramas/Secuencia/delete.png>
+Package pdftex.def Info: img/diagramas/Secuencia/delete.png  used on input line
+ 135.
+(pdftex.def)             Requested size: 388.6532pt x 284.31306pt.
+LaTeX Info: Redefining \. on input line 137.
+LaTeX Info: Redefining \% on input line 137.
+ [47 <./img/diagramas/Secuencia/logout.png (PNG copy)> <./img/diagramas/Secuenc
+ia/create.png (PNG copy)>]
+<img/diagramas/Secuencia/create_specialty.png, id=1010, 553.06625pt x 519.9425p
+t>
+File: img/diagramas/Secuencia/create_specialty.png Graphic file (type png)
+<use img/diagramas/Secuencia/create_specialty.png>
+Package pdftex.def Info: img/diagramas/Secuencia/create_specialty.png  used on 
+input line 142.
+(pdftex.def)             Requested size: 304.18738pt x 285.96925pt.
+<img/diagramas/Secuencia/edit_speciality.png, id=1011, 616.3025pt x 717.68124pt
+>
+File: img/diagramas/Secuencia/edit_speciality.png Graphic file (type png)
+<use img/diagramas/Secuencia/edit_speciality.png>
+Package pdftex.def Info: img/diagramas/Secuencia/edit_speciality.png  used on i
+nput line 147.
+(pdftex.def)             Requested size: 338.96742pt x 394.7259pt.
+LaTeX Info: Redefining \. on input line 149.
+LaTeX Info: Redefining \% on input line 149.
+ [48 <./img/diagramas/Secuencia/edit.png (PNG copy)> <./img/diagramas/Secuencia
+/delete.png (PNG copy)>]
+<img/diagramas/Secuencia/delete_speciality.png, id=1018, 646.415pt x 624.3325pt
+>
+File: img/diagramas/Secuencia/delete_speciality.png Graphic file (type png)
+<use img/diagramas/Secuencia/delete_speciality.png>
+Package pdftex.def Info: img/diagramas/Secuencia/delete_speciality.png  used on
+ input line 152.
+(pdftex.def)             Requested size: 355.52934pt x 343.38394pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 154.
+LaTeX Info: Redefining \% on input line 154.
+ [49 <./img/diagramas/Secuencia/create_specialty.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 155.
+LaTeX Info: Redefining \% on input line 155.
+ [50 <./img/diagramas/Secuencia/edit_speciality.png>]
+<img/diagramas/Secuencia/intercambio_guardia.png, id=1031, 636.3775pt x 584.182
+5pt>
+File: img/diagramas/Secuencia/intercambio_guardia.png Graphic file (type png)
+<use img/diagramas/Secuencia/intercambio_guardia.png>
+Package pdftex.def Info: img/diagramas/Secuencia/intercambio_guardia.png  used 
+on input line 160.
+(pdftex.def)             Requested size: 350.0087pt x 321.30136pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 164.
+LaTeX Info: Redefining \% on input line 164.
+ [51 <./img/diagramas/Secuencia/delete_speciality.png>]
+<img/diagramas/Secuencia/fichaje_geolocalizado.png, id=1038, 636.3775pt x 392.4
+6625pt>
+File: img/diagramas/Secuencia/fichaje_geolocalizado.png Graphic file (type png)
+
+<use img/diagramas/Secuencia/fichaje_geolocalizado.png>
+Package pdftex.def Info: img/diagramas/Secuencia/fichaje_geolocalizado.png  use
+d on input line 167.
+(pdftex.def)             Requested size: 350.0087pt x 215.85709pt.
+<img/diagramas/Secuencia/generacion_reportes.png, id=1039, 636.3775pt x 392.466
+25pt>
+File: img/diagramas/Secuencia/generacion_reportes.png Graphic file (type png)
+<use img/diagramas/Secuencia/generacion_reportes.png>
+Package pdftex.def Info: img/diagramas/Secuencia/generacion_reportes.png  used 
+on input line 175.
+(pdftex.def)             Requested size: 350.0087pt x 215.85709pt.
+)
+Underfull \vbox (badness 5119) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 230.
+LaTeX Info: Redefining \% on input line 230.
+ [52 <./img/diagramas/Secuencia/intercambio_guardia.png> <./img/diagramas/Secue
+ncia/fichaje_geolocalizado.png>]
 LaTeX Info: Redefining \. on input line 231.
 LaTeX Info: Redefining \% on input line 231.
- [46] [47
+ [53 <./img/diagramas/Secuencia/generacion_reportes.png>]
+[54
 
-] [48] (capítulos/08_Diseno_de_datos.tex
+] [55] (capítulos/08_Diseno_de_datos.tex
 Cap\'{\i }tulo 8.
-[49
+[56
 
 ]
 Overfull \hbox (8.81186pt too wide) in paragraph at lines 53--55
-[]\T1/fvs/b/n/12 Esquema re-la-cio-nal\T1/fvs/m/n/12 : Usua-rio($[]$, na-me, \T1/fvs/m/it/12 email\T1/fvs/m/n/12 , pass-word, ava-ta-rUrl, \T1/fvs/b/n/12 wor-ker_id\T1/fvs/m/n/12 ,
+[]\T1/fvs/b/n/12 Esquema re-la-cio-nal\T1/fvs/m/n/12 : Usua-rio($[]$, na-me, \T
+1/fvs/m/it/12 email\T1/fvs/m/n/12 , pass-word, ava-ta-rUrl, \T1/fvs/b/n/12 wor-
+ker_id\T1/fvs/m/n/12 ,
  []
 
 LaTeX Info: Redefining \. on input line 64.
 LaTeX Info: Redefining \% on input line 64.
-[50]
+[57]
 File: img/diagramas/Datos/User.png Graphic file (type png)
 <use img/diagramas/Datos/User.png>
 Package pdftex.def Info: img/diagramas/Datos/User.png  used on input line 77.
 (pdftex.def)             Requested size: 91.09007pt x 181.42735pt.
 LaTeX Info: Redefining \. on input line 94.
 LaTeX Info: Redefining \% on input line 94.
- [51]
+ [58]
 File: img/diagramas/Datos/trabajador.png Graphic file (type png)
 <use img/diagramas/Datos/trabajador.png>
-Package pdftex.def Info: img/diagramas/Datos/trabajador.png  used on input line 110.
+Package pdftex.def Info: img/diagramas/Datos/trabajador.png  used on input line
+ 110.
 (pdftex.def)             Requested size: 91.09007pt x 158.84303pt.
-LaTeX Info: Redefining \. on input line 136.
-LaTeX Info: Redefining \% on input line 136.
- [52]
+LaTeX Info: Redefining \. on input line 129.
+LaTeX Info: Redefining \% on input line 129.
+ [59]
 File: img/diagramas/Datos/especialidad.png Graphic file (type png)
 <use img/diagramas/Datos/especialidad.png>
-Package pdftex.def Info: img/diagramas/Datos/especialidad.png  used on input line 141.
+Package pdftex.def Info: img/diagramas/Datos/especialidad.png  used on input li
+ne 134.
 (pdftex.def)             Requested size: 106.14629pt x 91.09007pt.
 File: img/diagramas/Datos/guardia.png Graphic file (type png)
 <use img/diagramas/Datos/guardia.png>
-Package pdftex.def Info: img/diagramas/Datos/guardia.png  used on input line 172.
+Package pdftex.def Info: img/diagramas/Datos/guardia.png  used on input line 16
+5.
 (pdftex.def)             Requested size: 91.09007pt x 158.84303pt.
-LaTeX Info: Redefining \. on input line 175.
-LaTeX Info: Redefining \% on input line 175.
- [53]
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
-[]|\T1/cmr/m/n/12 ($[]$, da-te, duty_type, \T1/cmr/bx/n/12 id_speciality\T1/cmr/m/n/12 ,
+LaTeX Info: Redefining \. on input line 168.
+LaTeX Info: Redefining \% on input line 168.
+ [60]
+Overfull \hbox (36.94492pt too wide) in paragraph at lines 193--194
+[]\T1/fvs/b/n/12 Esquema re-la-cio-nal\T1/fvs/m/n/12 : In-ter-cam-bio($[]$, sta
+-tus, com-ments, \T1/fvs/b/n/12 id_duty_from\T1/fvs/m/n/12 , \T1/fvs/b/n/12 id_
+duty_to\T1/fvs/m/n/12 ,
  []
 
-LaTeX Info: Redefining \. on input line 208.
-LaTeX Info: Redefining \% on input line 208.
-[54]
-LaTeX Info: Redefining \. on input line 214.
-LaTeX Info: Redefining \% on input line 214.
- [55
+LaTeX Info: Redefining \. on input line 199.
+LaTeX Info: Redefining \% on input line 199.
+[61]
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+[]|\T1/cmr/m/n/12 ($[]$, da-te, duty_type, \T1/cmr/bx/n/12 id_speciality\T1/cmr
+/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 2884) in paragraph at lines 221--221
+[]|\T1/cmr/m/n/12 ($[]$, sta-tus, com-ments, \T1/cmr/bx/n/12 id_duty_from\T1/cm
+r/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--221
+\T1/cmr/bx/n/12 id_duty_to\T1/cmr/m/n/12 , \T1/cmr/bx/n/12 id_worker_requester\
+T1/cmr/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--221
+\T1/cmr/bx/n/12 id_worker_target\T1/cmr/m/n/12 ,
+ []
+
+LaTeX Info: Redefining \. on input line 230.
+LaTeX Info: Redefining \% on input line 230.
+[62]
+LaTeX Info: Redefining \. on input line 236.
+LaTeX Info: Redefining \% on input line 236.
+ [63
 
 ]) (capítulos/09_Diseno_arquitectonico.tex
 Cap\'{\i }tulo 9.
-) (capítulos/10_Diseno_de_la_interfaz.tex [56
+[64
 
 
 ]
-Cap\'{\i }tulo 10.
-[57
+LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 28.
 
-])
+Overfull \hbox (10.64137pt too wide) in paragraph at lines 36--37
+[]\T1/fvs/m/n/12 El c�-di-go fuen-te del clien-te se or-ga-ni-za en el di-rec-t
+o-rio \T1/cmtt/m/n/12 TFG-Nuevo-Frontend/src/\T1/fvs/m/n/12 : 
+ []
+
+) (capítulos/10_Diseno_de_la_interfaz.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [65]
+Cap\'{\i }tulo 10.
+[66
+
+]
+LaTeX Info: Redefining \. on input line 73.
+LaTeX Info: Redefining \% on input line 73.
+ [67])
 LaTeX Info: Redefining \. on input line 236.
 LaTeX Info: Redefining \% on input line 236.
- [58] [59
+ [68] [69
 
-] [60] (capítulos/11_Pruebas.tex
+] [70] (capítulos/11_Pruebas.tex
 Cap\'{\i }tulo 11.
-) [61
+[71
 
-] [62
+])
+LaTeX Info: Redefining \. on input line 239.
+LaTeX Info: Redefining \% on input line 239.
+ [72] [73
 
-] [63] (capítulos/12_Conclusiones.tex
+] [74] (capítulos/12_Conclusiones.tex
 Cap\'{\i }tulo 12.
-) (capítulos/13_Futuras_mejoras.tex [64
+[75
 
-]
+]) (capítulos/13_Futuras_mejoras.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [76]
 Cap\'{\i }tulo 13.
-) (capítulos/20_Anexos.tex [65
+
+Overfull \hbox (3.79681pt too wide) in paragraph at lines 10--11
+[]\T1/fvs/b/n/12 Inteligencia Ar-ti-fi-cial pa-ra Cua-dran-tes\T1/fvs/m/n/12 : 
+Im-ple-men-tar un al-go-rit-mo de apren-
+ []
+
+) (capítulos/20_Anexos.tex [77
 
 ]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [66]
+ [78]
 Cap\'{\i }tulo 14.
-) [67
+) [79
 
-] (capítulos/99_Readme.tex [68
+] (capítulos/99_Readme.tex [80
 
 ]
 Cap\'{\i }tulo 15.
-<img/diagramas/Modelo-Físico-ER.png, id=1057, 505.89pt x 289.08pt>
-File: img/diagramas/Modelo-Físico-ER.png Graphic file (type png)
-<use img/diagramas/Modelo-Físico-ER.png>
-Package pdftex.def Info: img/diagramas/Modelo-Físico-ER.png  used on input line 25.
-(pdftex.def)             Requested size: 455.29678pt x 260.16959pt.
+
+LaTeX Warning: File `img/diagramas/Modelo-Físico-ER.png' not found on input li
+ne 25.
+
+
+! Package pdftex.def Error: File `img/diagramas/Modelo-Físico-ER.png' not foun
+d: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...=0.9]{img/diagramas/Modelo-Físico-ER.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 LaTeX Font Info:    Font shape `T1/fvs/m/sl' in size <12> not available
 (Font)              Font shape `T1/fvs/m/it' tried instead on input line 34.
 LaTeX Font Info:    Font shape `T1/fvs/m/it' will be
@@ -1898,54 +2285,67 @@ LaTeX Font Info:    Font shape `T1/fvs/m/it' will be
 LaTeX Font Warning: Font shape `T1/fvs/m/sc' undefined
 (Font)              using `T1/fvs/m/n' instead on input line 35.
 
-[69
+[81
 
 ]
-LaTeX Info: Redefining \. on input line 70.
-LaTeX Info: Redefining \% on input line 70.
- [70 <./img/diagramas/Modelo-Físico-ER.png>]
-LaTeX Info: Redefining \. on input line 99.
-LaTeX Info: Redefining \% on input line 99.
- [71])
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
+ [82]
+LaTeX Info: Redefining \. on input line 111.
+LaTeX Info: Redefining \% on input line 111.
+ [83])
 LaTeX Info: Redefining \. on input line 257.
 LaTeX Info: Redefining \% on input line 257.
- [72]
-runsystem(latexminted cleantemp  --timestamp 20260217185249 FAD58DE7366495DB4650CFEFAC2FCD61)...disabled (restricted).
+ [84]
+runsystem(latexminted cleantemp  --timestamp 20260515135710 FAD58DE7366495DB465
+0CFEFAC2FCD61)...executed.
 
- (c:\Users\DAVANTE\Desktop\DAW_25_26_Medac_Arena___Proyecto\build\main.aux
+
+(D:\clase\segundo\documentacion\DAW_25_26_Medac_Arena___Proyecto\build\main.aux
 LaTeX Info: Redefining \sptext on input line 13.
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
 )
  ***********
 LaTeX2e <2025-11-01>
-L3 programming layer <2025-10-24>
+L3 programming layer <2025-11-06>
  ***********
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: EE54ED20E7696F57D556E7D925BA0DD1;20374.
+(rerunfilecheck)             Checksum: 721AD37315252D4C1AFDF9BDB97BAF1F;23230.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41015 strings out of 467871
- 812102 string characters out of 5417407
- 1758530 words of memory out of 5000000
- 68983 multiletter control sequences out of 15000+600000
- 676330 words of font info for 79 fonts, out of 8000000 for 9000
+ 41205 strings out of 467871
+ 817760 string characters out of 5418375
+ 1759741 words of memory out of 5000000
+ 69131 multiletter control sequences out of 15000+600000
+ 683166 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,14n,117p,1255b,2411s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\DAVANTE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsb8a.pfb><C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsr8a.pfb><C:/Users/DAVANTE/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsro8a.pfb>
-Output written on c:\Users\DAVANTE\Desktop\DAW_25_26_Medac_Arena___Proyecto\build\main.pdf (80 pages, 2149102 bytes).
+ 84i,14n,117p,1199b,2398s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
+1200.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecrm0600.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecti1200.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecbx1200.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\javij\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\javij\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\javij\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\javij\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/javij/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/javi
+j/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsb8a.pfb><C:/Users/javij/App
+Data/Local/Programs/MiKTeX/fonts/type1/bera/fvsr8a.pfb><C:/Users/javij/AppData/
+Local/Programs/MiKTeX/fonts/type1/bera/fvsro8a.pfb>
+Output written on D:\clase\segundo\documentacion\DAW_25_26_Medac_Arena___Proyec
+to\build\main.pdf (92 pages, 2282859 bytes).
 PDF statistics:
- 1562 PDF objects out of 1728 (max. 8388607)
- 234 named destinations out of 1000 (max. 500000)
- 1024 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1748 PDF objects out of 2073 (max. 8388607)
+ 275 named destinations out of 1000 (max. 500000)
+ 1194 words of extra memory for PDF output out of 10000 (max. 10000000)
 

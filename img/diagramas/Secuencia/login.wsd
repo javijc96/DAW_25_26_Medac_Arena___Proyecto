@@ -1,0 +1,43 @@
+@startuml
+title Autenticación: Inicio de Sesión (Login)
+
+actor Usuario
+participant "Interfaz UI" as UI
+participant "Servidor/API" as API
+database "Base de Datos" as DB
+
+Usuario -> UI : Ingresar Email y Contraseña
+activate UI
+UI -> UI : Validar formato (Front-end)
+alt Formato inválido
+    UI --> Usuario : Mostrar error de validación
+else Formato válido
+    UI -> API : POST /login (email, password)
+    activate API
+    API -> API : Validar datos (Back-end)
+    API -> DB : Consultar usuario por email
+    activate DB
+    DB --> API : Datos del usuario + Hash contraseña
+    deactivate DB
+    
+    alt Credenciales incorrectas
+        API --> UI : Respuesta 401 (No autorizado)
+        UI --> Usuario : Mostrar "Credenciales inválidas"
+    else Credenciales correctas
+        API -> API : Generar Token (JWT)
+        API --> UI : Respuesta 200 (Token + Datos Usuario/Rol)
+        deactivate API
+        
+        UI -> UI : Almacenar Token localmente
+        
+        alt Rol: Usuario (Admin)
+            UI -> UI : Redirigir a Panel Admin + Trabajador
+            UI --> Usuario : Mostrar funciones de Admin y Gestión
+        else Rol: Trabajador
+            UI -> UI : Redirigir a Panel Trabajador
+            UI --> Usuario : Mostrar solo funciones de consulta/guardias
+        end
+    end
+end
+deactivate UI
+@enduml

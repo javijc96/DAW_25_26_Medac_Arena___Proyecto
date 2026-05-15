@@ -1,0 +1,29 @@
+@startuml
+title "Editar Especialidad"
+actor Administrador
+participant UI
+participant API
+database DB
+Administrador -> UI : Click Editar
+activate UI
+UI -> API : GET /especialidad/id
+activate API
+API -> DB : SELECT datos
+activate DB
+DB --> API : Datos
+deactivate DB
+API --> UI : Datos Formulario
+deactivate API
+UI --> Administrador : Mostrar Datos
+Administrador -> UI : Guardar Cambios
+UI -> API : PUT /especialidad/id
+activate API
+API -> DB : UPDATE especialidad
+activate DB
+DB --> API : OK
+deactivate DB
+API --> UI : OK 200
+deactivate API
+UI --> Administrador : Guardado
+deactivate UI
+@enduml

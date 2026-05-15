@@ -67,6 +67,9 @@ Los tipos de entidad que se han identificado y que se describirán a continuaci�
     \item Tipo de entidad: Trabajador
     \item Tipo de entidad: Especialidad
     \item Tipo de entidad: Guardia
+    \item Tipo de entidad: Fichaje
+    \item Tipo de entidad: Intercambio
+    \item Tipo de entidad: Notificación
 \end{itemize}
 
 \subsection{Entidad Usuario}
@@ -467,6 +470,27 @@ Los tipos de entidad que se han identificado y que se describirán a continuaci�
     \end{table}
 \end{itemize}
 
+\subsection{Entidad Fichaje}
+\begin{itemize}
+    \item Descripción: representa el registro de jornada de un trabajador. Almacena el momento exacto de entrada y salida, así como las coordenadas GPS para validar la ubicación del profesional en el centro.
+    \item Características: fuerte, id primario, 5 propios.
+    \item Atributos propios: id, clock\_in, clock\_out, latitude, longitude, status.
+\end{itemize}
+
+\subsection{Entidad Intercambio}
+\begin{itemize}
+    \item Descripción: representa una solicitud para cambiar una guardia entre dos profesionales. Permite gestionar el flujo de aceptación y aprobación por parte de la administración.
+    \item Características: fuerte, id primario, 2 propios.
+    \item Atributos propios: id, status, comments.
+\end{itemize}
+
+\subsection{Entidad Notificación}
+\begin{itemize}
+    \item Descripción: representa un aviso enviado a un usuario específico para informarle de eventos relevantes (cambios aprobados, alertas administrativas).
+    \item Características: fuerte, id primario, 4 propios.
+    \item Atributos propios: id, title, message, is\_read, created\_at.
+\end{itemize}
+
 \section{Tipos de interrelación} \label{sec:relaciones}
 En esta sección se identificarán y describirán las interrelaciones entre los tipos de entidad descritos en la sección 7.2.
 
@@ -506,6 +530,30 @@ Se han identificado las interrelaciones que se indican a continuación y que se 
     \item Tipo de Interrelación: Guardia -- Especialidad
     \item Tipo de Interrelación: Guardia -- Trabajador (Asignación)
     \item Tipo de Interrelación: Guardia -- Trabajador (Jefatura)
+    \item Tipo de Interrelación: Trabajador -- Fichaje (Realiza)
+    \item Tipo de Interrelación: Guardia -- Intercambio (Intercambio\_mutuo)
+    \item Tipo de Interrelación: Usuario -- Notificación (Recibe)
+\end{itemize}
+
+\subsection{Interrelación Trabajador -- Fichaje}
+\begin{itemize}
+    \item \textbf{Nombre}: Realiza.
+    \item \textbf{Descripción}: relaciona a un trabajador con sus registros de jornada diarios.
+    \item \textbf{Cardinalidad}: 1:N.
+\end{itemize}
+
+\subsection{Interrelación Guardia -- Intercambio}
+\begin{itemize}
+    \item \textbf{Nombre}: Intercambio\_mutuo.
+    \item \textbf{Descripción}: relaciona dos guardias específicas con una solicitud de intercambio mutuo.
+    \item \textbf{Cardinalidad}: 2:1 (Dos guardias por cada intercambio).
+\end{itemize}
+
+\subsection{Interrelación Usuario -- Notificación}
+\begin{itemize}
+    \item \textbf{Nombre}: Recibe.
+    \item \textbf{Descripción}: relaciona un usuario con las notificaciones recibidas.
+    \item \textbf{Cardinalidad}: 1:N.
 \end{itemize}
 
 \subsection{Interrelación Usuario -- Trabajador}

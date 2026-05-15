@@ -1,0 +1,24 @@
+@startuml
+title CRUD: Eliminación de Usuario (Trabajador)
+
+actor Administrador
+participant "Interfaz UI" as UI
+participant "Servidor/API" as API
+database "Base de Datos" as DB
+
+Administrador -> UI : Pulsar botón "Borrar"
+activate UI
+UI --> Administrador : Mostrar Modal de Confirmación
+Administrador -> UI : Confirmar en el Modal
+UI -> API : DELETE /usuario/{id}
+activate API
+API -> DB : DELETE FROM trabajadores
+activate DB
+DB --> API : Confirmación de borrado
+deactivate DB
+API --> UI : Respuesta 204 (No Content)
+deactivate API
+UI -> UI : Refrescar lista de usuarios
+UI --> Administrador : Mostrar confirmación final
+deactivate UI
+@enduml

@@ -1,0 +1,32 @@
+@startuml
+title CRUD: Edición de Usuario (Trabajador)
+
+actor Administrador
+participant "Interfaz UI" as UI
+participant "Servidor/API" as API
+database "Base de Datos" as DB
+
+Administrador -> UI : Pulsar botón "Editar"
+activate UI
+UI -> API : GET /usuario/{id}
+activate API
+API -> DB : SELECT trabajador
+activate DB
+DB --> API : Datos actuales
+deactivate DB
+API --> UI : Enviar datos al formulario
+deactivate API
+UI --> Administrador : Mostrar formulario precargado
+
+Administrador -> UI : Modificar campos y pulsar "Guardar"
+UI -> API : PUT /usuario/{id} (datos actualizados)
+activate API
+API -> DB : UPDATE trabajador
+activate DB
+DB --> API : Confirmación actualización
+deactivate DB
+API --> UI : Respuesta 200 (Éxito)
+deactivate API
+UI --> Administrador : Notificar cambios guardados
+deactivate UI
+@enduml

@@ -1,0 +1,32 @@
+@startuml
+title "Fichaje con Geolocalización"
+
+actor "Trabajador" as T
+participant "App Móvil/Web" as App
+participant "Navegador\n(Geolocalización API)" as Nav
+participant "API (Laravel)" as API
+database "DB" as DB
+
+T -> App: Click en "Fichar Entrada/Salida"
+activate App
+App -> Nav: Solicitar coordenadas actuales
+activate Nav
+Nav --> App: Latitud, Longitud
+deactivate Nav
+
+App -> API: POST /api/attendance/clock-in {lat, lng}
+activate API
+API -> API: Calcular distancia al Hospital\n(Fórmula de Haversine)
+
+alt Dentro del radio permitido
+    API -> DB: Registrar Fichaje (Estado: NORMAL)
+    API --> App: Fichaje registrado correctamente
+else Fuera del radio
+    API -> DB: Registrar Fichaje (Estado: AVISO_UBICACION)
+    API --> App: Registrado con aviso de ubicación
+end
+deactivate API
+deactivate App
+
+@enduml
+

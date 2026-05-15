@@ -1,164 +1,178 @@
 \chapter{Análisis funcional} \label{cap:analisis}
 
 \section{Introducción}
+Este capítulo detalla el comportamiento del sistema GuardiApp desde el punto de vista funcional. Se identifican los actores, se describen los casos de uso detallados mediante tablas normalizadas y se representan los flujos críticos mediante diagramas de secuencia.
 
-Este capítulo identificará a los tipos de actores que podrán interactuar con el sistema informático que se desea desarrollar. A continuación, se utilizarán los casos de uso y los diagramas de secuencia para describir las acciones que podrán realizar los diferentes actores.
-
-\section{Actores}
-
-Un actor es una representación de una persona, proceso o entidad externa que interactúa con el sistema. Se van a considerar los siguientes tipos de actores:
-    
-    \begin{itemize}
-        \item \textbf{Administrador}
-        \begin{itemize}
-            \item Usuario registrado en el sistema con control completo sobre la aplicación.
-            \item Tiene competencias exclusivas para la gestión de usuarios, importación de guardias, configuración de tarifas, cierre y reapertura de meses, generación de documentos y auditoría.
-        \end{itemize}
-
-        \item \textbf{Usuario de consulta}
-        \begin{itemize}
-            \item Usuario registrado con permisos limitados.
-            \item Puede consultar información relacionada con guardias, vistas diaria y mensual, búsquedas y resúmenes de horas e importes, sin capacidad de modificación.
-        \end{itemize}
-    \end{itemize}
-
-\section{Casos de uso}
-
-  Los casos de uso describen las acciones que pueden desarrollar los actores del sistema. Se ha identificado los siguientes casos de uso principales, que son descritos en las secciones que se indican:
-    \begin{itemize}
-        \item \textbf{CU-0. Diagrama de contexto} (Sección \ref{sec:CU-0})
-        \item \textbf{CU-1. Consultar información de guardias} (Sección \ref{sec:CU-1})
-        \item \textbf{CU-2. Administrar sistema de guardias}(Sección \ref{sec:CU-2})
-    \end{itemize}
-
-\subsection{Caso de Uso 0. Diagrama de Contexto}\label{sec:CU-0}         
-
-  El diagrama de contexto engloba los casos de uso principales que componen el sistemas. Véanse la Figura \ref{fig:Diagrama-Contexto} y la Tabla \ref{tab:CU-0}.
-
-%Diagrama de contexto
-\begin{figure}[H]
-        \centering
-        %\includegraphics[scale=0.6]{img/diagramas/Funcional/CU-0.png}
-        \caption{Diagrama de Contexto}\label{fig:Diagrama-Contexto}
-\end{figure}
-
-\begin{table}[H]
-\caption{CU-0. Diagrama de contexto}\label{tab:CU-0}
-\begin{center}
-    \begin{tabular}{|l|p{12cm}|}
-    \hline
-    \multicolumn{2}{|c|}{Caso de uso 0 - Diagrama de contexto} \\ 
-    \hline \hline
-    Actores                 &   Administrador \\ \hline
-    Descripción             &   Acciones principales del sistema\\  \hline
-    Precondiciones          &   El usuario debe acceder a la página inicial de la aplicación   \\  \hline
-    Casos de uso            &   CU-1. \\  
-    & CU-2. Administrar \\ 
-    \hline
-    Flujo principal     &  1a. El usuario público accede a la aplicación sin necesidad de iniciar sesión y podrá. \\
-        & 1b. El resto de usuarios se deberá identificar para acceder a los módulos correspondientes dentro de la aplicación.
-    \\ \hline
-    Flujo alternativo    & 1. La aplicación no se carga correctamente. \\
-      & 2. Se informa del error al usuario. \\
-      & 3. Se informa al usuario que puede intentar cargar de nuevo la aplicación.
-    \\  \hline
-    \end{tabular}
-    \end{center}
-    \end{table}
-
-\newpage
-
-\subsection{CU-1. Consultar información de guardias}\label{sec:CU-1}
-
-El caso de uso \textit{CU-1. Consultar información de guardias} describe las acciones que puede realizar un usuario de consulta o un administrador para visualizar información del sistema.
-
-Este caso de uso está compuesto por los siguientes subcasos:
+\section{Actores del Sistema}
+Se han identificado tres tipos de actores que interactúan con el sistema:
 \begin{itemize}
-    \item CU-1.1. Consultar guardias por mes y especialidad.
-    \item CU-1.2. Consultar guardias de un profesional.
-    \item CU-1.3. Visualizar vista diaria de guardias.
+    \item \textbf{Administrador}: Responsable de la gestión global, importación de datos y aprobaciones críticas.
+    \item \textbf{Trabajador / Usuario de consulta}: Personal médico que consulta sus turnos, realiza fichajes y solicita intercambios.
+    \item \textbf{Sistema}: Entidad automatizada que ejecuta procesos en segundo plano (asignaciones, correos, generación de archivos).
 \end{itemize}
 
-\begin{figure}[H]
-\centering
-%\includegraphics[scale=0.75]{img/diagramas/Funcional/CU-1.png}
-\caption{CU-1.}\label{fig:Diagrama-Caso de uso 1.}   
-\end{figure}
+\section{Resumen de Casos de Uso}
+A continuación se enumeran las funcionalidades principales agrupadas por módulos:
+\begin{itemize}
+    \item \textbf{Gestión de Autenticación}: Login, Logout, Cambio de contraseña.
+    \item \textbf{Gestión de Intercambios}: Solicitar intercambio mutuo, Bandeja de solicitudes (aceptar/rechazar), Aprobación de jefe.
+    \item \textbf{Control de Presencia}: Fichaje geolocalizado (radio 300m), Historial de fichajes.
+    \item \textbf{Administración}: Gestión de usuarios/especialidades, Importación Excel, Generación de reportes.
+\end{itemize}
 
-    \begin{table}[H]
-    \caption{CU-1. Consultar información de guardias}\label{tab:CU-1}
-        \begin{center}
-            \begin{tabular}{|l|p{12cm}|}
-            \hline
-            \multicolumn{2}{|c|}{Caso de uso 1 - Consultar información de guardias} \\ 
-            \hline \hline
-            Actores & Usuario de consulta, Administrador \\ \hline
-            Descripción & Consulta de información relacionada con las guardias \\ \hline
-            Precondiciones & El usuario debe estar autenticado en el sistema \\ \hline
-            Casos de uso & CU-1.1, CU-1.2, CU-1.3 \\ \hline
-            Flujo principal & 
-            1. El usuario selecciona una opción de consulta. \\
-            & 2. El sistema solicita los datos al backend. \\
-            & 3. El sistema muestra la información solicitada. \\ \hline
-            Flujo alternativo & 
-            1. Error en la obtención de datos. \\
-            & 2. El sistema informa del error al usuario. \\ \hline
-            \end{tabular}
-        \end{center}
-    \end{table}
+\section{Detalle de Casos de Uso}
 
-\newpage
+\subsection{Gestión de Autenticación}
 
-
-
-\newpage
-
-\section{Validación de casos de uso}
-La tabla \ref{tab:Validación CU} permite comprobar que los casos de uso cubren todos los requisitos funcionales de la aplicación web propuestos en la Sección \ref{sec:requisitos-funcionales}.
 \begin{table}[H]
-    \centering
-    \caption{Tabla validación casos de uso} \label{tab:Validación CU}
-    \begin{tabular}{|l|l|}
-        \hline
-            \textbf{Requisito funcional} & \textbf{Caso de uso} \\ 
-        \hline 
-        \hline         
-            \textbf{RF-1}  & CU 1.1 \\
-        \hline
-            \textbf{RF-8}  & CU 2.1 \\
-        \hline
-    \end{tabular}%
-    \end{table}
-    
-\newpage 
-\section{Diagrama de secuencia}
+\caption{CU-AUT-01: Login}\label{tab:cu-login}
+\begin{center}
+    \begin{tabular}{|l|p{11cm}|}
+    \hline
+    Actores & Usuario, Sistema \\ \hline
+    Descripción & Acceso al sistema mediante credenciales. \\ \hline
+    Precondiciones & El usuario debe estar registrado. \\ \hline
+    Postcondiciones & Generación de sesión activa y token JWT. \\ \hline
+    Flujo Principal & 1. Entrada de email/pass. 2. Validación. 3. Redirección por rol. \\ \hline
+    Flujos Alternativos & Credenciales erróneas: se deniega el acceso. \\ \hline
+    \end{tabular}
+\end{center}
+\end{table}
 
-El diagrama de secuencia es una representación gráfica que pretende dar una visión de las acciones que se realizarán durante la ejecución de alguna operación en el sistema. A continuación, se muestran los diagramas de secuencias para la creación (Figura  \ref{fig:Diagrama de secuencia crear}), búsqueda (Figura \ref{fig:Diagrama de secuencia buscar}), modificación (Figura \ref{fig:Diagrama de secuencia modificar}) y borrado (Figura \ref{fig:Diagrama de secuencia borrar}) de instancias genéricas () que se corresponderán con...
+\subsection{Gestión de Intercambios (Flujo Crítico)}
+
+\begin{table}[H]
+\caption{CU-INT-01: Solicitar intercambio mutuo}\label{tab:cu-sol-inter}
+\begin{center}
+    \begin{tabular}{|l|p{11cm}|}
+    \hline
+    Actores & Trabajador (Solicitante) \\ \hline
+    Descripción & Petición para intercambiar una guardia propia por la de otro compañero. \\ \hline
+    Precondiciones & El solicitante debe tener asignada la guardia de origen y el receptor la de destino. \\ \hline
+    Postcondiciones & Creación de registro en estado "Pendiente". Notificación al receptor. \\ \hline
+    Flujo Principal & 1. Seleccionar guardia propia. 2. Seleccionar guardia de compañero. 3. Confirmar envío. \\ \hline
+    Flujos Alternativos & Conflictos de fecha o distinta especialidad: el sistema bloquea la solicitud. \\ \hline
+    \end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+\caption{CU-INT-02: Gestionar bandeja de solicitudes}\label{tab:cu-inbox}
+\begin{center}
+    \begin{tabular}{|l|p{11cm}|}
+    \hline
+    Actores & Trabajador (Receptor) \\ \hline
+    Descripción & Aceptación o rechazo de una propuesta de intercambio recibida. \\ \hline
+    Precondiciones & Existencia de una solicitud pendiente. \\ \hline
+    Postcondiciones & Si se acepta, pasa a estado "Aceptado" (esperando jefe). Si se rechaza, pasa a "Rechazado". \\ \hline
+    Flujo Principal & 1. Acceder a Bandeja de Solicitudes. 2. Revisar detalles. 3. Pulsar Aceptar o Rechazar. \\ \hline
+    \end{tabular}
+\end{center}
+\end{table}
+
+\subsection{Control de Presencia}
+
+\begin{table}[H]
+\caption{CU-FIC-01: Fichaje geolocalizado}\label{tab:cu-fichaje}
+\begin{center}
+    \begin{tabular}{|l|p{11cm}|}
+    \hline
+    Actores & Trabajador \\ \hline
+    Descripción & Registro de entrada o salida validando la ubicación GPS. \\ \hline
+    Precondiciones & Tener activado el GPS y estar a menos de 300m del centro. \\ \hline
+    Postcondiciones & Registro del evento con marca de tiempo y coordenadas. \\ \hline
+    Flujo Principal & 1. Pulsar botón de fichar. 2. El sistema obtiene coordenadas. 3. Validación de radio. 4. Éxito. \\ \hline
+    Flujos Alternativos & Fuera de radio: el sistema deniega el fichaje y muestra la distancia aproximada. \\ \hline
+    \end{tabular}
+\end{center}
+\end{table}
+
+\subsection{Gestión Administrativa}
+
+\begin{table}[H]
+\caption{CU-ADM-02: Importar cuadrante desde Excel}\label{tab:cu-import-guardias}
+\begin{center}
+    \begin{tabular}{|l|p{11cm}|}
+    \hline
+    Actores & Administrador, Sistema \\ \hline
+    Descripción & Carga masiva de turnos de guardia. \\ \hline
+    Precondiciones & Archivo con formato correcto (.xlsx). \\ \hline
+    Postcondiciones & Actualización del calendario global. \\ \hline
+    Flujo Principal & 1. Subir archivo. 2. Mapeo de campos. 3. Inserción en DB. \\ \hline
+    Flujos Alternativos & Conflicto de nombres: se solicita corrección manual. \\ \hline
+    \end{tabular}
+\end{center}
+\end{table}
+
+\newpage
+\section{Diagramas de Secuencia}
+
+\subsection{Autenticación}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.55]{diagramas/Secuencia/login.png}
+    \caption{Secuencia de Inicio de Sesión}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.55]{diagramas/Secuencia/logout.png}
+    \caption{Secuencia de Cierre de Sesión}
+\end{figure}
+
+\subsection{Gestión de Usuarios}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.55]{diagramas/Secuencia/create.png}
+    \caption{Creación de Trabajador}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.55]{diagramas/Secuencia/edit.png}
+    \caption{Modificación de Trabajador}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.55]{diagramas/Secuencia/delete.png}
+    \caption{Borrado de Trabajador}
+\end{figure}
+
+\subsection{Gestión de Especialidades}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.55]{diagramas/Secuencia/create_specialty.png}
+    \caption{Alta de Nueva Especialidad}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.55]{diagramas/Secuencia/edit_speciality.png}
+    \caption{Edición de Especialidad}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.55]{diagramas/Secuencia/delete_speciality.png}
+    \caption{Borrado de Especialidad}
+\end{figure}
+
+\subsection{Flujos Complejos}
 
 \begin{figure}[H]
     \centering
-%        \includegraphics[scale=0.55]{img/diagramas/Secuencia/SEC-1.png}
-    \caption{Diagrama de secuencia de crear}
-    \label{fig:Diagrama de secuencia crear}
+    \includegraphics[scale=0.55]{diagramas/Secuencia/intercambio_guardia.png}
+    \caption{Diagrama de secuencia de intercambio de guardias}
+    \label{fig:Diagrama de secuencia intercambio}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-%        \includegraphics[scale=0.55]{img/diagramas/Secuencia/SEC-1.png}
-    \caption{Diagrama de secuencia de borrar}
-    \label{fig:Diagrama de secuencia borrar}
+    \includegraphics[scale=0.55]{diagramas/Secuencia/fichaje_geolocalizado.png}
+    \caption{Diagrama de secuencia de fichaje geolocalizado}
+    \label{fig:Diagrama de secuencia fichaje}
 \end{figure}
+
 
 \begin{figure}[H]
     \centering
-%        \includegraphics[scale=0.55]{img/diagramas/Secuencia/SEC-1.png}
-    \caption{Diagrama de secuencia de buscar}
-    \label{fig:Diagrama de secuencia buscar}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-%        \includegraphics[scale=0.55]{img/diagramas/Secuencia/SEC-1.png}
-    \caption{Diagrama de secuencia de modificar}
-    \label{fig:Diagrama de secuencia modificar}
+    \includegraphics[scale=0.55]{diagramas/Secuencia/generacion_reportes.png}
+    \caption{Diagrama de secuencia de generación de reportes y envío}
+    \label{fig:Diagrama de secuencia reportes}
 \end{figure}

@@ -113,22 +113,15 @@ Todas las tablas definidas se encuentran en la Primera Forma Normal, puesto que 
 
 \subsection{Tabla Especialidad}
 \begin{itemize}
-    \item \textbf{Descripción}: la tabla \textit{Especialidad} se obtiene a partir de la entidad \textit{Especialidad}
-    (modelo \texttt{Speciality} de Laravel). Almacena las secciones/especialidades del hospital a las que pertenecen
-    los trabajadores y sobre las que se organizan las guardias.
-
+    \item \textbf{Descripción}: representa las distintas secciones o áreas del hospital. Cada especialidad tiene un jefe responsable de aprobar los intercambios.
     \item \textbf{Nombre de la tabla}: Especialidad (\texttt{speciality})
-
     \item \textbf{Atributos}:
     \begin{itemize}
         \item Clave primaria: \underline{id}
-        \item Claves alternas: ---
-        \item Claves foráneas: ---
+        \item Claves foráneas: \textbf{id\_chief} $\rightarrow$ Trabajador(id)
         \item Resto de atributos: name, active
     \end{itemize}
-
-    \item \textbf{Esquema relacional}:
-    Especialidad(\textbf{\underline{id}}, name, active)
+    \item \textbf{Esquema relacional}: Especialidad(\textbf{\underline{id}}, name, active, \textbf{id\_chief})
 \end{itemize}
 \subsection{Tabla Especialidad}
     \begin{itemize}
@@ -174,33 +167,62 @@ Todas las tablas definidas se encuentran en la Primera Forma Normal, puesto que 
 \end{figure}
 
 
-%%
+\subsection{Tabla Fichaje}
+\begin{itemize}
+    \item \textbf{Descripción}: la tabla \textit{Fichaje} (modelo \texttt{Fichaje}) almacena los registros de entrada y salida de los trabajadores.
+    \item \textbf{Nombre de la tabla}: Fichaje (\texttt{fichajes})
+    \item \textbf{Atributos}:
+    \begin{itemize}
+        \item Clave primaria: \underline{id}
+        \item Claves foráneas: \textbf{worker\_id} $\rightarrow$ Trabajador(id), \textbf{id\_duty} $\rightarrow$ Guardia(id)
+        \item Resto de atributos: date\_time, type (0: Entrada, 1: Salida), latitude, longitude
+    \end{itemize}
+    \item \textbf{Esquema relacional}: Fichaje(\textbf{\underline{id}}, date\_time, type, latitude, longitude, \textbf{worker\_id}, \textbf{id\_duty})
+\end{itemize}
+
+\subsection{Tabla Intercambio de Guardia}
+\begin{itemize}
+    \item \textbf{Descripción}: la tabla \textit{Intercambio} (modelo \texttt{DutySwap}) gestiona las solicitudes de intercambio mutuo entre dos profesionales y sus respectivas guardias.
+    \item \textbf{Nombre de la tabla}: Intercambio (\texttt{duty\_swaps})
+    \item \textbf{Atributos}:
+    \begin{itemize}
+        \item Clave primaria: \underline{id}
+        \item Claves foráneas: \textbf{id\_duty\_from} $\rightarrow$ Guardia(id), \textbf{id\_duty\_to} $\rightarrow$ Guardia(id), \textbf{id\_worker\_requester} $\rightarrow$ Trabajador(id), \textbf{id\_worker\_target} $\rightarrow$ Trabajador(id), \textbf{id\_chief\_approver} $\rightarrow$ Trabajador(id)
+        \item Resto de atributos: status (pending, accepted, rejected, approved, declined), comments
+    \end{itemize}
+    \item \textbf{Esquema relacional}: Intercambio(\textbf{\underline{id}}, status, comments, \textbf{id\_duty\_from}, \textbf{id\_duty\_to}, \textbf{id\_worker\_requester}, \textbf{id\_worker\_target}, \textbf{id\_chief\_approver})
+\end{itemize}
+
+\subsection{Tabla Notificación}
+\begin{itemize}
+    \item \textbf{Descripción}: la tabla \textit{Notificación} (modelo \texttt{Notification}) almacena los avisos del sistema para los usuarios.
+    \item \textbf{Nombre de la tabla}: Notificación (\texttt{notifications})
+    \item \textbf{Atributos}:
+    \begin{itemize}
+        \item Clave primaria: \underline{id}
+        \item Claves foráneas: \textbf{user\_id} $\rightarrow$ Usuario(id)
+        \item Resto de atributos: title, message, type, related\_id, is\_read
+    \end{itemize}
+    \item \textbf{Esquema relacional}: Notificación(\textbf{\underline{id}}, title, message, type, related\_id, is\_read, \textbf{user\_id})
+\end{itemize}
+
  \section{Esquema relacional}\label{sec:esquema-relacional}
 
 \begin{table}[H]
 \begin{center}
     \begin{tabular}{|l|p{8cm}|}
     \hline
-    Tabla                 &   Atributos
-    \\ \hline
-
-    Usuario             &   (\textbf{\underline{id}}, name, email, password, avatarUrl, \textbf{worker\_id}, email\_verified)
-    \\ \hline
-
-    Trabajador          &   (\textbf{\underline{id}}, name, rank, registration\_date, discharge\_date, \textbf{id\_speciality})
-    \\ \hline
-
-    Especialidad        &   (\textbf{\underline{id}}, name, active)
-    \\ \hline
-
-    Guardia             &   (\textbf{\underline{id}}, date, duty\_type, \textbf{id\_speciality}, \textbf{id\_worker}, \textbf{id\_chief\_worker})
-    \\ \hline
-
+    Tabla                 &   Atributos \\ \hline
+    Usuario             &   (\textbf{\underline{id}}, name, email, password, avatarUrl, \textbf{worker\_id}) \\ \hline
+    Trabajador          &   (\textbf{\underline{id}}, name, rank, registration\_date, discharge\_date, \textbf{id\_speciality}) \\ \hline
+    Especialidad        &   (\textbf{\underline{id}}, name, active, \textbf{id\_chief}) \\ \hline
+    Guardia             &   (\textbf{\underline{id}}, date, duty\_type, \textbf{id\_speciality}, \textbf{id\_worker}, \textbf{id\_chief\_worker}) \\ \hline
+    Fichaje             &   (\textbf{\underline{id}}, date\_time, type, latitude, longitude, \textbf{worker\_id}, \textbf{id\_duty}) \\ \hline
+    Intercambio         &   (\textbf{\underline{id}}, status, comments, \textbf{id\_duty\_from}, \textbf{id\_duty\_to}, \textbf{id\_worker\_requester}, \textbf{id\_worker\_target}, \textbf{id\_chief\_approver}) \\ \hline
+    Notificación        &   (\textbf{\underline{id}}, title, message, type, related\_id, is\_read, \textbf{user\_id}) \\ \hline
     \end{tabular}
 \end{center}
 \end{table}
-
-
 
 \section{Diagrama relacional}\label{sec:diagrama-relacional}
 El diagrama relacional del modelo propuesto se muestra en la figura \ref{fig:Diagrama Relacional}.

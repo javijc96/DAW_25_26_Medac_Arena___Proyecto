@@ -54,14 +54,20 @@
     \begin{itemize}
     \item \textbf{Administrador}
         \begin{itemize}
-        \item Usuario con acceso completo a las funcionalidades del sistema.
-        \item Responsable de la gestión de usuarios, guardias, jefaturas y validaciones.
+        \item Usuario con acceso completo a las funcionalidades de gestión global.
+        \item Responsable de la gestión de usuarios, carga de datos maestros y supervisión general.
         \end{itemize}
 
-    \item \textbf{Usuario de consulta}
+    \item \textbf{Jefe de Especialidad}
         \begin{itemize}
-            \item Usuario con acceso a funcionalidades de consulta de guardias.
-            \item Sin permisos para modificar información crítica del sistema.
+            \item Usuario responsable de un área concreta (especialidad).
+            \item Encargado de validar y aprobar definitivamente los intercambios de guardia propuestos por sus trabajadores.
+        \end{itemize}
+
+    \item \textbf{Trabajador / Usuario de consulta}
+        \begin{itemize}
+            \item Profesional sanitario que utiliza la aplicación para consultar su cuadrante.
+            \item Puede realizar fichajes geolocalizados e iniciar solicitudes de intercambio mutuo.
         \end{itemize}
     \end{itemize}
 \subsection{Entorno}
@@ -110,7 +116,7 @@ En relación con el aspecto externo, se tendrán en cuenta los siguientes aspect
 \begin{itemize}
 \item \textbf{Interfaz de usuario}
 \begin{itemize}
-\item Se desarrollará una interfaz totalmente responsiva, intuitiva y amigable. El Capítulo \ref{cap:diseño_interfaz} describirá el diseño de la interfaz de la aplicación web.
+\item Se desarrollará una interfaz totalmente responsiva, intuitiva y amigable. El Capítulo \ref{cap:diseno-interfaz} describirá el diseño de la interfaz de la aplicación web.
 \end{itemize}
 \item \textbf{Distribución de la aplicación}
 \begin{itemize}

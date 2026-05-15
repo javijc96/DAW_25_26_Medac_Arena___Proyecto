@@ -1,0 +1,44 @@
+@startuml intercambio_guardia
+skinparam Style strictuml
+skinparam SequenceMessageAlignment center
+
+actor "Trabajador Solicitante" as User1
+actor "Trabajador Receptor" as User2
+actor "Jefe de Especialidad" as Chief
+participant "Frontend (React)" as App
+participant "Backend (Laravel API)" as API
+database "Base de Datos" as DB
+
+== Solicitud de Intercambio Mutuo ==
+User1 -> App: Selecciona su guardia (G1) y la de User2 (G2)
+App -> API: POST /api/duty-swaps {id_duty_from: G1, id_duty_to: G2}
+API -> DB: Validar misma especialidad y sin conflictos
+API -> DB: Crear registro (status: pending)
+API -> User2: Enviar Notificación (Solicitud recibida)
+API --> App: Confirmación solicitud enviada
+App --> User1: Mostrar "Pendiente de aceptación"
+
+== Aceptación por Receptor ==
+User2 -> App: Ver Bandeja de Solicitudes (RequestsInbox)
+User2 -> App: Aceptar intercambio (G1 <-> G2)
+App -> API: POST /api/duty-swaps/{id}/accept
+API -> DB: Actualizar status a 'accepted'
+API -> User1: Enviar Notificación (Aceptado por receptor)
+API -> Chief: Enviar Notificación (Pendiente aprobación jefe)
+API --> App: Confirmación aceptación
+App --> User2: Mostrar "Esperando aprobación del jefe"
+
+== Aprobación por Jefe de Especialidad ==
+Chief -> App: Ver panel de administración / Intercambios
+Chief -> App: Aprobar intercambio
+App -> API: POST /api/duty-swaps/{id}/approve
+API -> DB: Iniciar Transacción
+API -> DB: Intercambiar id_worker en G1 y G2
+API -> DB: Actualizar status a 'approved'
+API -> DB: Commit
+API -> User1: Notificar (Intercambio finalizado)
+API -> User2: Notificar (Intercambio finalizado)
+API --> App: Éxito
+App --> Chief: Mostrar "Intercambio completado"
+
+@enduml
